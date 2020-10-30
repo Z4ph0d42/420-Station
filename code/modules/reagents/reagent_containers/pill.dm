@@ -393,7 +393,7 @@ obj/item/weapon/reagent_containers/pill/noexcutite/New()
 //Pills with random content
 /obj/item/weapon/reagent_containers/pill/floorpill
 	name = "floor pill"
-	desc = "Dare you?"
+	desc = "Score!"
 
 /obj/item/weapon/reagent_containers/pill/floorpill/Initialize()
 	. = ..()

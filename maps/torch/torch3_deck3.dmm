@@ -7991,7 +7991,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/primary/thirddeck/center)
+/area/space)
 "qV" = (
 /obj/machinery/atm{
 	pixel_y = 32

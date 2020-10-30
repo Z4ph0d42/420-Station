@@ -179,6 +179,30 @@
 				/obj/item/weapon/storage/med_pouch/radiation = 2,
 				/obj/item/weapon/storage/med_pouch/oxyloss = 2)
 
+/obj/random/belt
+	name = "Random Belt"
+	desc = "This is a belt"
+	icon = 'icons/obj/clothing/obj_belt.dmi'
+	icon_state = "utility"
+	spawn_nothing_percentage = 50
+
+obj/random/belt/spawn_choices()
+	return list (
+				/obj/item/weapon/storage/belt/utility,
+				/obj/item/weapon/storage/belt/medical/emt,
+				/obj/item/weapon/storage/belt/medical,
+				/obj/item/weapon/storage/belt/holster/security,
+				/obj/item/weapon/storage/belt/security,
+				/obj/item/weapon/storage/belt/general,
+				/obj/item/weapon/storage/belt/janitor,
+				/obj/item/weapon/storage/belt/holster/general,
+				/obj/item/weapon/storage/belt/holster/forensic,
+				/obj/item/weapon/storage/belt/forensic,
+				/obj/item/weapon/storage/belt/holster/machete,
+				/obj/item/weapon/storage/belt/holster/security/tactical,
+				/obj/item/weapon/storage/belt/waistpack,
+				/obj/item/weapon/storage/belt/waistpack/big)
+
 /obj/random/firstaid
 	name = "Random First Aid Kit"
 	desc = "This is a random first aid kit."
@@ -195,6 +219,249 @@
 				/obj/item/weapon/storage/firstaid/combat = 1,
 				/obj/item/weapon/storage/firstaid/empty = 2,
 				/obj/item/weapon/storage/firstaid/fire = 3)
+
+/obj/random/cloth/under
+	name = "Ramdom clothes"
+	desc = "This is a pile of random clothes"
+	icon = 'icons/obj/clothing/obj_under.dmi'
+	icon_state = "jumpsuit"
+
+obj/random/cloth/under/spawn_choices()
+   return list(
+	/obj/item/clothing/under/color/white,
+	/obj/item/clothing/under/color/black,
+	/obj/item/clothing/under/color/grey,
+	/obj/item/clothing/under/color/blue,
+	/obj/item/clothing/under/color/pink,
+	/obj/item/clothing/under/color/red,
+	/obj/item/clothing/under/color/green,
+	/obj/item/clothing/under/color/yellow,
+	/obj/item/clothing/under/color/lightpurple,
+	/obj/item/clothing/under/color/brown)
+
+
+/obj/random/cloth/armor
+	name = "Random bits of armor"
+	desc  = "This is some random armor"
+	icon = 'icons/obj/clothing/obj_suit_modular_armor.dmi'
+	icon_state = "pcarrier"
+
+/obj/random/cloth/armor/spawn_choices()
+	return list(/obj/item/clothing/suit/armor/vest = 20,
+				/obj/item/clothing/suit/armor/vest/press = 15,
+				/obj/item/clothing/suit/armor/vest/detective  = 10,
+				/obj/item/clothing/suit/storage/vest = 2,
+				/obj/item/clothing/suit/armor/vest/pcrc = 5,
+				/obj/item/clothing/suit/armor/bulletproof = 10,
+				/obj/item/clothing/suit/armor/bulletproof/vest = 2,
+				/obj/item/clothing/suit/armor/laserproof = 2,
+				/obj/item/clothing/suit/armor/pcarrier/light = 2,
+				/obj/item/clothing/suit/armor/pcarrier/medium = 2,
+				/obj/item/clothing/suit/armor/heavy = 2,
+				/obj/item/clothing/suit/armor/reactive = 2,
+				/obj/item/clothing/suit/storage/vest/merc = 2)
+
+/obj/random/cloth/masks
+	name = "Random masks"
+	desc = "This is a ramdom mask."
+	icon = 'icons/obj/clothing/obj_mask.dmi'
+	icon_state = "bandred"
+
+obj/random/cloth/masks/spawn_choices()
+	return list(/obj/item/clothing/mask/balaclava = 15,
+				/obj/item/clothing/mask/balaclava/tactical = 20,
+				/obj/item/clothing/mask/bandana = 2,
+				/obj/item/clothing/mask/bandana/blue = 1,
+				/obj/item/clothing/mask/bandana/botany = 1,
+				/obj/item/clothing/mask/bandana/camo = 1,
+				/obj/item/clothing/mask/bandana/gold = 1,
+				/obj/item/clothing/mask/bandana/green = 1,
+				/obj/item/clothing/mask/bandana/orange = 1,
+				/obj/item/clothing/mask/bandana/purple = 1,
+				/obj/item/clothing/mask/bandana/red = 1,
+				/obj/item/clothing/mask/bandana/skull = 1,
+				/obj/item/clothing/mask/breath = 20,
+				/obj/item/clothing/mask/breath/medical = 5,
+				/obj/item/clothing/mask/gas = 20,
+				/obj/item/clothing/mask/gas/clown_hat = 10,
+				/obj/item/clothing/mask/gas/swat = 2,
+				/obj/item/clothing/mask/gas/half = 2,
+				/obj/item/clothing/mask/luchador = 2,
+				/obj/item/clothing/mask/luchador/rudos = 2,
+				/obj/item/clothing/mask/luchador/tecnicos = 2,
+				/obj/item/clothing/mask/muzzle = 2,
+				/obj/item/clothing/mask/ai= 2,
+				/obj/item/clothing/mask/rubber/species/skrell = 1,
+				/obj/item/clothing/mask/rubber/species/cat = 1,
+				/obj/item/clothing/mask/greenscarf,
+				/obj/item/clothing/mask/ninjascarf= 2,
+				/obj/item/clothing/mask/redscarf = 2,
+				/obj/item/clothing/mask/bluescarf = 2,
+				/obj/item/clothing/mask/pig = 2,
+				/obj/item/clothing/mask/horsehead = 2,
+				/obj/item/clothing/mask/surgical = 8)
+
+
+/obj/random/pouches
+	name = "Random storage pouches"
+	desc = "This is a random storage pouch."
+	icon = 'icons/pouches.dmi'
+	icon_state = "medium_generic"
+
+/obj/random/pouches/spawn_choices()
+	return list(/obj/item/weapon/storage/pouch/small_generic = 4,
+				/obj/item/weapon/storage/pouch/medium_generic,
+				/obj/item/weapon/storage/pouch/large_generic = 3,
+				/obj/item/weapon/storage/pouch/medical_supply = 3,
+				/obj/item/weapon/storage/pouch/engineering_tools= 2,
+				/obj/item/weapon/storage/pouch/engineering_supply = 2,
+				/obj/item/weapon/storage/pouch/ammo = 1,
+				/obj/item/weapon/storage/pouch/tubular/vial= 1,
+				/obj/item/weapon/storage/pouch/pistol_holster = 3)
+
+/obj/random/material_ore
+	name = "Random raw ores"
+	desc = "This is a random raw ore."
+	icon = 'icons/obj/materials/ore.dmi'
+	icon_state = "lump"
+
+/obj/random/material_ore/spawn_choices()
+	return list(/obj/item/weapon/ore/coal = 4,\
+				/obj/item/weapon/ore/glass = 5,
+				/obj/item/weapon/ore/gold = 3,
+				/obj/item/weapon/ore/hydrogen = 2,
+				/obj/item/weapon/ore/iron = 4,
+				/obj/item/weapon/ore/osmium = 2,
+				/obj/item/weapon/ore/silver = 2,
+				/obj/item/weapon/ore/uranium = 1,
+				/obj/item/weapon/ore/diamond = 1)
+
+/obj/random/surgery_tool
+	name = "Ramdom surgery tools"
+	desc = "This is some random surgery tools"
+	icon =  'icons/obj/surgery.dmi'
+	icon_state = "scalpel"
+
+
+/obj/random/surgery_tool/spawn_choices()
+	return list(/obj/item/weapon/bonesetter,
+				/obj/item/weapon/scalpel,
+				/obj/item/weapon/scalpel/laser1,
+				/obj/item/weapon/scalpel/laser2,
+				/obj/item/weapon/surgicaldrill,
+				/obj/item/weapon/cautery,
+				/obj/item/weapon/retractor,
+				/obj/item/weapon/circular_saw,
+				/obj/item/weapon/hemostat)
+
+/obj/random/science
+	name = "Random Science tools"
+	desc = "These are some random science tools"
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "dropper0"
+
+/obj/random/science/spawn_choices()
+	return list(/obj/item/device/scanner/reagent = 6,
+	/obj/item/device/scanner/reagent/adv= 3,
+	/obj/item/weapon/reagent_containers/dropper = 2,
+	/obj/item/weapon/reagent_containers/glass/beaker/vial = 3,
+	/obj/item/weapon/reagent_containers/glass/beaker/vial/random = 2,
+	/obj/item/weapon/reagent_containers/glass/beaker/vial/random/toxin = 2,
+	/obj/item/weapon/reagent_containers/glass/beaker/insulated = 2,
+	/obj/item/weapon/stock_parts/scanning_module/adv = 3,
+	/obj/item/weapon/stock_parts/manipulator/nano = 3,
+	/obj/item/weapon/stock_parts/matter_bin/adv = 2,
+	/obj/item/weapon/stock_parts/micro_laser/high = 2,
+	/obj/item/weapon/stock_parts/computer/hard_drive/portable = 5,
+	/obj/item/weapon/stock_parts/computer/hard_drive/portable/advanced = 1,
+	/obj/item/weapon/rig/hazmat = 2,
+	/obj/item/weapon/rig/hazmat/equipped = 1
+	)
+
+
+/obj/random/cloth/hazmatsuit
+	name = "Ramdom Protective clothing"
+	desc = "Random protective clothing"
+	icon = 'icons/obj/clothing/obj_suit.dmi'
+	icon_state = "rad"
+	spawn_nothing_percentage = 90
+
+/obj/random/cloth/hazmatsuit/spawn_choices()
+	return list (/obj/item/clothing/suit/radiation,
+			/obj/item/clothing/head/radiation,
+
+	)
+obj/random/cloth/holster
+	name = "Random small arms holsters"
+	desc = "some random holsters"
+	icon = 'icons/obj/clothing/obj_belt.dmi'
+	icon_state = "holsterout"
+	spawn_nothing_percentage = 75
+
+obj/random/cloth/holster/spawn_choices()
+	return list (
+				/obj/item/clothing/accessory/storage/bandolier = 1,
+				/obj/item/clothing/accessory/storage/holster/thigh = 1,
+				/obj/item/clothing/accessory/storage/holster/hip = 1,
+				/obj/item/clothing/accessory/storage/holster/waist = 1,
+				/obj/item/clothing/accessory/storage/holster/armpit = 1,
+				/obj/item/weapon/storage/belt/holster/security = 2,
+				/obj/item/weapon/storage/belt/holster/security/tactical = 1,
+				/obj/item/weapon/storage/belt/holster/security/tactical = 2,
+				/obj/item/weapon/storage/belt/holster/machete = 3,
+	)
+
+obj/random/knife
+	name = "Random knives"
+	desc = "Random knives"
+	icon = 'icons/obj/knife.dmi'
+	icon_state = "knife"
+
+obj/random/knife/spawn_choices()
+	return list (
+				/obj/item/weapon/material/knife/combat = 1,
+				/obj/item/weapon/material/knife/folding = 1,
+				/obj/item/weapon/material/knife/folding/wood = 1,
+				/obj/item/weapon/material/knife/folding/combat/balisong = 2,
+				/obj/item/weapon/material/knife/folding/combat/switchblade = 1
+	)
+
+
+/obj/random/circuitbaord
+	name = "random circuitboard"
+	desc = "random cicutboards"
+	icon = 'icons/obj/module.dmi'
+	icon_state = "id_mod"
+
+obj/random/circuitboard/spawn_choices()
+	return list (
+			/obj/random/pack/rare,
+			/obj/item/weapon/stock_parts/circuitboard/message_monitor,
+			/obj/item/weapon/stock_parts/circuitboard/aiupload,
+			/obj/item/weapon/stock_parts/circuitboard/borgupload,
+			/obj/item/weapon/stock_parts/circuitboard/teleporter,
+			/obj/item/weapon/stock_parts/circuitboard/atmos_alert,
+			/obj/item/weapon/stock_parts/circuitboard/robotics,
+			/obj/item/weapon/stock_parts/circuitboard/drone_control,
+			/obj/item/weapon/stock_parts/circuitboard/arcade/battle,
+			/obj/item/weapon/stock_parts/circuitboard/arcade/orion_trail,
+			/obj/item/weapon/stock_parts/circuitboard/turbine_control,
+			/obj/item/weapon/stock_parts/circuitboard/solar_control,
+			/obj/item/weapon/stock_parts/circuitboard/powermonitor,
+			/obj/item/weapon/stock_parts/circuitboard/prisoner,
+			/obj/item/weapon/stock_parts/circuitboard/rdservercontrol,
+			/obj/item/weapon/stock_parts/circuitboard/crew,
+			/obj/item/weapon/stock_parts/circuitboard/operating,
+			/obj/item/weapon/stock_parts/circuitboard/helm,
+			/obj/item/weapon/stock_parts/circuitboard/engine,
+			/obj/item/weapon/stock_parts/circuitboard/nav,
+			/obj/item/weapon/stock_parts/circuitboard/nav/tele,
+			/obj/item/weapon/stock_parts/circuitboard/sensors,
+			/obj/item/weapon/stock_parts/circuitboard/area_atmos,
+			/obj/item/weapon/stock_parts/circuitboard/rcon_console,
+			/obj/item/weapon/stock_parts/circuitboard/account_database,
+			/obj/item/weapon/stock_parts/circuitboard/guestpass
+	)
 
 /obj/random/contraband
 	name = "Random Illegal Item"
@@ -266,6 +533,80 @@
 				/obj/item/weapon/gun/energy/taser = 4,
 				/obj/item/weapon/gun/energy/crossbow/largecrossbow = 2,
 				/obj/item/weapon/gun/energy/stunrevolver = 4)
+
+/obj/random/exosuit_equipment
+	name = "Random Exosuit equitment"
+	desc = "This is a random exosuit equitment."
+	icon = 'icons/obj/guns/energy_gun.dmi'
+	icon_state = "mech_clamp"
+
+/obj/random/exosuit_equitment/spawn_choices()
+	return list(
+		/obj/item/mech_equipment/sleeper,
+		/obj/item/mech_equipment/clamp,
+		/obj/item/mech_equipment/drill,
+		/obj/item/mech_equipment/mounted_system/extinguisher,
+		/obj/item/mech_equipment/mounted_system/rcd,
+		/obj/item/mech_equipment/catapult,
+		/obj/item/robot_parts/robot_component/armour/exosuit,
+		/obj/item/robot_parts/robot_component/armour/exosuit/radproof,
+		/obj/item/robot_parts/robot_component/armour/exosuit/em,
+		/obj/item/robot_parts/robot_component/armour/exosuit/combat,
+		/obj/item/mech_equipment/mounted_system/taser/laser,
+		/obj/item/mech_equipment/mounted_system/taser/ion,
+		/obj/item/mech_equipment/mounted_system/taser
+
+)
+//last coder turned these off idk why. could be ballance issuses, just moved them down out of the main code segment above
+//		/obj/item/mech_equipment/tool/ai_holder,
+//		/obj/item/mech_equipment/cable_layer,
+//		/obj/item/mech_equipment/syringe_gun,
+//		/obj/item/mech_equipment/thruster = 2,
+//		/obj/item/mech_equipment/drill/diamonddrill,
+//		/obj/item/mech_equipment/wormhole_generator,
+//		/obj/item/mech_equipment/gravcatapult,
+//		obj/item/mech_equipment/repair_droid,
+//		/obj/item/mech_equipment/tesla_energy_relay,
+//		/obj/item/mech_equipment/generator,
+//		/obj/item/mech_equipment/generator/nuclear,
+//		/obj/item/mech_equipment/tool/safety_clamp,
+//		/obj/item/mech_equipment/tool/passenger,
+//		/obj/item/mech_equipment/thruster,
+//		/obj/item/mech_equipment/weapon/energy/pulse,
+//		/obj/item/mech_equipment/weapon/ballistic/scattershot,
+//		/obj/item/mech_equipment/weapon/ballistic/lmg,
+//		/obj/item/mech_equipment/weapon/ballistic/missile_rack/flare,
+//		/obj/item/mech_equipment/weapon/ballistic/missile_rack/explosive,
+//		/obj/item/mech_equipment/weapon/ballistic/missile_rack/flashbang
+
+
+/obj/random/ammo/shotgun
+	name = "Rnadom Shotgun ammo"
+	desc = "Some random ammo for a shotgun"
+	icon = 'icons/obj/guns/shotguns.dmi'
+	icon_state = "shotgun"
+
+/obj/random/ammo/shotgun/spawn_choices()
+		return list(
+			/datum/uplink_item/item/ammo/shotgun_slugs,
+			/datum/uplink_item/item/ammo/shotgun_slugs,
+			/datum/uplink_item/item/ammo/empslug,
+			/datum/uplink_item/item/ammo/shotgun_shells
+			)
+
+/obj/random/shotgun
+	name = "random shotguns"
+	desc = "A bunch of random shotguns"
+	icon = 'icons/obj/guns/shotguns.dmi'
+	icon_state = "shotgun"
+
+/obj/random/shotgun/spawn_choices()
+	return list(/obj/item/weapon/gun/projectile/shotgun/pump/combat,
+				/obj/item/weapon/gun/projectile/shotgun/doublebarrel,
+				/obj/item/weapon/gun/projectile/shotgun/doublebarrel/pellet,
+				/obj/item/weapon/gun/projectile/shotgun/doublebarrel/flare
+					)
+
 
 /obj/random/projectile
 	name = "Random Projectile Weapon"
@@ -558,6 +899,29 @@ obj/random/closet //A couple of random closets to spice up maint
 				/obj/item/stack/material/rods/fifty,
 				/obj/item/stack/material/plasteel/fifty)
 
+/obj/random/material/steel //Random steel sheets
+	name = "random ammount of steel sheets"
+	desc = "This is a random ammount of steel sheets."
+	icon = 'icons/obj/materials.dmi'
+	icon_state = "sheet"
+
+	/obj/random/material/steel/spawn_choices()
+		return list(/obj/item/stack/material/steel/five,
+					/obj/item/stack/material/steel/ten,
+					/obj/item/stack/material/steel/twenty)
+
+/obj/random/rods //Random ammounts of rods for the scrap piles
+	name = "random rods"
+	desc = "This is some rods."
+	icon = 'icons/obj/materials.dmi'
+	icon_state = "rod-mult"
+
+/obj/random/rods/spawn_choices()
+	return list(/obj/item/stack/material/rods/five,
+				/obj/item/stack/material/rods/ten,
+				/obj/item/stack/material/rods/twenty_five,
+				/obj/item/stack/material/rods/fifty)
+
 /obj/random/soap
 	name = "Random Cleaning Supplies"
 	desc = "This is a random bar of soap. Soap! SOAP?! SOAP!!!"
@@ -692,7 +1056,63 @@ obj/random/obstruction/spawn_choices()
 				/obj/item/weapon/reagent_containers/food/snacks/plumphelmetbiscuit,
 				/obj/item/weapon/reagent_containers/food/snacks/skrellsnacks)
 
+/obj/random/junkfood
+	name = "random junkfood"
+	desc = "This is a random snack item."
+	icon = 'icons/obj/food.dmi'
+	icon_state = "chips"
 
+/obj/random/junkfood/spawn_choices()
+	return list(/obj/item/weapon/reagent_containers/food/snacks/chips = 3,
+				/obj/item/weapon/reagent_containers/food/snacks/candy = 3,
+				/obj/item/weapon/reagent_containers/food/snacks/cheesiehonkers = 3,
+				/obj/item/weapon/reagent_containers/food/snacks/tastybread = 3,
+				/obj/item/weapon/reagent_containers/food/snacks/no_raisin = 3,
+				/obj/item/weapon/reagent_containers/food/snacks/spacetwinkie = 3,
+				/obj/item/weapon/reagent_containers/food/drinks/dry_ramen = 2,
+				/obj/item/weapon/reagent_containers/food/snacks/hotdog = 1,
+				/obj/item/weapon/reagent_containers/food/snacks/liquidfood = 2,
+				/obj/item/weapon/reagent_containers/food/snacks/pie = 1,
+				/obj/item/weapon/reagent_containers/food/snacks/sandwich = 1)
+
+
+
+obj/random/backpack
+	name = "rancom backpacks"
+	desc = "this is a random backpack"
+	icon = 'icons/mob/onmob/items/lefthand_backpacks.dmi'
+	icon_state = "backpack"
+
+obj/random/backpack/spawn_choices()
+	return list(
+			/obj/item/weapon/storage/backpack,
+			/obj/item/weapon/storage/backpack/holding/duffle,
+			/obj/item/weapon/storage/backpack/clown,
+			/obj/item/weapon/storage/backpack/medic,
+			/obj/item/weapon/storage/backpack/security,
+			/obj/item/weapon/storage/backpack/captain,
+			/obj/item/weapon/storage/backpack/industrial,
+			/obj/item/weapon/storage/backpack/toxins,
+			/obj/item/weapon/storage/backpack/rucksack,
+			/obj/item/weapon/storage/backpack/rucksack/blue,
+			/obj/item/weapon/storage/backpack/rucksack/green,
+			/obj/item/weapon/storage/backpack/rucksack/navy,
+			/obj/item/weapon/storage/backpack/rucksack/tan,
+			/obj/item/weapon/storage/backpack/dufflebag,
+			/obj/item/weapon/storage/backpack/satchel,
+			/obj/item/weapon/storage/backpack/satchel/leather,
+			/obj/item/weapon/storage/backpack/satchel/grey,
+			/obj/item/weapon/storage/backpack/satchel/leather/khaki,
+			/obj/item/weapon/storage/backpack/satchel/leather/black,
+			/obj/item/weapon/storage/backpack/satchel/leather/navy,
+			/obj/item/weapon/storage/backpack/satchel/leather/olive,
+			/obj/item/weapon/storage/backpack/satchel/leather/reddish,
+			/obj/item/weapon/storage/backpack/satchel/pocketbook,
+			/obj/item/weapon/storage/backpack/satchel/pocketbook/brown,
+			/obj/item/weapon/storage/backpack/satchel/pocketbook/reddish,
+			/obj/item/weapon/storage/backpack/messenger,
+			/obj/item/weapon/storage/backpack/satchel/flat
+	)
 /obj/random/storage
 	name = "random storage item"
 	desc = "This is a storage item."
@@ -798,6 +1218,30 @@ obj/random/obstruction/spawn_choices()
 				/obj/item/clothing/glasses/sunglasses/sechud/goggles = 1,
 				/obj/item/clothing/glasses/tacgoggles = 1)
 
+/obj/random/cloth/helmet
+	name = "Random helmets"
+	desc = "This is a random helmet"
+	icon = 'icons/obj/clothing/obj_head.dmi'
+	icon_state = "helmet"
+
+/obj/random/cloth/helmet/spawn_choices()
+ 	return list(/obj/item/clothing/head/helmet/pcrc,
+	 			/obj/item/clothing/head/helmet/tactical,
+				/obj/item/clothing/head/helmet/merc,
+				/obj/item/clothing/head/helmet/riot,
+				/obj/item/clothing/head/helmet/ablative,
+				/obj/item/clothing/head/helmet/ballistic,
+				/obj/item/clothing/head/helmet/swat,
+				/obj/item/clothing/head/helmet/gladiator,
+				/obj/item/clothing/head/helmet/augment
+	)
+
+
+/obj/random/cloth/head
+	name = "random cloth hats"
+	desc = "this is a cloth hat of some kind"
+	icon = 'icons/obj/clothing/obj_head.dmi'
+	icon_state = "ushankadown"
 /obj/random/hat
 	name = "random headgear"
 	desc = "This is a random hat of some kind."
