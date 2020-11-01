@@ -664,6 +664,83 @@ obj/random/circuitboard/spawn_choices()
 				/obj/item/ammo_magazine/smg_top/rubber = 6,
 				/obj/item/ammo_magazine/pistol/throwback = 1)
 
+obj/random/gun_cheap
+	name = "Random Cheap guns"
+	desc = "Random Cheap guns"
+	icon = 'icons/obj/guns/zipgun.dmi'
+	icon_state = "zipgun"
+
+obj/random/gun_cheap/spawn_choices()
+	return list(
+		/obj/item/weapon/gun/projectile/pirate
+
+	)
+
+
+obj/random/ammo_lowcost
+	name = "Random Cheap ammo"
+	desc = "Random Cheap ammo"
+	icon = 'icons/obj/guns/zipgun.dmi'
+	icon_state = "zipgun"
+
+obj/random/gun_cheap/spawn_choices()
+	return list(
+		/obj/item/ammo_casing/pistol/rubber,
+		/obj/item/ammo_casing/pistol,
+		/obj/item/ammo_casing/pistol/practice,
+		/obj/item/ammo_casing/pistol/small,
+		/obj/item/ammo_casing/pistol/small/rubber,
+		/obj/item/ammo_casing/pistol/small/practice,
+		/obj/item/ammo_casing/pistol/magnum,
+		/obj/item/ammo_casing/shotgun/beanbag,
+		/obj/item/ammo_casing/shotgun/practice
+	)
+
+
+/obj/random/gun_normal
+	name = "Random fireamrs"
+	desc = "Random small arms"
+	icon = 'icons/obj/guns/assault_rifle.dmi'
+	icon_state = "arifle"
+
+obj/random/gun_normal/spawn_choices()
+	return list(/obj/item/weapon/gun/projectile/automatic/assault_rifle,
+	/obj/item/weapon/gun/projectile/automatic/bullpup_rifle,
+	/obj/item/weapon/gun/projectile/automatic/sec_smg,
+	/obj/item/weapon/gun/projectile/automatic/l6_saw
+	)
+
+
+obj/random/prothesis
+	name = "Random prothetics"
+	desc = "This a random prothetic body part."
+	icon = 'icons/mob/human_races/cyberlimbs/bishop/bishop_main.dmi'
+	icon_state = "arm" //missing icon state couldnt find it so i guessed here
+obj/random/prothesis/spawn_choices()
+	return list(
+		/datum/robolimb/bishop,
+		/datum/robolimb/bishop/rook,
+		/datum/robolimb/bishop/alt,
+		/datum/robolimb/bishop/alt/monitor,
+		/datum/robolimb/hephaestus,
+		/datum/robolimb/hephaestus/alt,
+		/datum/robolimb/hephaestus/titan,
+		/datum/robolimb/hephaestus/alt/monitor,
+		/datum/robolimb/zenghu,
+		/datum/robolimb/zenghu/spirit,
+		/datum/robolimb/xion,
+		/datum/robolimb/xion/econo,
+		/datum/robolimb/xion/alt,
+		/datum/robolimb/xion/alt/monitor,
+		/datum/robolimb/nanotrasen,
+		/datum/robolimb/wardtakahashi,
+		/datum/robolimb/economy,
+		/datum/robolimb/wardtakahashi/alt,
+		/datum/robolimb/wardtakahashi/alt/monitor,
+		/datum/robolimb/morpheus,
+		/datum/robolimb/morpheus/alt
+)
+
 /obj/random/action_figure
 	name = "random action figure"
 	desc = "This is a random action figure."

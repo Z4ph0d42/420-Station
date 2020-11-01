@@ -79,7 +79,7 @@ They generally give more random result and can provide more divercity in spawn.
 	/obj/item/weapon/stock_parts/manipulator/pico = 2,
 	/obj/item/weapon/stock_parts/micro_laser/ultra = 2,
 	/obj/item/weapon/stock_parts/matter_bin/super = 2,
-	/obj/random/prothesis/super = 1))
+	/obj/random/prothesis = 1))
 
 
 //This will be spawned in rare closets
@@ -92,12 +92,10 @@ They generally give more random result and can provide more divercity in spawn.
 	return pickweight(list(
 					/obj/random/gun_cheap = 8,
 					/obj/random/gun_normal = 3,
-					/obj/random/gun_energy_cheap = 6,
 					/obj/random/shotgun = 5,
 					/obj/random/knife = 6,
 					/obj/random/ammo = 15,
 					/obj/random/ammo/shotgun = 15,
-					/obj/random/ammo_ihs = 15,
 					/obj/random/ammo_lowcost = 18,
 					//obj/random/gun_upgrade = 10,
 					/obj/random/cloth/holster = 8
