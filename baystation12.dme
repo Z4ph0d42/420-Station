@@ -1101,6 +1101,7 @@
 #include "code\game\objects\items\weapons\tools\weldingtool.dm"
 #include "code\game\objects\items\weapons\tools\wirecutter.dm"
 #include "code\game\objects\items\weapons\tools\wrench.dm"
+#include "code\game\objects\random\closet.dm"
 #include "code\game\objects\random\date_based.dm"
 #include "code\game\objects\random\packs.dm"
 #include "code\game\objects\random\random.dm"

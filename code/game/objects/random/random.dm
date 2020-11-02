@@ -4,14 +4,30 @@
 	icon = 'icons/misc/mark.dmi'
 	icon_state = "rup"
 	var/spawn_nothing_percentage = 0 // this variable determines the likelyhood that this random object will not spawn anything
-
+	var/min_amount = 1
+	var/max_amount = 1
+	var/spread_range = 0
+	var/has_postspawn = FALSE
+	invisibility = INVISIBILITY_MAXIMUM
 	var/spawn_method = /obj/random/proc/spawn_item
 
 // creates a new object and deletes itself
 /obj/random/Initialize()
 	..()
-	call(src, spawn_method)()
+	if(!prob(spawn_nothing_percentage))
+		var/list/spawns = spawn_item()
+		if (has_postspawn && spawns.len)
+			post_spawn(spawns)
+
 	return INITIALIZE_HINT_QDEL
+
+// this function should return a specific item to spawn
+/obj/random/proc/item_to_spawn()
+	return
+
+// this function should return a specific item to spawn
+/obj/random/proc/post_spawn(var/list/spawns)
+	return
 
 // creates the random item
 /obj/random/proc/spawn_item()
