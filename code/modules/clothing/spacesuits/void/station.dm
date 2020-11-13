@@ -92,6 +92,28 @@
 /obj/item/clothing/suit/space/void/mining/prepared
 	helmet = /obj/item/clothing/head/helmet/space/void/mining
 
+//broken voidsuit
+
+var/damaged = FALSE
+
+/obj/random/voidsuit/damaged
+	name = "random damaged voidsuit"
+	damaged = TRUE
+	icon_state = "armor-red"
+
+/obj/random/voidsuit/damaged/low_chance
+	name = "low chance random damaged voidsuit"
+	icon_state = "armor-red-low"
+	spawn_nothing_percentage = 80
+
+
+/obj/random/voidsuit/post_spawn(var/list/spawns)
+	for (var/obj/item/clothing/suit/space/void/suit in spawns)
+		new /obj/item/clothing/shoes/magboots(loc)
+		if (damaged)
+			suit.create_breaches(pick(BRUTE, BURN), rand(10, 50))
+
+
 //Medical
 /obj/item/clothing/head/helmet/space/void/medical
 	name = "medical voidsuit helmet"

@@ -24,14 +24,14 @@
 	    "A relic from a bygone age.")
 
 	germ_level = pick(80,110,160)
-	price_tag *= RAND_DECIMAL(0.1, 0.6) //Tank the price of it
+	worths *= RAND_DECIMAL(0.1, 0.6) //Tank the price of it
 
-	//Deplete matter and matter_reagents
+	//Deplete matter and reagents
 	for (var/a in matter)
 		matter[a] *= RAND_DECIMAL(0.5, 1)
 
-	for (var/a in matter_reagents)
-		matter_reagents[a] *= RAND_DECIMAL(0.5, 1)
+	for (var/a in matter)
+		matter[a] *= RAND_DECIMAL(0.5, 1)
 
 	for(var/obj/item/sub_item in contents)
 		if (prob(80))
@@ -56,10 +56,11 @@
 			origin_tech = null
 		siemens_coefficient += 0.3
 
-/obj/item/weapon/tool/make_old()
-	.=..()
-	if (.)
-		adjustToolHealth(-(rand(40, 150) * degradation))
+///obj/item/weapon/tool/make_old()
+//	.=..()
+//	if (.)
+		//adjustToolHealth(-(rand(40, 150) * degradation)) we dont use tool health here but may in the future
+//we dont use tool health here
 
 /obj/item/weapon/storage/make_old()
 	.=..()
@@ -123,13 +124,13 @@
 	.=..()
 	if (.)
 		// It's silly to have old self-charging cells spawn partially discharged
-		if(!autorecharging)
+		(maxcharge = 3000)
 			charge = min(charge, RAND_DECIMAL(0, maxcharge))
 
-		if(prob(10))
-			rigged = TRUE
-			if(prob(80))
-				charge = maxcharge  //make it BOOM hard
+		//if(prob(10))
+		//	rigged = TRUE						eris cells can explode i guess and not on bay apparently
+		//	if(prob(80))						just turned this all off hope not every thing is broken
+		//		charge = maxcharge  //make it BOOM hard
 		update_icon()
 
 /obj/item/weapon/stock_parts/make_old()
@@ -163,7 +164,7 @@
 	if (.)
 		if(prob(75))
 			name = T_BOARD("unknown")
-			build_path = pick(/obj/machinery/washing_machine, /obj/machinery/broken, /obj/machinery/shower, /obj/machinery/holoposter, /obj/machinery/holosign)
+			build_path = pick(/obj/machinery/washing_machine, /obj/machinery/broken, /obj/machinery/holosign)
 
 
 /obj/item/weapon/aiModule/make_old()
@@ -187,14 +188,12 @@
 /obj/item/clothing/make_old()
 	.=..()
 	if (.)
-		if(prob(30))
-			slowdown += pick(0.5, 0.5, 1, 1.5)
 		if(prob(40))
 			if(islist(armor)) //Possible to run before the initialize proc, thus having to modify the armor list
 				for(var/i in armor)
 					armor[i] = rand(0, armor[i])
 			else if(is_proper_datum(armor))
-				armor = armor.setRating(melee = rand(0, armor.getRating(ARMOR_MELEE)), bullet =  rand(0, armor.getRating(ARMOR_BULLET)), energy = rand(0, armor.getRating(ARMOR_ENERGY)), bomb = rand(0, armor.getRating(ARMOR_BOMB)), bio = rand(0, armor.getRating(ARMOR_BIO)), rad = rand(0, armor.getRating(ARMOR_RAD)))
+				armor = armor.setRating(melee = rand(0, armor.getRating(ARMOR_MELEE_SMALL)), bullet =  rand(0, armor.getRating(ARMOR_BALLISTIC_SMALL)), energy = rand(0, armor.getRating(ARMOR_ENERGY_SMALL)), bomb = rand(0, armor.getRating(ARMOR_BOMB_MINOR)), bio = rand(0, armor.getRating(ARMOR_BIO_SMALL)), rad = rand(0, armor.getRating(ARMOR_RAD_SMALL)))
 		if(prob(40))
 			heat_protection = rand(0, round(heat_protection * 0.5))
 		if(prob(40))
@@ -203,15 +202,11 @@
 			contaminate()
 		if(prob(15))
 			add_blood()
-		if(prob(60)) // I mean, the thing is ew gross.
-			equip_delay += rand(0, 6 SECONDS)
 
 /obj/item/clothing/make_young()
 	if(oldified)
-		slowdown = initial(slowdown)
 		heat_protection = initial(heat_protection)
 		cold_protection = initial(cold_protection)
-		equip_delay = initial(equip_delay)
 	..()
 
 
@@ -235,15 +230,19 @@
 	sender.drop_from_inventory(src)
 	qdel(src)
 
-/obj/item/weapon/dnainjector/make_old()
-	.=..()
-	if (.)
-		if(prob(75))
-			name = "DNA-Injector (unknown)"
-			desc = pick("1mm0r74l17y 53rum", "1ncr3d1bl3 73l3p47y hNlk", "5up3rhum4n m16h7")
-			value = 0xFFF
-		if(prob(75))
-			block = pick(MONKEYBLOCK, HALLUCINATIONBLOCK, DEAFBLOCK, BLINDBLOCK, NERVOUSBLOCK, TWITCHBLOCK, CLUMSYBLOCK, COUGHBLOCK, HEADACHEBLOCK, GLASSESBLOCK)
+
+
+//DNA injectors seem to be missing or removed from bay as part of their cloning removal, its too much work to import them right now so for now ill exclude them
+
+///obj/item/weapon/dnainjector/make_old()
+//	.=..()
+//	if (.)
+//		if(prob(75))
+//			name = "DNA-Injector (unknown)"
+//			desc = pick("1mm0r74l17y 53rum", "1ncr3d1bl3 73l3p47y hNlk", "5up3rhum4n m16h7")
+//			value = 0xFFF
+//		if(prob(75))
+//			block = pick(MONKEYBLOCK, HALLUCINATIONBLOCK, DEAFBLOCK, BLINDBLOCK, NERVOUSBLOCK, TWITCHBLOCK, CLUMSYBLOCK, COUGHBLOCK, HEADACHEBLOCK, GLASSESBLOCK)
 
 
 /obj/item/clothing/glasses/hud/make_old()
@@ -267,23 +266,23 @@
 		if(prob(75))
 			darkness_view = -1
 
-/obj/item/device/lighting/glowstick/make_old()
+/obj/item/device/flashlight/flare/glowstick/make_old()
 	.=..()
 	if (.)
 		if(prob(75))
 			fuel = rand(0, fuel)
 
-/obj/item/device/lighting/toggleable/make_old()
+/obj/item/device/flashlight/make_old()
 	.=..()
 	if (.)
 		if(prob(75))
-			brightness_on = brightness_on / 2
+			flashlight_max_bright = flashlight_max_bright / 2
 
 /obj/machinery/floodlight/make_old()
 	.=..()
 	if (.)
 		if(prob(75))
-			brightness_on = brightness_on / 2
+			l_max_bright = l_max_bright / 2
 
 /obj/machinery/make_old()
 	.=..()

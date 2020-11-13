@@ -64,7 +64,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 	switch(severity)
 		if(1)
 			for(var/i in 1 to 12)
-				var/projtype = pick(/obj/item/stack/rods, /obj/item/weapon/material/shard)
+				var/projtype = pick(/obj/item/stack/material/rods, /obj/item/weapon/material/shard)
 				var/obj/item/projectile = new projtype(loc)
 				projectile.throw_at(locate(loc.x + rand(40) - 20, loc.y + rand(40) - 20, loc.z), 81, pick(1,3,80,80))
 		if(2)
@@ -121,7 +121,6 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 			loot.make_old()
 		if(istype(loot, /obj/item/weapon/reagent_containers/food/snacks))
 			var/obj/item/weapon/reagent_containers/food/snacks/S = loot
-			S.junk_food = TRUE
 			if(prob(20))
 				S.reagents.add_reagent("toxin", rand(2, 15))
 
@@ -233,12 +232,12 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 
 
 
-/obj/structure/scrap/proc/hurt_hand(mob/user)
+/obj/structure/scrap/proc/hurt_hand(var/mob/user)
 	if(prob(15))
 		if(!ishuman(user))
 			return FALSE
 		var/mob/living/carbon/human/victim = user
-		if(victim.species.flags & NO_MINOR_CUT)
+		if(SPECIES_FLAG_NO_MINOR_CUT)
 			return FALSE
 		if(victim.gloves && prob(90))
 			return FALSE
@@ -248,9 +247,9 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		if(BP_IS_ROBOTIC(BP))
 			return FALSE
 		to_chat(user, "<span class='danger'>Ouch! You cut yourself while picking through \the [src].</span>")
-		BP.take_damage(5, null, TRUE, TRUE, "Sharp debris")
+		BP.DAM_SHARP(5, null, TRUE, TRUE, "Sharp debris")
 		victim.reagents.add_reagent("toxin", pick(prob(50);0,prob(50);5,prob(10);10,prob(1);25))
-		if(victim.species.flags & NO_PAIN) // So we still take damage, but actually dig through.
+		if(SPECIES_FLAG_NO_PAIN) // So we still take damage, but actually dig through.
 			return FALSE
 		return TRUE
 	return FALSE
@@ -308,13 +307,10 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 
 /obj/structure/scrap/attackby(obj/item/W, mob/living/carbon/human/user)
 	user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
-	if((W.has_quality(QUALITY_SHOVELING)) && W.use_tool(user, src, WORKTIME_NORMAL, QUALITY_SHOVELING, FAILCHANCE_VERY_EASY, required_stat = STAT_ROB, forced_sound = "rummage"))
+	if((istype(W,/obj/item/weapon/shovel)) && W,use_tool(user, src, WORKTIME_NORMAL, QUALITY_SHOVELING, FAILCHANCE_VERY_EASY, required_stat = STAT_ROB, forced_sound = "rummage"))
 		user.visible_message(SPAN_NOTICE("[user] [pick(ways)] \the [src]."))
 		user.do_attack_animation(src)
-		if(user.stats.getPerk(PERK_JUNKBORN))
-			rare_item = TRUE
-		else
-			rare_item = FALSE
+
 		dig_out_lump(user.loc, 0)
 		shuffle_loot()
 		clear_if_empty()
