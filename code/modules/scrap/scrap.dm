@@ -237,7 +237,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		if(!ishuman(user))
 			return FALSE
 		var/mob/living/carbon/human/victim = user
-		if(SPECIES_FLAG_NO_MINOR_CUT)
+		if(victim && SPECIES_FLAG_NO_MINOR_CUT)
 			return FALSE
 		if(victim.gloves && prob(90))
 			return FALSE
@@ -247,9 +247,9 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		if(BP_IS_ROBOTIC(BP))
 			return FALSE
 		to_chat(user, "<span class='danger'>Ouch! You cut yourself while picking through \the [src].</span>")
-		BP.DAM_SHARP(5, null, TRUE, TRUE, "Sharp debris")
+		BP.take_external_damage(5, null, TRUE, TRUE, "Sharp debris")
 		victim.reagents.add_reagent("toxin", pick(prob(50);0,prob(50);5,prob(10);10,prob(1);25))
-		if(SPECIES_FLAG_NO_PAIN) // So we still take damage, but actually dig through.
+		if(victim & SPECIES_FLAG_NO_PAIN) // So we still take damage, but actually dig through.
 			return FALSE
 		return TRUE
 	return FALSE
@@ -293,24 +293,27 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		return TRUE
 	return FALSE
 
-/obj/structure/scrap/proc/clear()
-	visible_message("<span class='notice'>\The [src] is cleared out!</span>")
-	if(big_item)
-		visible_message("<span class='notice'>\A hidden [big_item] is uncovered from beneath the [src]!</span>")
-		big_item.forceMove(get_turf(src))
-		big_item = null
-	else if(rare_item && prob(rare_item_chance))
-		var/obj/O = pickweight(RANDOM_RARE_ITEM - /obj/item/stash_spawner)
-		O = new O(get_turf(src))
-		visible_message("<span class='notice'>\A hidden [O] is uncovered from beneath the [src]!</span>")
-	qdel(src)
+///obj/structure/scrap/proc/clear()
+//	visible_message("<span class='notice'>\The [src] is cleared out!</span>")
+//	if(big_item)
+//		visible_message("<span class='notice'>\A hidden [big_item] is uncovered from beneath the [src]!</span>")
+//		big_item.forceMove(get_turf(src))
+//		big_item = null
+//	else if(rare_item && prob(rare_item_chance))
+//		var/obj/O = pickweight(RANDOM_RARE_ITEM - /obj/item/stash_spawner)
+//		O = new O(get_turf(src))
+//		visible_message("<span class='notice'>\A hidden [O] is uncovered from beneath the [src]!</span>")
+//	qdel(src)
+//
+//Just gonna not use stash spawner, its lame
+
 
 /obj/structure/scrap/attackby(obj/item/W, mob/living/carbon/human/user)
 	user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
-	if((istype(W,/obj/item/weapon/shovel)) && W,use_tool(user, src, WORKTIME_NORMAL, QUALITY_SHOVELING, FAILCHANCE_VERY_EASY, required_stat = STAT_ROB, forced_sound = "rummage"))
+	if(isshovel(W))
 		user.visible_message(SPAN_NOTICE("[user] [pick(ways)] \the [src]."))
 		user.do_attack_animation(src)
-
+		playsound(user.loc, "rummage", 100, 1)
 		dig_out_lump(user.loc, 0)
 		shuffle_loot()
 		clear_if_empty()

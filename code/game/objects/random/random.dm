@@ -531,6 +531,11 @@ obj/random/circuitboard/spawn_choices()
 				/obj/item/weapon/reagent_containers/syringe/drugs = 1,
 				/obj/item/weapon/reagent_containers/food/snacks/egg/lizard = 3)
 
+/obj/random/contraband/low_chance
+	name = "low chance random illegal item"
+	icon_state = "box-red-low"
+	spawn_nothing_percentage = 60
+
 /obj/random/drinkbottle
 	name = "random drink"
 	desc = "This is a random drink."
