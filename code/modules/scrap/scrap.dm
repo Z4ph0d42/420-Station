@@ -164,7 +164,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 				if(affecting)
 					if(BP_IS_ROBOTIC(affecting))
 						return
-					if(affecting.take_damage(5, 0))
+					if(affecting.take_external_damage(5, 0))
 						H.UpdateDamageIcon()
 					H.reagents.add_reagent("toxin", pick(prob(50);0,prob(50);5,prob(10);10,prob(1);25))
 					H.updatehealth()

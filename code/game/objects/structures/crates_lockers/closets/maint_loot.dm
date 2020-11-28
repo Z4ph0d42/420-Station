@@ -154,23 +154,23 @@
 
 
 //Closet with unfair bullshit inside
-/obj/structure/closet/random_hostilemobs
-	name = "\improper forgotten closet"
-	desc = "Old and rusty closet, probably older than you."
-	icon_state = "oldstyle"
-	old_chance = 70
-
-/obj/structure/closet/random_hostilemobs/populate_contents()
-	new /obj/random/pack/rare(src) //To reward players for fighting this bullshit
-	new /obj/random/pack/rare(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/rations(src)
-	new /obj/random/rations(src)
-	new /obj/random/rations(src)
-	new /obj/random/cluster/roaches(src)
+///obj/structure/closet/random_hostilemobs
+//	name = "\improper forgotten closet"
+//	desc = "Old and rusty closet, probably older than you."
+//	icon_state = "oldstyle"
+//	old_chance = 70
+//
+///obj/structure/closet/random_hostilemobs/populate_contents()
+//	new /obj/random/pack/rare(src) //To reward players for fighting this bullshit
+//	new /obj/random/pack/rare(src)
+//	new /obj/random/lowkeyrandom/low_chance(src)
+//	new /obj/random/lowkeyrandom/low_chance(src)
+//	new /obj/random/lowkeyrandom/low_chance(src)              eris roach closets
+//	new /obj/random/lowkeyrandom/low_chance(src)
+//	new /obj/random/rations(src)
+//	new /obj/random/rations(src)
+//	new /obj/random/rations(src)
+//	new /obj/random/cluster/roaches(src)
 
 
 //im 50/50 on importing the scrap beacon, either way a job for latter.

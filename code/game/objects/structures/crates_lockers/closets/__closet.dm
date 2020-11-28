@@ -15,11 +15,10 @@
 							  //then open it in a populated area to crash clients.
 	var/open_sound = 'sound/effects/closet_open.ogg'
 	var/close_sound = 'sound/effects/closet_close.ogg'
-
+	var/old_chance = 0 //Chance to have rusted closet content in it, from 0 to 100. Keep in mind that chance increases in maints
 	var/storage_types = CLOSET_STORAGE_ALL
 	var/setup = CLOSET_CAN_BE_WELDED
 	var/closet_appearance = /decl/closet_appearance
-
 	// TODO: Turn these into flags. Skipped it for now because it requires updating 100+ locations...
 	var/broken = FALSE
 	var/opened = FALSE
@@ -647,8 +646,9 @@
 	return pickweight(list(/obj/structure/closet/random_miscellaneous = 10,
 				/obj/structure/closet/random_tech = 6,
 				/obj/structure/closet/random_milsupply = 2,
-				/obj/structure/closet/random_medsupply = 6,
-				/obj/structure/closet/random_hostilemobs = 8))
+				/obj/structure/closet/random_medsupply = 6
+			 ///obj/structure/closet/random_hostilemobs = 8   eris roach mobs are off
+				))
 
 /obj/random/closet_maintloot/low_chance
 	name = "low chance random maint loot closet"
@@ -661,6 +661,6 @@
 				/obj/structure/closet/random_miscellaneous = 5,
 				/obj/structure/closet/random_tech = 3,
 				/obj/structure/closet/random_milsupply = 1,
-				/obj/structure/closet/random_medsupply = 3,
-				/obj/structure/closet/random_hostilemobs/beacon = 8
+				/obj/structure/closet/random_medsupply = 3
+				//obj/structure/closet/random_hostilemobs/beacon = 8 eris roaches turned off for now
 			))

@@ -1098,10 +1098,10 @@ obj/random/closet //A couple of random closets to spice up maint
 	icon = 'icons/obj/materials.dmi'
 	icon_state = "sheet"
 
-	/obj/random/material/steel/spawn_choices()
-		return list(/obj/item/stack/material/steel/five,
-					/obj/item/stack/material/steel/ten,
-					/obj/item/stack/material/steel/twenty)
+/obj/random/material/steel/spawn_choices()
+	return list(/obj/item/stack/material/steel/five,
+				/obj/item/stack/material/steel/ten,
+				/obj/item/stack/material/steel/twenty)
 
 /obj/random/rods //Random ammounts of rods for the scrap piles
 	name = "random rods"
@@ -2070,3 +2070,85 @@ var/list/random_useful_
 	icon_state = "tech-orange-low"
 	spawn_nothing_percentage = 60
 
+
+/obj/random/medical/low_chance
+	name = "low chance random medicine"
+	icon_state = "meds-green-low"
+	spawn_nothing_percentage = 60
+
+/obj/random/medical_lowcost
+	name = "random low tier medicine"
+	icon_state = "meds-grey"
+
+/obj/random/medical_lowcost/item_to_spawn()
+	return pickweight(list(/obj/item/stack/medical/bruise_pack = 4,\
+				/obj/item/stack/medical/ointment = 4,\
+				/obj/item/weapon/reagent_containers/syringe/antitoxin = 2,\
+				/obj/item/weapon/reagent_containers/syringe/inaprovaline = 2
+				//obj/item/weapon/reagent_containers/syringe/tricordrazine = 1
+				))
+
+/obj/random/medical_lowcost/low_chance
+	name = "low chance random low tier medicine"
+	icon_state = "meds-grey-low"
+	spawn_nothing_percentage = 60
+
+
+/obj/random/rations
+	name = "random preserved rations"
+	icon_state = "food-green"
+
+/obj/random/rations/item_to_spawn()
+	return pickweight(list(/obj/item/weapon/reagent_containers/food/snacks/chips = 2,\
+				/obj/item/weapon/reagent_containers/food/snacks/candy = 2,\
+				/obj/item/weapon/reagent_containers/food/snacks/tastybread = 2,\
+				/obj/item/weapon/reagent_containers/food/snacks/no_raisin = 2,\
+				/obj/item/weapon/reagent_containers/food/snacks/liquidfood = 4,
+				/obj/item/weapon/reagent_containers/food/snacks/donkpocket/sinpocket = 1))
+
+/obj/random/rations/low_chance
+	name = "low chance preserved rations"
+	icon_state = "food-green-low"
+	spawn_nothing_percentage = 60
+
+
+/obj/random/structures
+	name = "random structure"
+	icon_state = "machine-black"
+
+/obj/random/structures/item_to_spawn()
+	return pickweight(list(/obj/structure/salvageable/machine = 10,\
+				/obj/structure/salvageable/autolathe = 10,\
+				/obj/structure/salvageable/implant_container = 3,\
+				/obj/structure/salvageable/data = 6,\
+				/obj/structure/salvageable/server = 6,\
+				/obj/structure/salvageable/computer = 6,\
+				/obj/structure/salvageable/personal = 5,\
+				/obj/structure/salvageable/bliss = 1 ,\
+				/obj/machinery/constructable_frame/computerframe = 5,\
+				/obj/machinery/constructable_frame/machine_frame = 4,\
+				/obj/structure/reagent_dispensers/fueltank = 6,\
+				/obj/structure/reagent_dispensers/watertank = 6,\
+				/obj/structure/largecrate = 2,\
+				/obj/structure/ore_box = 2,\
+				/obj/structure/dispenser/oxygen = 1))
+
+/obj/random/structures/low_chance
+	name = "low chance random structures"
+	icon_state = "machine-black-low"
+	spawn_nothing_percentage = 60
+
+/obj/random/structures/os
+	name = "random os structure"
+
+/obj/random/structures/os/item_to_spawn()
+	return pickweight(list(
+				/obj/structure/salvageable/autolathe = 10,\
+				/obj/structure/salvageable/implant_container_os = 3,\
+				/obj/structure/salvageable/data_os = 6,\
+				/obj/structure/salvageable/server_os = 6,\
+				/obj/structure/salvageable/computer_os = 6,\
+				/obj/structure/salvageable/console_broken_os = 6,\
+				/obj/structure/salvageable/console_os = 3,\
+				/obj/machinery/constructable_frame/computerframe = 2,\
+				/obj/machinery/constructable_frame/machine_frame = 2))
