@@ -107,7 +107,7 @@ They generally give more random result and can provide more divercity in spawn.
 	spawn_nothing_percentage = 70
 
 
-
+/* uhhhhhhh idk what to do with rare shit rn
 
 //Rare loot, where we need to be sure that reward is worth it
 /obj/random/pack/rare
@@ -122,7 +122,7 @@ They generally give more random result and can provide more divercity in spawn.
 	icon_state = "box-orange-low"
 	spawn_nothing_percentage = 70
 
-
+*/
 
 
 //The pack to surpass them all. This pack is meant to be PLACED ON MAP. Not in JUNK CODE, because it CONTAINS JUNK SPAWNER.
@@ -165,7 +165,8 @@ They generally give more random result and can provide more divercity in spawn.
 					/obj/random/closet_tech = 6,
 					/obj/random/closet = 4,
 					/obj/random/closet_wardrobe = 2,
-					/obj/random/exosuit/damaged = 1, //Some dangerous shit can be found there
+//					/obj/random/exosuit/damaged = 1, //Some dangerous shit can be found there
+					/obj/random/hardsuit = 1, //idk wtf an exosuit is so heres a hardsuit
 				))
 
 /obj/random/pack/junk_machine/low_chance
@@ -180,5 +181,5 @@ They generally give more random result and can provide more divercity in spawn.
 					/obj/random/closet_tech = 3,
 					/obj/random/closet = 2,
 					/obj/random/closet_wardrobe = 2,
-					/obj/random/exosuit/damaged = 1, //Some dangerous shit can be found there
+//					/obj/random/exosuit/damaged = 1, //Some dangerous shit can be found there to-do
 				))

@@ -6,22 +6,22 @@
 	icon_state = "oldstyle"
 	old_chance = 50
 
-/obj/structure/closet/random_miscellaneous/populate_contents()
-	new /obj/random/contraband/low_chance(src)
-	new /obj/random/contraband/low_chance(src)
-	new /obj/random/pack/rare/low_chance(src)
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/lowkeyrandom(src)
-	new /obj/random/lowkeyrandom(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/pack/tech_loot/low_chance(src)
-	new /obj/random/pack/cloth/low_chance(src)
-	new /obj/random/pack/cloth/low_chance(src)
-	new /obj/random/pack/gun_loot/low_chance(src)
-	new /obj/random/pack/gun_loot/low_chance(src)
+/obj/structure/closet/random_miscellaneous/WillContain()
+	return list(
+		/obj/random/contraband/low_chance,
+		/obj/random/contraband/low_chance,
+		/obj/random/junk,
+		/obj/random/junk,
+		/obj/random/junk,
+		/obj/random/lowkeyrandom,
+		/obj/random/lowkeyrandom,
+		/obj/random/lowkeyrandom/low_chance,
+		/obj/random/lowkeyrandom/low_chance,
+		/obj/random/pack/tech_loot/low_chance,
+		/obj/random/pack/cloth/low_chance,
+		/obj/random/pack/cloth/low_chance,
+		/obj/random/pack/gun_loot/low_chance,
+		/obj/random/pack/gun_loot/low_chance)
 
 
 
@@ -30,20 +30,21 @@
 	name = "\improper technical closet"
 	desc = "Somewhat old closet with wrench sign on it."
 	icon_state = "eng"
-	icon_door = "eng_tool"
+	closet_appearance = /decl/closet_appearance/secure_closet/engineering
 	old_chance = 10
 
-/obj/structure/closet/random_tech/populate_contents()
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/pack/tech_loot(src)
-	new /obj/random/pack/tech_loot(src)
-	new /obj/random/pack/tech_loot(src)
-	new /obj/random/pack/tech_loot(src)
-	new /obj/random/pack/tech_loot/low_chance(src)
-	new /obj/random/pack/tech_loot/low_chance(src)
+/obj/structure/closet/random_tech/WillContain()
+	return list(
+		/obj/random/lowkeyrandom/low_chance,
+		/obj/random/lowkeyrandom/low_chance,
+		/obj/random/lowkeyrandom/low_chance,
+		/obj/random/lowkeyrandom/low_chance,
+		/obj/random/pack/tech_loot,
+		/obj/random/pack/tech_loot,
+		/obj/random/pack/tech_loot,
+		/obj/random/pack/tech_loot,
+		/obj/random/pack/tech_loot/low_chance,
+		/obj/random/pack/tech_loot/low_chance)
 
 
 
@@ -52,27 +53,28 @@
 	name = "\improper spare parts closet"
 	desc = "Somewhat old closet with spare parts in it."
 	icon_state = "eng"
-	closet_appearance = "eng_secure_door"
+	closet_appearance = /decl/closet_appearance/secure_closet/engineering
 	old_chance = 10
 
-/obj/structure/closet/random_tech/populate_contents()
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/techpart(src)
-	new /obj/random/techpart(src)
-	new /obj/random/techpart(src)
-	new /obj/random/techpart(src)
-	new /obj/random/techpart(src)
-	new /obj/random/techpart(src)
+/obj/structure/closet/random_tech/WillContain()
+	return list(
+		/obj/random/lowkeyrandom/low_chance,
+		/obj/random/lowkeyrandom/low_chance,
+		/obj/random/lowkeyrandom/low_chance,
+		/obj/random/lowkeyrandom/low_chance,
+		/obj/random/techpart,
+		/obj/random/techpart,
+		/obj/random/techpart,
+		/obj/random/techpart,
+		/obj/random/techpart,
+		/obj/random/techpart,
 	//new /obj/random/tool_upgrade(src)
 	//new /obj/random/tool_upgrade(src)
 	//new /obj/random/tool_upgrade(src)    ERIS STUFF THAT MAY GET PORTED SOON
 	//new /obj/random/lathe_disk(src)
 	//new /obj/random/lathe_disk/low_chance(src)
-	new /obj/random/pack/tech_loot/low_chance(src)
-	new /obj/random/pack/tech_loot/low_chance(src)
+		/obj/random/pack/tech_loot/low_chance,
+		/obj/random/pack/tech_loot/low_chance)
 
 
 
@@ -84,27 +86,28 @@
 	icon_state = "syndicate"
 	old_chance = 10
 
-/obj/structure/closet/random_milsupply/populate_contents()
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/pack/rare(src)
-	new /obj/random/pack/gun_loot(src)
-	new /obj/random/pack/gun_loot(src)
-	new /obj/random/pack/gun_loot(src)
-	new /obj/random/pack/gun_loot(src)
-	new /obj/random/pack/gun_loot(src)
-	new /obj/random/pack/gun_loot/low_chance(src)
-	new /obj/random/pack/gun_loot/low_chance(src)
-	new /obj/random/pack/gun_loot/low_chance(src)
-	new /obj/random/pack/gun_loot/low_chance(src)
-	new /obj/random/pack/gun_loot/low_chance(src)
-	new /obj/random/pack/gun_loot/low_chance(src)
-	new /obj/random/pack/gun_loot/low_chance(src)
-	new /obj/random/medical/low_chance(src)
-	new /obj/random/medical/low_chance(src)
-	new /obj/random/medical/low_chance(src)
+/obj/structure/closet/random_milsupply/WillContain()
+	return list(
+		/obj/random/lowkeyrandom/low_chance,
+		/obj/random/lowkeyrandom/low_chance,
+		/obj/random/lowkeyrandom/low_chance,
+		/obj/random/lowkeyrandom/low_chance,
+//	new /obj/random/pack/rare(src)
+		/obj/random/pack/gun_loot,
+		/obj/random/pack/gun_loot,
+		/obj/random/pack/gun_loot,
+		/obj/random/pack/gun_loot,
+		/obj/random/pack/gun_loot,
+		/obj/random/pack/gun_loot/low_chance,
+		/obj/random/pack/gun_loot/low_chance,
+		/obj/random/pack/gun_loot/low_chance,
+		/obj/random/pack/gun_loot/low_chance,
+		/obj/random/pack/gun_loot/low_chance,
+		/obj/random/pack/gun_loot/low_chance,
+		/obj/random/pack/gun_loot/low_chance,
+		/obj/random/medical/low_chance,
+		/obj/random/medical/low_chance,
+		/obj/random/medical/low_chance)
 
 
 
@@ -116,40 +119,24 @@
 	icon_state = "freezer"
 	old_chance = 10
 
-/obj/structure/closet/random_medsupply/populate_contents()
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/lowkeyrandom/low_chance(src)
-	new /obj/random/medical_lowcost(src)
-	new /obj/random/medical_lowcost(src)
-	new /obj/random/medical_lowcost(src)
-	new /obj/random/medical_lowcost(src)
-	new /obj/random/medical(src)
-	new /obj/random/medical(src)
-	new /obj/random/medical(src)
-	new /obj/random/medical/low_chance(src)
-	new /obj/random/medical/low_chance(src)
+/obj/structure/closet/random_medsupply/WillContain()
+	return list(
+		/obj/random/lowkeyrandom/low_chance,
+		/obj/random/lowkeyrandom/low_chance,
+		/obj/random/lowkeyrandom/low_chance,
+		/obj/random/lowkeyrandom/low_chance,
+		/obj/random/medical_lowcost,
+		/obj/random/medical_lowcost,
+		/obj/random/medical_lowcost,
+		/obj/random/medical_lowcost,
+		/obj/random/medical,
+		/obj/random/medical,
+		/obj/random/medical,
+		/obj/random/medical/low_chance,
+		/obj/random/medical/low_chance)
 
 
 
-
-/obj/structure/closet/secure_closet/rare_loot
-	name = "\improper sealed military supply closet"
-	desc = "The access pannel looks old. There is probably no ID's around that can open it."
-	req_access = list(access_cent_specops) //You are suppose to hack it
-	icon_state = "syndicate"
-
-/obj/structure/closet/secure_closet/rare_loot/populate_contents()
-	new /obj/random/pack/rare(src)
-	new /obj/random/pack/rare(src)
-	new /obj/random/pack/rare(src)
-	new /obj/random/pack/rare(src)
-	new /obj/random/pack/gun_loot(src)
-	new /obj/random/pack/gun_loot(src)
-	new /obj/random/pack/gun_loot(src)
-	new /obj/random/pack/gun_loot(src)
-	new /obj/random/pack/gun_loot(src)
 
 
 

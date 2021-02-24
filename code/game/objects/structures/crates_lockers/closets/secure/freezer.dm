@@ -54,3 +54,4 @@
 			new cash_type(src)
 		else
 			break
+

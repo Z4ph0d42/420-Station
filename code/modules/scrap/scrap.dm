@@ -21,7 +21,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		/obj/random/rods,
 		/obj/item/weapon/material/shard,
 		/obj/random/junk/nondense = 2,
-		/obj/random/pack/rare = 0.4
+//		/obj/random/pack/rare = 0.4
 	)
 	var/dig_amount = 4
 	var/parts_icon = 'icons/obj/structures/scrap/trash.dmi'
@@ -168,8 +168,8 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 						H.UpdateDamageIcon()
 					H.reagents.add_reagent("toxin", pick(prob(50);0,prob(50);5,prob(10);10,prob(1);25))
 					H.updatehealth()
-					if(!(H.species.flags & NO_PAIN))
-						H.Weaken(3)
+//					if(!(H.species.flags & NO_PAIN)) i am not going to fuck with mob code right now.
+//						H.Weaken(3)
 					return
 				check -= picked
 
@@ -293,19 +293,17 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		return TRUE
 	return FALSE
 
-///obj/structure/scrap/proc/clear()
-//	visible_message("<span class='notice'>\The [src] is cleared out!</span>")
-//	if(big_item)
-//		visible_message("<span class='notice'>\A hidden [big_item] is uncovered from beneath the [src]!</span>")
-//		big_item.forceMove(get_turf(src))
-//		big_item = null
-//	else if(rare_item && prob(rare_item_chance))
-//		var/obj/O = pickweight(RANDOM_RARE_ITEM - /obj/item/stash_spawner)
-//		O = new O(get_turf(src))
-//		visible_message("<span class='notice'>\A hidden [O] is uncovered from beneath the [src]!</span>")
-//	qdel(src)
-//
-//Just gonna not use stash spawner, its lame
+/obj/structure/scrap/proc/clear()
+	visible_message("<span class='notice'>\The [src] is cleared out!</span>")
+	if(big_item)
+		visible_message("<span class='notice'>\A hidden [big_item] is uncovered from beneath the [src]!</span>")
+		big_item.forceMove(get_turf(src))
+		big_item = null
+	else if(rare_item && prob(rare_item_chance))
+		var/obj/O = pickweight(RANDOM_RARE_ITEM)
+		O = new O(get_turf(src))
+		visible_message("<span class='notice'>\A hidden [O] is uncovered from beneath the [src]!</span>")
+	qdel(src)
 
 
 /obj/structure/scrap/attackby(obj/item/W, mob/living/carbon/human/user)
@@ -341,7 +339,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		/obj/random/rods,
 		/obj/item/weapon/material/shard,
 		/obj/random/junk/nondense,
-		/obj/random/pack/rare = 0.3
+//		/obj/random/pack/rare = 0.3
 	)
 
 /obj/structure/scrap/vehicle
@@ -357,7 +355,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		/obj/item/weapon/material/shard,
 		/obj/random/junk/nondense,
 		/obj/random/material_ore,
-		/obj/random/pack/rare = 0.3,
+//		/obj/random/pack/rare = 0.3,
 		/obj/random/exosuit_equipment = 2
 	)
 
@@ -372,7 +370,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		/obj/random/rods,
 		/obj/item/weapon/material/shard,
 		/obj/random/junk/nondense,
-		/obj/random/pack/rare = 0.3
+//		/obj/random/pack/rare = 0.3
 	)
 
 /obj/structure/scrap/guns
@@ -390,7 +388,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		/obj/item/weapon/material/shard,
 		/obj/random/material/steel,
 		/obj/random/junk/nondense,
-		/obj/random/pack/rare = 0.3
+//		/obj/random/pack/rare = 0.3
 	)
 
 /obj/structure/scrap/science
@@ -404,7 +402,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		/obj/random/circuitboard,
 		/obj/random/science,
 		/obj/random/material_ore,
-		/obj/random/pack/rare,//No weight on this, rare loot is pretty likely to appear in scientific scrap
+//		/obj/random/pack/rare,//No weight on this, rare loot is pretty likely to appear in scientific scrap
 		/obj/random/exosuit_equipment
 	)
 
@@ -413,7 +411,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 	name = "cloth pile"
 	desc = "Pile of second hand clothing for charity."
 	parts_icon = 'icons/obj/structures/scrap/cloth.dmi'
-	loot_list = list(/obj/random/pack/cloth,/obj/random/pack/rare = 0.2)
+	loot_list = list(/obj/random/pack/cloth = 0.2)
 
 /obj/structure/scrap/poor
 	icontype = "poor"
@@ -426,7 +424,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		/obj/random/rods = 3,
 		/obj/random/material_ore,
 		/obj/item/weapon/material/shard,
-		/obj/random/pack/rare = 0.3
+//		/obj/random/pack/rare = 0.3
 	)
 
 /obj/structure/scrap/poor/large

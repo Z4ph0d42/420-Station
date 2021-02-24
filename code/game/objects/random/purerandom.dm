@@ -16,7 +16,8 @@
 				/obj/item/weapon/reagent_containers/syringe/inaprovaline = 2,
 				/obj/item/trash/cigbutt = 4,
 				/obj/item/device/t_scanner = 2,
-				/obj/random/voidsuit/damaged = 3,
+//				/obj/random/voidsuit/damaged = 3, eventually add a damaged voidsuit item type. should be able to
+				/obj/random/voidsuit = 3,
 				/obj/item/device/scanner/gas = 2,
 				/obj/item/device/scanner/health = 2,
 				/obj/item/weapon/storage/belt/utility/full = 6,
@@ -57,7 +58,7 @@
 				/obj/item/weapon/storage/box/ids = 2,
 				/obj/item/weapon/storage/briefcase/crimekit = 2,
 				/obj/item/weapon/storage/box/glasses = 2,
-				/obj/item/weapon/storage/freezer/contains_food = 1,
+//				/obj/item/weapon/storage/freezer/contains_food = 1, can eventually implement a freezer with random food just not right now
 				/obj/item/weapon/hand_labeler = 2,
 				/obj/item/weapon/bonesetter = 2,
 				/obj/item/weapon/scalpel = 2,
