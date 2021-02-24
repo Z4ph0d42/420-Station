@@ -184,7 +184,7 @@
 		if(prob(50))
 			create_breaches(pick(BRUTE, BURN), rand(10, 50))
 
-
+/* to-do: implement this
 /obj/item/clothing/make_old()
 	.=..()
 	if (.)
@@ -202,7 +202,7 @@
 			contaminate()
 		if(prob(15))
 			add_blood()
-
+*/
 /obj/item/clothing/make_young()
 	if(oldified)
 		heat_protection = initial(heat_protection)

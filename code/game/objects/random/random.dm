@@ -471,7 +471,7 @@ obj/random/knife/spawn_choices()
 
 obj/random/circuitboard/spawn_choices()
 	return list (
-			/obj/random/pack/rare,
+//			/obj/random/pack/rare,
 			/obj/item/weapon/stock_parts/circuitboard/message_monitor,
 			/obj/item/weapon/stock_parts/circuitboard/aiupload,
 			/obj/item/weapon/stock_parts/circuitboard/borgupload,
