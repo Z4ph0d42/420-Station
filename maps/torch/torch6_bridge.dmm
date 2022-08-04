@@ -2437,7 +2437,7 @@
 	pixel_y = 24
 	},
 /obj/machinery/camera/network/command{
-	c_tag = "Executive Officer - Office"
+	c_tag = "First Mate - Office"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -2506,7 +2506,7 @@
 /obj/item/weapon/material/bell,
 /obj/machinery/door/window/brigdoor/eastright{
 	dir = 8;
-	name = "Executive Officer's Desk"
+	name = "First Mate's Desk"
 	},
 /obj/item/weapon/paper_bin{
 	pixel_x = -3;
@@ -7349,7 +7349,7 @@
 "rK" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "captaindoor";
-	name = "Commanding Officer";
+	name = "The Captain";
 	secured_wires = 1
 	},
 /obj/structure/cable/green{
@@ -7611,7 +7611,7 @@
 "sz" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "seaforedoor";
-	name = "Senior Enlisted Advisor";
+	name = "The Second Mate";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -8642,7 +8642,7 @@
 	dir = 6
 	},
 /obj/machinery/camera/network/command{
-	c_tag = "Senior Enlisted Advisor - Office";
+	c_tag = "The Second Mate - Office";
 	dir = 4;
 	network = list("Command")
 	},
@@ -11608,7 +11608,7 @@
 /area/bridge)
 "FG" = (
 /obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Executive Officer"
+	department = "Torch - First Mate"
 	},
 /obj/structure/noticeboard{
 	pixel_y = 30
@@ -11949,7 +11949,7 @@
 "Ho" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "hopdoor";
-	name = "Executive Officer";
+	name = "First Mate";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -12423,14 +12423,14 @@
 	name = "plastic table frame"
 	},
 /obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Senior Enlisted Advisor"
+	department = "Torch - The Second Mate"
 	},
 /obj/effect/floor_decal/corner/blue/mono,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Senior Enlisted Advisor's Desk";
+	department = "The Second Mate's Desk";
 	departmentType = 6;
-	name = "Senior Enlisted Advisor RC";
+	name = "The Second Mate RC";
 	pixel_x = 0;
 	pixel_y = -34
 	},
@@ -13344,7 +13344,7 @@
 	pixel_y = 24
 	},
 /obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Commanding Officer"
+	department = "Torch - The Captain"
 	},
 /obj/machinery/button/windowtint{
 	id = "co_windows";
@@ -14035,7 +14035,7 @@
 "Qp" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "captaindoorfore";
-	name = "Commanding Officer";
+	name = "The Captain";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,

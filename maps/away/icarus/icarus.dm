@@ -122,8 +122,8 @@
 			Crew roster</center><br>\
 			<b>Command</b><br>\
 			\[list]\
-			\[*]Commanding Officer: Cmd. Angela Peterson\
-			\[*]Executive Officer: Lt. Semyon Andors \
+			\[*]The Captain: Cmd. Angela Peterson\
+			\[*]First Mate: Lt. Semyon Andors \
 			\[*]CMO: Lt. Toko Nashamura\
 			\[*]CE: Ens. Anna Lawrence\
 			\[*]COS: Lt. Rand Forbarra\

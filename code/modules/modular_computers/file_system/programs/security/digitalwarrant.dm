@@ -238,8 +238,8 @@ LEGACY_RECORD_STRUCTURE(all_warrants, warrant)
 //Suspect Job: Assistant
 //Charges: Vandalism
 //
-//Authorized by: Notthe Capitano - Commanding Officer
-//Access authorized by: Notthe Capitano - Commanding Officer
+//Authorized by: Notthe Capitano - The Captain
+//Access authorized by: Notthe Capitano - The Captain
 //
 //(legal notice)
 /datum/nano_module/program/digitalwarrant/proc/warranttotext(var/datum/computer_file/data/warrant/warrant)

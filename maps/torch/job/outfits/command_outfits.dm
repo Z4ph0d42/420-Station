@@ -4,7 +4,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_com
 
 /decl/hierarchy/outfit/job/torch/crew/command/CO
-	name = OUTFIT_JOB_NAME("Commanding Officer")
+	name = OUTFIT_JOB_NAME("The Captain")
 	glasses = /obj/item/clothing/glasses/sunglasses
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
@@ -20,7 +20,7 @@
 	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/weapon/storage/backpack/messenger/com
 
 /decl/hierarchy/outfit/job/torch/crew/command/XO
-	name = OUTFIT_JOB_NAME("Executive Officer")
+	name = OUTFIT_JOB_NAME("First Mate")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
 	shoes = /obj/item/clothing/shoes/dutyboots
@@ -28,7 +28,7 @@
 	pda_type = /obj/item/modular_computer/pda/heads/hop
 
 /decl/hierarchy/outfit/job/torch/crew/command/XO/fleet
-	name = OUTFIT_JOB_NAME("Executive Officer - Fleet")
+	name = OUTFIT_JOB_NAME("First Mate - Fleet")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
 	shoes = /obj/item/clothing/shoes/dutyboots
 
@@ -113,7 +113,7 @@
 	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
 
 /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
-	name = OUTFIT_JOB_NAME("Senior Enlisted Advisor - Fleet")
+	name = OUTFIT_JOB_NAME("The Second Mate - Fleet")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
 	shoes = /obj/item/clothing/shoes/dutyboots
 	l_ear = /obj/item/device/radio/headset/sea
@@ -121,7 +121,7 @@
 	pda_type = /obj/item/modular_computer/pda/heads
 
 /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer
-	name = OUTFIT_JOB_NAME("Bridge Officer")
+	name = OUTFIT_JOB_NAME("Helmsman")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_types = list(/obj/item/weapon/card/id/torch/crew/bridgeofficer)
@@ -129,6 +129,6 @@
 	l_ear = /obj/item/device/radio/headset/bridgeofficer
 
 /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet
-	name = OUTFIT_JOB_NAME("Bridge Officer - Fleet")
+	name = OUTFIT_JOB_NAME("Helmsman - Fleet")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
 	shoes = /obj/item/clothing/shoes/dutyboots

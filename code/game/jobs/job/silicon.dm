@@ -7,7 +7,7 @@
 	selection_color = "#3f823f"
 	supervisors = "your laws"
 	req_admin_notify = 1
-	minimal_player_age = 14
+	minimal_player_age = 18
 	account_allowed = 0
 	economic_power = 0
 	outfit_type = /decl/hierarchy/outfit/job/silicon/ai

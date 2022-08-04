@@ -4,7 +4,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/bearcat/captain
 	supervisors = "your bottom line"
 	info = "Your ship has suffered a catastrophic amount of damage, leaving it dark and crippled in the depths of \
-	unexplored space. The Captain is dead, leaving you, previously the First Mate in charge. Organize what's left of \
+	unexplored space. The Captain is dead, leaving you, previously The First Mate in charge. Organize what's left of \
 	your crew, and maybe you'll be able to survive long enough to be rescued."
 
 /datum/job/submap/bearcat_crewman

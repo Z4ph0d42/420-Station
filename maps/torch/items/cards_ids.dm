@@ -13,7 +13,7 @@
 	color = "#ccecff"
 
 /obj/item/weapon/card/id/torch/gold
-	desc = "A golden identification card belonging to the Commanding Officer."
+	desc = "A golden identification card belonging to The Captain."
 	item_state = "gold_id"
 	job_access_type = /datum/job/captain
 	color = "#d4c780"

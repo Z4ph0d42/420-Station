@@ -102,7 +102,7 @@
 /var/const/access_senadv = "ACCESS_TORCH_SENIOR_ADVISOR" //92
 /datum/access/senadv
 	id = access_senadv
-	desc = "Senior Enlisted Advisor"
+	desc = "The Second Mate"
 	region = ACCESS_REGION_COMMAND
 
 /var/const/access_explorer = "ACCESS_TORCH_EXPLORER" //93
@@ -136,7 +136,7 @@
 	desc = "Chief of Security"
 
 /datum/access/hop
-	desc = "Executive Officer"
+	desc = "First Mate"
 
 /datum/access/qm
 	desc = "Deck Chief"

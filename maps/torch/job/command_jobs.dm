@@ -1,7 +1,7 @@
 /datum/job/captain
-	title = "Commanding Officer"
-	supervisors = "the Sol Central Government and the Sol Code of Uniform Justice"
-	minimal_player_age = 14
+	title = "The Captain"
+	supervisors = "You are free to make you own decisions, you are only beholden to the many crew who serve under you and to the law"
+	minimal_player_age = 18
 	economic_power = 15
 	minimum_character_age = list(SPECIES_HUMAN = 40)
 	ideal_character_age = 50
@@ -26,7 +26,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/captain/get_description_blurb()
-	return "You are the Commanding Officer. You are the top dog. You are an experienced professional officer in control of an entire ship, and ultimately responsible for all that happens onboard. Your job is to make sure [GLOB.using_map.full_name] fulfils its space exploration mission. Delegate to your Executive Officer, your department heads, and your Senior Enlisted Advisor to effectively manage the ship, and listen to and trust their expertise."
+	return "You are The Captain. You are the top dog. You are a seasoned spacer in control of an entire ship, and ultimately responsible for all that happens onboard. Your job is to make sure [GLOB.using_map.full_name] remains space worthy, it's crew remain safe, and above all else lead profitable lives. Delegate to your First Mate, your department heads, and your Second Mate to effectively manage [GLOB.using_map.full_name], and listen to and trust their expertise."
 
 /datum/job/captain/post_equip_rank(var/mob/person, var/alt_title)
 	var/sound/announce_sound = (GAME_STATE <= RUNLEVEL_SETUP)? null : sound('sound/misc/boatswain.ogg', volume=20)
@@ -34,11 +34,11 @@
 	..()
 
 /datum/job/hop
-	title = "Executive Officer"
-	supervisors = "the Commanding Officer"
+	title = "First Mate"
+	supervisors = "The Captain"
 	department = "Command"
 	department_flag = COM
-	minimal_player_age = 14
+	minimal_player_age = 18
 	economic_power = 10
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 45
@@ -91,13 +91,13 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/hop/get_description_blurb()
-	return "You are the Executive Officer. You are an experienced senior officer, second in command of the ship, and are responsible for the smooth operation of the ship under your Commanding Officer. In his absence, you are expected to take his place. Your primary duty is directly managing department heads and all those outside a department heading. You are also responsible for the contractors and passengers aboard the ship. Consider the Senior Enlisted Advisor and Bridge Officers tools at your disposal."
+	return "You are The First Mate. You are an experienced senior officer, second in command of the [GLOB.using_map.full_name], and are responsible for the smooth operation of [GLOB.using_map.full_name] under The Captain. In their absence, you are expected to take their place. Your primary duty is directly managing department heads and all those outside a department heading. You are also responsible for the contractors and passengers aboard [GLOB.using_map.full_name]. Consider the Second Mate and Bridge Officers tools at your disposal."
 
 /datum/job/rd
 	title = "Chief Science Officer"
-	supervisors = "the Commanding Officer"
+	supervisors = "The Captain"
 	economic_power = 20
-	minimal_player_age = 14
+	minimal_player_age = 18
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 60
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/cso
@@ -142,9 +142,9 @@
 
 /datum/job/cmo
 	title = "Chief Medical Officer"
-	supervisors = "the Commanding Officer and the Executive Officer"
+	supervisors = "The Captain and The First Mate"
 	economic_power = 10
-	minimal_player_age = 14
+	minimal_player_age = 18
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 48
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cmo
@@ -185,11 +185,11 @@
 
 /datum/job/chief_engineer
 	title = "Chief Engineer"
-	supervisors = "the Commanding Officer and the Executive Officer"
+	supervisors = "The Captain and The First Mate"
 	economic_power = 9
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 	ideal_character_age = 40
-	minimal_player_age = 14
+	minimal_player_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -241,9 +241,9 @@
 
 /datum/job/hos
 	title = "Chief of Security"
-	supervisors = "the Commanding Officer and the Executive Officer"
+	supervisors = "The Captain and The First Mate"
 	economic_power = 8
-	minimal_player_age = 14
+	minimal_player_age = 18
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cos
@@ -286,8 +286,8 @@
 	title = "SolGov Representative"
 	department = "Support"
 	department_flag = SPT
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Sol Central Government and the SCG Charter"
 	selection_color = "#2f2f7f"
 	economic_power = 15
@@ -306,17 +306,17 @@
 	software_on_spawn = list(/datum/computer_file/program/reports)
 
 /datum/job/representative/get_description_blurb()
-	return "You are the Sol Gov Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, sol law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and corporate interests on board. Send faxes back to Sol on mission progress and important events."
+	return "You are the Sol Gov Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, sol law or other ethical or legal issues aboard and informing and advising The Captain of them. You are a mid-level bureaucrat. You liaise between the crew and corporate interests on board. Send faxes back to Sol on mission progress and important events."
 
 /datum/job/sea
-	title = "Senior Enlisted Advisor"
+	title = "The Second Mate"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Commanding Officer and the Executive Officer"
+	supervisors = "The Captain and The First Mate"
 	selection_color = "#2f2f7f"
-	minimal_player_age = 14
+	minimal_player_age = 18
 	economic_power = 8
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 45
@@ -353,15 +353,15 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/sea/get_description_blurb()
-	return "You are the Senior Enlisted Advisor. You are the highest enlisted person on the ship. You are directly subordinate to the CO. You advise them on enlisted concerns and provide expertise and advice to officers. You are responsible for ensuring discipline and good conduct among enlisted, as well as notifying officers of any issues and \"advising\" them on mistakes they make. You also handle various duties on behalf of the CO and XO. You are an experienced enlisted person, very likely equal only in experience to the CO and XO. You know the regulations better than anyone."
+	return "You are The Second Mate. You are the highest enlisted person on the ship. You are directly subordinate to the CO. You advise them on enlisted concerns and provide expertise and advice to officers. You are responsible for ensuring discipline and good conduct among enlisted, as well as notifying officers of any issues and \"advising\" them on mistakes they make. You also handle various duties on behalf of the CO and XO. You are an experienced enlisted person, very likely equal only in experience to the CO and XO. You know the regulations better than anyone."
 
 /datum/job/bridgeofficer
-	title = "Bridge Officer"
+	title = "Helmsman"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the Commanding Officer and heads of staff"
+	supervisors = "The Captain and heads of staff"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 0
 	economic_power = 7
@@ -400,4 +400,4 @@
 							 /datum/computer_file/program/deck_management)
 
 /datum/job/bridgeofficer/get_description_blurb()
-	return "You are a Bridge Officer. You are a very junior officer. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the CO and XO. You take the Torch's helm and pilot the Aquila if needed. You monitor bridge computer programs and communications and report relevant information to command."
+	return "You are a Helmsman. You are a very junior officer. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the CO and XO. You take the Torch's helm and pilot the Aquila if needed. You monitor bridge computer programs and communications and report relevant information to command."

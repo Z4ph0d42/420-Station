@@ -18,7 +18,7 @@
 			            access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
 			            access_research, access_engine, access_mining, access_medical, access_construction, access_mailsorting,
 			            access_bridge, access_hos, access_RC_announce, access_keycard_auth, access_gateway, access_external_airlocks)
-	minimal_player_age = 14
+	minimal_player_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/security/hos
 
 /datum/job/hos/equip(var/mob/living/carbon/human/H)

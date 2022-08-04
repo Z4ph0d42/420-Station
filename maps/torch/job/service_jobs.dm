@@ -8,7 +8,7 @@
 	ideal_character_age = 40
 	economic_power = 5
 	minimal_player_age = 0
-	supervisors = "the Executive Officer"
+	supervisors = "The First Mate"
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/chaplain
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
@@ -29,7 +29,7 @@
 	department_flag = SRV
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Executive Officer"
+	supervisors = "The First Mate"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
 	alt_titles = list(
@@ -59,7 +59,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	supervisors = "the Executive Officer"
+	supervisors = "The First Mate"
 	alt_titles = list(
 		"Chef",
 		"Culinary Specialist"
@@ -86,7 +86,7 @@
 /datum/job/bartender
 	department = "Service"
 	department_flag = SRV
-	supervisors = "the Executive Officer and the Corporate Liaison"
+	supervisors = "The First Mate and the Corporate Liaison"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 30
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/bartender
@@ -105,7 +105,7 @@
 	department_flag = SRV
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "the Executive Officer and SolGov Personnel"
+	supervisors = "The First Mate and The Captain"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/crewman

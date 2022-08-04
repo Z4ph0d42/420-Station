@@ -32,7 +32,7 @@ GLOBAL_DATUM_INIT(ert, /datum/antagonist/ert, new)
 
 /datum/antagonist/ert/Initialize()
 	..()
-	leader_welcome_text = SPAN_BOLD("You are the leader of the Emergency Response Team. ") + "As the leader, you answer only to [GLOB.using_map.company_name] officials. You have authorization to override the Commanding Officer where it is necessary to achieve your goals. However, it is recommended that you work with them to achieve your goals if possible."
+	leader_welcome_text = SPAN_BOLD("You are the leader of the Emergency Response Team. ") + "As the leader, you answer only to [GLOB.using_map.company_name] officials. You have authorization to override The Captain where it is necessary to achieve your goals. However, it is recommended that you work with them to achieve your goals if possible."
 	welcome_text =        SPAN_BOLD("You are a member of the Emergency Response Team.") + "As a member of the Emergency Response Team, you answer only to your leader and [GLOB.using_map.company_name] officials."
 
 /datum/antagonist/ert/greet(var/datum/mind/player)

@@ -4,7 +4,7 @@
 	department_flag = SUP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Executive Officer"
+	supervisors = "The First Mate"
 	economic_power = 5
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 27)
@@ -44,7 +44,7 @@
 	department_flag = SUP
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the Deck Chief and Executive Officer"
+	supervisors = "the Deck Chief and First Mate"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 24
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/tech
@@ -80,7 +80,7 @@
 	department_flag = SUP
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Deck Chief, the Corporate Liaison and the Executive Officer"
+	supervisors = "the Deck Chief, the Corporate Liaison and The First Mate"
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 25

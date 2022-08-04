@@ -182,7 +182,7 @@
 
 /obj/item/documents/generic/scgr/yourjob
 	name = "\improper SCG and you"
-	desc = "Some \"confidential\" briefing documents, detailing the job of the SCGR in brief. It highlights they are a civilian, first and foremost, who functions as a general-purpose civil servant aboard the SEV Torch. They also should advise the Commanding Officer, assisting with bureaucratic affairs where required, and spearheading diplomatic negotations."
+	desc = "Some \"confidential\" briefing documents, detailing the job of the SCGR in brief. It highlights they are a civilian, first and foremost, who functions as a general-purpose civil servant aboard the SEV Torch. They also should advise The Captain, assisting with bureaucratic affairs where required, and spearheading diplomatic negotations."
 
 /obj/item/document/generic/scgr/perdiemdeny
 	name = "per diem denials"
@@ -214,19 +214,19 @@
 
 /obj/item/documents/generic/sol/annoyingtheft
 	name = "abuse of access to equipment memo"
-	desc = "An \"internal use only\" memo sent from the Executive Officer for distribution to all personnel with access to to the bridge, reminding them that the access to the bridge officers' lockers is not to be abused, further reminding that everyone has equipment in their lockers they should use. It ends with a terse request to stop this abuse immediately."
+	desc = "An \"internal use only\" memo sent from The First Mate for distribution to all personnel with access to to the bridge, reminding them that the access to the bridge officers' lockers is not to be abused, further reminding that everyone has equipment in their lockers they should use. It ends with a terse request to stop this abuse immediately."
 
 /obj/item/documents/generic/sol/fraternizationissues
 	name = "anti-fraternization memo"
-	desc = "An \"internal use only\" memo sent from the Senior Enlisted Advisor to all infirmary staff informing them that, yes, inappropriate relationships are also forbidden for corpsmen and medical technicians. It highlights that further instances of fraternization can and will result in non-judical punishment and reminds all staff that the provision of medical care is their first priority."
+	desc = "An \"internal use only\" memo sent from The Second Mate to all infirmary staff informing them that, yes, inappropriate relationships are also forbidden for corpsmen and medical technicians. It highlights that further instances of fraternization can and will result in non-judical punishment and reminds all staff that the provision of medical care is their first priority."
 
 /obj/item/documents/generic/sol/bunnybirdissues
 	name = "bridge officer hallucination issues"
-	desc = "An \"internal use only\" memo sent from the Chief Medical Officer to the Executive Officer detailing the need for downtime and recovery for bridge staff after numerous reports of certain bridge officers seeing \"giant space birds\" after too long at the helm, and reminding  them to be sent for psychological counseling at their earliest convenience."
+	desc = "An \"internal use only\" memo sent from the Chief Medical Officer to The First Mate detailing the need for downtime and recovery for bridge staff after numerous reports of certain bridge officers seeing \"giant space birds\" after too long at the helm, and reminding  them to be sent for psychological counseling at their earliest convenience."
 
 /obj/item/documents/generic/sol/bunnytraining
 	name = "bridge officer qualification status"
-	desc = "An \"internal use only\" memo sent from the Commanding Officer to the heads of staff reminding them that bridge officers are qualified in communications and bridge operations and do not, in fact, double as naval infantry. They should not be deployed like such during minor security incidents, citing numerous reports of broken legs and feet being shot due to mishandling of weapons."
+	desc = "An \"internal use only\" memo sent from The Captain to the heads of staff reminding them that bridge officers are qualified in communications and bridge operations and do not, in fact, double as naval infantry. They should not be deployed like such during minor security incidents, citing numerous reports of broken legs and feet being shot due to mishandling of weapons."
 
 /obj/item/documents/generic/sol/comm
 	name = "Zurich Common reminder"
@@ -250,15 +250,15 @@ obj/item/documents/generic/sol/realitybreak
 
 /obj/item/documents/generic/sup/skrellcookery
 	name = "food for alien species memo"
-	desc = "An \"internal use only\" memo sent from the Executive Officer on behalf of Expeditionary Command detailing how to provision meals for Skrell crew. The memo seems to be vaguely misinformed and claims that Skrell should only be given hallucinogenic mushrooms and toast."
+	desc = "An \"internal use only\" memo sent from The First Mate on behalf of Expeditionary Command detailing how to provision meals for Skrell crew. The memo seems to be vaguely misinformed and claims that Skrell should only be given hallucinogenic mushrooms and toast."
 
 /obj/item/documents/generic/sup/gasprovisioning
 	name = "food for alien species memo"
-	desc = "An \"internal use only\" memo sent from the Executive Officer on behalf of expeditionary command detailing how to provision meals for Giant Armored Serpentid staff. It implies quite heavily that cost is a concern, and they should not be given meat except in exceptional circumstances and should otherwise only be given cheap cabbage."
+	desc = "An \"internal use only\" memo sent from The First Mate on behalf of expeditionary command detailing how to provision meals for Giant Armored Serpentid staff. It implies quite heavily that cost is a concern, and they should not be given meat except in exceptional circumstances and should otherwise only be given cheap cabbage."
 
 /obj/item/documents/generic/sup/shotgunblues
 	name = "in defense of the bar"
-	desc = "An \"internal use only\" memo sent from the Executive Officer on behalf of Expeditionary Command detailing that the service department does not need self-defense weapons, and any arguments to the contrary will be handled internally. A personal memo has been added; an underlined \"STOP ASKING US\" penned onto the page."
+	desc = "An \"internal use only\" memo sent from The First Mate on behalf of Expeditionary Command detailing that the service department does not need self-defense weapons, and any arguments to the contrary will be handled internally. A personal memo has been added; an underlined \"STOP ASKING US\" penned onto the page."
 
 /obj/item/documents/generic/sup/officelocation
 	name = "supply office location reminder"
@@ -346,7 +346,7 @@ obj/item/documents/generic/sol/realitybreak
 
 /obj/item/documents/generic/med/scrubswithranks
 	name = "uniform guide reminder"
-	desc = "An \"internal use only\" notice from the Senior Enlisted Advisor about which clothes are meant to be worn with ranks and which are not. Curiously, scrubs are mentioned often."
+	desc = "An \"internal use only\" notice from The Second Mate about which clothes are meant to be worn with ranks and which are not. Curiously, scrubs are mentioned often."
 
 /obj/item/documents/generic/med/washyourdamnhands
 	name = "sanitation reminder"
@@ -358,7 +358,7 @@ obj/item/documents/generic/sol/realitybreak
 
 /obj/item/documents/generic/med/traineebeards
 	name = "grooming standards"
-	desc = "An \"internal use only\" memo from the Senior Enlisted Advisor and the Chief Medical Officer reminding staff of the importance of grooming standards in the infirmary. The example of a recently-dismissed medical trainee that refused to trim his beard is used as a warning to all staff, and helpful pictures of proper hair are included."
+	desc = "An \"internal use only\" memo from The Second Mate and the Chief Medical Officer reminding staff of the importance of grooming standards in the infirmary. The example of a recently-dismissed medical trainee that refused to trim his beard is used as a warning to all staff, and helpful pictures of proper hair are included."
 
 /obj/item/documents/generic/med/spacies
 	name = "space-adapted humans"
@@ -402,7 +402,7 @@ obj/item/documents/generic/sol/realitybreak
 
 /obj/item/documents/generic/explo/pathfinderproblems
 	name = "pathfinder protocol reminder"
-	desc = "A \"confidential\" memo sent from the Executive Officer to the pathfinder reminding them that, yes, their pilot is there to fly the Charon, not them, and that, yes, they should ensure that the exploration shotgun is only used by trained personnel. The final bit is very tersely-written, advising them to stop explorers from looking directly into the barrel."
+	desc = "A \"confidential\" memo sent from The First Mate to the pathfinder reminding them that, yes, their pilot is there to fly the Charon, not them, and that, yes, they should ensure that the exploration shotgun is only used by trained personnel. The final bit is very tersely-written, advising them to stop explorers from looking directly into the barrel."
 
 /obj/item/documents/generic/explo/hangarproc
 	name = "don't force the fucking airlock"
