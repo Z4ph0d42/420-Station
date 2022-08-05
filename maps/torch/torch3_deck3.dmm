@@ -18382,7 +18382,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/aftstarboard)
 "SZ" = (
-/obj/structure/rubble/lab,
+/obj/structure/scrap/poor/large/beacon,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/port)
 "Tb" = (
@@ -41421,8 +41421,8 @@ XP
 ov
 wl
 Ez
-Ts
 SZ
+Ts
 BS
 Ez
 LK
