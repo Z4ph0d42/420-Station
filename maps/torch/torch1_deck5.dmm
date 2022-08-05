@@ -2038,6 +2038,18 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/atmos)
+"dX" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/catwalk,
+/obj/structure/scrap/vehicle/large,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/fore)
 "dY" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -5787,6 +5799,7 @@
 	},
 /obj/structure/catwalk,
 /obj/structure/disposalpipe/segment,
+/obj/structure/scrap/medical/large,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "nf" = (
@@ -7779,6 +7792,7 @@
 	dir = 8
 	},
 /obj/structure/catwalk,
+/obj/structure/scrap/vehicle/large,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "qT" = (
@@ -8226,6 +8240,7 @@
 	dir = 5
 	},
 /obj/structure/catwalk,
+/obj/structure/rubble/lab,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "rI" = (
@@ -12221,6 +12236,7 @@
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
+/obj/structure/scrap/medical/large,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "DX" = (
@@ -12506,6 +12522,16 @@
 /obj/effect/shuttle_landmark/merc/hanger,
 /turf/space,
 /area/space)
+"EO" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/catwalk,
+/obj/structure/scrap/medical/large,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/fore)
 "ER" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -15290,6 +15316,16 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/shuttle/petrov/analysis)
+"Ph" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/catwalk,
+/obj/structure/scrap/science,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/fore)
 "Pm" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -16793,6 +16829,11 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/hallwaya)
+"UU" = (
+/obj/structure/catwalk,
+/obj/structure/scrap/medical/large,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/fore)
 "UW" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -29970,7 +30011,7 @@ an
 an
 an
 an
-mh
+UU
 mh
 mh
 mh
@@ -30369,8 +30410,8 @@ or
 iW
 iW
 iW
-iW
-iW
+EO
+Ph
 iW
 qV
 iY
@@ -30572,7 +30613,7 @@ pl
 qM
 DT
 qS
-pl
+dX
 OW
 qW
 tb
