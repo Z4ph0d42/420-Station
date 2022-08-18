@@ -16,6 +16,11 @@
 	..()
 	if(!prob(spawn_nothing_percentage))
 		var/list/spawns = spawn_item()
+		if(!islist(spawns))
+			var/list/newlist = list()
+			if(spawns)
+				newlist += spawns
+			spawns = newlist
 		if (has_postspawn && spawns.len)
 			post_spawn(spawns)
 
@@ -36,8 +41,13 @@
 
 	if(isnull(loc))
 		return
+	var/build_path = item_to_spawn()
 
-	var/build_path = pickweight(spawn_choices())
+	if(!ispath(build_path))
+		var/list/spawnchoices = spawn_choices()
+		if(!islist(spawnchoices) || !spawnchoices.len)
+			return
+		build_path = pickweight(spawnchoices)
 
 	var/atom/A = new build_path(src.loc)
 	if(pixel_x || pixel_y)

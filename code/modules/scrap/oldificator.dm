@@ -24,7 +24,7 @@
 	    "A relic from a bygone age.")
 
 	germ_level = pick(80,110,160)
-	worths *= RAND_DECIMAL(0.1, 0.6) //Tank the price of it
+	//worths *= RAND_DECIMAL(0.1, 0.6) //Tank the price of it //this var is a global var that should not be edited. item value data is based on item type and is static and stored in a global var and if changed it will change all items of that types, value. -falaskian
 
 	//Deplete matter and reagents
 	for (var/a in matter)
