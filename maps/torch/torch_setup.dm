@@ -6,9 +6,9 @@
 /datum/map/torch/get_map_info()
 	. = list()
 	. +=  "You're aboard the " + replacetext("<b>[station_name]</b>", "\improper", "") + ", an aging generational ship who's original purpose has been lost to time. Its current general mission is profit and exploration of new and exploitable resources in deep space."
-    . +=  "The vessel is home many businesses and private individuals and hostile life forms"
-    . +=  "This area of space is uncharted and far away from Sol. You might encounter remote outposts or drifting wrecks, no recognized government holds claim on this sector as far as you can tell. That means every thing is free for the taking!"
-    return jointext(., "<br>")
+	. +=  "The vessel is home many businesses and private individuals and hostile life forms"
+	. +=  "This area of space is uncharted and far away from Sol. You might encounter remote outposts or drifting wrecks, no recognized government holds claim on this sector as far as you can tell. That means every thing is free for the taking!"
+	return jointext(., "<br>")
 
 /datum/map/torch/send_welcome()
 	var/obj/effect/overmap/visitable/ship/torch = SSshuttle.ship_by_type(/obj/effect/overmap/visitable/ship/torch)
