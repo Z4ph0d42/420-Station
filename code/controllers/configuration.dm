@@ -119,8 +119,8 @@ var/list/gamemode_cache = list()
 	var/creep_delay = 6
 	var/minimum_sprint_cost = 0.8
 	var/skill_sprint_cost_range = 0.8
-	var/minimum_stamina_recovery = 1
-	var/maximum_stamina_recovery = 3
+	var/minimum_stamina_recovery = 2
+	var/maximum_stamina_recovery = 4
 
 	//Mob specific modifiers. NOTE: These will affect different mob types in different ways
 	var/maximum_mushrooms = 15 //After this amount alive, mushrooms will not boom boom
