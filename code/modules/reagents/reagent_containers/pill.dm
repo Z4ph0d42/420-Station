@@ -399,39 +399,39 @@ obj/item/weapon/reagent_containers/pill/noexcutite/New()
 	. = ..()
 
 	var/random_reagent = pickweight(list(
-					list("spaceacillin" = 15) = 2,\
-					list("inaprovaline" = 30) = 2,\
-					list("anti_toxin" = 15) = 2,\
-					list("methylphenidate" = 15) = 2,\
-					list("paracetamol" = 15) = 2,\
-					list("dexalin" = 15) = 2,\
-					list("dexalinp" = 15) = 2,\
-					list("impedrezene" = 10, "synaptizine" = 5, "hyperzine" = 5, "citalopram" = 15) = 1,\
-					list("space_drugs" = 15, "sugar" = 15) = 1,\
-					list("dermaline" = 15, "citalopram" = 15) = 1,\
-					list("tramadol" = 15, "spaceacillin" = 15) = 1,\
-					list("blattedin" = 15) = 1,\
-					list("imidazoline" = 15, "space_drugs" = 15) = 1,\
-					list("ethylredoxrazine" = 15, "hyperzine" = 35) = 1,\
-					list("potassium_chlorophoride" = 15) = 1,\
-					list("mindbreaker" = 15, "synaptizine" = 5) = 1,\
-					list("plantbgone" = 15, "cleaner" = 15) = 1,\
-					list("coolant" = 50) = 1,\
-					list("fuel" = 50) = 1,\
-					list("water" = 15) = 1,\
-					list("sterilizine" = 50) = 1,\
-					list("tramadol" = 15, "sugar" = 15) = 1,\
-					list("thermite" = 15) = 1,\
-					list("lube" = 50) = 1,\
-					list("pacid" = 15) = 1,\
-					list("sacid" = 15) = 1,\
-					list("hclacid" = 15) = 1,\
-					list("impedrezene" = 15, "dexalinp" = 35) = 1,\
-					list("virusfood" = 15) = 1,\
-					list("leporazine" = 15) = 1,\
-					list("anti_toxin" = 15, "zombiepowder" = 10) = 0.5,\
-					list("dexalinp" = 35, "cyanide" = 15) = 0.5,\
-					list("toxin" = 40, "cyanide" = 10) = 0.5))
+					list(/datum/reagent/spaceacillin = 15) = 2,\
+					list(/datum/reagent/inaprovaline = 30) = 2,\
+					list(/datum/reagent/dylovene = 15) = 2,\
+					list(/datum/reagent/methylphenidate = 15) = 2,\
+					list(/datum/reagent/paracetamol = 15) = 2,\
+					list(/datum/reagent/dexalin = 15) = 2,\
+					list(/datum/reagent/dexalinp = 15) = 2,\
+					list(/datum/reagent/impedrezene = 10, /datum/reagent/synaptizine = 5, /datum/reagent/hyperzine = 5, /datum/reagent/citalopram = 15) = 1,\
+					list(/datum/reagent/space_drugs = 15, /datum/reagent/sugar = 15) = 1,\
+					list(/datum/reagent/dermaline = 15, /datum/reagent/citalopram = 15) = 1,\
+					list(/datum/reagent/tramadol = 15, /datum/reagent/spaceacillin = 15) = 1,\
+					/*list(/datum/reagent/blattedin = 15) = 1,\*/
+					list(/datum/reagent/imidazoline = 15, /datum/reagent/space_drugs = 15) = 1,\
+					list(/datum/reagent/ethylredoxrazine = 15, /datum/reagent/hyperzine = 35) = 1,\
+					list(/datum/reagent/toxin/potassium_chlorophoride = 15) = 1,\
+					list(/datum/reagent/mindbreaker = 15, /datum/reagent/synaptizine = 5) = 1,\
+					list(/datum/reagent/toxin/plantbgone = 15, /datum/reagent/space_cleaner = 15) = 1,\
+					list(/datum/reagent/coolant = 50) = 1,\
+					list(/datum/reagent/fuel = 50) = 1,\
+					list(/datum/reagent/water = 15) = 1,\
+					list(/datum/reagent/sterilizine = 50) = 1,\
+					list(/datum/reagent/tramadol = 15, /datum/reagent/sugar = 15) = 1,\
+					list(/datum/reagent/thermite = 15) = 1,\
+					list(/datum/reagent/lube = 50) = 1,\
+					list(/datum/reagent/acid/polyacid = 15) = 1,\
+					list(/datum/reagent/acid = 15) = 1,\
+					list(/datum/reagent/acid/hydrochloric = 15) = 1,\
+					list(/datum/reagent/impedrezene = 15, /datum/reagent/dexalinp = 35) = 1,\
+					/*list(/datum/reagent/virusfood = 15) = 1,\ doesnt seem to exist any more*/
+					list(/datum/reagent/leporazine = 15) = 1,\
+					list(/datum/reagent/dylovene = 15, /datum/reagent/toxin/zombiepowder = 10) = 0.5,\
+					list(/datum/reagent/dexalinp = 35, /datum/reagent/toxin/cyanide = 15) = 0.5,\
+					list(/datum/reagent/toxin = 40, /datum/reagent/toxin/cyanide = 10) = 0.5))
 
 	for(var/reagent in random_reagent)
 		reagents.add_reagent(reagent, random_reagent[reagent])
