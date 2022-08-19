@@ -1089,7 +1089,6 @@ obj/random/closet //A couple of random closets to spice up maint
 				/obj/item/stack/material/plastic/fifty,
 				/obj/item/stack/material/wood/fifty,
 				/obj/item/stack/material/cardboard/fifty,
-				/obj/item/stack/material/rods/fifty,
 				/obj/item/stack/material/plasteel/fifty)
 
 /obj/random/material/steel //Random steel sheets
@@ -1112,8 +1111,7 @@ obj/random/closet //A couple of random closets to spice up maint
 /obj/random/rods/spawn_choices()
 	return list(/obj/item/stack/material/rods/five,
 				/obj/item/stack/material/rods/ten,
-				/obj/item/stack/material/rods/twenty_five,
-				/obj/item/stack/material/rods/fifty)
+				/obj/item/stack/material/rods/twenty_five)
 
 /obj/random/soap
 	name = "Random Cleaning Supplies"
