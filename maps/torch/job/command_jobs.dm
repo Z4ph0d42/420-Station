@@ -26,7 +26,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/captain/get_description_blurb()
-	return "You are the The Captain. You are the top dog. You are a seasoned spacer in control of an entire ship, and ultimately responsible for all that happens onboard. Your job is to make sure [GLOB.using_map.full_name] remains space worthy, it's crew remain safe, and above all else lead profitable lives. Delegate to your First Mate, your department heads, and your Second Mate to effectively manage [GLOB.using_map.full_name], and listen to and trust their expertise."
+	return "You are the The Captain. You are the top dog. You are a seasoned spacer in control of an entire ship, and ultimately responsible for all that happens onboard. Your job is to make sure [GLOB.using_map.full_name] remains space worthy, it's crew remain safe, and above all else lead profitable lives. Delegate to your First Mate, your department heads, and your Second Mate to effectively manage [GLOB.using_map.full_name], and listen to and trust their expertise. The mission and heading of the ship is yours to decide."
 
 /datum/job/captain/post_equip_rank(var/mob/person, var/alt_title)
 	var/sound/announce_sound = (GAME_STATE <= RUNLEVEL_SETUP)? null : sound('sound/misc/boatswain.ogg', volume=20)
