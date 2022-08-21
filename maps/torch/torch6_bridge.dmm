@@ -3111,6 +3111,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/co)
 "fw" = (
+/obj/random/trash,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/port)
 "fx" = (
@@ -3759,6 +3760,7 @@
 	icon_state = "warning"
 	},
 /obj/structure/catwalk,
+/obj/structure/scrap/guns/large,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
 "gR" = (
@@ -3792,6 +3794,13 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
+"gW" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
+/obj/random/trash,
+/turf/simulated/floor/tiled/dark,
+/area/bridge/hallway/port)
 "gX" = (
 /obj/structure/sign/warning/airlock,
 /turf/simulated/wall/r_wall/hull,
@@ -4525,6 +4534,7 @@
 /area/aquila/passenger)
 "jw" = (
 /obj/effect/floor_decal/corner/blue,
+/obj/random/trash,
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "jx" = (
@@ -5089,6 +5099,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/random/trash,
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "lp" = (
@@ -5389,6 +5400,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
+/obj/structure/scrap/food/large,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
 "lX" = (
@@ -5688,6 +5700,7 @@
 	c_tag = "Bridge Hallway - Aft";
 	dir = 1
 	},
+/obj/effect/decal/cleanable/blood/oil/streak,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/aft)
 "nb" = (
@@ -7127,6 +7140,10 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/fore)
+"rj" = (
+/obj/structure/scrap/cloth,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/foreport)
 "rk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -7301,6 +7318,14 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/aquila/medical)
+"rG" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4;
+	icon_state = "warning"
+	},
+/obj/structure/scrap/science/large,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/foreport)
 "rI" = (
 /obj/structure/bed/chair/comfy/blue{
 	dir = 8;
@@ -7506,6 +7531,7 @@
 /obj/effect/floor_decal/corner/blue{
 	dir = 10
 	},
+/obj/random/trash,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "si" = (
@@ -9733,6 +9759,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/scrap,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
 "xB" = (
@@ -10037,6 +10064,10 @@
 "yD" = (
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
+"yI" = (
+/obj/structure/scrap/science,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/foreport)
 "yL" = (
 /obj/machinery/suit_storage_unit/standard_unit{
 	req_access = newlist()
@@ -13506,6 +13537,7 @@
 	dir = 4;
 	icon_state = "warning"
 	},
+/obj/structure/scrap/poor,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/foreport)
 "Ob" = (
@@ -15860,6 +15892,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge)
+"XV" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4;
+	icon_state = "warning"
+	},
+/obj/structure/scrap/cloth,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/foreport)
 "XW" = (
 /obj/structure/catwalk,
 /obj/structure/cable/green{
@@ -15996,6 +16036,25 @@
 /obj/random_multi/single_item/poppy,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
+"Yw" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/catwalk,
+/obj/structure/scrap/food/large,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/foreport)
 "Yz" = (
 /obj/structure/flora/pottedplant/orientaltree,
 /obj/effect/floor_decal/spline/fancy/wood/corner{
@@ -25935,7 +25994,7 @@ db
 KX
 KX
 CZ
-OD
+gW
 OD
 ed
 eD
@@ -27569,7 +27628,7 @@ IK
 UE
 UE
 lW
-oB
+yI
 tg
 tg
 tg
@@ -27769,8 +27828,8 @@ sL
 sL
 sL
 oB
-oB
-xj
+rj
+Yw
 xJ
 tg
 tg
@@ -27971,9 +28030,9 @@ vX
 wD
 sL
 NW
-NW
+XV
 gP
-NW
+rG
 tg
 tg
 tg

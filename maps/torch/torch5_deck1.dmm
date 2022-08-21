@@ -9046,6 +9046,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /obj/effect/floor_decal/corner/blue/mono,
+/obj/effect/decal/cleanable/blood/oil/streak,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/aft)
 "aCr" = (
@@ -17443,6 +17444,10 @@
 /obj/effect/floor_decal/industrial/hatch/blue,
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d1port)
+"exZ" = (
+/obj/effect/decal/cleanable/blood/gibs/robot/down,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/centralstarboard)
 "eyY" = (
 /turf/simulated/floor/tiled,
 /area/security/processing)
@@ -22014,6 +22019,10 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/monotile,
 /area/assembly/chargebay)
+"kUh" = (
+/obj/effect/decal/cleanable/blood/oil/streak,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/centralport)
 "kUt" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/closet{
@@ -47089,7 +47098,7 @@ agN
 agN
 anr
 acD
-rhO
+exZ
 fMI
 acD
 asF
@@ -50746,7 +50755,7 @@ jtb
 aHi
 aHi
 cQo
-cQo
+kUh
 tzg
 aJS
 aPU

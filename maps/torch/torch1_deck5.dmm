@@ -3481,6 +3481,14 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/storage)
+"hK" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4;
+	icon_state = "warning"
+	},
+/obj/effect/decal/cleanable/blood/oil/streak,
+/turf/simulated/floor/tiled/monotile,
+/area/quartermaster/hangar)
 "hL" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -7844,6 +7852,7 @@
 	},
 /obj/effect/floor_decal/corner/mauve/half,
 /obj/structure/disposalpipe/segment,
+/obj/effect/decal/cleanable/blood/oil/streak,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fifthdeck/fore)
 "qP" = (
@@ -14236,6 +14245,7 @@
 	icon_state = "intact"
 	},
 /obj/structure/disposalpipe/segment,
+/obj/effect/decal/cleanable/blood/gibs/robot/up,
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/toxins)
 "Kk" = (
@@ -17849,6 +17859,14 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fifthdeck/aft)
+"XA" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1;
+	icon_state = "warning"
+	},
+/obj/effect/decal/cleanable/blood/oil/streak,
+/turf/simulated/floor/tiled/monotile,
+/area/quartermaster/hangar)
 "XB" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4;
@@ -36076,7 +36094,7 @@ Mu
 Cf
 gx
 gy
-fS
+XA
 Bm
 jR
 ld
@@ -37671,7 +37689,7 @@ aJ
 aX
 cy
 Ho
-Ho
+hK
 iq
 Ho
 Ho

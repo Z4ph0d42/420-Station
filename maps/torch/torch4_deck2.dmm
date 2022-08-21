@@ -1398,6 +1398,10 @@
 /obj/item/weapon/stock_parts/circuitboard/arcade/orion_trail,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
+"ct" = (
+/obj/effect/decal/cleanable/blood/oil/streak,
+/turf/simulated/floor/tiled/monotile,
+/area/shuttle/escape_pod10/station)
 "cu" = (
 /obj/machinery/door/window/brigdoor/northleft{
 	name = "Weapons locker"
@@ -3943,6 +3947,7 @@
 /area/hallway/primary/seconddeck/fore)
 "hQ" = (
 /obj/effect/floor_decal/industrial/warning/corner,
+/obj/effect/decal/cleanable/blood/oil/streak,
 /turf/simulated/floor/tiled,
 /area/engineering/engineering_bay)
 "hU" = (
@@ -12801,6 +12806,10 @@
 	},
 /turf/simulated/floor/airless,
 /area/solar/port)
+"Ez" = (
+/obj/effect/decal/cleanable/blood/oil/streak,
+/turf/simulated/floor/reinforced/airless,
+/area/vacant/prototype/engine)
 "EA" = (
 /obj/structure/cable/yellow{
 	d2 = 2;
@@ -16160,6 +16169,10 @@
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod10/station)
+"OQ" = (
+/obj/effect/decal/cleanable/blood/oil/streak,
+/turf/simulated/floor/tiled/techfloor,
+/area/engineering/engine_room)
 "OR" = (
 /obj/machinery/camera/network/second_deck{
 	c_tag = "Second Deck Hallway - Engineering";
@@ -18783,6 +18796,7 @@
 	pixel_x = 0;
 	pixel_y = -24
 	},
+/obj/effect/decal/cleanable/blood/oil/streak,
 /turf/simulated/floor/tiled/steel_grid,
 /area/vacant/prototype/control)
 "Xk" = (
@@ -28732,7 +28746,7 @@ WZ
 Hg
 mh
 Qh
-Kf
+Ez
 Ej
 eH
 qj
@@ -29547,7 +29561,7 @@ mb
 qw
 vt
 ol
-wl
+ct
 Sl
 vt
 Wp
@@ -44684,7 +44698,7 @@ iZ
 jJ
 ks
 le
-if
+OQ
 xB
 MP
 oA
@@ -45285,7 +45299,7 @@ ax
 do
 gy
 dp
-if
+OQ
 jc
 jM
 kv
