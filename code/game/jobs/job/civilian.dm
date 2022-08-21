@@ -57,7 +57,7 @@
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_player_age = 3
-	ideal_character_age = 40
+	ideal_character_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/cargo/qm
 	
 /datum/job/qm/get_description_blurb()
@@ -131,7 +131,7 @@
 	economic_power = 7
 	access = list(access_lawyer, access_sec_doors, access_maint_tunnels, access_bridge)
 	minimal_access = list(access_lawyer, access_sec_doors, access_bridge)
-	minimal_player_age = 10
+	minimal_player_age = 1
 	outfit_type = /decl/hierarchy/outfit/job/internal_affairs_agent
 
 /datum/job/lawyer/equip(var/mob/living/carbon/human/H)

@@ -1,10 +1,9 @@
 /datum/job/captain
 	title = "Captain"
-	supervisors = "You are free to make you own decisions, you are only beholden to the many crew who serve under you"
-	minimal_player_age = 18
+	supervisors = "You are only beholden to the many crew who serve under you"
+	minimal_player_age = 4
 	economic_power = 15
-	minimum_character_age = list(SPECIES_HUMAN = 25)
-	ideal_character_age = 50
+	ideal_character_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/CO
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps
@@ -38,10 +37,9 @@
 	supervisors = "the The Captain"
 	department = "Command"
 	department_flag = COM
-	minimal_player_age = 18
+	minimal_player_age = 4
 	economic_power = 10
-	minimum_character_age = list(SPECIES_HUMAN = 35)
-	ideal_character_age = 45
+	ideal_character_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/XO
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -97,9 +95,9 @@
 	title = "Chief Science Officer"
 	supervisors = "The Captain"
 	economic_power = 20
-	minimal_player_age = 18
-	minimum_character_age = list(SPECIES_HUMAN = 35)
-	ideal_character_age = 60
+	minimal_player_age = 4
+
+	ideal_character_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/cso
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps
@@ -144,9 +142,8 @@
 	title = "Chief Medical Officer"
 	supervisors = "The Captain and the First Mate"
 	economic_power = 10
-	minimal_player_age = 18
-	minimum_character_age = list(SPECIES_HUMAN = 35)
-	ideal_character_age = 48
+	minimal_player_age = 4
+	ideal_character_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cmo
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -187,9 +184,8 @@
 	title = "Chief Engineer"
 	supervisors = "The Captain and the First Mate"
 	economic_power = 9
-	minimum_character_age = list(SPECIES_HUMAN = 27)
-	ideal_character_age = 40
-	minimal_player_age = 18
+	ideal_character_age = 18
+	minimal_player_age = 4
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -243,9 +239,8 @@
 	title = "Chief of Security"
 	supervisors = "The Captain and the First Mate"
 	economic_power = 8
-	minimal_player_age = 18
-	minimum_character_age = list(SPECIES_HUMAN = 25)
-	ideal_character_age = 35
+	minimal_player_age = 4
+	ideal_character_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cos
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -298,8 +293,7 @@
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_EXPERT,
 	                    SKILL_FINANCE     = SKILL_BASIC)
 	skill_points = 20
-	minimum_character_age = list(SPECIES_HUMAN = 27)
-
+	
 	access = list(access_representative, access_security, access_medical,
 			            access_bridge, access_cargo, access_solgov_crew, access_hangar, access_torch_fax)
 
@@ -316,10 +310,9 @@
 	spawn_positions = 1
 	supervisors = "The Captain and the First Mate"
 	selection_color = "#2f2f7f"
-	minimal_player_age = 18
+	minimal_player_age = 4
 	economic_power = 8
-	minimum_character_age = list(SPECIES_HUMAN = 35)
-	ideal_character_age = 45
+	ideal_character_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
 	allowed_branches = list(
 		/datum/mil_branch/fleet
@@ -365,8 +358,7 @@
 	selection_color = "#2f2f7f"
 	minimal_player_age = 0
 	economic_power = 7
-	minimum_character_age = list(SPECIES_HUMAN = 22)
-	ideal_character_age = 24
+	ideal_character_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,

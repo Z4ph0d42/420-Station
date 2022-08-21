@@ -13,10 +13,10 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	req_admin_notify = 1
 	access = list() 			//See get_access()
 	minimal_access = list() 	//See get_access()
-	minimal_player_age = 14
+	minimal_player_age = 4
 	economic_power = 20
 
-	ideal_character_age = 70 // Old geezer captains ftw
+	ideal_character_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/captain
 
 /datum/job/captain/equip(var/mob/living/carbon/human/H)
@@ -39,7 +39,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	req_admin_notify = 1
 	minimal_player_age = 14
 	economic_power = 10
-	ideal_character_age = 50
+	ideal_character_age = 18
 
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_heads,
 			            access_medical, access_engine, access_change_ids, access_ai_upload, access_eva, access_bridge,

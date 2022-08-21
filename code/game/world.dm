@@ -1,4 +1,4 @@
-/var/server_name = "Baystation 12"
+/var/server_name = "420-Station"
 
 /var/game_id = null
 /hook/global_init/proc/generate_gameid()
