@@ -19,9 +19,12 @@
 	stacktype = /obj/item/stack/material/rods
 	default_type = MATERIAL_STEEL
 
+/obj/item/stack/material/rods/five
+	amount = 5
 /obj/item/stack/material/rods/ten
 	amount = 10
-
+/obj/item/stack/material/rods/twenty_five
+	amount = 25
 /obj/item/stack/material/rods/fifty
 	amount = 50
 

@@ -4,8 +4,7 @@
 	department_flag = SRV
 	total_positions = 1
 	spawn_positions = 1
-	minimum_character_age = list(SPECIES_HUMAN = 24)
-	ideal_character_age = 40
+	ideal_character_age = 18
 	economic_power = 5
 	minimal_player_age = 0
 	supervisors = "The First Mate"
@@ -31,7 +30,7 @@
 	spawn_positions = 2
 	supervisors = "The First Mate"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	ideal_character_age = 20
+	ideal_character_age = 18
 	alt_titles = list(
 		"Janitor")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/janitor
@@ -88,7 +87,7 @@
 	department_flag = SRV
 	supervisors = "The First Mate and the Corporate Liaison"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	ideal_character_age = 30
+	ideal_character_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/bartender
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
@@ -107,7 +106,7 @@
 	spawn_positions = 5
 	supervisors = "The First Mate and The Captain"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	ideal_character_age = 20
+	ideal_character_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/crewman
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -121,3 +120,25 @@
 	)
 
 	access = list(access_maint_tunnels, access_emergency_storage, access_solgov_crew)
+
+	/datum/job/clown
+	title = "Clown"
+	department = "Civilian"
+	department_flag = CIV
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "The Captain"
+	economic_power = 2
+	access = list(access_maint_tunnels, access_solgov_crew)
+	minimal_access = list(access_maint_tunnels)
+	minimal_player_age = 4
+	outfit_type = /decl/hierarchy/outfit/clown
+	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	alt_titles = list(
+		"Clown", "Jester"
+		)
+
+/datum/job/clown/get_description_blurb()
+	return "Clowning is a profession where you have to be able to adapt to any situation. You need to be flexible, robust and quick-witted. Your job requires you to be creative and have a good sense of humor. A clown's job is not just about making people laugh."
+	

@@ -85,3 +85,6 @@
 
 /obj/item/clothing/glasses/hud/janitor/process_hud(var/mob/M)
 	process_jani_hud(M)
+
+/obj/item/clothing/glasses/hud/broken/process_hud(mob/M)
+	process_broken_hud(M, 1)

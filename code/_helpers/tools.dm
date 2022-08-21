@@ -6,6 +6,7 @@
 #define isMultitool(A)   (A && A.ismultitool())
 #define isCrowbar(A)     (A && A.iscrowbar())
 #define isHatchet(A)     (A && A.ishatchet())
+#define isShovel(A)		 (A && A.isshovel())
 
 /atom/proc/iswrench()
 	return FALSE
@@ -31,6 +32,9 @@
 /atom/proc/ishatchet()
 	return FALSE
 
+/atom/proc/isshovel()
+	return FALSE
+
 /obj/item/weapon/wrench/iswrench()
 	return TRUE
 
@@ -53,4 +57,7 @@
 	return TRUE
 
 /obj/item/weapon/material/hatchet/ishatchet()
+	return TRUE
+
+/obj/item/weapon/shovel/isshovel()
 	return TRUE

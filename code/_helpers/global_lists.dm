@@ -5,6 +5,7 @@ var/global/list/cable_list = list()					//Index for all cables, so that powernet
 var/global/list/landmarks_list = list()				//list of all landmarks created
 var/global/list/side_effects = list()				//list of all medical sideeffects types by thier names |BS12
 var/global/list/mechas_list = list()				//list of all mechs. Used by hostile mobs target tracking.
+GLOBAL_LIST_EMPTY(chemical_reagents_list)			//list of all /datum/reagent datums indexed by reagent id. Used by chemistry stuff
 
 #define all_genders_define_list list(MALE,FEMALE,PLURAL,NEUTER)
 #define all_genders_text_list list("Male","Female","Plural","Neuter")

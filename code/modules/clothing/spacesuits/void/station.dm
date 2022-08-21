@@ -92,6 +92,7 @@
 /obj/item/clothing/suit/space/void/mining/prepared
 	helmet = /obj/item/clothing/head/helmet/space/void/mining
 
+
 //Medical
 /obj/item/clothing/head/helmet/space/void/medical
 	name = "medical voidsuit helmet"

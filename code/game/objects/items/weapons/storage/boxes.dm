@@ -623,3 +623,12 @@
 
 /obj/item/weapon/storage/box/canned/tomato
 	startswith = list(/obj/item/weapon/reagent_containers/food/snacks/canned/tomato = 6)
+
+
+//data disks
+
+/obj/item/weapon/storage/box/data_disk/basic
+	name = "basic data disk box"
+	desc = "a box of basic data disks"
+	startswith = list(/obj/item/weapon/stock_parts/computer/hard_drive/portable = 7)
+

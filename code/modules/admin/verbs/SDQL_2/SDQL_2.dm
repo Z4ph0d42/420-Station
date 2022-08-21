@@ -128,6 +128,8 @@
 					if("set" in query_tree)
 						var/list/set_list = query_tree["set"]
 						for(var/datum/d in objs)
+							if (!is_proper_datum(d))
+								continue
 							for(var/list/sets in set_list)
 								var/datum/temp = d
 								var/i = 0
@@ -557,3 +559,46 @@
 	if(word != "")
 		query_list += word
 	return query_list
+
+/proc/is_proper_datum(object)
+	return istype(object, /datum) || istype(object, /client)
+
+/proc/SDQL_print(object, list/text_list)
+	if (is_proper_datum(object))
+		text_list += "<A HREF='?_src_=vars;Vars=\ref[object]'>\ref[object]</A>"
+		if(istype(object, /atom))
+			var/atom/a = object
+
+			if(a.x)
+				text_list += ": [object] at ([a.x], [a.y], [a.z])"
+
+			else if(a.loc && a.loc.x)
+				text_list += ": [object] in [a.loc] at ([a.loc.x], [a.loc.y], [a.loc.z])"
+
+			else
+				text_list += ": [object]"
+
+		else
+			text_list += ": [object]"
+
+	else if (islist(object))
+		var/list/L = object
+		var/first = TRUE
+		text_list += "\["
+		for (var/x in L)
+			if (!first)
+				text_list += ", "
+			first = FALSE
+			SDQL_print(x, text_list)
+			if (!isnull(x) && !isnum(x) && L[x] != null)
+				text_list += " -> "
+				SDQL_print(L[L[x]])
+
+		text_list += "]"
+
+	else
+		if (isnull(object))
+			text_list += "NULL"
+
+		else
+			text_list += "[object]"

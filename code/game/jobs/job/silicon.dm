@@ -56,7 +56,7 @@
 	spawn_positions = 2
 	supervisors = "your laws and the AI"
 	selection_color = "#254c25"
-	minimal_player_age = 7
+	minimal_player_age = 1
 	account_allowed = 0
 	economic_power = 0
 	loadout_allowed = FALSE

@@ -9,8 +9,7 @@
 	selection_color = "#633d63"
 	economic_power = 12
 	minimal_player_age = 3
-	minimum_character_age = list(SPECIES_HUMAN = 30)
-	ideal_character_age = 50
+	ideal_character_age = 18
 	alt_titles = list(
 		"Research Supervisor")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/senior_scientist
@@ -45,8 +44,7 @@
 	spawn_positions = 6
 	supervisors = "the Chief Science Officer"
 	economic_power = 10
-	minimum_character_age = list(SPECIES_HUMAN = 25)
-	ideal_character_age = 45
+	ideal_character_age = 18
 	minimal_player_age = 0
 	alt_titles = list(
 		"Xenoarcheologist",
@@ -92,8 +90,7 @@
 	supervisors = "the Chief Science Officer and science personnel"
 	selection_color = "#633d63"
 	economic_power = 3
-	minimum_character_age = list(SPECIES_HUMAN = 18)
-	ideal_character_age = 30
+	ideal_character_age = 18
 	alt_titles = list(
 		"Custodian" = /decl/hierarchy/outfit/job/torch/passenger/research/assist/janitor,
 		"Testing Assistant" = /decl/hierarchy/outfit/job/torch/passenger/research/assist/testsubject,

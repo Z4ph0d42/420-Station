@@ -181,10 +181,10 @@
 
 /obj/item/stack/flag/green
 	light_color = COLOR_LIME
-	
+
 /obj/item/stack/flag/blue
 	light_color = COLOR_BLUE
-	
+
 /obj/item/stack/flag/teal
 	light_color = COLOR_TEAL
 

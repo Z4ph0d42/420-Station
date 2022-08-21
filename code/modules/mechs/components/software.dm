@@ -1,4 +1,5 @@
 #define T_BOARD_MECH(name)	"exosuit software (" + (name) + ")"
+var/build_path = null
 
 /obj/item/weapon/circuitboard/exosystem
 	name = "exosuit software template"

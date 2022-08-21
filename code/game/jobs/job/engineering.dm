@@ -10,8 +10,10 @@
 	selection_color = "#7f6e2c"
 	req_admin_notify = 1
 	economic_power = 10
+	minimal_player_age = 3
 
-	ideal_character_age = 50
+
+	ideal_character_age = 18
 
 
 	access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_heads,
@@ -35,7 +37,6 @@
 	supervisors = "the chief engineer"
 	selection_color = "#5b4d20"
 	economic_power = 5
-	minimal_player_age = 7
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage)
 	minimal_access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage)
 	alt_titles = list("Maintenance Technician","Engine Technician","Electrician",
