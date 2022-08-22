@@ -1751,6 +1751,10 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/crew_quarters/head)
+"dL" = (
+/obj/structure/salvageable/bliss,
+/turf/simulated/floor/tiled/monotile,
+/area/vacant/brig)
 "dM" = (
 /obj/machinery/suit_storage_unit/atmos/alt/sol,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -4407,6 +4411,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/salvageable/implant_container_os,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
 "iH" = (
@@ -4417,6 +4422,7 @@
 /obj/machinery/atmospherics/valve/shutoff/fuel{
 	dir = 4
 	},
+/obj/structure/salvageable/machine,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
 "iI" = (
@@ -4836,6 +4842,7 @@
 	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
+/obj/structure/salvageable/server,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
 "jx" = (
@@ -5307,6 +5314,10 @@
 /obj/item/weapon/stool/wood,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
+"kn" = (
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/tiled/dark,
+/area/vacant/cabin)
 "ko" = (
 /obj/machinery/space_heater,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -6694,6 +6705,14 @@
 /obj/effect/floor_decal/industrial/outline/red,
 /turf/simulated/floor/reinforced/oxygen,
 /area/thruster/d3port)
+"nF" = (
+/obj/structure/table/rack,
+/obj/random/maintenance/solgov,
+/obj/random/maintenance/solgov,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/item/weapon/shovel,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/foreport)
 "nG" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/portable_atmospherics/powered/pump/filled,
@@ -7189,6 +7208,10 @@
 /obj/random/drinkbottle,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/recreation)
+"oS" = (
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/plating,
+/area/vacant/brig)
 "oT" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -7479,6 +7502,10 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/center)
+"po" = (
+/obj/structure/salvageable/computer_os,
+/turf/simulated/floor/plating,
+/area/vacant/brig)
 "pp" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -7588,6 +7615,10 @@
 /obj/structure/scrap/large,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
+"pA" = (
+/obj/structure/scrap/food/large,
+/turf/simulated/floor/tiled,
+/area/vacant/brig)
 "pB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -7599,6 +7630,10 @@
 /obj/random/trash,
 /turf/simulated/floor/plating,
 /area/tcommsat/chamber)
+"pC" = (
+/obj/structure/scrap/poor/large,
+/turf/simulated/floor/tiled,
+/area/vacant/brig)
 "pD" = (
 /obj/structure/flora/ausbushes/pointybush,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -7782,6 +7817,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/mess)
+"qa" = (
+/obj/item/weapon/material/knife/kitchen/cleaver,
+/turf/simulated/floor/plating,
+/area/vacant/brig)
 "qb" = (
 /obj/effect/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
@@ -7925,6 +7964,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
+/obj/structure/salvageable/autolathe,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
 "qx" = (
@@ -8170,6 +8210,10 @@
 /obj/item/sticky_pad/random,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
+"rn" = (
+/obj/structure/salvageable/data_os,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/port)
 "ro" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -8450,6 +8494,10 @@
 	},
 /turf/simulated/floor/carpet,
 /area/crew_quarters/recreation)
+"rY" = (
+/obj/structure/salvageable/server,
+/turf/simulated/floor/plating,
+/area/vacant/brig)
 "sc" = (
 /obj/effect/floor_decal/corner/green/half{
 	dir = 1;
@@ -8606,6 +8654,10 @@
 /obj/effect/floor_decal/corner/red/mono,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/center)
+"sm" = (
+/obj/structure/salvageable/data,
+/turf/simulated/floor/tiled/monotile,
+/area/vacant/brig)
 "sn" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -9843,6 +9895,25 @@
 /obj/item/weapon/beach_ball,
 /turf/simulated/floor/grass,
 /area/crew_quarters/observation)
+"vz" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk,
+/obj/structure/salvageable/data_os,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/aftstarboard)
 "vC" = (
 /obj/structure/scrap/poor/large,
 /turf/simulated/floor/plating,
@@ -11476,6 +11547,7 @@
 	pixel_x = 21
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "zX" = (
@@ -11614,6 +11686,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/thirddeck)
+"Ay" = (
+/obj/structure/salvageable/console_os,
+/turf/simulated/floor/tiled/monotile,
+/area/vacant/brig)
 "AA" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -11660,6 +11736,7 @@
 	pixel_x = 32
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "AG" = (
@@ -11765,6 +11842,10 @@
 	},
 /turf/simulated/floor/lino,
 /area/crew_quarters/office)
+"AT" = (
+/obj/structure/salvageable/machine,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/aftstarboard)
 "AV" = (
 /obj/effect/floor_decal/spline/fancy/black{
 	dir = 9;
@@ -11790,6 +11871,10 @@
 /obj/item/weapon/reagent_containers/food/snacks/mint,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/galleybackroom)
+"AY" = (
+/obj/structure/salvageable/data,
+/turf/simulated/floor/plating,
+/area/vacant/brig)
 "Ba" = (
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftport)
@@ -12258,6 +12343,7 @@
 	pixel_x = 22
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "Cv" = (
@@ -12334,6 +12420,10 @@
 "CF" = (
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/recreation)
+"CG" = (
+/obj/structure/scrap/guns,
+/turf/simulated/floor/plating,
+/area/vacant/brig)
 "CH" = (
 /turf/simulated/floor/tiled/monotile,
 /area/maintenance/thirddeck/starboard)
@@ -12557,6 +12647,7 @@
 	},
 /obj/structure/closet/secure_closet/personal,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "Dj" = (
@@ -13062,6 +13153,10 @@
 /obj/effect/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/aft)
+"En" = (
+/obj/structure/salvageable/implant_container,
+/turf/simulated/floor/plating,
+/area/vacant/cabin)
 "Eo" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -13301,6 +13396,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
+"ER" = (
+/obj/item/weapon/material/knife/kitchen,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/aftport)
 "ES" = (
 /obj/random/trash,
 /obj/structure/catwalk,
@@ -15909,6 +16008,7 @@
 "Lh" = (
 /obj/structure/closet/emcloset,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "Li" = (
@@ -16578,6 +16678,10 @@
 /obj/effect/floor_decal/corner/yellow/half,
 /turf/simulated/floor/tiled/dark,
 /area/engineering/hardstorage)
+"MV" = (
+/obj/structure/salvageable/data_os,
+/turf/simulated/floor/tiled/monotile,
+/area/vacant/brig)
 "MW" = (
 /obj/machinery/atmospherics/binary/passive_gate/on{
 	dir = 1;
@@ -16677,6 +16781,10 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
+"Ng" = (
+/obj/structure/salvageable/computer_os,
+/turf/simulated/floor/tiled/dark,
+/area/vacant/cabin)
 "Ni" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -16964,6 +17072,10 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics/storage)
+"Of" = (
+/obj/structure/salvageable/server_os,
+/turf/simulated/floor/plating,
+/area/vacant/brig)
 "Og" = (
 /obj/structure/table/standard,
 /obj/item/weapon/paper_bin{
@@ -17327,6 +17439,10 @@
 	},
 /turf/simulated/floor/airless,
 /area/command/disperser)
+"Pm" = (
+/obj/structure/salvageable/implant_container_os,
+/turf/simulated/floor/plating,
+/area/vacant/brig)
 "Pn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -18221,6 +18337,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters/gym)
+"Sa" = (
+/obj/structure/salvageable/data_os,
+/turf/simulated/floor/plating,
+/area/vacant/cabin)
 "Sb" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/fuel{
 	dir = 4
@@ -19446,6 +19566,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/bar)
+"Vj" = (
+/obj/structure/scrap/poor,
+/turf/simulated/floor/plating,
+/area/vacant/brig)
 "Vl" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -32417,7 +32541,7 @@ gq
 Xc
 Cg
 yN
-fT
+nF
 Ur
 Ur
 Ur
@@ -40657,7 +40781,7 @@ aa
 aa
 aa
 ad
-ag
+oS
 at
 aw
 ad
@@ -41261,8 +41385,8 @@ aa
 aa
 aa
 ad
-QC
-ae
+dL
+pA
 ae
 ag
 ae
@@ -41466,7 +41590,7 @@ ad
 af
 ag
 ag
-ae
+pC
 vK
 zm
 QC
@@ -41665,7 +41789,7 @@ aa
 aa
 aa
 ad
-QC
+sm
 vK
 XL
 ag
@@ -41717,7 +41841,7 @@ Dn
 Dn
 Dn
 HD
-Ts
+rn
 Hf
 Qq
 Qq
@@ -41867,7 +41991,7 @@ aa
 aa
 aa
 ad
-ag
+Pm
 ak
 ap
 au
@@ -42069,13 +42193,13 @@ aa
 aa
 aa
 ad
-ag
+Of
 ae
 aq
 ao
 We
 ID
-ag
+CG
 az
 ag
 ag
@@ -42271,12 +42395,12 @@ aa
 aa
 aa
 ad
-QC
+MV
 XL
 ag
 av
-ag
-ag
+Vj
+CG
 eA
 aE
 ae
@@ -42318,7 +42442,7 @@ YZ
 Ts
 CE
 ub
-Fj
+Ng
 Ei
 Hj
 ub
@@ -42473,7 +42597,7 @@ aa
 aa
 aa
 ad
-QC
+Ay
 al
 ae
 av
@@ -42722,7 +42846,7 @@ AN
 Ov
 WA
 ub
-ED
+Sa
 II
 FN
 ub
@@ -42924,7 +43048,7 @@ AN
 TN
 JV
 ub
-Fj
+kn
 Fj
 GK
 ub
@@ -43079,7 +43203,7 @@ aa
 aa
 aa
 ad
-ag
+po
 ae
 ag
 ag
@@ -43485,7 +43609,7 @@ aa
 aa
 ad
 ad
-ag
+qa
 at
 ag
 ad
@@ -43688,8 +43812,8 @@ aa
 aa
 ad
 as
-ag
-ag
+AY
+rY
 ad
 aa
 aa
@@ -44138,7 +44262,7 @@ ub
 Fi
 Fj
 ED
-ED
+En
 ub
 Ba
 jZ
@@ -44509,7 +44633,7 @@ aT
 bL
 OA
 OA
-dn
+AT
 Zg
 SY
 gE
@@ -45112,7 +45236,7 @@ aI
 aT
 aT
 aT
-bN
+vz
 OA
 dm
 eb
@@ -46358,7 +46482,7 @@ RG
 JT
 Dq
 Qc
-EE
+ER
 Gr
 EE
 jZ

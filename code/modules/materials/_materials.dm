@@ -220,6 +220,16 @@
 /material/proc/place_dismantled_product(var/turf/target,var/is_devastated)
 	place_sheet(target, is_devastated ? 1 : 2)
 
+// Use this to drop a given amount of material.
+/material/proc/place_material(target, amount=1)
+	// Drop the integer amount of sheets
+	if(place_sheet(target, round(amount)))
+		amount -= round(amount)
+
+	// If there is a remainder left, drop it as a shard instead
+	if(amount)
+		place_shard(target, amount)
+		
 // Debris product. Used ALL THE TIME.
 /material/proc/place_sheet(var/turf/target, var/amount = 1)
 	return stack_type ? new stack_type(target, amount, name) : null

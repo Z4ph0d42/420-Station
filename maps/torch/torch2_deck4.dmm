@@ -1086,6 +1086,16 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/janitor)
+"dz" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/catwalk,
+/obj/structure/salvageable/implant_container_os,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/aft)
 "dA" = (
 /obj/structure/largecrate,
 /turf/simulated/floor/tiled/techfloor,
@@ -1255,6 +1265,10 @@
 "ef" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/starboard)
+"eg" = (
+/obj/structure/salvageable/bliss,
+/turf/simulated/floor/plating,
+/area/vacant/monitoring)
 "ej" = (
 /turf/simulated/wall/prepainted,
 /area/storage/auxillary/starboard)
@@ -1318,6 +1332,10 @@
 "er" = (
 /turf/simulated/wall/prepainted,
 /area/maintenance/fourthdeck/forestarboard)
+"es" = (
+/obj/structure/scrap/vehicle,
+/turf/simulated/wall/r_wall/hull,
+/area/maintenance/fourthdeck/aft)
 "et" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
@@ -1349,6 +1367,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
+"ew" = (
+/obj/structure/catwalk,
+/obj/structure/scrap/vehicle/large,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/port)
 "ex" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/manifold/hidden,
@@ -1788,6 +1811,7 @@
 /obj/random/tech_supply,
 /obj/random/tool,
 /obj/effect/floor_decal/techfloor,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/auxillary/starboard)
 "fZ" = (
@@ -2630,6 +2654,7 @@
 /obj/item/clothing/mask/plunger,
 /obj/item/clothing/mask/plunger,
 /obj/item/clothing/mask/plunger,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/steel_grid,
 /area/janitor/storage)
 "iC" = (
@@ -2639,6 +2664,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/steel_grid,
 /area/janitor/storage)
 "iD" = (
@@ -2683,6 +2709,23 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/port)
+"iQ" = (
+/obj/structure/table/rack{
+	dir = 8
+	},
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel{
+	pixel_y = 3
+	},
+/obj/item/weapon/shovel,
+/obj/item/weapon/storage/belt/utility,
+/turf/simulated/floor/tiled/monotile,
+/area/storage/primary)
 "iS" = (
 /turf/simulated/wall/walnut,
 /area/crew_quarters/lounge)
@@ -2909,6 +2952,16 @@
 /obj/structure/grille,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
+"jQ" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/catwalk,
+/obj/structure/salvageable/server_os,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/aft)
 "jX" = (
 /obj/machinery/door/blast/regular/escape_pod,
 /turf/simulated/floor/reinforced/airless,
@@ -3068,6 +3121,7 @@
 /obj/item/weapon/storage/box/lights/mixed,
 /obj/item/weapon/storage/box/mousetraps,
 /obj/item/weapon/storage/box/mousetraps,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/steel_grid,
 /area/janitor/storage)
 "kD" = (
@@ -4025,6 +4079,16 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/fourthdeck/fore)
+"nw" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/catwalk,
+/obj/structure/salvageable/data_os,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/aft)
 "nx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -4341,6 +4405,10 @@
 	},
 /turf/simulated/open,
 /area/quartermaster/hangar/top)
+"oX" = (
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/plating,
+/area/vacant/monitoring)
 "oZ" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/structure/cable/green{
@@ -4774,6 +4842,14 @@
 	},
 /turf/simulated/floor/crystal,
 /area/crew_quarters/adherent)
+"qI" = (
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
+	},
+/obj/structure/salvageable/machine,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/foreport)
 "qJ" = (
 /obj/structure/sign/warning/airlock{
 	dir = 4;
@@ -5351,6 +5427,11 @@
 /obj/random/tech_supply,
 /obj/random/tech_supply,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
+/obj/item/weapon/shovel{
+	pixel_x = 2
+	},
+/obj/item/weapon/storage/belt/utility,
 /turf/simulated/floor/tiled/monotile,
 /area/storage/primary)
 "sz" = (
@@ -7482,6 +7563,25 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/storage/upper)
+"yk" = (
+/obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/scrap/vehicle,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/port)
 "yl" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -7604,6 +7704,11 @@
 /obj/structure/scrap/food,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
+"yZ" = (
+/obj/structure/catwalk,
+/obj/structure/scrap/vehicle,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/port)
 "ze" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -8057,6 +8162,7 @@
 	pixel_x = -23;
 	pixel_y = -3
 	},
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/office)
 "AC" = (
@@ -8495,6 +8601,10 @@
 /obj/random_multi/single_item/runtime,
 /turf/simulated/floor/tiled,
 /area/crew_quarters/commissary)
+"Cw" = (
+/obj/structure/salvageable/server_os,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fourthdeck/port)
 "Cy" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
@@ -8749,6 +8859,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/catwalk,
+/obj/structure/scrap/vehicle,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
 "DF" = (
@@ -8813,6 +8924,9 @@
 	icon_state = "alarm0";
 	pixel_x = -22;
 	pixel_y = 0
+	},
+/obj/structure/salvageable/console_broken_os{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/vacant/monitoring)
@@ -9732,6 +9846,10 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod8/station)
+"GO" = (
+/obj/structure/scrap/vehicle,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fourthdeck/aft)
 "GQ" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
@@ -10171,6 +10289,10 @@
 /obj/machinery/shield_diffuser,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
+"Ip" = (
+/obj/structure/salvageable/server,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fourthdeck/port)
 "Iq" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 6
@@ -10430,6 +10552,11 @@
 /obj/structure/scrap/medical/large,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/port)
+"Jt" = (
+/obj/structure/catwalk,
+/obj/structure/salvageable/implant_container_os,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/aft)
 "Jx" = (
 /obj/machinery/light{
 	dir = 8
@@ -10696,6 +10823,7 @@
 	pixel_y = 0
 	},
 /obj/structure/catwalk,
+/obj/structure/scrap/vehicle/large,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/port)
 "Kh" = (
@@ -11324,6 +11452,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled,
 /area/crew_quarters/commissary)
 "Ma" = (
@@ -11697,6 +11826,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
+/obj/structure/scrap/food/large,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "Na" = (
@@ -11713,6 +11843,23 @@
 /obj/item/weapon/book/manual/stasis,
 /turf/simulated/floor/wood,
 /area/crew_quarters/lounge)
+"Nc" = (
+/obj/structure/table/rack{
+	dir = 8
+	},
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel{
+	pixel_y = 2
+	},
+/obj/item/weapon/shovel,
+/obj/item/weapon/storage/belt/utility,
+/turf/simulated/floor/tiled/monotile,
+/area/storage/primary)
 "Nd" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/power/apc{
@@ -12828,6 +12975,7 @@
 	dir = 1;
 	icon_state = "warning"
 	},
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/storage/upper)
 "Qg" = (
@@ -13020,6 +13168,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/scrap/food/large,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "QK" = (
@@ -13168,6 +13317,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/scrap/food/large,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "Rm" = (
@@ -16318,6 +16468,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
+/obj/structure/salvageable/server,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "Zg" = (
@@ -29182,8 +29333,8 @@ le
 BT
 CU
 DP
-CV
-CV
+eg
+oX
 Gb
 GC
 Hp
@@ -29778,7 +29929,7 @@ Yx
 Nf
 oF
 Ry
-sy
+Nc
 Ye
 vy
 hE
@@ -29980,7 +30131,7 @@ Yx
 OG
 pV
 OU
-sy
+iQ
 ub
 vz
 hE
@@ -32624,7 +32775,7 @@ bp
 Vd
 Vd
 XB
-Or
+qI
 DT
 DT
 DT
@@ -38481,7 +38632,7 @@ tA
 pc
 pc
 Yf
-zx
+Ip
 Ni
 JL
 Kc
@@ -38885,7 +39036,7 @@ QK
 Sx
 Sx
 Yf
-zx
+Cw
 Ni
 xL
 Kd
@@ -40100,7 +40251,7 @@ GK
 JU
 By
 tg
-Ni
+yZ
 jX
 av
 aa
@@ -40302,7 +40453,7 @@ NT
 DU
 By
 tg
-Ni
+ew
 jX
 av
 aa
@@ -40503,7 +40654,7 @@ DU
 DU
 DU
 By
-tg
+yk
 Kf
 jX
 av
@@ -42120,7 +42271,7 @@ oM
 DX
 wc
 JS
-OB
+GO
 wp
 pp
 aa
@@ -42726,7 +42877,7 @@ OK
 OK
 TD
 Ur
-Vr
+es
 Vr
 Vr
 aa
@@ -42917,15 +43068,15 @@ Ak
 Bu
 CD
 DA
-DA
-DA
-DA
+nw
+dz
+jQ
 bA
 Hm
 Pm
 pD
 pT
-Vj
+Jt
 Vr
 Vr
 Vr
