@@ -1976,6 +1976,7 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "adM" = (
+/obj/structure/salvageable,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/forestarboard)
 "adN" = (
@@ -3954,6 +3955,7 @@
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
 	},
+/obj/structure/salvageable/console_broken_os,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
 "agU" = (
@@ -3972,6 +3974,7 @@
 	dir = 4;
 	icon_state = "warningcorner"
 	},
+/obj/structure/salvageable,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
 "agW" = (
@@ -13082,6 +13085,7 @@
 	pixel_y = -22
 	},
 /obj/structure/catwalk,
+/obj/structure/salvageable,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
 "aSu" = (
@@ -14639,6 +14643,10 @@
 	},
 /turf/simulated/wall/ocp_wall,
 /area/thruster/d1starboard)
+"bcv" = (
+/obj/structure/salvageable/console_broken_os,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/centralstarboard)
 "bdb" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/machinery/door/airlock/external,
@@ -15431,6 +15439,10 @@
 /obj/structure/bed/chair/shuttle,
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod17/station)
+"bVL" = (
+/obj/structure/salvageable/data_os,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/foreport)
 "bWb" = (
 /obj/machinery/status_display{
 	pixel_x = -32;
@@ -15596,6 +15608,7 @@
 /area/hallway/primary/firstdeck/aft)
 "chb" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/data_os,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftstarboard)
 "cib" = (
@@ -15869,6 +15882,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/medical)
+"cys" = (
+/obj/structure/salvageable/implant_container_os,
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/aftstarboard)
 "czb" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 5;
@@ -19547,6 +19564,10 @@
 /obj/item/weapon/storage/box/handcuffs,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
+"hUh" = (
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/foreport)
 "hUE" = (
 /obj/machinery/atmospherics/tvalve/digital{
 	dir = 4;
@@ -19649,6 +19670,10 @@
 /obj/structure/scrap/poor,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/forestarboard)
+"iaX" = (
+/obj/structure/salvageable,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/foreport)
 "ibb" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4;
@@ -19658,6 +19683,10 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
+"iea" = (
+/obj/structure/salvageable/computer_os,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/centralstarboard)
 "iej" = (
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /turf/simulated/floor/reinforced,
@@ -25163,6 +25192,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/wing)
+"oSj" = (
+/obj/structure/salvageable/server,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/foreport)
 "oSD" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 9
@@ -25302,6 +25335,12 @@
 "pbb" = (
 /turf/simulated/floor/tiled/dark,
 /area/rnd/misc_lab)
+"pbc" = (
+/obj/structure/salvageable/console_broken_os{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/centralport)
 "pcb" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -26860,6 +26899,10 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/misc_lab)
+"qRt" = (
+/obj/structure/salvageable/data,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/aftstarboard)
 "qRE" = (
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/structure/hygiene/sink{
@@ -27686,6 +27729,10 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/freezer,
 /area/rnd/xenobiology/xenoflora)
+"rJF" = (
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/centralport)
 "rKb" = (
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /obj/machinery/atmospherics/pipe/simple/visible,
@@ -29075,6 +29122,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology)
+"taw" = (
+/obj/structure/salvageable/data_os,
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/aftstarboard)
 "taR" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/door/firedoor,
@@ -29902,6 +29953,7 @@
 	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
+/obj/structure/salvageable/autolathe,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "ure" = (
@@ -30190,6 +30242,10 @@
 /obj/item/weapon/storage/fancy/crayons,
 /turf/simulated/floor/tiled/monotile,
 /area/security/brig)
+"uVJ" = (
+/obj/structure/salvageable/data_os,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/centralport)
 "uWa" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 6
@@ -31136,6 +31192,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/office)
+"xym" = (
+/obj/structure/salvageable/personal,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/foreport)
 "xzj" = (
 /obj/effect/floor_decal/techfloor,
 /obj/machinery/camera/network/command{
@@ -43085,7 +43145,7 @@ aGP
 aDW
 kny
 aRu
-jTV
+hUh
 tAS
 tAS
 tAS
@@ -46509,7 +46569,7 @@ ahL
 adq
 aee
 ahL
-jTV
+iaX
 aJK
 aKT
 aLP
@@ -46711,7 +46771,7 @@ ahL
 lte
 oGG
 ahL
-jTV
+xym
 aJL
 aIr
 aLQ
@@ -46913,7 +46973,7 @@ ahL
 ahL
 ahL
 ahL
-jTV
+oSj
 aJL
 aIr
 aLR
@@ -47312,7 +47372,7 @@ ayg
 ure
 kdd
 auN
-jTV
+bVL
 thO
 aFf
 aGq
@@ -48302,7 +48362,7 @@ abP
 abP
 abP
 xEq
-rhO
+iea
 ahY
 aji
 dlb
@@ -49713,7 +49773,7 @@ aaa
 abP
 abP
 abP
-rhO
+iea
 abe
 alN
 vzy
@@ -49915,7 +49975,7 @@ aaa
 abP
 abP
 abP
-rhO
+bcv
 cjb
 rhO
 vzy
@@ -50155,7 +50215,7 @@ aKY
 aPS
 wBV
 aRH
-cQo
+uVJ
 jjh
 jjh
 jjh
@@ -51165,7 +51225,7 @@ bSD
 mav
 aJS
 aRI
-cQo
+rJF
 jjh
 jjh
 jjh
@@ -51367,7 +51427,7 @@ tLL
 mav
 aCZ
 aRI
-cQo
+pbc
 jjh
 jjh
 jjh
@@ -53145,7 +53205,7 @@ aaN
 adA
 mpy
 mpy
-uXe
+qRt
 adw
 sde
 sde
@@ -58412,8 +58472,8 @@ mpy
 mpy
 mpy
 uXe
-sde
-sde
+taw
+cys
 abL
 aGN
 aGN

@@ -306,6 +306,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/salvageable/server_os,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "aG" = (
@@ -650,6 +651,7 @@
 	dir = 10;
 	icon_state = "intact"
 	},
+/obj/structure/salvageable/server,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "bp" = (
@@ -4539,6 +4541,7 @@
 /area/bridge)
 "jx" = (
 /obj/structure/railing/mapped,
+/obj/structure/salvageable/server,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "jy" = (
@@ -5584,6 +5587,10 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
+"mM" = (
+/obj/structure/salvageable/computer,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "mN" = (
 /obj/structure/cable/green{
 	d2 = 8;
@@ -7797,6 +7804,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/aquila/secure_storage)
+"sX" = (
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/aftstarboard)
 "sY" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/cyan,
 /obj/item/device/radio/intercom{
@@ -10014,6 +10025,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/aquila/medical)
+"yo" = (
+/obj/structure/salvageable/console_os,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "yw" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/structure/table/glass,
@@ -10985,6 +11000,10 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/cobed)
+"Cm" = (
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "Cn" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -12711,6 +12730,7 @@
 /area/maintenance/bridge/foreport)
 "JT" = (
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/salvageable/implant_container_os,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/forestarboard)
 "JV" = (
@@ -12880,6 +12900,7 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
+/obj/structure/salvageable/server,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "KN" = (
@@ -13713,6 +13734,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/cl)
+"OH" = (
+/obj/structure/salvageable/machine,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/foreport)
 "OK" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/aftport)
@@ -13743,6 +13768,7 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
+/obj/structure/salvageable,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "OX" = (
@@ -13912,6 +13938,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/aquila/medical)
+"PV" = (
+/obj/structure/salvageable/server_os,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "Qb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -14471,6 +14501,16 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
+"RM" = (
+/obj/structure/salvageable/console_broken_os{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
+"RP" = (
+/obj/structure/salvageable/computer_os,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "RQ" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -15158,6 +15198,10 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bridgecheck)
+"Uw" = (
+/obj/structure/salvageable/bliss,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "Uy" = (
 /obj/structure/table/glass,
 /obj/structure/cable/green{
@@ -16097,6 +16141,7 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/sgr)
 "YI" = (
+/obj/structure/salvageable/server,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/forestarboard)
 "YJ" = (
@@ -24762,7 +24807,7 @@ aa
 aa
 af
 af
-aj
+PV
 VB
 zq
 Nr
@@ -26176,7 +26221,7 @@ aa
 af
 af
 af
-aj
+Cm
 VB
 xN
 aO
@@ -26580,7 +26625,7 @@ aa
 af
 af
 af
-aj
+Uw
 VB
 xN
 aO
@@ -26782,7 +26827,7 @@ ad
 af
 af
 af
-aj
+mM
 VB
 YL
 aO
@@ -26984,9 +27029,9 @@ ad
 af
 af
 af
-aj
+RP
 VB
-aj
+RM
 aO
 FG
 YA
@@ -27186,7 +27231,7 @@ ad
 af
 af
 af
-aj
+yo
 VB
 Xr
 aO
@@ -27424,7 +27469,7 @@ AR
 wB
 fB
 xb
-oB
+OH
 xz
 xF
 tg
@@ -29208,7 +29253,7 @@ af
 af
 af
 af
-aj
+Cm
 bh
 dk
 br
@@ -31841,7 +31886,7 @@ bC
 cJ
 dt
 bC
-zW
+sX
 fh
 ds
 ds

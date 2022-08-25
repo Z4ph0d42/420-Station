@@ -307,7 +307,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 
 
 /obj/structure/scrap/attackby(obj/item/W, mob/living/carbon/human/user)
-	user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
+	if(do_after(user,30,src))
 	if(W.isshovel())
 		user.visible_message(SPAN_NOTICE("[user] [pick(ways)] \the [src]."))
 		user.do_attack_animation(src)
