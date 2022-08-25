@@ -2763,17 +2763,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/quartermaster/hangar)
-"fC" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/catwalk,
-/obj/structure/salvageable/implant_container,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/fore)
 "fD" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/blue{
 	dir = 1;
@@ -9910,6 +9899,10 @@
 	},
 /turf/simulated/wall/prepainted,
 /area/maintenance/fifthdeck/fore)
+"vb" = (
+/obj/structure/salvageable/personal,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/fore)
 "vc" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -10223,22 +10216,6 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/phoron)
-"wp" = (
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/catwalk,
-/obj/structure/salvageable/autolathe,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/fore)
 "wr" = (
 /obj/machinery/portable_atmospherics/canister/empty,
 /obj/effect/floor_decal/industrial/outline/red,
@@ -11739,6 +11716,11 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/isolation)
+"Bv" = (
+/obj/structure/railing/mapped,
+/obj/structure/scrap/large,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftport)
 "Bw" = (
 /obj/structure/scrap/vehicle/large,
 /turf/simulated/floor/plating,
@@ -12075,6 +12057,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/storage)
+"CQ" = (
+/obj/structure/salvageable,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftport)
 "CR" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4;
@@ -12223,6 +12209,13 @@
 /obj/effect/paint/silver,
 /turf/simulated/floor/reinforced,
 /area/shuttle/petrov/cell3)
+"Dj" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/salvageable/server_os,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftstarboard)
 "Dl" = (
 /obj/structure/table/steel,
 /obj/machinery/chemical_dispenser/bar_alc/full,
@@ -12699,11 +12692,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
-"ED" = (
-/obj/structure/railing/mapped,
-/obj/structure/scrap/large,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/aftport)
 "EE" = (
 /obj/machinery/atmospherics/pipe/manifold4w/visible,
 /obj/structure/cable/cyan{
@@ -12869,12 +12857,6 @@
 "Fk" = (
 /turf/simulated/wall/prepainted,
 /area/hallway/primary/fifthdeck/aft)
-"Fl" = (
-/obj/structure/disposalpipe/segment,
-/obj/structure/catwalk,
-/obj/structure/salvageable/data_os,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/fore)
 "Fn" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -12898,10 +12880,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/petrov/analysis)
-"Fp" = (
-/obj/structure/salvageable/autolathe,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/aftport)
 "Fs" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -13094,6 +13072,12 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/isolation)
+"Gt" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/catwalk,
+/obj/structure/salvageable/data_os,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/fore)
 "Gv" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -14472,6 +14456,10 @@
 /obj/machinery/papershredder,
 /turf/simulated/floor/lino,
 /area/shuttle/petrov/rd)
+"KS" = (
+/obj/structure/salvageable/server,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftport)
 "KU" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -14627,6 +14615,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftport)
+"Ln" = (
+/obj/structure/salvageable/autolathe,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "Lo" = (
@@ -14845,6 +14837,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
+"LY" = (
+/obj/structure/salvageable/computer_os,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fifthdeck/aftstarboard)
 "Ma" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/random/trash,
@@ -14940,10 +14936,6 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/shuttle/petrov/cell1)
-"Mq" = (
-/obj/structure/salvageable/autolathe,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/fifthdeck/fore)
 "Mr" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -15023,10 +15015,6 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/equipment)
-"MA" = (
-/obj/structure/salvageable/computer_os,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/fifthdeck/aftstarboard)
 "MB" = (
 /obj/machinery/door/blast/regular{
 	density = 0;
@@ -15738,6 +15726,10 @@
 /obj/structure/scrap/science,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
+"Pk" = (
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fifthdeck/fore)
 "Pm" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -16183,6 +16175,22 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/petrov/custodial)
+"QU" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/catwalk,
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/fore)
 "QV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
@@ -16791,13 +16799,6 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/phoron)
-"Tf" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/salvageable/server_os,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/aftstarboard)
 "Tg" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -17774,6 +17775,17 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/rnd)
+"WQ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/catwalk,
+/obj/structure/salvageable/implant_container,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/fore)
 "WR" = (
 /turf/simulated/floor/reinforced,
 /area/shuttle/petrov/cell2)
@@ -17785,10 +17797,6 @@
 "WU" = (
 /turf/simulated/wall/prepainted,
 /area/quartermaster/expedition)
-"WX" = (
-/obj/structure/salvageable/personal,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/fore)
 "Xa" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/effect/paint/silver,
@@ -18034,10 +18042,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/petrov/maint)
-"XL" = (
-/obj/structure/salvageable,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/aftport)
 "XQ" = (
 /obj/machinery/atmospherics/portables_connector,
 /turf/simulated/floor/tiled/white,
@@ -18082,10 +18086,6 @@
 "XW" = (
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/equipment)
-"XZ" = (
-/obj/structure/salvageable/server,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/aftport)
 "Yb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white,
@@ -30305,7 +30305,7 @@ pN
 sN
 er
 gS
-WX
+vb
 an
 an
 an
@@ -31539,7 +31539,7 @@ ph
 ph
 ph
 rg
-fC
+WQ
 an
 an
 aa
@@ -31944,7 +31944,7 @@ rc
 rb
 rg
 rI
-Mq
+Pk
 an
 an
 aa
@@ -32316,11 +32316,11 @@ aa
 aa
 an
 an
-wp
+QU
 cd
 VA
 Zj
-Fl
+Gt
 VA
 VA
 VA
@@ -37768,7 +37768,7 @@ aa
 ZG
 ZG
 Tm
-Tf
+Dj
 aW
 hi
 Hh
@@ -38208,7 +38208,7 @@ aJ
 Yo
 nL
 gI
-XZ
+KS
 LX
 ws
 ws
@@ -39587,7 +39587,7 @@ ZG
 ZG
 zJ
 Um
-MA
+LY
 Ut
 Ut
 ag
@@ -42245,7 +42245,7 @@ ws
 ws
 ok
 pD
-ED
+Bv
 we
 uH
 ws
@@ -42647,7 +42647,7 @@ aa
 aa
 ws
 ws
-XL
+CQ
 Tv
 VC
 xv
@@ -42849,7 +42849,7 @@ aa
 aa
 ws
 ws
-Fp
+Ln
 vI
 VC
 wj

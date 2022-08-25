@@ -3847,10 +3847,6 @@
 	},
 /turf/simulated/floor/airless,
 /area/aquila/cockpit)
-"he" = (
-/obj/structure/salvageable/console_os,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "hi" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/table/rack{
@@ -5085,6 +5081,10 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bridgecheck)
+"ll" = (
+/obj/structure/salvageable/computer_os,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "lm" = (
 /obj/machinery/hologram/holopad/longrange,
 /obj/effect/landmark{
@@ -5892,6 +5892,10 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/space)
+"nt" = (
+/obj/structure/salvageable/computer,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "nE" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1;
@@ -8143,10 +8147,6 @@
 /obj/item/weapon/storage/firstaid/surgery,
 /turf/simulated/floor/tiled/white/monotile,
 /area/aquila/medical)
-"tQ" = (
-/obj/structure/salvageable/autolathe,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/bridge/aftstarboard)
 "tR" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/wood/walnut,
@@ -10251,6 +10251,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
+"zA" = (
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/aftstarboard)
 "zC" = (
 /obj/structure/table/rack,
 /obj/item/weapon/storage/box/PDAs{
@@ -11288,6 +11292,10 @@
 /obj/effect/wallframe_spawn/reinforced/hull,
 /turf/simulated/floor/plating,
 /area/bridge/storage)
+"DG" = (
+/obj/structure/salvageable/console_os,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "DH" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 9
@@ -11478,10 +11486,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/airlock)
-"EF" = (
-/obj/structure/salvageable/computer_os,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "EJ" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1;
@@ -11509,10 +11513,6 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
-"ES" = (
-/obj/structure/salvageable/autolathe,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "EV" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 10
@@ -12822,6 +12822,10 @@
 /obj/item/weapon/aiModule/freeform,
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/cobed)
+"Kr" = (
+/obj/structure/salvageable/machine,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/foreport)
 "Ks" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -13082,10 +13086,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
-"Lt" = (
-/obj/structure/salvageable/server_os,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "Lv" = (
 /obj/structure/table/glass,
 /obj/item/weapon/book/manual/nt_regs,
@@ -13326,6 +13326,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
+"Na" = (
+/obj/structure/salvageable/server_os,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "Nb" = (
 /obj/structure/bed/chair/comfy/captain{
 	color = "#666666";
@@ -13443,6 +13447,10 @@
 /obj/effect/floor_decal/industrial/shutoff,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
+"Nl" = (
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "Nn" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -13451,10 +13459,6 @@
 /obj/item/weapon/reagent_containers/food/condiment/small/packet/coffee,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/sea)
-"No" = (
-/obj/structure/salvageable/machine,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/bridge/foreport)
 "Np" = (
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
@@ -13722,6 +13726,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
+"OB" = (
+/obj/structure/salvageable/console_broken_os{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "OD" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 9
@@ -14742,6 +14752,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/aft)
+"SP" = (
+/obj/structure/salvageable/bliss,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "SQ" = (
 /obj/machinery/atmospherics/unary/engine{
 	dir = 1
@@ -15183,10 +15197,6 @@
 /obj/structure/bed/chair/padded/green,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
-"Ur" = (
-/obj/structure/salvageable/computer,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "Uu" = (
 /obj/machinery/hologram/holopad,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -15926,12 +15936,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge)
-"XU" = (
-/obj/structure/salvageable/console_broken_os{
-	dir = 1
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "XV" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4;
@@ -16072,10 +16076,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
-"Yl" = (
-/obj/structure/salvageable/bliss,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "Ys" = (
 /obj/random_multi/single_item/poppy,
 /turf/simulated/floor/plating,
@@ -24807,7 +24807,7 @@ aa
 aa
 af
 af
-Lt
+Na
 VB
 zq
 Nr
@@ -26221,7 +26221,7 @@ aa
 af
 af
 af
-ES
+Nl
 VB
 xN
 aO
@@ -26625,7 +26625,7 @@ aa
 af
 af
 af
-Yl
+SP
 VB
 xN
 aO
@@ -26827,7 +26827,7 @@ ad
 af
 af
 af
-Ur
+nt
 VB
 YL
 aO
@@ -27029,9 +27029,9 @@ ad
 af
 af
 af
-EF
+ll
 VB
-XU
+OB
 aO
 FG
 YA
@@ -27231,7 +27231,7 @@ ad
 af
 af
 af
-he
+DG
 VB
 Xr
 aO
@@ -27469,7 +27469,7 @@ AR
 wB
 fB
 xb
-No
+Kr
 xz
 xF
 tg
@@ -29253,7 +29253,7 @@ af
 af
 af
 af
-ES
+Nl
 bh
 dk
 br
@@ -31886,7 +31886,7 @@ bC
 cJ
 dt
 bC
-tQ
+zA
 fh
 ds
 ds
