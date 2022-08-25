@@ -306,6 +306,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/salvageable/server_os,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "aG" = (
@@ -650,6 +651,7 @@
 	dir = 10;
 	icon_state = "intact"
 	},
+/obj/structure/salvageable/server,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "bp" = (
@@ -3845,6 +3847,10 @@
 	},
 /turf/simulated/floor/airless,
 /area/aquila/cockpit)
+"he" = (
+/obj/structure/salvageable/console_os,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "hi" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/table/rack{
@@ -4539,6 +4545,7 @@
 /area/bridge)
 "jx" = (
 /obj/structure/railing/mapped,
+/obj/structure/salvageable/server,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "jy" = (
@@ -8136,6 +8143,10 @@
 /obj/item/weapon/storage/firstaid/surgery,
 /turf/simulated/floor/tiled/white/monotile,
 /area/aquila/medical)
+"tQ" = (
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/aftstarboard)
 "tR" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/wood/walnut,
@@ -11467,6 +11478,10 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/airlock)
+"EF" = (
+/obj/structure/salvageable/computer_os,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "EJ" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1;
@@ -11494,6 +11509,10 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
+"ES" = (
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "EV" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 10
@@ -12711,6 +12730,7 @@
 /area/maintenance/bridge/foreport)
 "JT" = (
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/salvageable/implant_container_os,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/forestarboard)
 "JV" = (
@@ -12880,6 +12900,7 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
+/obj/structure/salvageable/server,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "KN" = (
@@ -13061,6 +13082,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
+"Lt" = (
+/obj/structure/salvageable/server_os,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "Lv" = (
 /obj/structure/table/glass,
 /obj/item/weapon/book/manual/nt_regs,
@@ -13426,6 +13451,10 @@
 /obj/item/weapon/reagent_containers/food/condiment/small/packet/coffee,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/sea)
+"No" = (
+/obj/structure/salvageable/machine,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/foreport)
 "Np" = (
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
@@ -13743,6 +13772,7 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
+/obj/structure/salvageable,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "OX" = (
@@ -15153,6 +15183,10 @@
 /obj/structure/bed/chair/padded/green,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
+"Ur" = (
+/obj/structure/salvageable/computer,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "Uu" = (
 /obj/machinery/hologram/holopad,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -15892,6 +15926,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge)
+"XU" = (
+/obj/structure/salvageable/console_broken_os{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "XV" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4;
@@ -16032,6 +16072,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
+"Yl" = (
+/obj/structure/salvageable/bliss,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "Ys" = (
 /obj/random_multi/single_item/poppy,
 /turf/simulated/floor/plating,
@@ -16097,6 +16141,7 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/sgr)
 "YI" = (
+/obj/structure/salvageable/server,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/forestarboard)
 "YJ" = (
@@ -24762,7 +24807,7 @@ aa
 aa
 af
 af
-aj
+Lt
 VB
 zq
 Nr
@@ -26176,7 +26221,7 @@ aa
 af
 af
 af
-aj
+ES
 VB
 xN
 aO
@@ -26580,7 +26625,7 @@ aa
 af
 af
 af
-aj
+Yl
 VB
 xN
 aO
@@ -26782,7 +26827,7 @@ ad
 af
 af
 af
-aj
+Ur
 VB
 YL
 aO
@@ -26984,9 +27029,9 @@ ad
 af
 af
 af
-aj
+EF
 VB
-aj
+XU
 aO
 FG
 YA
@@ -27186,7 +27231,7 @@ ad
 af
 af
 af
-aj
+he
 VB
 Xr
 aO
@@ -27424,7 +27469,7 @@ AR
 wB
 fB
 xb
-oB
+No
 xz
 xF
 tg
@@ -29208,7 +29253,7 @@ af
 af
 af
 af
-aj
+ES
 bh
 dk
 br
@@ -31841,7 +31886,7 @@ bC
 cJ
 dt
 bC
-zW
+tQ
 fh
 ds
 ds

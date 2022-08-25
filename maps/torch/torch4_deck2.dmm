@@ -3409,6 +3409,7 @@
 	dir = 5
 	},
 /obj/structure/catwalk,
+/obj/structure/salvageable/implant_container_os,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "gw" = (
@@ -3926,6 +3927,10 @@
 /obj/random/obstruction,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
+"hN" = (
+/obj/structure/salvageable/server,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "hO" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -4379,6 +4384,15 @@
 /obj/item/weapon/aiModule/reset,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/synth/borg_upload)
+"iU" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/scrap/poor/large,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/forestarboard)
 "iW" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -5480,6 +5494,10 @@
 	},
 /turf/simulated/floor/bluegrid,
 /area/synth/borg_upload)
+"lv" = (
+/obj/structure/salvageable/implant_container_os,
+/turf/simulated/floor/airless,
+/area/engineering/engine_room)
 "lx" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -5731,6 +5749,7 @@
 /area/vacant/prototype/engine)
 "mc" = (
 /obj/effect/floor_decal/industrial/warning/corner,
+/obj/structure/salvageable,
 /turf/simulated/floor/plating,
 /area/vacant/prototype/engine)
 "md" = (
@@ -6973,6 +6992,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/engineering/foyer)
+"px" = (
+/obj/structure/salvageable/implant_container_os,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "py" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -9336,6 +9359,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/engineering/engineering_bay)
+"vd" = (
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/foreport)
 "ve" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -9680,6 +9707,10 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/engineering/atmos)
+"vW" = (
+/obj/structure/salvageable/personal,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/foreport)
 "vX" = (
 /obj/machinery/atmospherics/binary/pump{
 	dir = 4
@@ -11057,6 +11088,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/engineering/storage)
+"Ae" = (
+/obj/structure/salvageable/console_broken_os{
+	dir = 8
+	},
+/turf/simulated/floor/airless,
+/area/engineering/engine_room)
 "Af" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/floor_decal/industrial/warning{
@@ -11403,6 +11440,10 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos)
+"AZ" = (
+/obj/structure/salvageable/implant_container,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "Bb" = (
 /obj/structure/closet/crate/med_crate/trauma,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -13568,6 +13609,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
+"Gr" = (
+/obj/structure/salvageable/console_broken_os,
+/turf/simulated/floor/airless,
+/area/engineering/engine_room)
 "Gs" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -14293,6 +14338,10 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/engineering/engine_monitoring)
+"IC" = (
+/obj/structure/salvageable/server_os,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "IE" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/seconddeck/aftstarboard)
@@ -15770,6 +15819,10 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/foreport)
+"NL" = (
+/obj/structure/salvageable/computer,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "NN" = (
 /obj/structure/closet/crate/med_crate/toxin,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -16091,6 +16144,10 @@
 /obj/effect/floor_decal/corner/yellow/half,
 /turf/simulated/floor/tiled,
 /area/engineering/foyer)
+"Oz" = (
+/obj/structure/salvageable/machine,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "OB" = (
 /obj/structure/sign/warning/vent_port,
 /turf/simulated/wall/r_wall/hull,
@@ -19211,6 +19268,10 @@
 "YQ" = (
 /turf/simulated/wall/prepainted,
 /area/engineering/wastetank)
+"YS" = (
+/obj/structure/salvageable/data_os,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/forestarboard)
 "YU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -31564,7 +31625,7 @@ JX
 iR
 gM
 Rx
-bd
+YS
 bI
 tj
 xR
@@ -33203,8 +33264,8 @@ go
 zD
 Aw
 yg
-pi
-pi
+vd
+vW
 Wp
 Wp
 Wp
@@ -35593,9 +35654,9 @@ af
 JX
 JX
 JX
-bd
+YS
 xr
-EY
+iU
 EY
 Fa
 dS
@@ -36408,7 +36469,7 @@ cQ
 bf
 dW
 eG
-bK
+hN
 XP
 bZ
 cx
@@ -36610,7 +36671,7 @@ dY
 bf
 dW
 hE
-bK
+Oz
 XP
 cr
 cz
@@ -36812,7 +36873,7 @@ cR
 bf
 xJ
 eG
-bK
+IC
 XP
 XP
 cA
@@ -37014,7 +37075,7 @@ dY
 dY
 dW
 eG
-bK
+AZ
 bw
 XP
 su
@@ -37211,12 +37272,12 @@ ag
 ag
 aC
 aC
-bK
+NL
 IN
 dw
 dW
 eG
-bK
+px
 bw
 XP
 uB
@@ -37616,7 +37677,7 @@ aa
 aa
 aa
 aC
-bK
+px
 bf
 dZ
 eI
@@ -46101,7 +46162,7 @@ ag
 aa
 aa
 TK
-ox
+Gr
 ox
 gz
 PY
@@ -48327,7 +48388,7 @@ aa
 aa
 aa
 TK
-ox
+Ae
 fT
 il
 jj
@@ -48349,7 +48410,7 @@ jj
 il
 jj
 fT
-ox
+lv
 IR
 aa
 aa
