@@ -3147,6 +3147,15 @@
 	},
 /turf/simulated/floor/tiled,
 /area/engineering/engineering_bay)
+"fX" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/scrap/poor/large,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/forestarboard)
 "fY" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/plating,
@@ -4004,10 +4013,6 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/engineering_bay)
-"hZ" = (
-/obj/structure/salvageable/server,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/central)
 "ia" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -5586,10 +5591,6 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/foreport)
-"lH" = (
-/obj/structure/salvageable/implant_container_os,
-/turf/simulated/floor/airless,
-/area/engineering/engine_room)
 "lJ" = (
 /obj/item/weapon/stool/padded,
 /obj/effect/floor_decal/industrial/warning,
@@ -5855,10 +5856,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
-"ms" = (
-/obj/structure/salvageable/implant_container,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/central)
 "mt" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/floor_decal/techfloor{
@@ -6200,6 +6197,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics)
+"ni" = (
+/obj/structure/salvageable/personal,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/foreport)
 "nk" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8;
@@ -7009,6 +7010,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/engineering/foyer)
+"pz" = (
+/obj/structure/salvageable/data_os,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/forestarboard)
 "pA" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -7453,6 +7458,10 @@
 /obj/structure/cable,
 /turf/simulated/floor/plating,
 /area/engineering/shieldbay)
+"qz" = (
+/obj/structure/salvageable/implant_container_os,
+/turf/simulated/floor/airless,
+/area/engineering/engine_room)
 "qA" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
@@ -8393,10 +8402,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/substation/seconddeck)
-"sB" = (
-/obj/structure/salvageable/implant_container_os,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/central)
 "sC" = (
 /obj/machinery/computer/drone_control,
 /obj/structure/sign/warning/secure_area{
@@ -9044,6 +9049,12 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/foyer)
+"uj" = (
+/obj/structure/salvageable/console_broken_os{
+	dir = 8
+	},
+/turf/simulated/floor/airless,
+/area/engineering/engine_room)
 "un" = (
 /obj/effect/floor_decal/corner/yellow{
 	dir = 9
@@ -9334,6 +9345,10 @@
 	},
 /turf/simulated/floor/bluegrid,
 /area/engineering/bluespace)
+"uX" = (
+/obj/structure/salvageable/machine,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "uY" = (
 /obj/effect/floor_decal/corner/yellow/half,
 /obj/effect/floor_decal/industrial/warning,
@@ -10028,10 +10043,6 @@
 "wU" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/seconddeck/aftport)
-"wV" = (
-/obj/structure/salvageable/data_os,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/forestarboard)
 "wW" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/green{
 	dir = 8;
@@ -11018,6 +11029,10 @@
 	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftstarboard)
+"zQ" = (
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/foreport)
 "zR" = (
 /obj/structure/scrap/poor/large,
 /turf/simulated/floor/tiled/techfloor,
@@ -12304,15 +12319,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/wastetank)
-"Dk" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/scrap/poor/large,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/forestarboard)
 "Dm" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/ladder/up,
@@ -13614,10 +13620,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/hallway/primary/seconddeck/fore)
-"Gt" = (
-/obj/structure/salvageable/personal,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/foreport)
 "Gw" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -14328,6 +14330,10 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/engineering/engine_monitoring)
+"IC" = (
+/obj/structure/salvageable/console_broken_os,
+/turf/simulated/floor/airless,
+/area/engineering/engine_room)
 "IE" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/seconddeck/aftstarboard)
@@ -14703,10 +14709,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/disposal)
-"JP" = (
-/obj/structure/salvageable/console_broken_os,
-/turf/simulated/floor/airless,
-/area/engineering/engine_room)
 "JQ" = (
 /obj/structure/table/steel,
 /obj/machinery/recharger{
@@ -15190,6 +15192,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics)
+"LG" = (
+/obj/structure/salvageable/server_os,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "LJ" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -15561,6 +15567,10 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/vacant/prototype/engine)
+"Nc" = (
+/obj/structure/salvageable/computer,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "Nd" = (
 /obj/machinery/power/terminal{
 	dir = 1;
@@ -17165,12 +17175,6 @@
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
-"RA" = (
-/obj/structure/salvageable/console_broken_os{
-	dir = 8
-	},
-/turf/simulated/floor/airless,
-/area/engineering/engine_room)
 "RB" = (
 /obj/random/trash,
 /turf/simulated/wall/r_wall/prepainted,
@@ -17468,6 +17472,10 @@
 "Ss" = (
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/seconddeck/elevator)
+"St" = (
+/obj/structure/salvageable/server,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "Sv" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -17749,10 +17757,6 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/seconddeck)
-"Tt" = (
-/obj/structure/salvageable/autolathe,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/foreport)
 "Tu" = (
 /obj/machinery/space_heater,
 /obj/machinery/alarm{
@@ -17859,10 +17863,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
-"TT" = (
-/obj/structure/salvageable/server_os,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/central)
 "TV" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -18296,8 +18296,8 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/fore)
-"VO" = (
-/obj/structure/salvageable/computer,
+"VN" = (
+/obj/structure/salvageable/implant_container_os,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "VP" = (
@@ -19528,10 +19528,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/foreport)
-"ZE" = (
-/obj/structure/salvageable/machine,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/central)
 "ZF" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -19577,6 +19573,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
+"ZM" = (
+/obj/structure/salvageable/implant_container,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "ZQ" = (
 /obj/random/trash,
 /turf/simulated/floor/tiled/steel_grid,
@@ -31625,7 +31625,7 @@ JX
 iR
 gM
 Rx
-wV
+pz
 bI
 tj
 xR
@@ -33264,8 +33264,8 @@ go
 zD
 Aw
 yg
-Tt
-Gt
+zQ
+ni
 Wp
 Wp
 Wp
@@ -35654,9 +35654,9 @@ af
 JX
 JX
 JX
-wV
+pz
 xr
-Dk
+fX
 EY
 Fa
 dS
@@ -36469,7 +36469,7 @@ cQ
 bf
 dW
 eG
-hZ
+St
 XP
 bZ
 cx
@@ -36671,7 +36671,7 @@ dY
 bf
 dW
 hE
-ZE
+uX
 XP
 cr
 cz
@@ -36873,7 +36873,7 @@ cR
 bf
 xJ
 eG
-TT
+LG
 XP
 XP
 cA
@@ -37075,7 +37075,7 @@ dY
 dY
 dW
 eG
-ms
+ZM
 bw
 XP
 su
@@ -37272,12 +37272,12 @@ ag
 ag
 aC
 aC
-VO
+Nc
 IN
 dw
 dW
 eG
-sB
+VN
 bw
 XP
 uB
@@ -37677,7 +37677,7 @@ aa
 aa
 aa
 aC
-sB
+VN
 bf
 dZ
 eI
@@ -46162,7 +46162,7 @@ ag
 aa
 aa
 TK
-JP
+IC
 ox
 gz
 PY
@@ -48388,7 +48388,7 @@ aa
 aa
 aa
 TK
-RA
+uj
 fT
 il
 jj
@@ -48410,7 +48410,7 @@ jj
 il
 jj
 fT
-lH
+qz
 IR
 aa
 aa

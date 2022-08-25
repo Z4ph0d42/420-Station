@@ -14643,6 +14643,10 @@
 	},
 /turf/simulated/wall/ocp_wall,
 /area/thruster/d1starboard)
+"bcv" = (
+/obj/structure/salvageable/console_broken_os,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/centralstarboard)
 "bdb" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/machinery/door/airlock/external,
@@ -15435,6 +15439,10 @@
 /obj/structure/bed/chair/shuttle,
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod17/station)
+"bVL" = (
+/obj/structure/salvageable/data_os,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/foreport)
 "bWb" = (
 /obj/machinery/status_display{
 	pixel_x = -32;
@@ -15874,6 +15882,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/medical)
+"cys" = (
+/obj/structure/salvageable/implant_container_os,
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/aftstarboard)
 "czb" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 5;
@@ -16765,10 +16777,6 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/turbolift/robotics_lift)
-"dGX" = (
-/obj/structure/salvageable/server,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/foreport)
 "dIb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -16844,10 +16852,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue/autopsy)
-"dKr" = (
-/obj/structure/salvageable/computer_os,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/centralstarboard)
 "dMb" = (
 /obj/item/weapon/storage/box/syringes{
 	pixel_x = 4;
@@ -17137,10 +17141,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
-"eaJ" = (
-/obj/structure/salvageable/data_os,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/foreport)
 "eaS" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/self_destruct,
@@ -17733,10 +17733,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/foyer)
-"eYW" = (
-/obj/structure/salvageable/console_broken_os,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/centralstarboard)
 "eZQ" = (
 /obj/machinery/lapvend{
 	dir = 4;
@@ -18419,10 +18415,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/security/processing)
-"guI" = (
-/obj/structure/salvageable/implant_container_os,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/aftstarboard)
 "guP" = (
 /obj/structure/table/rack,
 /obj/item/weapon/storage/firstaid/regular{
@@ -19572,6 +19564,10 @@
 /obj/item/weapon/storage/box/handcuffs,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
+"hUh" = (
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/foreport)
 "hUE" = (
 /obj/machinery/atmospherics/tvalve/digital{
 	dir = 4;
@@ -19674,6 +19670,10 @@
 /obj/structure/scrap/poor,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/forestarboard)
+"iaX" = (
+/obj/structure/salvageable,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/foreport)
 "ibb" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4;
@@ -19683,6 +19683,10 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
+"iea" = (
+/obj/structure/salvageable/computer_os,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/centralstarboard)
 "iej" = (
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /turf/simulated/floor/reinforced,
@@ -20873,10 +20877,6 @@
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
-"jyo" = (
-/obj/structure/salvageable/data,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/aftstarboard)
 "jzb" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -21718,10 +21718,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/firstdeck)
-"kBl" = (
-/obj/structure/salvageable/autolathe,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/centralport)
 "kCb" = (
 /turf/simulated/wall/prepainted,
 /area/medical/surgery)
@@ -21877,10 +21873,6 @@
 /obj/structure/scrap/medical/large,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
-"kNZ" = (
-/obj/structure/salvageable/personal,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/foreport)
 "kOb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -22780,10 +22772,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
-"lWg" = (
-/obj/structure/salvageable,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/foreport)
 "lWh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -25204,6 +25192,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/wing)
+"oSj" = (
+/obj/structure/salvageable/server,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/foreport)
 "oSD" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 9
@@ -25343,6 +25335,12 @@
 "pbb" = (
 /turf/simulated/floor/tiled/dark,
 /area/rnd/misc_lab)
+"pbc" = (
+/obj/structure/salvageable/console_broken_os{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/centralport)
 "pcb" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -26451,10 +26449,6 @@
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/tiled/freezer,
 /area/medical/washroom)
-"qvo" = (
-/obj/structure/salvageable/data_os,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/centralport)
 "qvX" = (
 /obj/structure/table/rack,
 /obj/random/maintenance/solgov,
@@ -26905,6 +26899,10 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/misc_lab)
+"qRt" = (
+/obj/structure/salvageable/data,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/aftstarboard)
 "qRE" = (
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/structure/hygiene/sink{
@@ -27731,6 +27729,10 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/freezer,
 /area/rnd/xenobiology/xenoflora)
+"rJF" = (
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/centralport)
 "rKb" = (
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /obj/machinery/atmospherics/pipe/simple/visible,
@@ -29120,6 +29122,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology)
+"taw" = (
+/obj/structure/salvageable/data_os,
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/aftstarboard)
 "taR" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/door/firedoor,
@@ -29563,12 +29569,6 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/firstdeck)
-"tzX" = (
-/obj/structure/salvageable/console_broken_os{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/centralport)
 "tAS" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/firstdeck/foreport)
@@ -30242,6 +30242,10 @@
 /obj/item/weapon/storage/fancy/crayons,
 /turf/simulated/floor/tiled/monotile,
 /area/security/brig)
+"uVJ" = (
+/obj/structure/salvageable/data_os,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/centralport)
 "uWa" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 6
@@ -30434,10 +30438,6 @@
 /obj/machinery/status_display,
 /turf/simulated/wall/prepainted,
 /area/security/brig)
-"vrz" = (
-/obj/structure/salvageable/autolathe,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/foreport)
 "vrM" = (
 /obj/structure/sign/warning/secure_area{
 	dir = 4;
@@ -31192,6 +31192,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/office)
+"xym" = (
+/obj/structure/salvageable/personal,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/foreport)
 "xzj" = (
 /obj/effect/floor_decal/techfloor,
 /obj/machinery/camera/network/command{
@@ -31424,10 +31428,6 @@
 /obj/effect/floor_decal/corner/research/mono,
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/office)
-"xWW" = (
-/obj/structure/salvageable/data_os,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/aftstarboard)
 "xYM" = (
 /turf/simulated/wall/prepainted,
 /area/medical/physicianoffice)
@@ -43145,7 +43145,7 @@ aGP
 aDW
 kny
 aRu
-vrz
+hUh
 tAS
 tAS
 tAS
@@ -46569,7 +46569,7 @@ ahL
 adq
 aee
 ahL
-lWg
+iaX
 aJK
 aKT
 aLP
@@ -46771,7 +46771,7 @@ ahL
 lte
 oGG
 ahL
-kNZ
+xym
 aJL
 aIr
 aLQ
@@ -46973,7 +46973,7 @@ ahL
 ahL
 ahL
 ahL
-dGX
+oSj
 aJL
 aIr
 aLR
@@ -47372,7 +47372,7 @@ ayg
 ure
 kdd
 auN
-eaJ
+bVL
 thO
 aFf
 aGq
@@ -48362,7 +48362,7 @@ abP
 abP
 abP
 xEq
-dKr
+iea
 ahY
 aji
 dlb
@@ -49773,7 +49773,7 @@ aaa
 abP
 abP
 abP
-dKr
+iea
 abe
 alN
 vzy
@@ -49975,7 +49975,7 @@ aaa
 abP
 abP
 abP
-eYW
+bcv
 cjb
 rhO
 vzy
@@ -50215,7 +50215,7 @@ aKY
 aPS
 wBV
 aRH
-qvo
+uVJ
 jjh
 jjh
 jjh
@@ -51225,7 +51225,7 @@ bSD
 mav
 aJS
 aRI
-kBl
+rJF
 jjh
 jjh
 jjh
@@ -51427,7 +51427,7 @@ tLL
 mav
 aCZ
 aRI
-tzX
+pbc
 jjh
 jjh
 jjh
@@ -53205,7 +53205,7 @@ aaN
 adA
 mpy
 mpy
-jyo
+qRt
 adw
 sde
 sde
@@ -58472,8 +58472,8 @@ mpy
 mpy
 mpy
 uXe
-xWW
-guI
+taw
+cys
 abL
 aGN
 aGN

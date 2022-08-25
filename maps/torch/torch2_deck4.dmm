@@ -229,14 +229,6 @@
 "aY" = (
 /turf/simulated/floor/shuttle_ceiling/torch/air,
 /area/quartermaster/hangar/top)
-"aZ" = (
-/obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
-	},
-/obj/structure/salvageable/data_os,
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/foreport)
 "bc" = (
 /obj/structure/janitorialcart,
 /obj/item/weapon/mop,
@@ -664,6 +656,10 @@
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/aft)
+"cp" = (
+/obj/structure/salvageable/implant_container,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/forestarboard)
 "cq" = (
 /obj/structure/hygiene/sink/kitchen{
 	pixel_x = 0;
@@ -1008,23 +1004,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/aft)
-"dr" = (
-/obj/structure/table/rack{
-	dir = 8
-	},
-/obj/random/tech_supply,
-/obj/random/tech_supply,
-/obj/random/tech_supply,
-/obj/random/tech_supply,
-/obj/random/tech_supply,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/weapon/shovel,
-/obj/item/weapon/shovel{
-	pixel_x = 2;
-	pixel_y = -2
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/storage/primary)
 "ds" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/structure/cable{
@@ -2672,10 +2651,6 @@
 /obj/structure/closet/crate/internals,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/aft)
-"iE" = (
-/obj/structure/salvageable/machine,
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/forestarboard)
 "iM" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -2713,6 +2688,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/port)
+"iR" = (
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/foreport)
 "iS" = (
 /turf/simulated/wall/walnut,
 /area/crew_quarters/lounge)
@@ -4184,6 +4163,23 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/fourthdeck/fore)
+"oq" = (
+/obj/structure/table/rack{
+	dir = 8
+	},
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
+/obj/item/weapon/shovel{
+	pixel_x = 2;
+	pixel_y = -2
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/storage/primary)
 "os" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -5169,10 +5165,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
-"sa" = (
-/obj/structure/salvageable/implant_container,
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/forestarboard)
 "sd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/effect/catwalk_plated/dark,
@@ -6272,6 +6264,22 @@
 	},
 /turf/simulated/floor/crystal,
 /area/crew_quarters/adherent)
+"us" = (
+/obj/structure/table/rack{
+	dir = 8
+	},
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel{
+	pixel_x = 3
+	},
+/obj/item/weapon/shovel,
+/turf/simulated/floor/tiled/monotile,
+/area/storage/primary)
 "ut" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 10;
@@ -6311,6 +6319,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/lounge)
+"ux" = (
+/obj/structure/salvageable/machine,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/forestarboard)
 "uy" = (
 /obj/effect/floor_decal/spline/fancy/wood,
 /obj/effect/floor_decal/spline/fancy/wood/corner{
@@ -8254,22 +8266,6 @@
 /obj/effect/shuttle_landmark/lift/cargo_top,
 /turf/simulated/floor/tiled/steel_grid,
 /area/turbolift/cargo_lift)
-"Bk" = (
-/obj/structure/table/rack{
-	dir = 8
-	},
-/obj/random/tech_supply,
-/obj/random/tech_supply,
-/obj/random/tech_supply,
-/obj/random/tech_supply,
-/obj/random/tech_supply,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/weapon/shovel{
-	pixel_x = 3
-	},
-/obj/item/weapon/shovel,
-/turf/simulated/floor/tiled/monotile,
-/area/storage/primary)
 "Bm" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -9479,10 +9475,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/storage/upper)
-"FR" = (
-/obj/structure/scrap/medical,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/fourthdeck/forestarboard)
 "FS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -9794,6 +9786,14 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod8/station)
+"GM" = (
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
+	},
+/obj/structure/salvageable/data_os,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/foreport)
 "GQ" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
@@ -14661,6 +14661,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
+"UF" = (
+/obj/structure/salvageable/implant_container_os,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fourthdeck/forestarboard)
 "UH" = (
 /obj/machinery/door/airlock/hatch/maintenance,
 /obj/machinery/door/firedoor,
@@ -15066,6 +15070,10 @@
 /obj/machinery/portable_atmospherics/canister/carbon_dioxide,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/eva)
+"VH" = (
+/obj/structure/scrap/medical,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fourthdeck/forestarboard)
 "VI" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -16005,10 +16013,6 @@
 "Yf" = (
 /turf/simulated/wall/prepainted,
 /area/quartermaster/storage/upper)
-"Yi" = (
-/obj/structure/salvageable/implant_container_os,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/fourthdeck/forestarboard)
 "Yj" = (
 /obj/machinery/door/firedoor,
 /obj/effect/wallframe_spawn/reinforced/hull,
@@ -29863,7 +29867,7 @@ Yx
 Nf
 oF
 Ry
-Bk
+us
 Ye
 vy
 hE
@@ -30065,7 +30069,7 @@ Yx
 OG
 pV
 OU
-dr
+oq
 ub
 vz
 hE
@@ -31066,7 +31070,7 @@ YW
 KF
 TS
 Qr
-Yi
+UF
 am
 kl
 kl
@@ -31268,7 +31272,7 @@ kQ
 KF
 TS
 Kt
-FR
+VH
 am
 kl
 kl
@@ -31491,7 +31495,7 @@ Db
 QV
 Dc
 PH
-DQ
+iR
 Sp
 DT
 DT
@@ -32709,7 +32713,7 @@ bp
 Vd
 Vd
 XB
-aZ
+GM
 DT
 DT
 DT
@@ -35702,7 +35706,7 @@ aa
 aa
 ak
 ak
-sa
+cp
 bw
 bZ
 dU
@@ -35904,7 +35908,7 @@ aa
 aa
 ak
 ak
-iE
+ux
 bw
 bZ
 dU
