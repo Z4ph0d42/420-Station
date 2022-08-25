@@ -4155,9 +4155,6 @@
 /area/medical/counselor/therapy)
 "ahl" = (
 /obj/structure/table/woodentable/walnut,
-/obj/item/modular_computer/laptop{
-	icon_state = "laptop-closed"
-	},
 /turf/simulated/floor/wood/walnut,
 /area/medical/counselor/therapy)
 "ahm" = (
@@ -9000,7 +8997,6 @@
 	},
 /obj/structure/closet/emcloset,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aBJ" = (
@@ -9426,7 +9422,6 @@
 	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
-/obj/item/weapon/shovel,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "aEC" = (
@@ -9947,7 +9942,6 @@
 "aGu" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/secure_closet/personal,
-/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aGw" = (
@@ -10091,7 +10085,6 @@
 	c_tag = "Auxiliary Cryogenic Storage - Starboard";
 	dir = 8
 	},
-/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aHh" = (
@@ -10723,7 +10716,6 @@
 "aJN" = (
 /obj/structure/table/standard,
 /obj/random/coin,
-/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aJO" = (
@@ -10887,7 +10879,6 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aKV" = (
@@ -15285,10 +15276,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
-"bPF" = (
-/obj/structure/salvageable/console_broken_os,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/centralstarboard)
 "bPR" = (
 /obj/structure/table/rack,
 /obj/random/maintenance/solgov,
@@ -15609,7 +15596,6 @@
 /area/hallway/primary/firstdeck/aft)
 "chb" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/salvageable/implant_container_os,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftstarboard)
 "cib" = (
@@ -16472,10 +16458,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/medical)
-"dhm" = (
-/obj/structure/salvageable/console_os,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/foreport)
 "dib" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
@@ -18127,10 +18109,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/security/detectives_office)
-"fUY" = (
-/obj/structure/salvageable/implant_container_os,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/centralstarboard)
 "fVb" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
@@ -20774,10 +20752,6 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/firstdeck/center)
-"jsq" = (
-/obj/structure/salvageable/computer_os,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/foreport)
 "jtb" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Research Maintenance Access"
@@ -22188,7 +22162,6 @@
 "ldP" = (
 /obj/structure/table/rack,
 /obj/random/maintenance/solgov,
-/obj/item/weapon/shovel,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftport)
 "leb" = (
@@ -22204,9 +22177,6 @@
 /area/hallway/primary/firstdeck/center)
 "lfM" = (
 /obj/structure/table/rack,
-/obj/item/modular_computer/laptop{
-	icon_state = "laptop-closed"
-	},
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralport)
@@ -25108,9 +25078,6 @@
 	pixel_x = 26;
 	pixel_y = 0
 	},
-/obj/item/modular_computer/laptop{
-	icon_state = "laptop-closed"
-	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
 "oPD" = (
@@ -27497,10 +27464,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralport)
-"rxV" = (
-/obj/structure/salvageable/computer_os,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/centralstarboard)
 "ryb" = (
 /turf/simulated/floor/reinforced,
 /area/rnd/misc_lab)
@@ -29147,10 +29110,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology)
-"tbM" = (
-/obj/structure/salvageable/bliss,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/centralstarboard)
 "tcb" = (
 /obj/effect/landmark{
 	name = "lightsout"
@@ -30241,10 +30200,6 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
-"uWt" = (
-/obj/structure/salvageable/console_broken_os,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/foreport)
 "uXe" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftstarboard)
@@ -31433,10 +31388,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
-"ybN" = (
-/obj/structure/salvageable/server_os,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/aftstarboard)
 "ycp" = (
 /obj/effect/floor_decal/corner/research/half,
 /turf/simulated/floor/tiled/white/monotile,
@@ -46558,7 +46509,7 @@ ahL
 adq
 aee
 ahL
-jsq
+jTV
 aJK
 aKT
 aLP
@@ -46760,7 +46711,7 @@ ahL
 lte
 oGG
 ahL
-dhm
+jTV
 aJL
 aIr
 aLQ
@@ -46962,7 +46913,7 @@ ahL
 ahL
 ahL
 ahL
-uWt
+jTV
 aJL
 aIr
 aLR
@@ -49560,7 +49511,7 @@ aaa
 abP
 abP
 abP
-bPF
+rhO
 abd
 agP
 xSA
@@ -49762,7 +49713,7 @@ aaa
 abP
 abP
 abP
-rxV
+rhO
 abe
 alN
 vzy
@@ -49964,7 +49915,7 @@ aaa
 abP
 abP
 abP
-tbM
+rhO
 cjb
 rhO
 vzy
@@ -50570,7 +50521,7 @@ aaa
 abP
 abP
 abP
-fUY
+rhO
 ahX
 rhO
 vzy
@@ -53194,7 +53145,7 @@ aaN
 adA
 mpy
 mpy
-ybN
+uXe
 adw
 sde
 sde

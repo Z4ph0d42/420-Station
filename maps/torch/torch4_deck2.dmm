@@ -251,7 +251,6 @@
 /obj/item/device/lightreplacer,
 /obj/item/clothing/gloves/thick,
 /obj/item/clothing/gloves/thick,
-/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled,
 /area/engineering/engineering_bay)
 "av" = (
@@ -826,7 +825,6 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftstarboard)
 "bB" = (
@@ -2786,7 +2784,6 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
-/obj/structure/salvageable/bliss,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "fe" = (
@@ -4797,7 +4794,6 @@
 /obj/machinery/firealarm{
 	pixel_y = 21
 	},
-/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/seconddeck)
 "ka" = (
@@ -5871,7 +5867,6 @@
 /obj/item/device/paint_sprayer,
 /obj/item/device/pipe_painter,
 /obj/item/weapon/reagent_containers/spray/cleaner,
-/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled,
 /area/engineering/engineering_bay)
 "mx" = (
@@ -5904,7 +5899,6 @@
 	pixel_y = -32
 	},
 /obj/effect/floor_decal/corner/yellow/half,
-/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/storage)
 "mD" = (
@@ -6072,7 +6066,6 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
 "mS" = (
@@ -8830,7 +8823,6 @@
 	pixel_x = -22;
 	pixel_y = 0
 	},
-/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/disposal)
 "tH" = (
@@ -9063,11 +9055,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/assembly/robotics/surgery)
-"uo" = (
-/obj/structure/catwalk,
-/obj/structure/salvageable/console_broken_os,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/aftstarboard)
 "ur" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 6
@@ -9534,10 +9521,6 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/shuttle/escape_pod10/station)
-"vx" = (
-/obj/structure/salvageable/server_os,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/seconddeck/foreport)
 "vy" = (
 /obj/machinery/door/blast/regular{
 	dir = 8;
@@ -11918,7 +11901,6 @@
 	pixel_x = -23;
 	pixel_y = 0
 	},
-/obj/structure/salvageable/personal,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/foreport)
 "Cq" = (
@@ -12454,7 +12436,6 @@
 	pixel_x = 0;
 	pixel_y = 25
 	},
-/obj/structure/salvageable/console_broken_os,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/wastetank)
 "DC" = (
@@ -14032,7 +14013,6 @@
 /obj/structure/table/rack,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
-/obj/item/weapon/shovel,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "HW" = (
@@ -14422,10 +14402,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
-"IZ" = (
-/obj/structure/salvageable/console_broken_os,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/foreport)
 "Jb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/catwalk,
@@ -14897,10 +14873,6 @@
 "Ky" = (
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
-"Kz" = (
-/obj/structure/salvageable/console_broken_os,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/central)
 "KA" = (
 /obj/machinery/button/blast_door{
 	id_tag = "bsdwindow";
@@ -17838,10 +17810,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
-"TQ" = (
-/obj/structure/salvageable/data,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/forestarboard)
 "TV" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -19109,7 +19077,6 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
 "Yh" = (
@@ -19471,7 +19438,6 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
-/obj/structure/salvageable/data_os,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "Zs" = (
@@ -35245,11 +35211,11 @@ bI
 ZS
 gn
 nc
-IZ
+pi
 AM
 ZV
 pi
-vx
+ZV
 yi
 xh
 pi
@@ -35627,7 +35593,7 @@ af
 JX
 JX
 JX
-TQ
+bd
 xr
 EY
 EY
@@ -37245,7 +37211,7 @@ ag
 ag
 aC
 aC
-Kz
+bK
 IN
 dw
 dW
@@ -43512,7 +43478,7 @@ dE
 eP
 Ul
 Lk
-uo
+hj
 ke
 hp
 hh

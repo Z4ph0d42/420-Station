@@ -384,7 +384,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "aM" = (
-/obj/item/remains/mouse,
 /turf/simulated/floor/plating,
 /area/vacant/infirmary)
 "aN" = (
@@ -823,7 +822,6 @@
 	icon_state = "1-4"
 	},
 /obj/structure/catwalk,
-/obj/structure/salvageable/data_os,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "bN" = (
@@ -2453,17 +2451,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
-"eJ" = (
-/obj/structure/disposalpipe/segment,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/catwalk,
-/obj/structure/salvageable/data_os,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/aftstarboard)
 "eM" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4;
@@ -2480,17 +2467,6 @@
 "eN" = (
 /obj/structure/railing/mapped,
 /turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/fore)
-"eO" = (
-/obj/structure/table/rack,
-/obj/random/maintenance,
-/obj/random/maintenance,
-/obj/random/maintenance,
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/item/weapon/material/knife/combat{
-	pixel_x = -4
-	},
-/turf/simulated/floor/tiled/techmaint,
 /area/maintenance/fifthdeck/fore)
 "eQ" = (
 /obj/structure/cable/cyan{
@@ -3410,10 +3386,6 @@
 "hq" = (
 /turf/simulated/floor/tiled,
 /area/quartermaster/expedition/eva)
-"hr" = (
-/obj/structure/salvageable/implant_container_os,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/aftport)
 "hs" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -4369,7 +4341,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/blood/oil/streak,
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/expedition/storage)
 "jJ" = (
@@ -5558,7 +5529,6 @@
 	dir = 6
 	},
 /obj/structure/catwalk,
-/obj/structure/salvageable/server_os,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "mq" = (
@@ -5574,7 +5544,6 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
-/obj/structure/salvageable/implant_container_os,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "ms" = (
@@ -5599,7 +5568,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/obj/structure/scrap/vehicle/large,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "mv" = (
@@ -7522,7 +7490,6 @@
 	icon_state = "4-8"
 	},
 /obj/structure/railing/mapped,
-/obj/structure/scrap/vehicle/large,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "qb" = (
@@ -8166,7 +8133,6 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
-/obj/structure/salvageable/implant_container_os,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "rn" = (
@@ -8666,7 +8632,6 @@
 /area/maintenance/fifthdeck/fore)
 "sg" = (
 /obj/machinery/light/small,
-/obj/structure/salvageable/autolathe,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/fore)
 "sh" = (
@@ -9434,7 +9399,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/obj/structure/salvageable/data_os,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "ug" = (
@@ -9445,7 +9409,6 @@
 	},
 /obj/structure/railing/mapped,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/salvageable/server_os,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "uh" = (
@@ -10456,7 +10419,6 @@
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
-/obj/structure/salvageable/server_os,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "xd" = (
@@ -12474,17 +12436,6 @@
 /obj/structure/scrap/medical/large,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
-"DW" = (
-/obj/structure/disposalpipe/segment,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/catwalk,
-/obj/structure/salvageable/server_os,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/aftstarboard)
 "DX" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -12803,7 +12754,6 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
-/mob/living/simple_animal/mouse/white,
 /turf/simulated/floor/tiled/white,
 /area/vacant/infirmary)
 "EU" = (
@@ -13203,11 +13153,6 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/reinforced,
 /area/shuttle/petrov/cell3)
-"GN" = (
-/obj/structure/catwalk,
-/obj/structure/salvageable/computer_os,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/fore)
 "GO" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -13577,17 +13522,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/expedition)
-"HQ" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/disposalpipe/segment,
-/obj/structure/catwalk,
-/obj/structure/salvageable/autolathe,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/fore)
 "HR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -13737,7 +13671,6 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
-/obj/structure/salvageable/server_os,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "Io" = (
@@ -15555,22 +15488,6 @@
 /obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/storage)
-"Oz" = (
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/catwalk,
-/obj/structure/salvageable/computer_os,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/fore)
 "OC" = (
 /obj/structure/table/standard,
 /obj/item/stack/material/phoron,
@@ -15887,10 +15804,6 @@
 /obj/structure/scrap/cloth/large,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
-"PJ" = (
-/obj/structure/salvageable/data_os,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/aftport)
 "PK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -16203,19 +16116,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/petrov/custodial)
-"QU" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/disposalpipe/segment,
-/obj/structure/catwalk,
-/obj/structure/salvageable/console_broken_os{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/fore)
 "QV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
@@ -16728,7 +16628,6 @@
 	icon_state = "4-8";
 	pixel_x = 0
 	},
-/obj/structure/salvageable/console_broken_os,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftport)
 "SK" = (
@@ -17385,17 +17284,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/petrov/analysis)
-"Vl" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/disposalpipe/segment,
-/obj/structure/catwalk,
-/obj/structure/salvageable/server_os,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/fore)
 "Vm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/cyan{
@@ -17565,16 +17453,6 @@
 	icon_state = "intact"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fifthdeck/aftstarboard)
-"VK" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
-	},
-/obj/item/weapon/material/knife/kitchen,
-/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftstarboard)
 "VM" = (
 /obj/structure/noticeboard{
@@ -18346,11 +18224,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/vacant/bar)
-"YI" = (
-/obj/structure/catwalk,
-/obj/structure/salvageable/autolathe,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/fore)
 "YJ" = (
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/phoron)
@@ -18364,7 +18237,6 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/obj/structure/salvageable/console_os,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftport)
 "YQ" = (
@@ -30365,7 +30237,7 @@ pi
 uB
 yq
 ux
-eO
+ux
 an
 an
 an
@@ -32357,7 +32229,7 @@ aa
 aa
 an
 an
-Oz
+mq
 cd
 VA
 Zj
@@ -32383,9 +32255,9 @@ mM
 rw
 ry
 ry
-QU
-Vl
-HQ
+ry
+ry
+ry
 nx
 ne
 ng
@@ -32565,9 +32437,9 @@ ZN
 Bp
 ZN
 yc
-YI
+mh
 wZ
-GN
+mh
 sg
 fl
 so
@@ -39627,7 +39499,7 @@ aa
 ZG
 ZG
 zJ
-VK
+Um
 Ea
 Ut
 Ut
@@ -39832,8 +39704,8 @@ KI
 al
 Cq
 jv
-DW
-eJ
+Cq
+Cq
 bM
 Qn
 cW
@@ -42688,7 +42560,7 @@ aa
 aa
 ws
 ws
-hr
+vK
 vK
 VC
 xv
@@ -42890,7 +42762,7 @@ aa
 aa
 ws
 ws
-PJ
+vK
 vI
 VC
 wj
