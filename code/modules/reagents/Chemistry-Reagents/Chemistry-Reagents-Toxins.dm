@@ -515,6 +515,31 @@
 
 /* Drugs */
 
+/datum/reagent/thc
+	name = "THC"
+	description = "A chemical compound found primarilly in the cannabis plant. Can cause mild euphoria and pain relief in small does. In larger doses can induce mild psychosis"
+	taste_description = "slightly spicy and herby"
+	taste_mult = 1
+	reagent_state = LIQUID
+	color = "#2edb0782"
+	metabolism = REM * 0.5
+	overdose = REAGENTS_OVERDOSE
+	value = 0.01
+
+/datum/reagent/thc/affect_blood(mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+	.
+		return
+		M.emote(pick("space out", "drool", "stare into space for a long time", "giggle" , "forgot what you were about to do"))
+	M.add_chemical_effect(CE_SEDATE, -1)
+	
+	var/drug_strength = 6
+	if(alien == IS_SKRELL)
+		drug_strength = drug_strength * 0.5
+	
+	
+	
+
 /datum/reagent/space_drugs
 	name = "Space drugs"
 	description = "An illegal chemical compound used as drug."

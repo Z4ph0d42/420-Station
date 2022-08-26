@@ -1622,3 +1622,28 @@
 	set_trait(TRAIT_PLANT_ICON,"bush")
 	set_trait(TRAIT_WATER_CONSUMPTION, 6)
 	set_trait(TRAIT_NUTRIENT_CONSUMPTION, 0.15)
+
+//Dude, weed lmao
+/datum/seed/cannabis
+	name = "cannabis"
+	seed_name = "cannabis"
+	seed_noun = "A packet of cannabis seeds"
+	mutants =list("")
+	chems = list(/datum/reagent/nutriment = list(1), /datum/reagent/thc = list(1,8))
+	kitchen_tag = "cannabis"
+
+//I'm color blind please feel free to tweak this color
+/datum/seed/cannabis/New()
+	..()
+	set_trait(TRAIT_HARVEST_REPEAT,1)
+	set_trait(TRAIT_MATURATION,5)
+	set_trait(TRAIT_PRODUCTION,5)
+	set_trait(TRAIT_YIELD,2)
+	set_trait(TRAIT_POTENCY,10)
+	set_trait(TRAIT_PRODUCT_ICON,"ambrosia")
+	set_trait(TRAIT_PRODUCT_COLOUR,"#09da09")
+	set_trait(TRAIT_PLANT_ICON,"pointybush_1")
+	set_trait(TRAIT_PLANT_COLOUR,"#06a306")
+	set_trait(TRAIT_IDEAL_HEAT, 298)
+	set_trait(TRAIT_IDEAL_LIGHT, 6)
+	set_trait(TRAIT_WATER_CONSUMPTION, 6)

@@ -279,4 +279,4 @@
 #define FOURSPACES "&nbsp;&nbsp;&nbsp;&nbsp;"
 #define CLIENT_FROM_VAR(I) (ismob(I) ? I:client : (isclient(I) ? I : (istype(I, /datum/mind) ? I:current?:client : null)))
 
-#define RANDOM_RARE_ITEM list()
+#define RANDOM_RARE_ITEM
