@@ -279,4 +279,5 @@
 #define FOURSPACES "&nbsp;&nbsp;&nbsp;&nbsp;"
 #define CLIENT_FROM_VAR(I) (ismob(I) ? I:client : (isclient(I) ? I : (istype(I, /datum/mind) ? I:current?:client : null)))
 
+//left blank for now, should fill latter for scrap system
 #define RANDOM_RARE_ITEM
