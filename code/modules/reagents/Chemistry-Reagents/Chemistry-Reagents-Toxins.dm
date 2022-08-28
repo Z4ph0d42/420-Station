@@ -526,20 +526,24 @@
 	overdose = REAGENTS_OVERDOSE
 	value = 0.01
 
-/datum/reagent/thc/affect_blood(mob/living/carbon/M, var/alien, var/removed)
+/datum/reagent/thc/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(alien == IS_DIONA)
-	.
 		return
-		M.emote(pick("space out", "drool", "stare into space for a long time", "giggle" , "forgot what you were about to do"))
-	M.add_chemical_effect(CE_SEDATE, -1)
-	
-	var/drug_strength = 6
-	if(alien == IS_SKRELL)
-		drug_strength = drug_strength * 0.5
-	
-	
-	
 
+	if(alien == IS_SKRELL)
+	if(prob(5))
+		M.adjust_nutrition(-2)
+		to_chat(pick("You suddenly feel very hungry.", "You could totally go for a some pizza right now.", "Dude, you're totally starving!"))
+	if(prob(5))
+		M.adjust_hydration(-2)
+		to_chat(pick("Your mouth feels very dry.", "You feel very thirsty", "You could chug an entire bottle of water right now.", "Holy shit I'm thirsty!"))
+	if(prob(6))
+		to_chat(pick("You feel very relaxed.", "You feel totally chill.", "You feel like taking it easy.", "man fuck the police!"))
+		M.emote(pick("smile","giggle","stare"))
+		M.add_chemical_effect(CE_SEDATE, 1)
+		M.add_chemical_effect(CE_MIND, -1)
+		M.add_chemical_effect(CE_PAINKILLER, 20)
+	
 /datum/reagent/space_drugs
 	name = "Space drugs"
 	description = "An illegal chemical compound used as drug."
