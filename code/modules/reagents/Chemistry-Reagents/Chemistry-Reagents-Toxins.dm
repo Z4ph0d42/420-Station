@@ -530,7 +530,10 @@
 	if(alien == IS_DIONA)
 		return
 
+	var/drug_strength = 15
 	if(alien == IS_SKRELL)
+		drug_strength = drug_strength * 0.8
+	
 	if(prob(5))
 		M.adjust_nutrition(-2)
 		to_chat(pick("You suddenly feel very hungry.", "You could totally go for a some pizza right now.", "Dude, you're totally starving!"))

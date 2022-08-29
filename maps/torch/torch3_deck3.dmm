@@ -11513,6 +11513,7 @@
 	pixel_x = 21
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "zX" = (
@@ -11697,6 +11698,7 @@
 	pixel_x = 32
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "AG" = (
@@ -12302,6 +12304,7 @@
 	pixel_x = 22
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "Cv" = (
@@ -12605,6 +12608,7 @@
 	},
 /obj/structure/closet/secure_closet/personal,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "Dj" = (
@@ -15969,6 +15973,7 @@
 "Lh" = (
 /obj/structure/closet/emcloset,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "Li" = (

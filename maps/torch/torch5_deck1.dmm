@@ -9000,6 +9000,7 @@
 	},
 /obj/structure/closet/emcloset,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aBJ" = (
@@ -9687,6 +9688,7 @@
 /obj/random/maintenance/clean,
 /obj/random/maintenance/clean,
 /obj/structure/closet/secure_closet/crew/research,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aFh" = (
@@ -9913,6 +9915,7 @@
 /obj/random/maintenance/solgov/clean,
 /obj/random/maintenance/solgov/clean,
 /obj/random/maintenance/solgov/clean,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aGs" = (
@@ -9945,6 +9948,7 @@
 "aGu" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/secure_closet/personal,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aGw" = (
@@ -10061,6 +10065,7 @@
 	c_tag = "Auxiliary Cryogenic Storage - Port";
 	dir = 4
 	},
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aHd" = (
@@ -10088,6 +10093,7 @@
 	c_tag = "Auxiliary Cryogenic Storage - Starboard";
 	dir = 8
 	},
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aHh" = (

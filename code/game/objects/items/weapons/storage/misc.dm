@@ -59,6 +59,13 @@
 	slot_flags = SLOT_BELT
 	startswith = list(/obj/item/paper/cig = 10)
 
+/obj/item/weapon/storage/cigpaper/longpaper
+	name = "\improper Bong Rips long paper"
+	desc = "Bong Rips papers are a type of paper that is commonly used for rolling marijuana cigarettes. They are long, narrow, and have a distinctive appearance. They are slightly brown in color and are made from 100% hemp."
+	icon = 'icons/obj/cigarettes.dmi'
+	icon_state = "oldcigpaperbook"
+	startswith = list(/obj/item/paper/cig/long = 10)
+
 /obj/item/weapon/storage/cigpaper/fancy
 	name = "\improper Trident cigarette paper"
 	desc = "A fancy brand of Trident cigarette paper, for rolling your own cigarettes. Like a person who appreciates the finer things in life."
@@ -109,6 +116,8 @@
 	desc = "A exclusive brand of overpriced tobacco, allegedly grown at a lagrange point station in Sol system."
 	startswith = list(/obj/item/weapon/reagent_containers/food/snacks/grown/dried_tobacco/fine = 8)
 	icon_state = "rollfine"
+//weed
+/obj/item/weapon/storage/chewables/rollable/weed
 
 //chewing tobacco
 /obj/item/weapon/storage/chewables/tobacco

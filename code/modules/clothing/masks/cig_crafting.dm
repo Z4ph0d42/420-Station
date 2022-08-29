@@ -33,6 +33,11 @@
 	desc = "A thin piece of trident branded paper used to make fine smokeables."
 	icon_state = "cig_paperf"
 
+/obj/item/paper/cig/long
+	name = "\improper Bong Rips long paper"
+	desc = "Bong Rips long papers are a type of paper that is commonly used for rolling marijuana cigarettes. They are long, narrow, and have a distinctive appearance. They are slightly brown in color and are made from 100% hemp."
+	icon_state = "long_paper"
+
 /obj/item/paper/cig/filter
 	name = "cigarette filter"
 	desc = "A small nub like filter for cigarettes."
