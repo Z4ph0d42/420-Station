@@ -63,7 +63,7 @@
 	name = "\improper Bong Rips long paper"
 	desc = "Bong Rips papers are a type of paper that is commonly used for rolling marijuana cigarettes. They are long, narrow, and have a distinctive appearance. They are slightly brown in color and are made from 100% hemp."
 	icon = 'icons/obj/cigarettes.dmi'
-	icon_state = "oldcigpaperbook"
+	icon_state = "fancycigpaperbook"
 	startswith = list(/obj/item/paper/cig/long = 10)
 
 /obj/item/weapon/storage/cigpaper/fancy
