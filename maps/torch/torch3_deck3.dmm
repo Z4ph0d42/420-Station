@@ -1695,17 +1695,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/habcheck)
-"dF" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/bed/chair{
-	dir = 4
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/mess)
 "dG" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/item/weapon/reagent_containers/glass/bucket,
@@ -4670,18 +4659,15 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
 /obj/machinery/alarm{
 	dir = 8;
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
-/obj/item/weapon/paper_bin,
 /obj/effect/floor_decal/carpet/blue2{
 	dir = 5
 	},
+/obj/random/plant,
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/mess)
 "jg" = (
@@ -7415,6 +7401,7 @@
 	pixel_y = -24
 	},
 /obj/effect/floor_decal/carpet/blue2,
+/obj/random/plant,
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/mess)
 "pg" = (
@@ -39367,8 +39354,8 @@ ZK
 Aq
 Wt
 rL
-AA
-dF
+jc
+Tx
 jc
 lB
 mq

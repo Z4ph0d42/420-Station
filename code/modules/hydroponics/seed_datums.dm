@@ -1642,7 +1642,7 @@
 	set_trait(TRAIT_POTENCY,10)
 	set_trait(TRAIT_PRODUCT_ICON,"ambrosia")
 	set_trait(TRAIT_PRODUCT_COLOUR,"#09da09")
-	set_trait(TRAIT_PLANT_ICON,"pointybush_1")
+	set_trait(TRAIT_PLANT_ICON,"tree3")
 	set_trait(TRAIT_PLANT_COLOUR,"#06a306")
 	set_trait(TRAIT_IDEAL_HEAT, 298)
 	set_trait(TRAIT_IDEAL_LIGHT, 6)

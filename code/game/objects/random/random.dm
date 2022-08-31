@@ -2160,3 +2160,36 @@ var/list/random_useful_
 				/obj/structure/salvageable/console_os = 3,\
 				/obj/machinery/constructable_frame/computerframe = 2,\
 				/obj/machinery/constructable_frame/machine_frame = 2))
+
+/obj/random/plant
+	name = "random potted plant"
+	icon = 'icons/obj/plants.dmi'
+	icon_state = "plant-03"
+
+
+/obj/random/plant/item_to_spawn()
+	return pickweight(list(
+				/obj/structure/flora/pottedplant/fern = 4,
+				/obj/structure/flora/pottedplant/overgrown = 8,
+				/obj/structure/flora/pottedplant/bamboo = 6,
+				/obj/structure/flora/pottedplant/largebush = 4,
+				/obj/structure/flora/pottedplant/thinbush = 2,
+				/obj/structure/flora/pottedplant/mysterious = 1,
+				/obj/structure/flora/pottedplant/smalltree= 1,
+				/obj/structure/flora/pottedplant/unusual = 1,
+				/obj/structure/flora/pottedplant/orientaltree = 1,
+				/obj/structure/flora/pottedplant/smallcactus = 1,
+				/obj/structure/flora/pottedplant/tall = 1,
+				/obj/structure/flora/pottedplant/sticky = 8,
+				/obj/structure/flora/pottedplant/smelly = 0.5,
+				/obj/structure/flora/pottedplant/small = 1,
+				/obj/structure/flora/pottedplant/aquatic =  3,
+				/obj/structure/flora/pottedplant/shoot = 2,
+				/obj/structure/flora/pottedplant/flower =4,
+				/obj/structure/flora/pottedplant/crystal = 2
+				))
+
+/obj/random/potted_plant/low_chance
+	name = "low chance random potted plant"
+	icon_state = "plant-03"
+	spawn_nothing_percentage = 00
