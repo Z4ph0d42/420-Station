@@ -116,8 +116,6 @@
 	desc = "A exclusive brand of overpriced tobacco, allegedly grown at a lagrange point station in Sol system."
 	startswith = list(/obj/item/weapon/reagent_containers/food/snacks/grown/dried_tobacco/fine = 8)
 	icon_state = "rollfine"
-//weed
-/obj/item/weapon/storage/chewables/rollable/weed
 
 //chewing tobacco
 /obj/item/weapon/storage/chewables/tobacco

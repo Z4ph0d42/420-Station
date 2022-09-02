@@ -524,7 +524,7 @@
 	color = "#2edb0782"
 	metabolism = REM * 0.5
 	overdose = REAGENTS_OVERDOSE
-	value = 0.01
+	value = 1
 
 /datum/reagent/thc/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(alien == IS_DIONA)

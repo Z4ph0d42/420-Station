@@ -75,7 +75,7 @@
 	"}
 
 /obj/item/weapon/folder/envelope/captain
-	desc = "A thick envelope. The SCG crest is stamped in the corner, along with 'TOP SECRET - TORCH UMBRA'."
+	desc = "A thick envelope. The SCG crest is stamped in the corner, along with 'TOP SECRET - ZERZURA UMBRA'."
 
 /obj/item/weapon/folder/envelope/captain/Initialize()
 	..()
