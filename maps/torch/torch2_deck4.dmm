@@ -9140,6 +9140,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/structure/bookcase,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/lounge)
 "EU" = (
@@ -9155,6 +9156,7 @@
 	c_tag = "Fourth Deck - Lounge Aft";
 	name = "security camera"
 	},
+/obj/structure/bookcase,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/lounge)
 "EY" = (
@@ -11045,6 +11047,14 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/fourthdeck/aft)
+"KV" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 1;
+	icon_state = "spline_fancy"
+	},
+/obj/structure/bookcase,
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/lounge)
 "KW" = (
 /turf/simulated/floor/tiled/dark,
 /area/command/captainmess)
@@ -15679,6 +15689,7 @@
 	c_tag = "Fourth Deck - Lounge Fore";
 	name = "security camera"
 	},
+/obj/structure/bookcase,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/lounge)
 "Xv" = (
@@ -16171,6 +16182,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
+/obj/structure/bookcase,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/lounge)
 "YE" = (
@@ -16441,6 +16453,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/bookcase,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/lounge)
 "Zl" = (
@@ -34324,7 +34337,7 @@ Yd
 ES
 gN
 Zk
-MY
+KV
 RY
 RY
 RY
