@@ -44,6 +44,17 @@
 	icon_state = "cig_filter"
 	w_class = ITEM_SIZE_TINY
 
+//weed 
+/obj/item/weapon/reagent_containers/food/snacks/grown/dried_cannabis
+	plantname = "cannabis"
+	w_class = ITEM_SIZE_TINY
+
+/obj/item/weapon/reagent_containers/food/snacks/grown/dried_cannabis/Initialize()
+	. = ..()
+	dry = TRUE
+	SetName("dried [name]")
+	color = "#499b4a"
+
 //tobacco sold seperately if you're too snobby to grow it yourself.
 /obj/item/weapon/reagent_containers/food/snacks/grown/dried_tobacco
 	plantname = "tobacco"
@@ -78,7 +89,7 @@
 			return
 	..()
 
-/obj/item/weapon/reagent_containers/food/snacks/grown/attackby(obj/item/I, mob/user)
+/obj/item/weapon/reagent_containers/food/snacks/grown/dried_tobacco/attackby(obj/item/I, mob/user)
 	if(is_type_in_list(I, list(/obj/item/paper/cig/, /obj/item/weapon/paper/, /obj/item/weapon/teleportation_scroll)))
 		if(!dry)
 			to_chat(user, "<span class='warning'>You need to dry [src] first!</span>")

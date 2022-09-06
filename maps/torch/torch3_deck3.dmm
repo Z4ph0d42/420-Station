@@ -1339,6 +1339,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
+/obj/item/weapon/material/ashtray/plastic,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
 "cV" = (
@@ -15606,6 +15607,7 @@
 	dir = 4
 	},
 /obj/structure/table/standard,
+/obj/item/weapon/material/ashtray/glass,
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/mess)
 "Kp" = (
@@ -16612,6 +16614,7 @@
 /obj/machinery/camera/network/third_deck{
 	c_tag = "Recreation Room"
 	},
+/obj/item/weapon/material/ashtray/plastic,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/recreation)
 "MR" = (
@@ -19512,7 +19515,9 @@
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar)
 "Vh" = (
-/obj/structure/door_assembly,
+/obj/structure/door_assembly{
+	anchored = 1
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "Vi" = (
