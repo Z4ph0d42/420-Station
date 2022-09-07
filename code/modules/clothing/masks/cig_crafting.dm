@@ -125,7 +125,7 @@
 			to_chat(user, "<span class='warning'>You need to dry [src] first!</span>")
 			return
 		if(user.unEquip(I))
-			var/obj/item/clothing/mask/smokable/cigarette/rolled/R = new(get_turf(src))
+			var/obj/item/clothing/mask/smokable/cigarette/rolled/joint/R = new(get_turf(src))
 			R.chem_volume = reagents.total_volume
 			R.brand = "[src] handrolled in \the [I]."
 			reagents.trans_to_holder(R.reagents, R.chem_volume)
