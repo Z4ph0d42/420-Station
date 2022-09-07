@@ -34,7 +34,7 @@
 
 /datum/job/hop
 	title = "First Mate"
-	supervisors = "the The Captain"
+	supervisors = "The Captain"
 	department = "Command"
 	department_flag = COM
 	minimal_player_age = 4

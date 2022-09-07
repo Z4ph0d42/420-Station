@@ -7632,11 +7632,11 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/fore)
 "pH" = (
-/obj/structure/flora/pottedplant/flower,
 /obj/item/device/radio/intercom/entertainment{
 	dir = 4;
 	pixel_x = -22
 	},
+/obj/random/plant,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/recreation)
 "pI" = (
@@ -9532,7 +9532,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "uz" = (
-/obj/structure/flora/pottedplant/large,
+/obj/random/plant,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/recreation)
 "uA" = (
