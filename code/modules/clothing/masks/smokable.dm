@@ -408,6 +408,16 @@
 	slot_flags = SLOT_EARS
 	throwforce = 1
 
+/obj/item/trash/roach
+	name = "an old roach"
+	desc = "A dried up old joint roach."
+	icon = 'icons/obj/clothing/obj_mask.dmi'
+	icon_state = "roach"
+	randpixel = 10
+	w_class = ITEM_SIZE_TINY
+	slot_flags = SLOT_EARS
+	throwforce = 1
+
 /obj/item/trash/cigbutt/New()
 	..()
 	transform = turn(transform,rand(0,360))

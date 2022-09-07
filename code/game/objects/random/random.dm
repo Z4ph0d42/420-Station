@@ -955,6 +955,8 @@ obj/random/prothesis/spawn_choices()
 
 /obj/random/trash/spawn_choices()
 	return list(/obj/item/remains/lizard,
+				/obj/item/trash/roach,
+				/obj/item/trash/cigbutt,
 				/obj/effect/decal/cleanable/blood/gibs/robot,
 				/obj/effect/decal/cleanable/blood/oil,
 				/obj/effect/decal/cleanable/blood/oil/streak,
