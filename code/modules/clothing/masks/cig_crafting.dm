@@ -26,12 +26,10 @@
 	chem_volume = 50
 	brand = "handrolled"
 	filling = list()
-	var/filter = 0
 
 /obj/item/clothing/mask/smokable/cigarette/rolled/joint/on_update_icon()
 	. = ..()
-	if(!lit)
-		icon_state = filter ? "spliffoff"
+	icon_state = lit ? "spliffon" : "spliffoff"
 
 /////////////Ported Straight from TG. I am not sorry. - BloodyMan  //YOU SHOULD BE
 //ROLLING//
