@@ -1640,7 +1640,7 @@
 	set_trait(TRAIT_PRODUCTION,5)
 	set_trait(TRAIT_YIELD,2)
 	set_trait(TRAIT_POTENCY,10)
-	set_trait(TRAIT_PRODUCT_ICON,"ambrosia")
+	set_trait(TRAIT_PRODUCT_ICON,"cannabis")
 	set_trait(TRAIT_PRODUCT_COLOUR,"#09da09")
 	set_trait(TRAIT_PLANT_ICON,"tree3")
 	set_trait(TRAIT_PLANT_COLOUR,"#06a306")

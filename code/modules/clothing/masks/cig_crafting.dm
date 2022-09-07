@@ -25,6 +25,8 @@
 	type_butt = /obj/item/trash/roach
 	chem_volume = 50
 	brand = "handrolled"
+	smoketime = 800
+	chem_volume = 15
 	filling = list()
 
 /obj/item/clothing/mask/smokable/cigarette/rolled/joint/on_update_icon()
