@@ -837,6 +837,7 @@
 	products = list(
 					/obj/item/weapon/storage/cigpaper/filters = 5,
 					/obj/item/weapon/storage/cigpaper = 3,
+					/obj/item/weapon/storage/cigpaper/long = 3,
 					/obj/item/weapon/storage/cigpaper/fancy = 2,
 					/obj/item/weapon/storage/chewables/rollable/bad = 2,
 					/obj/item/weapon/storage/chewables/rollable/generic = 2,
