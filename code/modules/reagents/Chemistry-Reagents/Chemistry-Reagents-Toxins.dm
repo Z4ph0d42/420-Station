@@ -524,6 +524,9 @@
 	color = "#2edb0782"
 	metabolism = REM * 0.5
 	overdose = REAGENTS_OVERDOSE
+	scent = "marijuana smoke"
+	scent_descriptor = SCENT_DESC_ODOR
+	scent_range = 4
 	value = 1
 
 /datum/reagent/thc/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
