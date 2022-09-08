@@ -9170,11 +9170,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/engineering/shieldbay)
-"uB" = (
-/obj/structure/table/steel,
-/obj/structure/scrap/guns,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/assembly/robotics)
 "uD" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 4
@@ -37280,7 +37275,7 @@ eG
 VN
 bw
 XP
-uB
+fD
 dF
 ee
 XP
