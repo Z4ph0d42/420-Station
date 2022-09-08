@@ -1,5 +1,5 @@
 /*
- * Torch Excavation
+ * Zerzura Excavation
  */
 
 /obj/structure/closet/toolcloset/excavation

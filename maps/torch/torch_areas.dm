@@ -366,7 +366,7 @@
 //Aquila
 
 /area/aquila
-	name = "\improper SEV Aquila"
+	name = "\improper CEV Aquila"
 	icon_state = "shuttlered"
 	base_turf = /turf/simulated/floor/reinforced/airless
 	requires_power = 1
@@ -374,35 +374,35 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
 /area/aquila/cockpit
-	name = "\improper SEV Aquila - Cockpit"
+	name = "\improper CEV Aquila - Cockpit"
 	req_access = list(access_aquila)
 
 /area/aquila/maintenance
-	name = "\improper SEV Aquila - Maintenance"
+	name = "\improper CEV Aquila - Maintenance"
 	req_access = list(access_solgov_crew)
 
 /area/aquila/storage
-	name = "\improper SEV Aquila - Storage"
+	name = "\improper CEV Aquila - Storage"
 	req_access = list(access_solgov_crew)
 
 /area/aquila/secure_storage
-	name = "\improper SEV Aquila - Secure Storage"
+	name = "\improper CEV Aquila - Secure Storage"
 	req_access = list(access_aquila)
 
 /area/aquila/mess
-	name = "\improper SEV Aquila - Mess Hall"
+	name = "\improper CEV Aquila - Mess Hall"
 
 /area/aquila/passenger
-	name = "\improper SEV Aquila - Passenger Compartment"
+	name = "\improper CEV Aquila - Passenger Compartment"
 
 /area/aquila/medical
-	name = "\improper SEV Aquila - Medical"
+	name = "\improper CEV Aquila - Medical"
 
 /area/aquila/head
-	name = "\improper SEV Aquila - Head"
+	name = "\improper CEV Aquila - Head"
 
 /area/aquila/airlock
-	name = "\improper SEV Aquila - Airlock Compartment"
+	name = "\improper CEV Aquila - Airlock Compartment"
 	req_access = list(access_solgov_crew)
 
 //Guppy
@@ -1223,7 +1223,7 @@
 // Command
 
 /area/bridge
-	name = "\improper SEV Torch Bridge"
+	name = "\improper CEV Zerzura Bridge"
 	icon_state = "bridge"
 	req_access = list(access_bridge)
 

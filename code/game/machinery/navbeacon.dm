@@ -276,7 +276,7 @@ Transponder Codes:<UL>"}
 	location = "Hydroponics"
 	codes = list("delivery" = 1, "dir" = 2)
 
-// Torch types below
+// Zerzura types below
 
 /obj/machinery/navbeacon/torch/bridge1
 	location = "bridge1"
@@ -366,7 +366,7 @@ Transponder Codes:<UL>"}
 	location = "rdoffice"
 	codes = list("patrol" = 1, "next_patrol" = "vault2")
 
-// Torch delivery types
+// Zerzura delivery types
 
 /obj/machinery/navbeacon/torch/QM3
 	location = "QM #3"

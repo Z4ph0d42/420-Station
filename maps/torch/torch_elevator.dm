@@ -1,5 +1,5 @@
 /obj/turbolift_map_holder/torch
-	name = "Torch turbolift map placeholder"
+	name = "Zerzura turbolift map placeholder"
 	depth = 6
 	lift_size_x = 4
 	lift_size_y = 4

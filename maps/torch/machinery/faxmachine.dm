@@ -1,6 +1,6 @@
 
 /**
-* Torch fax machine overrides. Cleaner than map stuff.
+* Zerzura fax machine overrides. Cleaner than map stuff.
 **/
 
 /obj/machinery/photocopier/faxmachine

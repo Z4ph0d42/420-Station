@@ -2955,7 +2955,7 @@
 	},
 /obj/structure/table/standard,
 /obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Pathfinder"
+	department = "Zerzura - Pathfinder"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/command/pathfinder)

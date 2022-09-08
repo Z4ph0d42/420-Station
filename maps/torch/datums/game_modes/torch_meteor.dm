@@ -1,11 +1,11 @@
-//Torch override for it, auto-calls long-delayed jump automatically so round duration is hard capped.
+//Zerzura override for it, auto-calls long-delayed jump automatically so round duration is hard capped.
 /datum/game_mode/meteor
 	name = "Meteor"
 	round_description = "Suddenly the rocks, thousands of them!"
 	extended_round_description = "We are on an unavoidable collision course with an asteroid field. You have only a moment to prepare before you are barraged by dust and meteors. Emergency BS drive spoolup has been initiated, but you need to survive until it's done."
 	shuttle_delay = 5	//40ish minutes round
 	meteor_grace_period = 10 MINUTES
-	meteor_severity = 10   //Since Torch is pretty sturdy and time is of essence, jumpstart things a bit
+	meteor_severity = 10   //Since Zerzura is pretty sturdy and time is of essence, jumpstart things a bit
 	escalation_probability = 70
 
 /datum/game_mode/meteor/post_setup()

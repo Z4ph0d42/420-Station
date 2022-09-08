@@ -180,7 +180,7 @@
 
 #elif !defined(MAP_OVERRIDE)
 
-	#warn A map has already been included, ignoring Torch
+	#warn A map has already been included, ignoring Zerzura
 
 #endif
 

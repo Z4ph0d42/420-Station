@@ -1,5 +1,5 @@
 /*
- * Torch Command
+ * Zerzura Command
  */
 /decl/closet_appearance/secure_closet/torch/command
 	extra_decals = list(

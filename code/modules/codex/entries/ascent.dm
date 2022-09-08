@@ -12,7 +12,7 @@
 	lore_text = "The Ascent is a human-hostile alien culture located rimward of the Skrellian \
 	territories. Little is known about them, and diplomatic channels do not currently exist. \
 	They made themselves known to Humanity by attacking and destroying a science vessel called \
-	the SEV Magnus, leading to current state of tension.<br><br> \
+	the CEV Magnus, leading to current state of tension.<br><br> \
 	The Skrell appear to have stable diplomatic ties to the Ascent, but are reluctant to use them. \
 	They have been referred to several times over the course of Human-Skrell history, \
 	usually accidentally or offhandedly, or over channels humans were not expected to have access \
@@ -29,6 +29,6 @@
 	information relating to the Ascent, please contact the Codex offices, Venus orbit, for monetary reward."
 	mechanics_text = "The Ascent are a hostile insectoid culture neighboring the Skrell. \
 	Until quite recently, humanity knew almost nothing about them, but with the destruction of \
-	the SEV Magnus in an Ascent assault, first contact has been more or less achieved. The average \
+	the CEV Magnus in an Ascent assault, first contact has been more or less achieved. The average \
 	Skrell citizen knows that the Ascent are vicious, easily provoked, and stand roughly on par with \
 	Skrellian technology."
