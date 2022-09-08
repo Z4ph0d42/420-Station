@@ -546,7 +546,7 @@
 	if(prob(6))
 		to_chat(pick("You feel very relaxed.", "You feel totally chill.", "You feel like taking it easy.", "Man fuck the police!", "You forget what you were about to do."))
 		M.emote(pick("smile","giggle","stare"))
-		M.add_chemical_effect(CE_SEDATE, 1)
+		M.add_chemical_effect(CE_SEDATE, 2)
 		M.add_chemical_effect(CE_MIND, -1)
 		M.add_chemical_effect(CE_PAINKILLER, 20)
 	

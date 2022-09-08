@@ -16606,7 +16606,7 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 10
 	},
-/obj/structure/flora/pottedplant/minitree,
+/obj/random/plant,
 /turf/simulated/floor/tiled,
 /area/security/detectives_office)
 "dnb" = (

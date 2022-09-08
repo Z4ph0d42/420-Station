@@ -6252,7 +6252,7 @@
 /area/crew_quarters/bar)
 "mp" = (
 /obj/structure/table/standard,
-/obj/random/single/cola,
+/obj/item/sticky_pad/random,
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/mess)
 "mq" = (

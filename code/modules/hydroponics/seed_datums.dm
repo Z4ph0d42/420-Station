@@ -1627,9 +1627,8 @@
 /datum/seed/cannabis
 	name = "cannabis"
 	seed_name = "cannabis"
-	seed_noun = "A packet of cannabis seeds"
 	mutants =list("")
-	chems = list(/datum/reagent/nutriment = list(1), /datum/reagent/thc = list(1,8))
+	chems = list(/datum/reagent/nutriment = list(1), /datum/reagent/thc = list(5,8))
 	kitchen_tag = "cannabis"
 
 //I'm color blind please feel free to tweak this color

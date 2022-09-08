@@ -1762,6 +1762,7 @@
 /obj/effect/floor_decal/corner/blue/three_quarters{
 	dir = 8
 	},
+/obj/random/plant,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "cV" = (
@@ -2444,7 +2445,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/flora/pottedplant/fern,
+/obj/random/plant,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
 "eo" = (
@@ -16100,7 +16101,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
 "Yz" = (
-/obj/structure/flora/pottedplant/orientaltree,
 /obj/effect/floor_decal/spline/fancy/wood/corner{
 	dir = 1
 	},
@@ -16109,6 +16109,7 @@
 	pixel_x = -23;
 	pixel_y = 0
 	},
+/obj/random/plant,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/co)
 "YA" = (
