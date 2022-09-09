@@ -31,7 +31,7 @@ They generally give more random result and can provide more divercity in spawn.
 /obj/random/pack/cloth/low_chance
 	name = "low chance random cloth"
 	icon_state = "armor-red-low"
-	spawn_nothing_percentage = 70
+	spawn_nothing_percentage = 30
 
 
 
@@ -65,7 +65,7 @@ They generally give more random result and can provide more divercity in spawn.
 /obj/random/pack/tech_loot/low_chance
 	name = "low chance technical loot"
 	icon_state = "tool-red-low"
-	spawn_nothing_percentage = 70
+	spawn_nothing_percentage = 30
 
 
 /obj/random/pack/tech_loot/super
@@ -104,7 +104,7 @@ They generally give more random result and can provide more divercity in spawn.
 /obj/random/pack/gun_loot/low_chance
 	name = "low chance gun loot"
 	icon_state = "gun-red-low"
-	spawn_nothing_percentage = 70
+	spawn_nothing_percentage = 30
 
 
 /* uhhhhhhh idk what to do with rare shit rn
@@ -120,7 +120,7 @@ They generally give more random result and can provide more divercity in spawn.
 /obj/random/pack/rare/low_chance
 	name = "low chance rare loot"
 	icon_state = "box-orange-low"
-	spawn_nothing_percentage = 70
+	spawn_nothing_percentage = 30
 
 */
 
@@ -146,7 +146,7 @@ They generally give more random result and can provide more divercity in spawn.
 /obj/random/pack/machine/low_chance
 	name = "low chance random structure"
 	icon_state = "machine-orange-low"
-	spawn_nothing_percentage = 70
+	spawn_nothing_percentage = 30
 
 
 
@@ -172,7 +172,7 @@ They generally give more random result and can provide more divercity in spawn.
 /obj/random/pack/junk_machine/low_chance
 	name = "low chance random junk structure"
 	icon_state = "machine-grey-low"
-	spawn_nothing_percentage = 70
+	spawn_nothing_percentage = 30
 
 /obj/random/pack/junk_machine/beacon/spawn_choices()
 	return pickweight(list(

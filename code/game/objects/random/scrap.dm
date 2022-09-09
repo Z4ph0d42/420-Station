@@ -22,7 +22,7 @@
 /obj/random/scrap/dense_even/low_chance
 	name = "low chance random trash"
 	icon_state = "junk-red-low"
-	spawn_nothing_percentage = 70
+	spawn_nothing_percentage = 30
 
 
 
@@ -47,7 +47,7 @@
 /obj/random/scrap/dense_weighted/low_chance
 	name = "low chance random trash"
 	icon_state = "junk-red-low"
-	spawn_nothing_percentage = 70
+	spawn_nothing_percentage = 30
 
 
 
@@ -70,7 +70,7 @@
 /obj/random/scrap/sparse_even/low_chance
 	name = "low chance random trash"
 	icon_state = "junk-red-low"
-	spawn_nothing_percentage = 70
+	spawn_nothing_percentage = 30
 
 
 
@@ -94,7 +94,7 @@
 /obj/random/scrap/sparse_weighted/low_chance
 	name = "low chance random trash"
 	icon_state = "junk-red-low"
-	spawn_nothing_percentage = 70
+	spawn_nothing_percentage = 30
 
 
 
@@ -111,7 +111,7 @@
 /obj/random/scrap/moderate_weighted/low_chance
 	name = "low chance random trash"
 	icon_state = "junk-red-low"
-	spawn_nothing_percentage = 70
+	spawn_nothing_percentage = 30
 
 
 

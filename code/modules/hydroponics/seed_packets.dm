@@ -340,3 +340,6 @@ var/global/list/plant_seed_sprites = list()
 
 /obj/item/seeds/affelerin
 	seed_type = "affelerin"
+
+/obj/item/seeds/cannabis
+	seed_type = "cannabis"

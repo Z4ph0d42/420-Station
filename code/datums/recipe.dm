@@ -5,7 +5,7 @@
  * It exists not only for food.
  * supports both reagents and objects as prerequisites.
  * In order to use this system you have to define a deriative from /datum/recipe
- * * reagents are reagents. Acid, milc, booze, etc.
+ * * reagents are reagents. Acid, milk, booze, etc.
  * * items are objects. Fruits, tools, circuit boards.
  * * result is type to create as new object
  * * time is optional parameter, you shall use in in your machine,

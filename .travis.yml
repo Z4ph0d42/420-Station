@@ -24,7 +24,7 @@ jobs:
       env: TEST=CODE
     - name: "Map - Example"
       env: TEST=MAP MAP_PATH=example
-    - name: "Map - Torch"
+    - name: "Map - Zerzura"
       env: TEST=MAP MAP_PATH=torch
     - name: "Map - Bearcat"
       env: TEST=MAP MAP_PATH=bearcat

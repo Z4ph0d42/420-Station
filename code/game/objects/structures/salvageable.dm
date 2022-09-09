@@ -14,7 +14,7 @@
 	return
 
 /obj/structure/salvageable/attackby(obj/item/I, mob/user)
-	if(do_after(user,30,src))
+	(do_after(user,30,src))
 	if(isCrowbar(I))
 		to_chat(user, SPAN_NOTICE("You start salvage anything useful from \the [src]."))
 		if(isCrowbar(I))

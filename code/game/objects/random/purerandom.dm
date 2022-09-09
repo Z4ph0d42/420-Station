@@ -135,4 +135,4 @@
 /obj/random/lowkeyrandom/low_chance
 	name = "low chance random stuff"
 	icon_state = "radnomstuff-green-low"
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 40

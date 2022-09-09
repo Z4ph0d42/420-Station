@@ -589,7 +589,7 @@
 /obj/random/closet/low_chance
 	name = "low chance random closet"
 	icon_state = "closet-grey-low"
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 40
 
 
 
@@ -609,7 +609,7 @@
 /obj/random/closet_tech/low_chance
 	name = "low chance random technical closet"
 	icon_state = "closet-orange-low"
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 40
 
 
 
@@ -631,7 +631,7 @@
 /obj/random/closet_wardrobe/low_chance
 	name = "low chance random wardrobe closet"
 	icon_state = "closet-blue-low"
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 40
 
 
 
@@ -653,7 +653,7 @@
 /obj/random/closet_maintloot/low_chance
 	name = "low chance random maint loot closet"
 	icon_state = "closet-black-low"
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 40
 
 // For Scrap Beacon
 /obj/random/closet_maintloot/beacon/item_to_spawn()

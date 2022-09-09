@@ -8,7 +8,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the crew who you serve"
+	supervisors = "No one."
 	selection_color = "#1d1d4f"
 	req_admin_notify = 1
 	access = list() 			//See get_access()

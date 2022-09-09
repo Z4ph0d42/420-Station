@@ -1339,6 +1339,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
+/obj/item/weapon/material/ashtray/plastic,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
 "cV" = (
@@ -1695,17 +1696,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/habcheck)
-"dF" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/bed/chair{
-	dir = 4
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/mess)
 "dG" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/item/weapon/reagent_containers/glass/bucket,
@@ -4670,18 +4660,15 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
 /obj/machinery/alarm{
 	dir = 8;
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
-/obj/item/weapon/paper_bin,
 /obj/effect/floor_decal/carpet/blue2{
 	dir = 5
 	},
+/obj/random/plant,
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/mess)
 "jg" = (
@@ -6265,7 +6252,7 @@
 /area/crew_quarters/bar)
 "mp" = (
 /obj/structure/table/standard,
-/obj/random/single/cola,
+/obj/item/sticky_pad/random,
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/mess)
 "mq" = (
@@ -7415,6 +7402,7 @@
 	pixel_y = -24
 	},
 /obj/effect/floor_decal/carpet/blue2,
+/obj/random/plant,
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/mess)
 "pg" = (
@@ -7644,11 +7632,11 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/fore)
 "pH" = (
-/obj/structure/flora/pottedplant/flower,
 /obj/item/device/radio/intercom/entertainment{
 	dir = 4;
 	pixel_x = -22
 	},
+/obj/random/plant,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/recreation)
 "pI" = (
@@ -9544,7 +9532,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "uz" = (
-/obj/structure/flora/pottedplant/large,
+/obj/random/plant,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/recreation)
 "uA" = (
@@ -11513,6 +11501,7 @@
 	pixel_x = 21
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "zX" = (
@@ -11697,6 +11686,7 @@
 	pixel_x = 32
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "AG" = (
@@ -12302,6 +12292,7 @@
 	pixel_x = 22
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "Cv" = (
@@ -12605,6 +12596,7 @@
 	},
 /obj/structure/closet/secure_closet/personal,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "Dj" = (
@@ -15615,6 +15607,7 @@
 	dir = 4
 	},
 /obj/structure/table/standard,
+/obj/item/weapon/material/ashtray/glass,
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/mess)
 "Kp" = (
@@ -15969,6 +15962,7 @@
 "Lh" = (
 /obj/structure/closet/emcloset,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "Li" = (
@@ -16620,6 +16614,7 @@
 /obj/machinery/camera/network/third_deck{
 	c_tag = "Recreation Room"
 	},
+/obj/item/weapon/material/ashtray/plastic,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/recreation)
 "MR" = (
@@ -19520,7 +19515,9 @@
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar)
 "Vh" = (
-/obj/structure/door_assembly,
+/obj/structure/door_assembly{
+	anchored = 1
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "Vi" = (
@@ -39362,8 +39359,8 @@ ZK
 Aq
 Wt
 rL
-AA
-dF
+jc
+Tx
 jc
 lB
 mq

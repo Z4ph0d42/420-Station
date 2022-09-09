@@ -598,7 +598,7 @@
 /area/constructionsite/bridge)
 "bS" = (
 /obj/random/hostile{
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 40
 	},
 /turf/simulated/floor/tiled/dark/airless,
 /area/constructionsite/bridge)
@@ -714,7 +714,7 @@
 /area/constructionsite/bridge)
 "cj" = (
 /obj/random/hostile{
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 40
 	},
 /turf/simulated/floor/airless,
 /area/constructionsite/bridge)

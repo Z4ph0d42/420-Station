@@ -1762,6 +1762,7 @@
 /obj/effect/floor_decal/corner/blue/three_quarters{
 	dir = 8
 	},
+/obj/random/plant,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "cV" = (
@@ -1931,7 +1932,7 @@
 	icon_state = "tube1"
 	},
 /obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Bridge"
+	department = "Zerzura - Bridge"
 	},
 /obj/machinery/button/alternate/door{
 	id_tag = "meetingstarboard";
@@ -2439,12 +2440,12 @@
 	pixel_y = 24
 	},
 /obj/machinery/camera/network/command{
-	c_tag = "First Mate - Office"
+	c_tag = "Executive Officer - Office"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/flora/pottedplant/fern,
+/obj/random/plant,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
 "eo" = (
@@ -2508,7 +2509,7 @@
 /obj/item/weapon/material/bell,
 /obj/machinery/door/window/brigdoor/eastright{
 	dir = 8;
-	name = "First Mate's Desk"
+	name = "Executive Officer's Desk"
 	},
 /obj/item/weapon/paper_bin{
 	pixel_x = -3;
@@ -5583,7 +5584,7 @@
 	pixel_x = 20
 	},
 /obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Chief of Security"
+	department = "Zerzura - Chief of Security"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
@@ -7381,7 +7382,7 @@
 "rK" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "captaindoor";
-	name = "The Captain";
+	name = "Commanding Officer";
 	secured_wires = 1
 	},
 /obj/structure/cable/green{
@@ -7644,7 +7645,7 @@
 "sz" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "seaforedoor";
-	name = "The Second Mate";
+	name = "Senior Enlisted Advisor";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -8679,7 +8680,7 @@
 	dir = 6
 	},
 /obj/machinery/camera/network/command{
-	c_tag = "The Second Mate - Office";
+	c_tag = "Senior Enlisted Advisor - Office";
 	dir = 4;
 	network = list("Command")
 	},
@@ -9337,7 +9338,7 @@
 "wD" = (
 /obj/structure/table/woodentable/walnut,
 /obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - SolGov Representative"
+	department = "Zerzura - SolGov Representative"
 	},
 /obj/item/device/radio/intercom{
 	dir = 4;
@@ -10092,7 +10093,7 @@
 /area/crew_quarters/safe_room/bridge)
 "yM" = (
 /obj/structure/sign/dedicationplaque{
-	desc = "S.E.V. Torch - Mako Class - Sol Expeditionary Corps Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched 2302 - Sol Central Government - 'Never was anything great achieved without danger.'";
+	desc = "S.E.V. Zerzura - Mako Class - Sol Expeditionary Corps Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched 2302 - Sol Central Government - 'Never was anything great achieved without danger.'";
 	pixel_x = 0
 	},
 /turf/simulated/wall/r_wall/prepainted,
@@ -11658,7 +11659,7 @@
 /area/bridge)
 "FG" = (
 /obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - First Mate"
+	department = "Zerzura - Executive Officer"
 	},
 /obj/structure/noticeboard{
 	pixel_y = 30
@@ -11999,7 +12000,7 @@
 "Ho" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "hopdoor";
-	name = "First Mate";
+	name = "Executive Officer";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -12473,14 +12474,14 @@
 	name = "plastic table frame"
 	},
 /obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - The Second Mate"
+	department = "Zerzura - Senior Enlisted Advisor"
 	},
 /obj/effect/floor_decal/corner/blue/mono,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "The Second Mate's Desk";
+	department = "Senior Enlisted Advisor's Desk";
 	departmentType = 6;
-	name = "The Second Mate RC";
+	name = "Senior Enlisted Advisor RC";
 	pixel_x = 0;
 	pixel_y = -34
 	},
@@ -12915,7 +12916,7 @@
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/structure/table/glass,
 /obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Chief Medical Officer"
+	department = "Zerzura - Chief Medical Officer"
 	},
 /obj/item/weapon/stamp/cmo,
 /obj/item/device/radio{
@@ -13396,7 +13397,7 @@
 	pixel_y = 24
 	},
 /obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - The Captain"
+	department = "Zerzura - Commanding Officer"
 	},
 /obj/machinery/button/windowtint{
 	id = "co_windows";
@@ -14097,7 +14098,7 @@
 "Qp" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "captaindoorfore";
-	name = "The Captain";
+	name = "Commanding Officer";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -15074,7 +15075,7 @@
 /area/aquila/maintenance)
 "Uc" = (
 /obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Corporate Liasion"
+	department = "Zerzura - Corporate Liasion"
 	},
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/structure/noticeboard{
@@ -15640,7 +15641,7 @@
 "Wi" = (
 /obj/structure/table/glass,
 /obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Chief Science Officer"
+	department = "Zerzura - Chief Science Officer"
 	},
 /obj/machinery/newscaster{
 	pixel_y = 32
@@ -16100,7 +16101,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
 "Yz" = (
-/obj/structure/flora/pottedplant/orientaltree,
 /obj/effect/floor_decal/spline/fancy/wood/corner{
 	dir = 1
 	},
@@ -16109,6 +16109,7 @@
 	pixel_x = -23;
 	pixel_y = 0
 	},
+/obj/random/plant,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/co)
 "YA" = (
@@ -16351,7 +16352,7 @@
 	},
 /obj/effect/floor_decal/corner/yellow/mono,
 /obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Chief Engineer"
+	department = "Zerzura - Chief Engineer"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/ce)

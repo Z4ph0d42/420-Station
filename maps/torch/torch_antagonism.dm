@@ -1,4 +1,4 @@
-//Makes sure we don't get any merchant antags as a balance concern. Can also be used for future Torch specific antag restrictions.
+//Makes sure we don't get any merchant antags as a balance concern. Can also be used for future Zerzura specific antag restrictions.
 /datum/antagonist/changeling
 	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant, /datum/job/captain, /datum/job/hop, /datum/job/submap)
 

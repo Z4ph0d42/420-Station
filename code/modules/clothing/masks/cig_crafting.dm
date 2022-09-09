@@ -13,12 +13,27 @@
 	. = ..()
 	if(filter)
 		to_chat(user, "Capped off one end with a filter.")
-
 /obj/item/clothing/mask/smokable/cigarette/rolled/on_update_icon()
 	. = ..()
 	if(!lit)
 		icon_state = filter ? "cigoff" : "cigroll"
-/////////// //Ported Straight from TG. I am not sorry. - BloodyMan  //YOU SHOULD BE
+
+/obj/item/clothing/mask/smokable/cigarette/rolled/joint
+	name = "a joint"
+	desc = "A hand rolled joint using dried cannabis."
+	icon_state = "spliffoff"
+	type_butt = /obj/item/trash/roach
+	chem_volume = 50
+	brand = "handrolled"
+	smoketime = 800
+	chem_volume = 15
+	filling = list()
+
+/obj/item/clothing/mask/smokable/cigarette/rolled/joint/on_update_icon()
+	. = ..()
+	icon_state = lit ? "spliffon" : "spliffoff"
+
+/////////////Ported Straight from TG. I am not sorry. - BloodyMan  //YOU SHOULD BE
 //ROLLING//
 ///////////
 /obj/item/paper/cig
@@ -33,11 +48,27 @@
 	desc = "A thin piece of trident branded paper used to make fine smokeables."
 	icon_state = "cig_paperf"
 
+/obj/item/paper/cig/long
+	name = "\improper Bong Rips long paper"
+	desc = "Bong Rips long papers are a type of paper that is commonly used for rolling marijuana cigarettes. They are long, narrow, and have a distinctive appearance. They are slightly brown in color and are made from 100% hemp."
+	icon_state = "long_paper"
+
 /obj/item/paper/cig/filter
 	name = "cigarette filter"
 	desc = "A small nub like filter for cigarettes."
 	icon_state = "cig_filter"
 	w_class = ITEM_SIZE_TINY
+
+//weed 
+/obj/item/weapon/reagent_containers/food/snacks/grown/dried_cannabis
+	plantname = "cannabis"
+	w_class = ITEM_SIZE_TINY
+
+/obj/item/weapon/reagent_containers/food/snacks/grown/dried_cannabis/Initialize()
+	. = ..()
+	dry = TRUE
+	SetName("dried [name]")
+	color = "#499b4a"
 
 //tobacco sold seperately if you're too snobby to grow it yourself.
 /obj/item/weapon/reagent_containers/food/snacks/grown/dried_tobacco
@@ -73,13 +104,30 @@
 			return
 	..()
 
-/obj/item/weapon/reagent_containers/food/snacks/grown/attackby(obj/item/I, mob/user)
+/obj/item/weapon/reagent_containers/food/snacks/grown/dried_tobacco/attackby(obj/item/I, mob/user)
 	if(is_type_in_list(I, list(/obj/item/paper/cig/, /obj/item/weapon/paper/, /obj/item/weapon/teleportation_scroll)))
 		if(!dry)
 			to_chat(user, "<span class='warning'>You need to dry [src] first!</span>")
 			return
 		if(user.unEquip(I))
 			var/obj/item/clothing/mask/smokable/cigarette/rolled/R = new(get_turf(src))
+			R.chem_volume = reagents.total_volume
+			R.brand = "[src] handrolled in \the [I]."
+			reagents.trans_to_holder(R.reagents, R.chem_volume)
+			to_chat(user, "<span class='notice'>You roll \the [src] into \the [I]</span>")
+			user.put_in_active_hand(R)
+			qdel(I)
+			qdel(src)
+			return
+	..()
+
+/obj/item/weapon/reagent_containers/food/snacks/grown/dried_cannabis/attackby(obj/item/I, mob/user)
+	if(is_type_in_list(I, list(/obj/item/paper/cig/long, /obj/item/weapon/paper/, /obj/item/weapon/teleportation_scroll)))
+		if(!dry)
+			to_chat(user, "<span class='warning'>You need to dry [src] first!</span>")
+			return
+		if(user.unEquip(I))
+			var/obj/item/clothing/mask/smokable/cigarette/rolled/joint/R = new(get_turf(src))
 			R.chem_volume = reagents.total_volume
 			R.brand = "[src] handrolled in \the [I]."
 			reagents.trans_to_holder(R.reagents, R.chem_volume)

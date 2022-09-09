@@ -17,7 +17,7 @@
 /datum/map/torch // setting the map to use this list
 	security_state = /decl/security_state/default/torchdept
 
-//Torch map alert levels. Refer to security_state.dm.
+//Zerzura map alert levels. Refer to security_state.dm.
 /decl/security_state/default/torchdept
 	all_security_levels = list(/decl/security_level/default/torchdept/code_green, /decl/security_level/default/torchdept/code_violet, /decl/security_level/default/torchdept/code_orange, /decl/security_level/default/torchdept/code_blue, /decl/security_level/default/torchdept/code_red, /decl/security_level/default/torchdept/code_delta)
 

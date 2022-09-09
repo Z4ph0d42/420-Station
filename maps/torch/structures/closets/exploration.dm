@@ -1,5 +1,5 @@
 /*
- * Torch Exploration
+ * Zerzura Exploration
  */
 
 /decl/closet_appearance/secure_closet/torch/exploration

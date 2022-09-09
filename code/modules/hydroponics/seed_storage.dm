@@ -60,6 +60,7 @@
 		/obj/item/seeds/blueberryseed = 15,
 		/obj/item/seeds/cabbageseed = 15,
 		/obj/item/seeds/carrotseed = 15,
+		/obj/item/seeds/cannabis = 15,
 		/obj/item/seeds/chantermycelium = 15,
 		/obj/item/seeds/cherryseed = 15,
 		/obj/item/seeds/chiliseed = 15,

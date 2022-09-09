@@ -39,7 +39,7 @@
 /datum/map_template/ruin/away_site/icarus
 	name = "Fallen Icarus"
 	id = "awaysite_icarus"
-	description = "The crashlanding site of the SEV Icarus."
+	description = "The crashlanding site of the CEV Icarus."
 	suffixes = list("icarus/icarus-1.dmm", "icarus/icarus-2.dmm")
 	cost = 2
 	generate_mining_by_z = list(1, 2)
@@ -87,7 +87,7 @@
 	name = "Printed piece of paper"
 	info = "\[LOG\]: Orbit stabilized. Next correction burst, est.: 2 hrs 12 m<br>\
 			\[LOG\]: Orbit stabiliztion. Announcing...<br>\
-			\[ANN\]: Attention all hands, SEV Icarus is stabilizing orbit in 30 seconds. Prepare for possible gravitational spikes.<br>\
+			\[ANN\]: Attention all hands, CEV Icarus is stabilizing orbit in 30 seconds. Prepare for possible gravitational spikes.<br>\
 			\[LOG\]: Announcing complete.<br>\
 			\[LOG\]: Preparing for burst: heating up impulse mass.<br>\
 			\[WARN\]: Minor pressure alert, Reactor Cooling Loop 3.<br>\
@@ -118,7 +118,7 @@
 /obj/item/weapon/paper/icarus/crew_roster
 	name = "Printed piece of paper"
 	info = "<center>\[solcrest]<BR>\
-			<b>SEV Icarus</b><br>\
+			<b>CEV Icarus</b><br>\
 			Crew roster</center><br>\
 			<b>Command</b><br>\
 			\[list]\
@@ -156,12 +156,12 @@
 			\[list]"
 
 /obj/item/toy/ship_model
-	name = "table-top SEV Icarus model"
-	desc = "A small model of a spaceship mounted on a wooden stand. On the stand is engraved: \"SEV Icarus 1:278th scale\". The small lights on the hull and the engine exhaust still light up and blink."
+	name = "table-top CEV Icarus model"
+	desc = "A small model of a spaceship mounted on a wooden stand. On the stand is engraved: \"CEV Icarus 1:278th scale\". The small lights on the hull and the engine exhaust still light up and blink."
 	icon = 'maps/away/icarus/icarus_sprites.dmi'
 	icon_state = "model"
 
-//to pass tests and make vesrion not depending on Torch code. Sol gov floor decal had to go though :(
+//to pass tests and make vesrion not depending on Zerzura code. Sol gov floor decal had to go though :(
 /obj/structure/sign/icarus/solgov
 	name = "\improper SolGov Seal"
 	desc = "A familiar seal showing this vessel is SolGov property."
@@ -170,7 +170,7 @@
 
 /obj/item/clothing/under/icarus/ec_uniform
 	name = "expeditionary uniform"
-	desc = "An older model of the utility uniform of the SCG Expeditionary Corps. It has a patch on the left sleeve signifying the wearer served on the SEV Icarus."
+	desc = "An older model of the utility uniform of the SCG Expeditionary Corps. It has a patch on the left sleeve signifying the wearer served on the CEV Icarus."
 	icon_state = "blackutility_crew"
 	worn_state = "blackutility_crew"
 	icon = 'maps/away/icarus/icarus_sprites.dmi'

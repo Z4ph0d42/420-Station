@@ -75,8 +75,8 @@ medals
 	return check_codex_val || ..()
 
 /obj/item/clothing/accessory/solgov/torch_patch
-	name = "\improper Torch mission patch"
-	desc = "A fire resistant shoulder patch, worn by the personnel involved in the Torch Project."
+	name = "\improper Zerzura mission patch"
+	desc = "A fire resistant shoulder patch, worn by the personnel involved in the Zerzura Project."
 	icon_state = "torchpatch"
 	on_rolled = list("down" = "none")
 	slot = ACCESSORY_SLOT_INSIGNIA

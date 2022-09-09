@@ -515,6 +515,41 @@
 
 /* Drugs */
 
+/datum/reagent/thc
+	name = "THC"
+	description = "A chemical compound found primarilly in the cannabis plant. Can cause mild euphoria and pain relief in small does. In larger doses can induce mild psychosis"
+	taste_description = "slightly spicy and herby"
+	taste_mult = 1
+	reagent_state = LIQUID
+	color = "#2edb0782"
+	metabolism = REM * 0.5
+	overdose = REAGENTS_OVERDOSE
+	scent = "marijuana smoke"
+	scent_descriptor = SCENT_DESC_ODOR
+	scent_range = 4
+	value = 1
+
+/datum/reagent/thc/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+
+	var/drug_strength = 15
+	if(alien == IS_SKRELL)
+		drug_strength = drug_strength * 0.8
+	
+	if(prob(5))
+		M.adjust_nutrition(-2)
+		to_chat(pick("You suddenly feel very hungry.", "You could totally go for a some pizza right now.", "Dude, you're totally starving!"))
+	if(prob(5))
+		M.adjust_hydration(-2)
+		to_chat(pick("Your mouth feels very dry.", "You feel very thirsty", "You could chug an entire bottle of water right now.", "Holy shit I'm thirsty!"))
+	if(prob(6))
+		to_chat(pick("You feel very relaxed.", "You feel totally chill.", "You feel like taking it easy.", "Man fuck the police!", "You forget what you were about to do."))
+		M.emote(pick("smile","giggle","stare"))
+		M.add_chemical_effect(CE_SEDATE, 2)
+		M.add_chemical_effect(CE_MIND, -1)
+		M.add_chemical_effect(CE_PAINKILLER, 20)
+	
 /datum/reagent/space_drugs
 	name = "Space drugs"
 	description = "An illegal chemical compound used as drug."

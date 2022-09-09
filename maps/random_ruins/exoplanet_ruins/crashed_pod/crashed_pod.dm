@@ -60,5 +60,5 @@ GLOBAL_LIST_INIT(crashed_pod_areas, new)
 		"Scarab",		"Ash Borer",	"Admiral",
 		"Emperor",		"Skipper",		"Tarantula Hawk",
 		"Adder",		"Bumblebee")
-	name = "[pick("SEV", "SIC", "FTUV", "ICV", "HMS")] [pick(possible_ship_names)]"
+	name = "[pick("CEV", "SIC", "FTUV", "ICV", "HMS")] [pick(possible_ship_names)]"
 	..()

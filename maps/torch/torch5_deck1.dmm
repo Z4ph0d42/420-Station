@@ -9000,6 +9000,7 @@
 	},
 /obj/structure/closet/emcloset,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aBJ" = (
@@ -9687,6 +9688,7 @@
 /obj/random/maintenance/clean,
 /obj/random/maintenance/clean,
 /obj/structure/closet/secure_closet/crew/research,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aFh" = (
@@ -9913,6 +9915,7 @@
 /obj/random/maintenance/solgov/clean,
 /obj/random/maintenance/solgov/clean,
 /obj/random/maintenance/solgov/clean,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aGs" = (
@@ -9945,6 +9948,7 @@
 "aGu" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/secure_closet/personal,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aGw" = (
@@ -10061,6 +10065,7 @@
 	c_tag = "Auxiliary Cryogenic Storage - Port";
 	dir = 4
 	},
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aHd" = (
@@ -10088,6 +10093,7 @@
 	c_tag = "Auxiliary Cryogenic Storage - Starboard";
 	dir = 8
 	},
+/obj/item/weapon/shovel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aHh" = (
@@ -15353,7 +15359,7 @@
 	},
 /obj/effect/floor_decal/corner/research/mono,
 /obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Research Paperwork Office"
+	department = "Zerzura - Research Paperwork Office"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/office)
@@ -16600,7 +16606,7 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 10
 	},
-/obj/structure/flora/pottedplant/minitree,
+/obj/random/plant,
 /turf/simulated/floor/tiled,
 /area/security/detectives_office)
 "dnb" = (
@@ -23987,7 +23993,7 @@
 	dir = 4
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Investigations Office"
+	department = "Zerzura - Investigations Office"
 	},
 /turf/simulated/floor/tiled,
 /area/security/detectives_office)
@@ -24143,7 +24149,7 @@
 "nFh" = (
 /obj/structure/table/steel,
 /obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Brig Chief"
+	department = "Zerzura - Brig Chief"
 	},
 /obj/machinery/camera/network/security{
 	c_tag = "Security Wing - Brig Chief";
