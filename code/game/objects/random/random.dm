@@ -64,7 +64,7 @@
 	name = "randomly spawned object"
 	desc = "This item type is used to randomly spawn a given object at round-start."
 	icon_state = "x3"
-	spawn_nothing_percentage = 50
+	spawn_nothing_percentage = 30
 	var/spawn_object = null
 
 /obj/random/single/spawn_choices()
@@ -161,7 +161,7 @@
 	desc = "This is a random piece of technology supplies."
 	icon = 'icons/obj/power.dmi'
 	icon_state = "cell"
-	spawn_nothing_percentage = 50
+	spawn_nothing_percentage = 30
 
 /obj/random/tech_supply/spawn_choices()
 	return list(/obj/random/powercell = 3,
@@ -230,7 +230,7 @@
 	desc = "This is a belt"
 	icon = 'icons/obj/clothing/obj_belt.dmi'
 	icon_state = "utility"
-	spawn_nothing_percentage = 50
+	spawn_nothing_percentage = 30
 
 obj/random/belt/spawn_choices()
 	return list (
@@ -514,7 +514,7 @@ obj/random/circuitboard/spawn_choices()
 	desc = "Hot Stuff."
 	icon = 'icons/obj/items.dmi'
 	icon_state = "purplecomb"
-	spawn_nothing_percentage = 50
+	spawn_nothing_percentage = 30
 
 /obj/random/contraband/spawn_choices()
 	return list(/obj/item/weapon/haircomb = 4,
@@ -544,7 +544,7 @@ obj/random/circuitboard/spawn_choices()
 /obj/random/contraband/low_chance
 	name = "low chance random illegal item"
 	icon_state = "box-red-low"
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 40
 
 /obj/random/drinkbottle
 	name = "random drink"
@@ -945,7 +945,7 @@ obj/random/prothesis/spawn_choices()
 /obj/random/junk/low_chance
 	name = "low chance random junk"
 	icon_state = "trashbag3"
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 40
 
 /obj/random/trash //Mostly remains and cleanable decals. Stuff a janitor could clean up
 	name = "random trash"
@@ -2078,13 +2078,13 @@ var/list/random_useful_
 /obj/random/techpart/low_chance
 	name = "low chance random techpart"
 	icon_state = "tech-orange-low"
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 40
 
 
 /obj/random/medical/low_chance
 	name = "low chance random medicine"
 	icon_state = "meds-green-low"
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 40
 
 /obj/random/medical_lowcost
 	name = "random low tier medicine"
@@ -2101,7 +2101,7 @@ var/list/random_useful_
 /obj/random/medical_lowcost/low_chance
 	name = "low chance random low tier medicine"
 	icon_state = "meds-grey-low"
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 40
 
 
 /obj/random/rations
@@ -2119,7 +2119,7 @@ var/list/random_useful_
 /obj/random/rations/low_chance
 	name = "low chance preserved rations"
 	icon_state = "food-green-low"
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 40
 
 
 /obj/random/structures
@@ -2146,7 +2146,7 @@ var/list/random_useful_
 /obj/random/structures/low_chance
 	name = "low chance random structures"
 	icon_state = "machine-black-low"
-	spawn_nothing_percentage = 60
+	spawn_nothing_percentage = 40
 
 /obj/random/structures/os
 	name = "random os structure"
