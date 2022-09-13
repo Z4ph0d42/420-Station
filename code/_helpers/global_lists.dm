@@ -39,6 +39,12 @@ GLOBAL_DATUM_INIT(underwear, /datum/category_collection/underwear, new())
 var/list/datum/visualnet/visual_nets = list()
 var/datum/visualnet/camera/cameranet = new()
 
+//Jobs and economy
+GLOBAL_LIST_EMPTY(joblist)					//list of all jobstypes, minus borg and AI
+GLOBAL_LIST_EMPTY(all_departments)			//List of all department datums
+var/global/list/department_IDs = list(COM, MED, ENG, SCI, SEC, SUP, SRV)
+GLOBAL_LIST_EMPTY(global_corporations)
+
 // Runes
 var/global/list/rune_list = new()
 var/global/list/endgame_exits = list()

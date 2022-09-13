@@ -246,6 +246,7 @@
 #define EMAIL_DOCUMENTS "document.server@internal-services.net"
 #define EMAIL_SYSADMIN  "admin@internal-services.net"
 #define EMAIL_BROADCAST "broadcast@internal-services.net"
+#define EMAIL_PAYROLL "payroll@internal-services.net"
 
 //Stats for department goals etc
 #define STAT_XENOPLANTS_SCANNED  "xenoplants_scanned"

@@ -52,6 +52,7 @@
 #define SS_INIT_TICKER          -20
 #define SS_INIT_CHAT            -90 // Should be lower to ensure chat remains smooth during init.
 #define SS_INIT_UNIT_TESTS      -100
+#define SS_INIT_ORDER_LATELOAD 	-180
 
 // SS runlevels
 
