@@ -11,6 +11,13 @@
 							//2 - require card and manual login
 	var/account_type = ACCOUNT_TYPE_PERSONAL
 
+//One-stop safety checks for accounts
+/datum/money_account/proc/is_valid()
+	if (suspended)
+		return FALSE
+
+	return TRUE
+
 /datum/money_account/New(var/account_type)
 	account_type = account_type ? account_type : ACCOUNT_TYPE_PERSONAL
 
@@ -38,6 +45,18 @@
 	var/datum/transaction/T = new(src, to_account, amount, purpose)
 	return T.perform()
 
+
+/datum/transaction/proc/apply_to(var/datum/money_account/account)
+	if(!istype(account) || !account.is_valid())
+		return FALSE
+
+	if(isnum(amount))
+		if(amount < 0 && (account.money + amount) < 0)
+			return FALSE
+		account.money += amount
+
+	account.transaction_log.Add(src.Copy())
+	return TRUE
 
 /proc/create_account(var/account_name = "Default account name", var/owner_name, var/starting_funds = 0, var/account_type = ACCOUNT_TYPE_PERSONAL, var/obj/machinery/computer/account_database/source_db)
 

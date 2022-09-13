@@ -5,7 +5,7 @@
 */
 
 /datum/department
-	var/name = "unspecified department"	//Name may be shown in UIs, proper capitalisation
+	//var/name = "unspecified department"	//Name may be shown in UIs, proper capitalisation
 	var/id	= "department" //This should be one of the DEPARTMENT_XXX defines in __defines/jobs.dm
 	var/account_number = 0
 	var/account_pin
@@ -26,7 +26,7 @@
 
 	//Where the money for wages and budget actually comes from. With internal, this is a department account ID
 	//With external, this is the name of an organisation
-	var/funding_source = DEPARTMENT_COMMAND
+	var/funding_source = COM
 
 	//This is a key value list of datacore records and their total owed wage
 	//When payday comes, accounts in the department are added here, and removed once the balance is paid off
