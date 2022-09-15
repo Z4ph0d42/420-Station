@@ -67,7 +67,7 @@ SUBSYSTEM_DEF(economy)
 		//Ok lets get their job to determine how much we'll pay them
 		var/datum/job/temp_job = SSjob.GetJob(R.get_job())
 		if(!istype(temp_job))
-			temp_job = SSjob.GetJob(ASSISTANT_TITLE)
+			temp_job = SSjob.GetJob(CIV)
 		if(!istype(temp_job))
 			continue
 
