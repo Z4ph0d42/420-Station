@@ -65,9 +65,9 @@ SUBSYSTEM_DEF(economy)
 
 
 		//Ok lets get their job to determine how much we'll pay them
-		var/datum/job/temp_job = SSjob.GetJob(R.get_job())
+		var/datum/job/temp_job = SSjobs.get_by_title(R.get_job())
 		if(!istype(temp_job))
-			temp_job = SSjob.GetJob(CIV)
+			temp_job = SSjobs.get_by_title("Assistant")
 		if(!istype(temp_job))
 			continue
 
@@ -75,7 +75,9 @@ SUBSYSTEM_DEF(economy)
 		if (!department)
 			continue
 
-		var/wage = temp_job.get_wage(R)
+		var/wage = 0
+		if(temp_job.wage > 0)
+			wage = temp_job.wage
 		if (wage <= 0)
 			continue //This person will not be paid
 
@@ -169,12 +171,12 @@ SUBSYSTEM_DEF(economy)
 		if (account.money < department.pending_wage_total)
 			//TODO Here: Email the account owner warning them that wages can't be paid
 			//Ok we can't pay wages, this is bad. Lets tell the account owner
-			var/ownername = account.owner_name
+			/*var/ownername = account.owner_name
 			if (ownername)
 				//Lets pull up the records for this person
 				var/datum/computer_file/report/crew_record/OR = get_crewmember_record(ownername)
 				if (OR)
-					payroll_failure_mail(OR, account, department.pending_wage_total)
+					payroll_failure_mail(OR, account, department.pending_wage_total)*/
 			continue
 
 		//Here we go, lets pay them!
@@ -191,13 +193,13 @@ SUBSYSTEM_DEF(economy)
 					//If this wage was funded internally, make sure the recipient knows that
 					sender = "CEV Eris via [sender]"
 
-				payroll_mail_account_holder(R, sender, amount)
+				//payroll_mail_account_holder(R, sender, amount)
 		department.pending_wages = list() //All pending wages paid off
 	command_announcement.Announce("Hourly crew wages have been paid, please check your email for details. In total the crew of CEV Eris have earned [total_paid] credits.\n Please contact your Department Heads in case of errors or missing payments.", "Dispensation")
 
 
 //Sent to a head of staff when their department account fails to pay out wages
-/proc/payroll_failure_mail(var/datum/computer_file/report/crew_record/R, var/datum/money_account/fail_account, var/amount)
+/*/proc/payroll_failure_mail(var/datum/computer_file/report/crew_record/R, var/datum/money_account/fail_account, var/amount)
 	var/address = R.get_email()
 
 	var/datum/computer_file/data/email_message/message = new()
@@ -231,4 +233,4 @@ SUBSYSTEM_DEF(economy)
 	message.source = payroll_mailer.login
 	if(!payroll_mailer.send_mail(address, message))
 		return FALSE
-	return TRUE
+	return TRUE*/

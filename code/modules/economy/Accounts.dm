@@ -18,6 +18,12 @@
 
 	return TRUE
 
+//Try to get the name of the account
+/datum/money_account/proc/get_name()
+	if (account_name)
+		return account_name
+	return owner_name
+
 /datum/money_account/New(var/account_type)
 	account_type = account_type ? account_type : ACCOUNT_TYPE_PERSONAL
 
@@ -55,7 +61,7 @@
 			return FALSE
 		account.money += amount
 
-	account.transaction_log.Add(src.Copy())
+	//account.transaction_log.Add(src.Copy())
 	return TRUE
 
 /proc/create_account(var/account_name = "Default account name", var/owner_name, var/starting_funds = 0, var/account_type = ACCOUNT_TYPE_PERSONAL, var/obj/machinery/computer/account_database/source_db)
@@ -109,6 +115,49 @@
 	all_money_accounts.Add(M)
 
 	return M
+
+//Charges an account a certain amount of money which is functionally just removed from existence
+/proc/charge_to_account(attempt_account_number, target_name, purpose, terminal_id, amount)
+	var/datum/money_account/D = get_account(attempt_account_number)
+	if (D)
+		//create a transaction log entry
+		var/datum/transaction/T = new(amount*-1, target_name, purpose, terminal_id)
+		return T.apply_to(D)
+
+	return FALSE
+
+//Creates money from nothing and deposits it in an account
+/proc/deposit_to_account(attempt_account_number, source_name, purpose, terminal_id, amount)
+	var/datum/money_account/D = get_account(attempt_account_number)
+	if (D)
+		//create a transaction log entry
+		var/datum/transaction/T = new(amount, source_name, purpose, terminal_id)
+		return T.apply_to(D)
+
+	return FALSE
+
+//Transfers funds from one account to another
+/proc/transfer_funds(source_account, target_account, purpose, terminal_id, amount)
+	var/datum/money_account/source = get_account(source_account)
+	var/datum/money_account/target = get_account(target_account)
+
+	if (!source || !target)
+		return FALSE
+	if (!source.is_valid() || !target.is_valid())
+		return FALSE
+
+	//We've got both accounts and confirmed they are valid
+
+	//The transaction to take the money
+	var/datum/transaction/T1 = new(amount*-1, target.get_name(), purpose, terminal_id)
+	if (T1.apply_to(source))
+
+		//The transaction to give the money
+		var/datum/transaction/T2 = new(amount, source.get_name(), purpose, terminal_id)
+		//SEND_SIGNAL(source, COMSIG_TRANSATION, source, target, amount)
+		return T2.apply_to(target)
+
+	return FALSE
 
 //this returns the first account datum that matches the supplied accnum/pin combination, it returns null if the combination did not match any account
 /proc/attempt_account_access(var/attempt_account_number, var/attempt_pin_number, var/security_level_passed = 0)
