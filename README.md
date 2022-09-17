@@ -1,6 +1,6 @@
 # baystation12
 
-[Website](http://baystation12.net/) - [Code](https://github.com/Z4ph0d42/420-Station) - [Discord](https://discord.baystation12.net/) - [IRC](https://kiwiirc.com/client/irc.sorcery.net/codershuttle): irc://irc.sorcery.net/#codershuttle
+[Website](http://baystation12.net/) - [Code](https://github.com/Z4ph0d42/420-Station) - [Discord](https://discord.gg/2eDSTdeR) - [IRC](https://kiwiirc.com/client/irc.sorcery.net/codershuttle): irc://irc.sorcery.net/#codershuttle
 
 ---
 
