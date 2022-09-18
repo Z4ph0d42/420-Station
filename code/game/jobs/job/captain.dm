@@ -15,6 +15,8 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	minimal_access = list() 	//See get_access()
 	minimal_player_age = 4
 	economic_power = 20
+	wage = WAGE_NONE //The captain doesn't get paid, he's the one who does the paying
+	//The ship account is his, and he's free to draw as much salary as he likes
 
 	ideal_character_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/captain

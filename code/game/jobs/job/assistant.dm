@@ -11,6 +11,8 @@
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	alt_titles = list("Technical Assistant","Medical Intern","Research Assistant","Visitor")
 	outfit_type = /decl/hierarchy/outfit/job/assistant
+	wage = WAGE_NONE //Get a job ya lazy bum
+	
 
 /datum/job/assistant/get_access()
 	return list()
