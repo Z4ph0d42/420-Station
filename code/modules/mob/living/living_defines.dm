@@ -14,7 +14,7 @@
 	//var/oxyloss = 0   //Oxygen depravation damage (no air in lungs)
 	//var/toxloss = 0   //Toxic damage caused by being poisoned or radiated
 	//var/fireloss = 0  //Burn damage caused by being way too hot, too cold or burnt.
-	//var/halloss = 0   //Hallucination damage. 'Fake' damage obtained through hallucinating or the holodeck. Sleeping should cause it to wear off.
+	var/halloss = 0   //Hallucination damage. 'Fake' damage obtained through hallucinating or the holodeck. Sleeping should cause it to wear off.
 
 	var/last_special = 0 //Used by the resist verb, likely used to prevent players from bypassing next_move by logging in/out.
 
@@ -28,6 +28,8 @@
 	var/mob_swap_flags = 0
 	var/mob_push_flags = 0
 	var/mob_always_swap = 0
+	var/can_burrow = FALSE //If true, this mob can travel around using the burrow network.
+	//When this mob spawns at roundstart, a burrow will be created near it if it can't find one
 
 	var/mob/living/cameraFollow = null
 	var/list/datum/action/actions = list()

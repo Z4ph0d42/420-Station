@@ -44,3 +44,29 @@
 /obj/item/weapon/reagent_containers/food/snacks/meat/chicken/game
 	name = "game bird piece"
 	desc = "Fresh game meat, harvested from some wild bird."
+
+obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat
+	desc = "A slab of sickly-green bubbling meat cut from a giant roach. You swear you can see it still twitching occasionally. Delicious!"
+	icon_state = "xenomeat"
+	filling_color = "#E2FFDE"
+
+	bitesize = 6
+	reagents = list("protein" = 4)
+
+/obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat/seuche
+	reagents = list("protein" = 4)
+
+/obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat/panzer
+	reagents = list("protein" = 8)
+
+/obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat/fuhrer
+	reagents = list("protein" = 6)
+
+/obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat/kaiser
+	reagents = list("protein" = 6)
+
+/obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat/jager
+	reagents = list("protein" = 6)
+
+/obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat/kraftwerk 
+	reagents = list("protein" = 6)
