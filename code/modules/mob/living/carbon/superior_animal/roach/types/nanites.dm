@@ -32,7 +32,7 @@
 	if(isliving(A))
 		var/mob/living/L = A
 		if(istype(L) && prob(25) && nanite_swarms.len < max_swarms)
-			var/sound/screech = pick('sound\machines\robot_talk_light1.ogg','/sound/machines/robot_talk_light2.ogg','/sound/machines/robot_talk_light4.ogg')
+			var/sound/screech = pick('sound/machines/robot_talk_light1.ogg','/sound/machines/robot_talk_light2.ogg','/sound/machines/robot_talk_light4.ogg')
 			playsound(src, screech, 30, 1, -3)
 			nanite_swarms.Add(new /mob/living/simple_animal/hostile/naniteswarm(get_turf(src), src))
 			say("10101010011100010101")
