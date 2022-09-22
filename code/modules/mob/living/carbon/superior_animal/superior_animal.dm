@@ -8,7 +8,7 @@
 	mob_size = MOB_SMALL //MOB_MINISCULE MOB_TINY MOB_SMALL MOB_MEDIUM MOB_LARGE
 	a_intent = I_HURT
 
-	icon = 'icons\mob\simple_animal\animal.dmi'
+	icon = 'icons/mob/simple_animal/animal.dmi'
 	icon_state = "jelly"
 
 	var/icon_living

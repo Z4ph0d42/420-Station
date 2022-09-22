@@ -453,7 +453,7 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 			//This should never be false
 			//Play a sound
 			if(!silent)
-				audio('sound/effects/impacts/thud_break.ogg', 100)
+				audio('sound/effects/thud_break.ogg', 100)
 			spawn_rubble(loc, 1, 100)//And make some rubble
 
 /obj/structure/burrow/proc/reveal()
@@ -490,7 +490,7 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 						invisibility = 101
 						spawn(rand(3,10) SECONDS)
 							if(isSealed)
-								audio('sound/effects/impacts/thud_break.ogg', 100)
+								audio('sound/effects/thud_break.ogg', 100)
 								spawn_rubble(loc, 1, 100)//And make some rubble
 								invisibility = 0
 				else

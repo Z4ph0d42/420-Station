@@ -73,7 +73,7 @@ Has ability of every roach.
 		if(istype(L) && prob(10))
 			var/damage = rand(melee_damage_lower, melee_damage_upper)
 			L.damage_through_armor(damage, TOX)
-			playsound(src, 'sound/voice/insect_battle_screeching.ogg', 30, 1, -3)
+			playsound(src, 'sound\voice\insect_battle_screeching.ogg', 30, 1, -3)
 			L.visible_message(SPAN_DANGER("\the [src] globs up some toxic bile all over \the [L]!"))
 
 // SUPPORT ABILITIES
