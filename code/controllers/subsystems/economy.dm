@@ -54,7 +54,6 @@ SUBSYSTEM_DEF(economy)
 //This is step 1, lets get the info
 /proc/gather_payroll_info()
 
-
 	//First gather the data for crew wages
 	//Each record covers a specific crewman
 	for(var/datum/computer_file/report/crew_record/R in GLOB.all_crew_records)
@@ -71,9 +70,12 @@ SUBSYSTEM_DEF(economy)
 		if(!istype(temp_job))
 			continue
 
-		var/datum/department/department = GLOB.all_departments[temp_job.department]
+
+		var/datum/station_department/department = GLOB.all_departments[temp_job.department]
 		if (!department)
 			continue
+		if(!department.pending_wages || !islist(department.pending_wages))
+			department.pending_wages = list()
 
 		var/wage = 0
 		if(temp_job.wage > 0)
@@ -82,12 +84,16 @@ SUBSYSTEM_DEF(economy)
 			continue //This person will not be paid
 
 		//Alright we have their wage and their department, lets add it to the department's pending payments
-		LAZYAPLUS(department.pending_wages, R, wage)
+		//LAZYAPLUS(department.pending_wages, R, wage)
+		if(!department.pending_wages[R])
+			department.pending_wages[R] = 0
+		department.pending_wages[R] += wage
+
 
 
 	//Lets request departmental funding next
 	for (var/d in GLOB.all_departments)
-		var/datum/department/department = GLOB.all_departments[d]
+		var/datum/station_department/department = GLOB.all_departments[d]
 		if (department.account_budget)
 			department.pending_budget_total += department.account_budget
 		department.sum_wages() //Poke this in here to cache the wage totals
@@ -95,9 +101,9 @@ SUBSYSTEM_DEF(economy)
 
 //Step 2: Requesting funds
 //Here we attempt to transfer money from funding sources to department accounts
-/proc/request_payroll_funds()
+/proc/request_payroll_funds() //this shit should connect ot the existing accounts not some new ones
 	for (var/d in GLOB.all_departments)
-		var/datum/department/department = GLOB.all_departments[d]
+		var/datum/station_department/department = GLOB.all_departments[d]
 		if (department.funding_type == FUNDING_NONE)
 			continue //This department gets no funding
 
@@ -132,6 +138,7 @@ SUBSYSTEM_DEF(economy)
 					//It has enough, lets do this
 					can_pay = TRUE
 
+
 		if (can_pay)
 			var/paid = FALSE
 
@@ -155,20 +162,26 @@ SUBSYSTEM_DEF(economy)
 
 //Step 3: Actually paying the wages
 /proc/pay_wages()
+	to_chat(world,"pay_wages")
 	var/total_paid = 0
 	for (var/d in GLOB.all_departments)
-		var/datum/department/department = GLOB.all_departments[d]
+		var/datum/station_department/department = GLOB.all_departments[d]
+		to_chat(world,"[department.id]")
 		if (!department.pending_wage_total)
 			//No need to do anything if nobody's being paid here
+			to_chat(world,"[department.id] is not pending_wage_total")
 			continue
 
 		//Get our account
 		var/datum/money_account/account = department_accounts[department.id]
 		if (!account)
+			to_chat(world,"[department.id] has no account")
 			continue
+		to_chat(world,"[account.account_name]")
 
 		//Check again that the department has enough. Because some departments, like guild, didnt request funds
 		if (account.money < department.pending_wage_total)
+			to_chat(world,"[account.money < department.pending_wage_total]")
 			//TODO Here: Email the account owner warning them that wages can't be paid
 			//Ok we can't pay wages, this is bad. Lets tell the account owner
 			/*var/ownername = account.owner_name
@@ -181,12 +194,15 @@ SUBSYSTEM_DEF(economy)
 
 		//Here we go, lets pay them!
 		for (var/datum/computer_file/report/crew_record/R in department.pending_wages)
+			to_chat(world,"crew record [R.get_name()]")
 			var/paid = FALSE
 			//Get the crewman's account that we'll pay to
 			var/crew_account_num = R.get_account()
 			var/amount = department.pending_wages[R]
+			to_chat(world,"crew_account_num = [crew_account_num], amount = [amount]")
 			paid = transfer_funds(department.account_number, crew_account_num, "Payroll", "CEV Zerzura payroll system", amount)
 			if (paid)
+				to_chat(world,"paid success")
 				total_paid += amount
 				var/sender = "[department.name] account"
 				if (department.funding_type == FUNDING_INTERNAL)
@@ -195,7 +211,8 @@ SUBSYSTEM_DEF(economy)
 
 				//payroll_mail_account_holder(R, sender, amount)
 		department.pending_wages = list() //All pending wages paid off
-	command_announcement.Announce("Hourly crew wages have been paid, please check your email for details. In total the crew of CEV Zerzura have earned [total_paid] credits.\n Please contact your Department Heads in case of errors or missing payments.", "Dispensation")
+	if(total_paid > 0)
+		command_announcement.Announce("Hourly crew wages have been paid, please check your email for details. In total the crew of CEV Zerzura have earned [total_paid] credits.\n Please contact your Department Heads in case of errors or missing payments.", "Dispensation")
 
 
 //Sent to a head of staff when their department account fails to pay out wages

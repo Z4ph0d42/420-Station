@@ -74,13 +74,12 @@ var/global/list/datum/money_account/department_accounts = list()
 var/global/num_financial_terminals = 1
 var/global/next_account_number = 0
 var/global/list/all_money_accounts = list()
-var/global/list/transaction_devices = list()
-var/global/economy_init = 0
+//var/global/economy_init = 0
 
 //Email account used to send notifications about salaries. Payments made, funding failed, etc
 var/global/datum/computer_file/data/email_account/service/payroll/payroll_mailer = null
 
-/proc/setup_economy()
+/*/proc/setup_economy()
 	if(economy_init)
 		return 2
 
@@ -111,8 +110,8 @@ var/global/datum/computer_file/data/email_account/service/payroll/payroll_mailer
 	economy_init = 1
 	return 1
 
-
-/proc/create_department_account(var/datum/department/department)
+//this already exists with in 420 station source.
+/proc/create_department_account(var/datum/station_department/department)
 	next_account_number = rand(111111, 999999)
 
 	var/datum/money_account/department_account = new()
@@ -124,12 +123,15 @@ var/global/datum/computer_file/data/email_account/service/payroll/payroll_mailer
 	department.account_pin = department_account.remote_access_pin
 
 	//create an entry in the account transaction log for when it was created
-	var/datum/transaction/T = new(department.account_initial_balance, department_account.owner_name, "Account creation", "Asters Guild Terminal #277")
-	T.date = "2 April, 2555"
-	T.time = "11:24"
+	//var/datum/transaction/T = new(department.account_initial_balance, department_account.owner_name, "Account creation", "Asters Guild Terminal #277")
+	///datum/transaction/New(_source, _target, _amount, _purpose) -420 source
+	///datum/transaction/New(_amount = 0, _target_name, _purpose, _source_terminal, _date = null, _time = null) -cev source
+	var/datum/transaction/T = new("Asters Guild Terminal #277", department_account, department.account_initial_balance, "Account creation", "2 April, 2555","11:24")
+	//T.date = "2 April, 2555"
+	//T.time = "11:24"
 
 	//add the account
 	T.apply_to(department_account)
 	all_money_accounts.Add(department_account)
 
-	department_accounts[department.id] = department_account
+	department_accounts[department.id] = department_account*/

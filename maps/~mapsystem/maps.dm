@@ -422,7 +422,11 @@ var/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 			station_departments |= dept
 
 	for(var/department in station_departments)
-		department_accounts[department] = create_account("[department] Account", "[department]", department_money, ACCOUNT_TYPE_DEPARTMENT)
+		var/datum/money_account/M = create_account("[department] Account", "[department]", department_money, ACCOUNT_TYPE_DEPARTMENT)
+		var/datum/station_department/SD = GLOB.all_departments[department]
+		if(istype(SD))
+			SD.account_number = M.account_number
+		department_accounts[department] = M
 
 	department_accounts["Vendor"] = create_account("Vendor Account", "Vendor", 0, ACCOUNT_TYPE_DEPARTMENT)
 	vendor_account = department_accounts["Vendor"]
@@ -469,7 +473,7 @@ var/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 
 /datum/map/proc/show_titlescreen(client/C)
 	winset(C, "lobbybrowser", "is-disabled=false;is-visible=true")
-	
+
 	show_browser(C, current_lobby_screen, "file=titlescreen.png;display=0")
 	show_browser(C, file('html/lobby_titlescreen.html'), "window=lobbybrowser")
 

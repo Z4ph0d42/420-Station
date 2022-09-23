@@ -4,8 +4,8 @@
 	in future, should be a holder for job datums
 */
 
-/datum/department
-	//var/name = "unspecified department"	//Name may be shown in UIs, proper capitalisation
+/datum/station_department
+	var/name = "unspecified department"	//Name may be shown in UIs, proper capitalisation
 	var/id	= "department" //This should be one of the DEPARTMENT_XXX defines in __defines/jobs.dm
 	var/account_number = 0
 	var/account_pin
@@ -26,7 +26,7 @@
 
 	//Where the money for wages and budget actually comes from. With internal, this is a department account ID
 	//With external, this is the name of an organisation
-	var/funding_source = COM
+	var/funding_source = DEPARTMENT_COMMAND
 
 	//This is a key value list of datacore records and their total owed wage
 	//When payday comes, accounts in the department are added here, and removed once the balance is paid off
@@ -41,7 +41,7 @@
 
 
 //Populates the pending wage total
-/datum/department/proc/sum_wages()
+/datum/station_department/proc/sum_wages()
 	pending_wage_total = 0
 	for (var/a in pending_wages)
 		pending_wage_total += pending_wages[a]
@@ -50,9 +50,9 @@
 /*************
 	Command
 **************/
-/datum/department/command
+/datum/station_department/command
 	name = "CEV Zerzura Command"
-	id = COM
+	id = DEPARTMENT_COMMAND
 	/*
 	The command account is the ship account. It is the master account that retainer departments are paid from,
 	and represents the Captain's wealth, assets and holdings
@@ -69,17 +69,17 @@
 	Retainers
 **************/
 //These departments are paid out of ship funding
-/datum/department/ironhammer
+/datum/station_department/ironhammer
 	name = "Security"
-	id = SEC
+	id = DEPARTMENT_SECURITY
 
-/datum/department/technomancers
+/datum/station_department/technomancers
 	name = "Engineering"
-	id = ENG
+	id = DEPARTMENT_ENGINEERING
 
-/datum/department/civilian
+/datum/station_department/civilian
 	name = "CEV Zerzura Civic"
-	id = SRV
+	id = DEPARTMENT_CIVILIAN
 	account_budget = 0
 	account_initial_balance = 0
 	//No standing balance is kept in the account, this is just for paying gardener, janitor and actor
@@ -89,22 +89,22 @@
 	Benefactors
 *******************/
 //Departments subsidised by an external organisation. These pay their own employees
-/datum/department/moebius_medical
+/datum/station_department/moebius_medical
 	name = "Moebius Corp: Medical Division"
-	id = MED
+	id = DEPARTMENT_MEDICAL
 	funding_type = FUNDING_EXTERNAL
 	funding_source = "Moebius Corp."
 
-/datum/department/moebius_research
+/datum/station_department/moebius_research
 	name = "Moebius Corp: Research Division"
-	id = SCI
+	id = DEPARTMENT_SCIENCE
 	account_budget = 5000 //For buying materials and components and things of scientific value
 	funding_type = FUNDING_EXTERNAL
 	funding_source = "Moebius Corp."
 
-/datum/department/church
+/datum/station_department/church
 	name = "Church of NeoTheology"
-	id = SRV
+	id = DEPARTMENT_CHURCH
 	funding_type = FUNDING_EXTERNAL
 	funding_source = "Church of NeoTheology"
 
@@ -114,9 +114,9 @@
 	Independant
 *******************/
 //Self funds and pays wages out of its earnings
-/datum/department/guild
+/datum/station_department/guild
 	name = "Cargo"
-	id = SUP
+	id = DEPARTMENT_GUILD
 
 	/*
 		The guild account represents the holdings of the local branch, and merchant.

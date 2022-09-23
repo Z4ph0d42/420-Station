@@ -149,11 +149,13 @@
 	//We've got both accounts and confirmed they are valid
 
 	//The transaction to take the money
-	var/datum/transaction/T1 = new(amount*-1, target.get_name(), purpose, terminal_id)
+	//var/datum/transaction/T1 = new(amount*-1, target.get_name(), purpose, terminal_id)
+	var/datum/transaction/T1 = new(source, target, amount*-1, purpose)
 	if (T1.apply_to(source))
 
 		//The transaction to give the money
-		var/datum/transaction/T2 = new(amount, source.get_name(), purpose, terminal_id)
+		//var/datum/transaction/T2 = new(amount, source.get_name(), purpose, terminal_id)
+		var/datum/transaction/T2 = new(source, target, amount, purpose)
 		//SEND_SIGNAL(source, COMSIG_TRANSATION, source, target, amount)
 		return T2.apply_to(target)
 

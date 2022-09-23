@@ -43,6 +43,7 @@ var/datum/visualnet/camera/cameranet = new()
 GLOBAL_LIST_EMPTY(joblist)					//list of all jobstypes, minus borg and AI
 GLOBAL_LIST_EMPTY(all_departments)			//List of all department datums
 var/global/list/department_IDs = list(COM, MED, ENG, SCI, SEC, SUP, SRV)
+GLOBAL_LIST_EMPTY(global_corporations)
 
 // Runes
 var/global/list/rune_list = new()
@@ -114,6 +115,14 @@ var/global/list/string_slot_flags = list(
 		H = new path()
 		GLOB.facial_hair_styles_list[H.name] = H
 
+	//List of job department datums
+	paths = subtypesof(/datum/station_department)
+	for(var/T in paths)
+		var/datum/station_department/D = new T
+		if(!D.id || !istext(D.id))
+			continue
+		GLOB.all_departments[D.id] = D
+
 	//Body markings - Initialise all /datum/sprite_accessory/marking into an list indexed by marking name
 	paths = typesof(/datum/sprite_accessory/marking) - /datum/sprite_accessory/marking
 	for(var/path in paths)
@@ -149,12 +158,6 @@ var/global/list/string_slot_flags = list(
 		all_species[S.name] = S
 		if(!(S.spawn_flags & SPECIES_IS_RESTRICTED))
 			playable_species += S.name
-	
-	//List of job department datums
-	paths = subtypesof(/datum/department)
-	for(var/T in paths)
-		var/datum/department/D = new T
-		GLOB.all_departments[D.id] = D
 
 	//Grabs
 	paths = typesof(/datum/grab) - /datum/grab
