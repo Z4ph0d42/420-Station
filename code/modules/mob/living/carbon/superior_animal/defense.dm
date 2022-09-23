@@ -47,7 +47,7 @@
 		if (I_GRAB)
 			if(M == src || anchored)
 				return 0
-			for(var/obj/item/weapon/grab/G in src.grabbed_by)
+			for(var/obj/item/grab/G in grabbed_by)
 				if(G.assailant == M)
 					to_chat(M, SPAN_NOTICE("You already grabbed [src]."))
 					return

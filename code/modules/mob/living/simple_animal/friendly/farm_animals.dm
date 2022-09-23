@@ -5,10 +5,10 @@
 	icon_state = "goat"
 	icon_living = "goat"
 	icon_dead = "goat_dead"
-	speak = list("EHEHEHEHEH","eh?")
+	speak = list("EHEHEHEHEH","eh?","EAAAAAHHHHHH!", "Eh!")
 	speak_emote = list("brays")
-	emote_hear = list("brays")
-	emote_see = list("shakes its head", "stamps a foot", "glares around")
+	emote_hear = list("brays", "bleats", "screams")
+	emote_see = list("shakes its head", "stamps a foot", "glares around", "sniffs the air")
 	speak_chance = 1
 	turns_per_move = 5
 	see_in_dark = 6
@@ -90,7 +90,7 @@
 		..()
 
 //cow
-/mob/living/simple_animal/cow
+/mob/living/simple_animal/cow3
 	name = "cow"
 	desc = "Known for their milk, just don't tip them over."
 	icon_state = "cow"

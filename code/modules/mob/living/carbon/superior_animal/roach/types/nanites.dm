@@ -53,7 +53,7 @@
 /mob/living/simple_animal/hostile/naniteswarm
 	name = "nanite infested miniroach cluster"
 	desc = "A swarm of disgusting locusts infested with nanomachines."
-	icon = 'icons/mob/critter.dmi'
+	icon = 'icons/mob/simple_animal/critter.dmi'
 	icon_state = "naniteroach"
 	icon_living = "naniteroach"
 	pass_flags = PASSTABLE
