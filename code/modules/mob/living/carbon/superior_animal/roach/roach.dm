@@ -33,7 +33,7 @@
 	randpixel = 12
 	overkill_gib = 16
 
-	sanity_damage = 0.5
+
 
 	//spawn_values
 	spawn_tags = SPAWN_TAG_ROACH
