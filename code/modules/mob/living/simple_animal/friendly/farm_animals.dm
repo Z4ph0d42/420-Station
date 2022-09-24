@@ -90,7 +90,7 @@
 		..()
 
 //cow
-/mob/living/simple_animal/cow3
+/mob/living/simple_animal/cow
 	name = "cow"
 	desc = "Known for their milk, just don't tip them over."
 	icon_state = "cow"
