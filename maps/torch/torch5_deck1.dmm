@@ -11668,7 +11668,7 @@
 	density = 0;
 	pixel_y = -32
 	},
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/plating,
 /area/crew_quarters/sleep/cryo/aux)
 "aOe" = (
 /obj/machinery/cryopod{
@@ -11687,6 +11687,7 @@
 /obj/effect/landmark{
 	name = "JoinLateCryo"
 	},
+/obj/random/trash,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/sleep/cryo/aux)
 "aOg" = (
@@ -16773,6 +16774,9 @@
 /obj/effect/floor_decal/corner/paleblue,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/morgue/autopsy)
+"dFn" = (
+/turf/simulated/floor/plating,
+/area/security/processing)
 "dFH" = (
 /obj/effect/floor_decal/corner/yellow{
 	dir = 8
@@ -26654,6 +26658,9 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/office)
+"qED" = (
+/turf/simulated/floor/plating,
+/area/hallway/primary/firstdeck/fore)
 "qFb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -30958,6 +30965,9 @@
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury)
+"wGI" = (
+/turf/simulated/floor/plating,
+/area/command/conference)
 "wHE" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/table/rack,
@@ -31002,11 +31012,7 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/teleporter/firstdeck)
 "wWr" = (
-/obj/effect/floor_decal/corner/green/half{
-	dir = 1;
-	icon_state = "bordercolorhalf"
-	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/center)
 "wXc" = (
 /obj/item/device/radio/intercom/entertainment{
@@ -31434,6 +31440,9 @@
 /obj/effect/floor_decal/corner/research/mono,
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/office)
+"xWy" = (
+/turf/simulated/floor/plating,
+/area/security/brig)
 "xYM" = (
 /turf/simulated/wall/prepainted,
 /area/medical/physicianoffice)
@@ -31491,6 +31500,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/firstdeck)
+"yfW" = (
+/obj/machinery/light,
+/turf/simulated/floor/plating,
+/area/security/brig)
 "ygK" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -41517,7 +41530,7 @@ auv
 jpt
 vTY
 eyY
-eyY
+dFn
 eyY
 aBd
 uJn
@@ -42327,7 +42340,7 @@ wcQ
 pIA
 cje
 wzN
-wzN
+qED
 aqi
 sCM
 wzN
@@ -43121,7 +43134,7 @@ ahK
 cSj
 cSj
 cSj
-iEb
+wGI
 iEb
 aoa
 pXm
@@ -43143,7 +43156,7 @@ ogb
 asv
 aIf
 fHk
-iuB
+yfW
 edT
 aMM
 aIl
@@ -43547,7 +43560,7 @@ aFV
 bSz
 sTT
 xCn
-eVQ
+xWy
 aLK
 uUC
 uVw
@@ -43751,7 +43764,7 @@ aIi
 aJy
 aKL
 aLL
-eVQ
+xWy
 rGU
 aGP
 aPw
@@ -48787,7 +48800,7 @@ auS
 kep
 acF
 acE
-ycz
+wWr
 ayj
 azp
 aAu

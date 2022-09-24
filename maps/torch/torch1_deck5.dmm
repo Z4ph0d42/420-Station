@@ -10930,6 +10930,9 @@
 "yI" = (
 /turf/simulated/floor/plating,
 /area/vacant/bar)
+"yJ" = (
+/turf/simulated/floor/plating,
+/area/hallway/primary/fifthdeck/aft)
 "yL" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -12822,6 +12825,9 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
+"Fb" = (
+/turf/simulated/floor/plating,
+/area/hallway/primary/fifthdeck/fore)
 "Fd" = (
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/equipment)
@@ -16100,7 +16106,7 @@
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/plating,
 /area/quartermaster/expedition/atmos)
 "QB" = (
 /obj/structure/cable/cyan{
@@ -32535,7 +32541,7 @@ sm
 ii
 gv
 rO
-oY
+Fb
 oZ
 qR
 pa
@@ -35751,9 +35757,9 @@ aH
 ye
 aJ
 iX
-fX
+bi
 aJ
-UH
+bi
 ih
 ee
 bj
@@ -40415,7 +40421,7 @@ qz
 um
 Xz
 hF
-UO
+yJ
 xg
 UO
 aS
@@ -40623,7 +40629,7 @@ oR
 oS
 HG
 MW
-OG
+Ym
 Oy
 Yi
 UL
