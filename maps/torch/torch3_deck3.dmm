@@ -7414,6 +7414,20 @@
 /obj/effect/floor_decal/carpet/blue2,
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/mess)
+"ph" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/crew_quarters/sleep/cryo)
 "pi" = (
 /obj/machinery/camera/network/third_deck{
 	c_tag = "Mess Hall - Port";
@@ -10791,6 +10805,7 @@
 	pixel_x = -24
 	},
 /obj/item/weapon/book/manual/solgov_law,
+/obj/random/pouches,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "ya" = (
@@ -10824,7 +10839,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/plating,
 /area/crew_quarters/sleep/cryo)
 "yd" = (
 /obj/structure/cable/green{
@@ -10878,7 +10893,7 @@
 	pixel_x = 25;
 	pixel_y = 0
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/plating,
 /area/crew_quarters/recreation)
 "yk" = (
 /obj/machinery/camera/network/third_deck{
@@ -11640,6 +11655,9 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/thirddeck)
+"Ay" = (
+/turf/simulated/floor/plating,
+/area/crew_quarters/gym)
 "AA" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -12682,10 +12700,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -32
 	},
-/obj/effect/floor_decal/corner/green{
-	dir = 10
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/center)
 "Dv" = (
 /obj/structure/table/steel,
@@ -33527,7 +33542,7 @@ Ur
 Ur
 yJ
 Ur
-Yb
+BX
 qo
 zS
 XS
@@ -35346,7 +35361,7 @@ Bm
 Bm
 Bm
 Bm
-Yb
+BX
 BV
 BV
 BV
@@ -38977,7 +38992,7 @@ vV
 vV
 vV
 Dg
-za
+ph
 Ew
 Fd
 Nj
@@ -41585,7 +41600,7 @@ UC
 WB
 jb
 VF
-VF
+Ay
 VF
 VF
 WB
@@ -42185,7 +42200,7 @@ tr
 cl
 fL
 Wb
-Rf
+Ay
 Rf
 NN
 WB

@@ -55,6 +55,10 @@
 
 #define ismouse(A) istype(A, /mob/living/simple_animal/mouse)
 
+#define issuperioranimal(A) istype(A, /mob/living/carbon/superior_animal)
+
+#define isburrow(A) istype(A, /obj/structure/burrow)
+
 #define isnewplayer(A) istype(A, /mob/new_player)
 
 #define isobj(A) istype(A, /obj)

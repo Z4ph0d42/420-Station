@@ -1719,6 +1719,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
+"fF" = (
+/turf/simulated/floor/plating,
+/area/eva)
 "fH" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -7117,6 +7120,9 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/hangcheck)
+"wN" = (
+/turf/simulated/floor/plating,
+/area/hallway/primary/fourthdeck/aft)
 "wQ" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 1;
@@ -7241,6 +7247,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod9/station)
+"xz" = (
+/obj/effect/decal/cleanable/blood/oil,
+/turf/simulated/floor/tiled,
+/area/hallway/primary/fourthdeck/aft)
 "xA" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -8253,6 +8263,9 @@
 /obj/item/latexballon,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/aft)
+"Bc" = (
+/turf/simulated/floor/plating,
+/area/janitor/storage)
 "Bf" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 8;
@@ -12915,6 +12928,7 @@
 	icon_state = "warning"
 	},
 /obj/item/weapon/shovel,
+/obj/item/weapon/storage/pouch/medium_generic,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/storage/upper)
 "Qg" = (
@@ -25634,7 +25648,7 @@ zj
 zj
 Yb
 HS
-HS
+fF
 os
 Dd
 lU
@@ -26647,7 +26661,7 @@ mc
 ni
 ou
 vW
-qR
+fF
 fC
 tQ
 tS
@@ -38144,7 +38158,7 @@ aq
 aq
 YN
 be
-mH
+Bc
 Ub
 cQ
 dx
@@ -38569,10 +38583,10 @@ rH
 tb
 yC
 rz
+xz
 yC
 yC
-yC
-yC
+wN
 gM
 yC
 vi
@@ -40975,7 +40989,7 @@ bk
 Mx
 YR
 YR
-YR
+wN
 YR
 eX
 US

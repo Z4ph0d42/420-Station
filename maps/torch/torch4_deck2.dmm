@@ -3252,7 +3252,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
 "gi" = (
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/plating,
 /area/hallway/primary/seconddeck)
 "gj" = (
 /obj/structure/disposalpipe/segment{
@@ -4549,6 +4549,10 @@
 /obj/effect/shuttle_landmark/lift/robotics_bottom,
 /turf/simulated/floor/plating,
 /area/assembly/robotics)
+"js" = (
+/obj/effect/floor_decal/industrial/warning,
+/turf/simulated/floor/plating,
+/area/hallway/primary/seconddeck)
 "ju" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -5869,6 +5873,9 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
+"mu" = (
+/turf/simulated/floor/plating,
+/area/engineering/engineering_monitoring)
 "mw" = (
 /obj/structure/table/rack{
 	dir = 8
@@ -6206,7 +6213,7 @@
 	dir = 8;
 	icon_state = "warningcorner"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/plating,
 /area/hallway/primary/seconddeck/fore)
 "nl" = (
 /obj/effect/floor_decal/techfloor,
@@ -14747,6 +14754,9 @@
 "JY" = (
 /turf/simulated/wall/ocp_wall,
 /area/engineering/fuelbay)
+"JZ" = (
+/turf/simulated/floor/plating,
+/area/engineering/foyer)
 "Ka" = (
 /obj/machinery/door/blast/regular{
 	dir = 8;
@@ -16062,7 +16072,7 @@
 	c_tag = "Second Deck Hallway - Elevator Landing";
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/plating,
 /area/hallway/primary/seconddeck/elevator)
 "On" = (
 /obj/machinery/atmospherics/unary/outlet_injector{
@@ -36477,7 +36487,7 @@ fz
 fF
 XP
 gg
-gD
+js
 ha
 RF
 RF
@@ -40925,7 +40935,7 @@ Tz
 rS
 oc
 tw
-oc
+JZ
 jP
 sZ
 xD
@@ -42129,7 +42139,7 @@ fs
 Xv
 hK
 vN
-mE
+mu
 pb
 iG
 qW
