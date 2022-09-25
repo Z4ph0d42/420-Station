@@ -46,7 +46,7 @@
 /mob/living/carbon/superior_animal/proc/isValidAttackTarget(var/atom/O)
 	if (isliving(O))
 		var/mob/living/L = O
-		if((L.stat != CONSCIOUS) || (L.health <= (ishuman(L) ? HEALTH_THRESHOLD_CRIT : 0)) || (!attack_same && (L.faction == src.faction)) || (L in friends))
+		if((L.stat != CONSCIOUS) || (!attack_same && (L.faction == src.faction)) || (L in friends)) //(L.health <= (ishuman(L) ? HEALTH_THRESHOLD_CRIT : 0)) ||
 			return
 		return 1
 
@@ -60,7 +60,7 @@
 		for (var/obj/structure/window/obstacle in src.loc) // To destroy directional windows that are on the creature's tile
 			obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),attacktext)
 			return
-		
+
 		for (var/obj/machinery/door/window/obstacle in src.loc) // To destroy windoors that are on the creature's tile
 			obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),attacktext)
 			return

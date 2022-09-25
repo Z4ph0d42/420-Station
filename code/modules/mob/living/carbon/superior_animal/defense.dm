@@ -1,7 +1,10 @@
 /mob/living/carbon/superior_animal/proc/harvest(mob/user)
 	var/actual_meat_amount = max(1,(meat_amount/2))
 	if(meat_type && actual_meat_amount>0 && (stat == DEAD))
-		drop_embedded()
+		//drop_embedded()
+		for(var/obj/item/embeddeds in get_visible_implants(0))
+			remove_implant(embeddeds)
+			embeddeds.forceMove(get_turf(src))
 		for(var/i=0;i<actual_meat_amount;i++)
 			var/obj/item/meat = new meat_type(get_turf(src))
 			meat.name = "[src.name] [meat.name]"
@@ -365,7 +368,7 @@
 
 //Called when the environment becomes unlivable, maybe in other situations
 //The mobs will request the nearby burrow to take them away somewhere else
-/mob/living/carbon/superior_animal/proc/evacuate()
+/*/mob/living/carbon/superior_animal/proc/evacuate()
 	var/obj/structure/burrow/B = find_visible_burrow(src)
 	if (B)
-		B.evacuate()
+		B.evacuate()*/

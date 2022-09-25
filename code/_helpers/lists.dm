@@ -331,6 +331,39 @@ Checks if a list has the same entries and values as an element of big.
 #define BITRESET(bitfield,index) (bitfield)  &= ~(1 << (index))
 #define BITFLIP(bitfield,index)  (bitfield)  ^=  (1 << (index))
 
+//returns an unsorted list of nearest map objects from a given list to sourceLocation using get_dist, acceptableDistance sets tolerance for distance
+//result is intended to be used with pick()
+/proc/nearestObjectsInList(list/L, sourceLocation, acceptableDistance = 0)
+	if (L.len == 1)
+		return L.Copy()
+
+	var/list/nearestObjects = new
+	var/shortestDistance = INFINITY
+	for (var/object in L)
+		var/distance = get_dist(sourceLocation,object)
+
+		if (distance <= acceptableDistance)
+			if (shortestDistance > acceptableDistance)
+				shortestDistance = acceptableDistance
+				nearestObjects.Cut()
+			nearestObjects += object
+
+		else if (shortestDistance > acceptableDistance)
+			if (distance < shortestDistance)
+				shortestDistance = distance
+				nearestObjects.Cut()
+				nearestObjects += object
+
+			else if (distance == shortestDistance)
+				nearestObjects += object
+
+	return nearestObjects
+
+//Return either pick(list) or null if list is not of type /list or is empty
+/proc/safepick(list/L)
+	if(LAZYLEN(L))
+		return pick(L)
+
 //Converts a bitfield to a list of numbers (or words if a wordlist is provided)
 /proc/bitfield2list(bitfield = 0, list/wordlist)
 	var/list/r = list()
