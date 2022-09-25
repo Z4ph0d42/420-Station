@@ -337,7 +337,7 @@
 
 /obj/machinery/sorter/biomatter/Initialize()
 	. = ..()
-	sort_settings += new /datum/sort_rule(SORT_INCLUDE, SORT_TYPE_MATERIAL, 1)//MATERIAL_BIOMATTER doesnt exist in this source?
+	sort_settings += new /datum/sort_rule(SORT_INCLUDE, SORT_TYPE_MATERIAL, MATERIAL_BIOMATTER, 1)
 
 
 #undef SORT_EXCLUDE
