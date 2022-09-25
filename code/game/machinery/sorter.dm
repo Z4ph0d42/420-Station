@@ -27,7 +27,7 @@
 	switch(sort_type)
 		if(SORT_TYPE_MATERIAL)
 			if(O)
-				var/list/materials = O.matter //O.get_matter()
+				var/list/materials = O.get_matter()
 				if((value in materials) && (!amount || materials[value] >= amount))
 					return TRUE
 
@@ -323,7 +323,8 @@
 	playsound(loc, 'sound/machines/machine_switch.ogg', 100, 1)
 	return FALSE
 
-
+/obj/proc/get_matter()
+	return matter ? matter : list()
 
 
 
@@ -332,6 +333,7 @@
 
 /obj/machinery/sorter/biomatter
 	name = "biomatter sorter"
+	base_type = /obj/machinery/sorter/biomatter
 
 /obj/machinery/sorter/biomatter/Initialize()
 	. = ..()
@@ -356,3 +358,7 @@
 		/obj/item/weapon/stock_parts/scanning_module = 1,
 		/obj/item/weapon/stock_parts/micro_laser = 1
 	)
+
+/obj/item/weapon/stock_parts/circuitboard/sorter/biomatter
+	name = T_BOARD("biomatter sorter")
+	build_path = /obj/machinery/sorter/biomatter
