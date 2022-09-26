@@ -7537,12 +7537,14 @@
 /obj/structure/closet/toolcloset/excavation,
 /obj/effect/floor_decal/corner/brown/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/storage/pouch/medium_generic,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "qf" = (
 /obj/structure/closet/secure_closet/secure_closet/xenoarchaeologist_torch,
 /obj/effect/floor_decal/corner/brown/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/storage/pouch/medium_generic,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "qg" = (
@@ -7568,6 +7570,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/item/weapon/storage/pouch/medium_generic,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "qi" = (
@@ -10004,6 +10007,9 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/shuttle/petrov/maint)
+"vs" = (
+/turf/simulated/floor/plating,
+/area/hallway/primary/fifthdeck/aft)
 "vt" = (
 /obj/structure/shuttle/engine/heater{
 	dir = 4;
@@ -10930,9 +10936,6 @@
 "yI" = (
 /turf/simulated/floor/plating,
 /area/vacant/bar)
-"yJ" = (
-/turf/simulated/floor/plating,
-/area/hallway/primary/fifthdeck/aft)
 "yL" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -12558,6 +12561,7 @@
 /obj/structure/closet/secure_closet/prospector,
 /obj/effect/floor_decal/corner/brown/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/storage/pouch/medium_generic,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "Ek" = (
@@ -12825,9 +12829,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
-"Fb" = (
-/turf/simulated/floor/plating,
-/area/hallway/primary/fifthdeck/fore)
 "Fd" = (
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/equipment)
@@ -14465,6 +14466,9 @@
 /obj/structure/salvageable/autolathe,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/fore)
+"KK" = (
+/turf/simulated/floor/plating,
+/area/hallway/primary/fifthdeck/fore)
 "KL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/cyan{
@@ -32541,7 +32545,7 @@ sm
 ii
 gv
 rO
-Fb
+KK
 oZ
 qR
 pa
@@ -40421,7 +40425,7 @@ qz
 um
 Xz
 hF
-yJ
+vs
 xg
 UO
 aS
