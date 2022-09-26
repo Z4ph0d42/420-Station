@@ -19530,9 +19530,7 @@
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar)
 "Vh" = (
-/obj/structure/door_assembly{
-	anchored = 1
-	},
+/obj/machinery/door/airlock/hatch/maintenance,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "Vi" = (
