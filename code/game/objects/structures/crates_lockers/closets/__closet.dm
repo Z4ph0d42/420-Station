@@ -647,7 +647,7 @@
 				/obj/structure/closet/random_tech = 6,
 				/obj/structure/closet/random_milsupply = 2,
 				/obj/structure/closet/random_medsupply = 6,
-				/obj/structure/closet/random_hostilemobs = 8,
+				//obj/structure/closet/random_hostilemobs = 8,
 				))
 
 /obj/random/closet_maintloot/low_chance
@@ -662,5 +662,5 @@
 				/obj/structure/closet/random_tech = 3,
 				/obj/structure/closet/random_milsupply = 1,
 				/obj/structure/closet/random_medsupply = 3,
-				/obj/structure/closet/random_hostilemobs/beacon = 8,
+				//obj/structure/closet/random_hostilemobs/beacon = 8,
 			))

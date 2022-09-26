@@ -4549,10 +4549,6 @@
 /obj/effect/shuttle_landmark/lift/robotics_bottom,
 /turf/simulated/floor/plating,
 /area/assembly/robotics)
-"js" = (
-/obj/effect/floor_decal/industrial/warning,
-/turf/simulated/floor/plating,
-/area/hallway/primary/seconddeck)
 "ju" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -4667,6 +4663,10 @@
 /obj/item/weapon/aiModule/solgov_aggressive,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/synth/borg_upload)
+"jG" = (
+/obj/effect/floor_decal/industrial/warning,
+/turf/simulated/floor/plating,
+/area/hallway/primary/seconddeck)
 "jH" = (
 /obj/machinery/door/airlock/hatch{
 	icon_state = "closed";
@@ -5590,6 +5590,9 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
+"lF" = (
+/turf/simulated/floor/plating,
+/area/engineering/foyer)
 "lG" = (
 /obj/machinery/shieldgen,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -5873,9 +5876,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
-"mu" = (
-/turf/simulated/floor/plating,
-/area/engineering/engineering_monitoring)
 "mw" = (
 /obj/structure/table/rack{
 	dir = 8
@@ -8984,6 +8984,13 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
+"tZ" = (
+/obj/structure/table/standard,
+/obj/random/maintenance/solgov{
+	pixel_x = -93
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/engineering/drone_fabrication)
 "ub" = (
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/machinery/light/small{
@@ -14711,6 +14718,9 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/disposal)
+"JO" = (
+/turf/simulated/floor/plating,
+/area/engineering/engineering_monitoring)
 "JQ" = (
 /obj/structure/table/steel,
 /obj/machinery/recharger{
@@ -14754,9 +14764,6 @@
 "JY" = (
 /turf/simulated/wall/ocp_wall,
 /area/engineering/fuelbay)
-"JZ" = (
-/turf/simulated/floor/plating,
-/area/engineering/foyer)
 "Ka" = (
 /obj/machinery/door/blast/regular{
 	dir = 8;
@@ -34673,7 +34680,7 @@ qv
 rF
 rF
 tm
-tm
+tZ
 rF
 rF
 qv
@@ -36487,7 +36494,7 @@ fz
 fF
 XP
 gg
-js
+jG
 ha
 RF
 RF
@@ -40935,7 +40942,7 @@ Tz
 rS
 oc
 tw
-JZ
+lF
 jP
 sZ
 xD
@@ -42139,7 +42146,7 @@ fs
 Xv
 hK
 vN
-mu
+JO
 pb
 iG
 qW
