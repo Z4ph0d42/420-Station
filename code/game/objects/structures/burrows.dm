@@ -7,7 +7,7 @@
 	desc = "Cracks on the tile."
 	anchored = TRUE
 	density = FALSE
-	plane = FLOOR_PLANE
+	plane = ABOVE_TILE_LAYER 
 	icon = 'icons/obj/burrows.dmi'
 	icon_state = "cracks"
 	level = BELOW_PLATING_LEVEL
@@ -475,14 +475,16 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 	Breaking a hole with a crowbar is theoretically possible, but extremely slow and difficult. You are strongly
 	advised to use proper mining tools. A pickaxe or a drill will do the job in a reasonable time
 *****************************************************/
-/obj/structure/burrow/attackby(obj/item/I, mob/user)
+/obj/structure/burrow/attackby(var/obj/item/weapon/W as obj, var/mob/user as mob)
 	if(!isRevealed)
 		return
 	if(isSealed)
-		if (I.has_quality(QUALITY_WELDING))
-			user.visible_message("[user] attempts to weld [src] with the [I]", "You start welding [src] with the [I]")
-			if(I.use_tool(user, src, WORKTIME_NORMAL, QUALITY_WELDING, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC) && isSealed)
-				user.visible_message("[user] welds [src] with the [I].", "You welds [src] with the [I].")
+	if(isWelder(W))
+	(do_after(user,30,src))
+		var/obj/item/weapon/weldingtool/WT = W
+			user.visible_message("[user] attempts to weld [src] with the [W]", "You start welding [src] with the [W]")
+			if(W.use_tool(user, src, WORKTIME_NORMAL, QUALITY_WELDING, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC) && isSealed)
+				user.visible_message("[user] welds [src] with the [W].", "You weld the [src] with the [W].")
 				if(recieving)
 					if(prob(33))
 						qdel(src)
@@ -496,10 +498,10 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 				else
 					qdel(src)
 	else
-		if(istype(I, /obj/item/stack/material) && I.get_material_name() == MATERIAL_STEEL)
-			var/obj/item/stack/G = I
+		if(istype(W, /obj/item/stack/material) && W.get_material_name() == MATERIAL_STEEL)
+			var/obj/item/stack/G = W
 
-			user.visible_message("[user] starts covering [src] with the [I]", "You start covering [src] with the [I]")
+			user.visible_message("[user] starts covering [src] with the [W]", "You start covering [src] with the [W]")
 			if(do_after(user, 20, src))
 				if (G.use(1))
 					playsound(src.loc, 'sound/items/Deconstruct.ogg', 50, 1)
@@ -507,8 +509,8 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 					return
 
 
-		if (I.has_quality(QUALITY_DIGGING) && !isSealed)
-			user.visible_message("[user] starts breaking and collapsing [src] with the [I]", "You start breaking and collapsing [src] with the [I]")
+		if (W.has_quality(QUALITY_DIGGING) && !isSealed)
+			user.visible_message("[user] starts breaking and collapsing [src] with the [W]", "You start breaking and collapsing [src] with the [W]")
 
 			//Attempting to collapse a burrow may trigger reinforcements.
 			//Not immediate so they will take some time to arrive.
@@ -521,10 +523,10 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 			var/start = world.time
 			var/target_time = WORKTIME_FAST+ 2*health
 
-			if (I.use_tool(user, src, target_time, QUALITY_DIGGING, health * 0.66, list(STAT_MEC, STAT_ROB), forced_sound = WORKSOUND_PICKAXE))
+			if (W.use_tool(user, src, target_time, QUALITY_DIGGING, health * 0.66, list(STAT_MEC, STAT_ROB), forced_sound = WORKSOUND_PICKAXE))
 				//On success, the hole is destroyed!
 				new /obj/spawner/scrap/sparse(get_turf(user))
-				user.visible_message("[user] collapses [src] with the [I] and dumps trash which was in the way.", "You collapse [src] with the [I] and dump trash which was in the way.")
+				user.visible_message("[user] collapses [src] with the [W] and dumps trash which was in the way.", "You collapse [src] with the [W] and dump trash which was in the way.")
 
 				collapse()
 			else
@@ -534,7 +536,7 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 
 				spawn_rubble(loc, 1, 100)
 
-				if (I.get_tool_quality(QUALITY_DIGGING) > 30)
+				if (W.get_tool_quality(QUALITY_DIGGING) > 30)
 					to_chat(user, SPAN_NOTICE("The [src] crumbles a bit. Keep trying and you'll collapse it eventually"))
 				else
 					to_chat(user, SPAN_NOTICE("This isn't working very well. Perhaps you should get a better digging tool?"))
@@ -547,7 +549,7 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 					//If they spent less than the full time attempting the work, then the reduction is reduced
 					//A multiplier is based on 85% of the time spent working,
 					time_mult = (duration / target_time) * 0.85
-				health -= (I.get_tool_quality(QUALITY_DIGGING)*time_mult)
+				health -= (W.get_tool_quality(QUALITY_DIGGING)*time_mult)
 
 			return
 
