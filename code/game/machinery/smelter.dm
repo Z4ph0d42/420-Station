@@ -30,7 +30,7 @@
 
 	var/obj/current_item
 
-	var/forbidden_materials = list(MATERIAL_CARDBOARD,MATERIAL_WOOD,MATERIAL_BIOMATTER) doesnt exist
+	var/forbidden_materials = list(MATERIAL_CARDBOARD,MATERIAL_WOOD,MATERIAL_BIOMATTER)
 
 	// base multiplier for scrap smelting, increased by better microlasers
 	var/scrap_multiplier = 0.25
