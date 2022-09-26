@@ -2850,6 +2850,8 @@
 #include "code\modules\research\designs\designs_weapon.dm"
 #include "code\modules\scrap\oldificator.dm"
 #include "code\modules\scrap\scrap.dm"
+#include "code\modules\scrap\scrap_beacon.dm"
+#include "code\modules\scrap\scrap_dropholder.dm"
 #include "code\modules\scrap\scrap_refine.dm"
 #include "code\modules\security levels\keycard authentication.dm"
 #include "code\modules\shield_generators\floor_diffuser.dm"
