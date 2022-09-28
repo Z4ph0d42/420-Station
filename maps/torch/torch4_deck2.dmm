@@ -1674,7 +1674,9 @@
 	dir = 4;
 	pixel_y = 0
 	},
-/obj/machinery/smelter,
+/obj/machinery/smelter{
+	refuse_output_side = 1
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/disposal)
 "db" = (
@@ -11103,6 +11105,12 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos)
+"Ah" = (
+/obj/structure/sign/warning/moving_parts{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/disposal)
 "Aj" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/portable_atmospherics/canister/hydrogen{
@@ -11110,6 +11118,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/vacant/prototype/engine)
+"Ak" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/sign/warning/biohazard{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/seconddeck/aftstarboard)
 "Al" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 8;
@@ -15069,6 +15084,11 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/seconddeck/forestarboard)
+"Lg" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/suit_storage_unit/science,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/seconddeck/aftstarboard)
 "Lh" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -15151,6 +15171,20 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/engineering/storage)
+"Lw" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/maintenance{
+	name = "Disposal Access"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/maintenance/disposal)
 "Lz" = (
 /obj/machinery/vending/engivend,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -15834,7 +15868,9 @@
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/random/single/playing_cards,
+/obj/random/single/playing_cards{
+	pixel_y = 1
+	},
 /obj/structure/sign/warning/nosmoking_1{
 	dir = 4;
 	icon_state = "nosmoking";
@@ -17170,20 +17206,6 @@
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
-"Ry" = (
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/door/airlock/maintenance{
-	name = "Disposal Access"
-	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/disposal)
 "RB" = (
 /obj/random/trash,
 /turf/simulated/wall/r_wall/prepainted,
@@ -17854,11 +17876,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/forestarboard)
-"TI" = (
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/suit_storage_unit/science,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/seconddeck/aftstarboard)
 "TJ" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/engineering/shieldbay)
@@ -18075,13 +18092,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos/storage)
-"UC" = (
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/sign/warning/biohazard{
-	pixel_y = 32
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/seconddeck/aftstarboard)
 "UF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -19001,12 +19011,6 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/forestarboard)
-"XF" = (
-/obj/structure/sign/warning/moving_parts{
-	pixel_y = -32
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/disposal)
 "XH" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -38921,7 +38925,7 @@ NU
 aQ
 PD
 aY
-TI
+Lg
 aY
 dA
 iF
@@ -39122,7 +39126,7 @@ JJ
 JN
 aR
 PD
-UC
+Ak
 UY
 UY
 dA
@@ -39323,7 +39327,7 @@ FJ
 Kl
 ab
 aG
-Ry
+Lw
 aZ
 aX
 aX
@@ -39524,7 +39528,7 @@ bP
 GI
 cq
 aw
-XF
+Ah
 PD
 ba
 GM
