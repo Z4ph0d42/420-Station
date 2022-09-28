@@ -130,7 +130,8 @@ Has ability of every roach.
 /mob/living/carbon/superior_animal/roach/kaiser/slip(var/slipped_on)
 	return FALSE
 
-//RIDING
+/* turned this off for now, its not working and i doubt it would get used much. might fix latter. ported directly from eris
+// //RIDING
 /mob/living/carbon/superior_animal/roach/kaiser/try_tame(var/mob/living/carbon/user, var/obj/item/weapon/reagent_containers/food/snacks/grown/thefood)
 	if(!istype(thefood))
 		return FALSE
@@ -160,3 +161,4 @@ Has ability of every roach.
 		return TRUE
 	visible_message("[src] snaps out of its trance and rushes at [user]!")
 	return FALSE
+*/

@@ -1,4 +1,4 @@
-/mob/living/carbon/superior_animal/roach
+/*/mob/living/carbon/superior_animal/roach 			//Turned off for now, its broken any way and people probably wont be riding right now
 	var/taming_window = 30 //How long you have to tame this roach, once it's pacified.
 
 /mob/living/carbon/superior_animal/roach/Move()
@@ -36,3 +36,4 @@
 		return TRUE
 	visible_message("[src] snaps out of its trance and rushes at [user]!")
 	return FALSE
+	*/
