@@ -544,6 +544,22 @@ proc/BlendHSV(hsv1, hsv2, amount)
 
 	return hsv(hue, sat, val, alpha)
 
+//Uses a list of values to overwrite HSV components of a color
+//A null entry won't overwrite anything
+proc/set_HSV(var/color, var/list/values)
+	if (!color) return "#FFFFFF"
+	if (!values || !values.len) return color
+
+	var/hsv_string = RGBtoHSV(color)
+	var/list/HSV = ReadHSV(hsv_string)
+	if (!isnull(values[1]))
+		HSV[1] = Clamp(values[1], 0, 255)
+	if (!isnull(values[2]))
+		HSV[2] = Clamp(values[2], 0, 255)
+	if (!isnull(values[3]))
+		HSV[3] = Clamp(values[3], 0, 255)
+	return HSVtoRGB(hsv(HSV[1],HSV[2],HSV[3], null))
+
 /*
 	Smooth blend between RGB colors
 

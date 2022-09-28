@@ -635,6 +635,17 @@
 	var/datum/reagent/chem = GLOB.chemical_reagents_list[new_chem]
 	var/color = chem.color
 
+	//Color Wizardry
+	//We will take the color's hue completely
+	//We will cap its saturation to a low value, giving more of a pastel shade
+	//We will hard set the brightness to max
+	var/list/HSV = ReadHSV(RGBtoHSV(color))
+	color = set_HSV(color, list(null, min(HSV[2],100), 255))
+
+	if (chem)
+		set_trait(TRAIT_PLANT_COLOUR,color)
+		set_trait(TRAIT_PRODUCT_COLOUR,color)
+
 //Flowers/varieties
 /datum/seed/flower
 	name = "harebells"
