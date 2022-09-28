@@ -127,40 +127,41 @@
 	if(can_bleed && bleed_ticks > 0)
 		handle_bleeding()
 
-	if(buckled && can_escape)
-		if(istype(buckled, /obj/effect/energy_net))
-			var/obj/effect/energy_net/Net = buckled
-			Net.escape_net(src)
-		else if(prob(50))
-			escape(src, buckled)
-		else if(prob(50))
-			visible_message("<span class='warning'>\The [src] struggles against \the [buckled]!</span>")
+	if(!AI_inactive)
+		if(buckled && can_escape)
+			if(istype(buckled, /obj/effect/energy_net))
+				var/obj/effect/energy_net/Net = buckled
+				Net.escape_net(src)
+			else if(prob(50))
+				escape(src, buckled)
+			else if(prob(50))
+				visible_message("<span class='warning'>\The [src] struggles against \the [buckled]!</span>")
 
-	//Movement
-	if(!client && !stop_automated_movement && wander && !anchored)
-		if(isturf(src.loc) && !resting)		//This is so it only moves if it's not inside a closet, gentics machine, etc.
-			turns_since_move++
-			if(turns_since_move >= turns_per_move)
-				if(!(stop_automated_movement_when_pulled && pulledby)) //Some animals don't move when pulled
-					SelfMove(pick(GLOB.cardinal))
-					turns_since_move = 0
+		//Movement
+		if(!client && !stop_automated_movement && wander && !anchored)
+			if(isturf(src.loc) && !resting)		//This is so it only moves if it's not inside a closet, gentics machine, etc.
+				turns_since_move++
+				if(turns_since_move >= turns_per_move)
+					if(!(stop_automated_movement_when_pulled && pulledby)) //Some animals don't move when pulled
+						SelfMove(pick(GLOB.cardinal))
+						turns_since_move = 0
 
-	//Speaking
-	if(!client && speak_chance)
-		if(rand(0,200) < speak_chance)
-			var/action = pick(
-				speak.len;      "speak",
-				emote_hear.len; "emote_hear",
-				emote_see.len;  "emote_see"
-				)
+		//Speaking
+		if(!client && speak_chance)
+			if(rand(0,200) < speak_chance)
+				var/action = pick(
+					speak.len;      "speak",
+					emote_hear.len; "emote_hear",
+					emote_see.len;  "emote_see"
+					)
 
-			switch(action)
-				if("speak")
-					say(pick(speak))
-				if("emote_hear")
-					audible_emote("[pick(emote_hear)].")
-				if("emote_see")
-					visible_emote("[pick(emote_see)].")
+				switch(action)
+					if("speak")
+						say(pick(speak))
+					if("emote_hear")
+						audible_emote("[pick(emote_hear)].")
+					if("emote_see")
+						visible_emote("[pick(emote_see)].")
 	return 1
 
 /mob/living/simple_animal/proc/handle_atmos(var/atmos_suitable = 1)

@@ -158,7 +158,7 @@
 	if(!.)
 		walk(src, 0)
 		return 0
-	if(client)
+	if(client || AI_inactive)
 		return 0
 	if(!can_act())
 		walk(src, 0)
