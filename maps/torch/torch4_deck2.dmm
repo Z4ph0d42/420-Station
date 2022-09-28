@@ -270,9 +270,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/sign/warning/moving_parts{
-	pixel_y = -32
-	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/disposal)
 "ax" = (
@@ -358,9 +355,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
 "aG" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Disposal Access"
-	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
@@ -368,8 +362,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/techfloor/grid,
+/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/disposal)
 "aH" = (
 /obj/machinery/light{
@@ -380,8 +373,7 @@
 /area/medical/morgue)
 "aI" = (
 /obj/structure/disposaloutlet{
-	dir = 1;
-	icon_state = "outlet"
+	dir = 8
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/disposalpipe/trunk{
@@ -494,17 +486,16 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
 "aQ" = (
-/obj/structure/table/rack,
-/obj/item/weapon/caution,
-/obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
-/area/maintenance/seconddeck/aftstarboard)
+/area/maintenance/disposal)
 "aR" = (
-/obj/structure/sign/warning/biohazard{
-	pixel_y = 32
+/obj/machinery/power/apc{
+	dir = 2;
+	name = "south bump";
+	pixel_y = -24
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/maintenance/seconddeck/aftstarboard)
+/area/maintenance/disposal)
 "aS" = (
 /obj/machinery/alarm{
 	pixel_y = 24
@@ -1679,14 +1670,11 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
 "da" = (
-/obj/machinery/conveyor{
-	dir = 2;
-	id = "garbage"
-	},
 /obj/machinery/light/small{
 	dir = 4;
 	pixel_y = 0
 	},
+/obj/machinery/smelter,
 /turf/simulated/floor/plating,
 /area/maintenance/disposal)
 "db" = (
@@ -14707,11 +14695,6 @@
 /area/hallway/primary/seconddeck/fore)
 "JN" = (
 /obj/item/weapon/stool/padded,
-/obj/machinery/power/apc{
-	dir = 2;
-	name = "south bump";
-	pixel_y = -24
-	},
 /obj/structure/cable/green{
 	d2 = 4;
 	icon_state = "0-4"
@@ -17187,6 +17170,20 @@
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
+"Ry" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/maintenance{
+	name = "Disposal Access"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/maintenance/disposal)
 "RB" = (
 /obj/random/trash,
 /turf/simulated/wall/r_wall/prepainted,
@@ -17857,6 +17854,11 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/forestarboard)
+"TI" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/suit_storage_unit/science,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/seconddeck/aftstarboard)
 "TJ" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/engineering/shieldbay)
@@ -18073,6 +18075,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos/storage)
+"UC" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/sign/warning/biohazard{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/seconddeck/aftstarboard)
 "UF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -18992,6 +19001,12 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/forestarboard)
+"XF" = (
+/obj/structure/sign/warning/moving_parts{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/disposal)
 "XH" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -38702,7 +38717,7 @@ rP
 PD
 PD
 PD
-dA
+PD
 dA
 dA
 dA
@@ -38903,10 +38918,10 @@ aa
 rP
 tG
 NU
-PD
 aQ
+PD
 aY
-GM
+TI
 aY
 dA
 iF
@@ -39105,11 +39120,11 @@ rP
 rP
 JJ
 JN
-PD
 aR
-aY
-GM
-aY
+PD
+UC
+UY
+UY
 dA
 iF
 nv
@@ -39308,7 +39323,7 @@ FJ
 Kl
 ab
 aG
-aX
+Ry
 aZ
 aX
 aX
@@ -39509,7 +39524,7 @@ bP
 GI
 cq
 aw
-PD
+XF
 PD
 ba
 GM
