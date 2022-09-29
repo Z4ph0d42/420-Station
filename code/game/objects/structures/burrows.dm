@@ -549,7 +549,7 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 					//If they spent less than the full time attempting the work, then the reduction is reduced
 					//A multiplier is based on 85% of the time spent working,
 					time_mult = (duration / target_time) * 0.85
-				health -= (W.isshovel*time_mult)
+			health -= (I.get_tool_quality(QUALITY_DIGGING)*time_mult)
 
 			return
 
