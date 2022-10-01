@@ -1,6 +1,6 @@
 /datum/job/captain
 	title = "Captain"
-	supervisors = "The crew."
+	supervisors = "The crew"
 	minimal_player_age = 4
 	economic_power = 15
 	ideal_character_age = 18
