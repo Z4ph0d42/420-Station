@@ -12,9 +12,9 @@
 		if (isValidAttackTarget(O))
 			filteredTargets += O
 
-	for (var/mob/living/exosuit/M in GLOB.mechas_list)
+	/*for (var/mob/living/exosuit/M in GLOB.mechas_list)
 		if ((M.z == src.z) && (get_dist(src, M) <= viewRange) && isValidAttackTarget(M))
-			filteredTargets += M
+			filteredTargets += M*/
 
 	return safepick(nearestObjectsInList(filteredTargets, src, acceptableTargetDistance))
 

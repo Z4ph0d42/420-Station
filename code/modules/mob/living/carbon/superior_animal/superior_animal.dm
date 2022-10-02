@@ -53,7 +53,7 @@
 	var/attack_sound_chance = 33
 	var/attack_sound_volume = 20
 
-	var/meat_type = /obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat
+	//var/meat_type = /obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat
 	meat_amount = 3
 
 	var/melee_damage_lower = 0
@@ -92,7 +92,7 @@
 
 	objectsInView = new
 
-	verbs -= /mob/verb/observe
+	//verbs -= /mob/verb/observe
 	pixel_x = RAND_DECIMAL(-randpixel, randpixel)
 	pixel_y = RAND_DECIMAL(-randpixel, randpixel)
 
@@ -140,6 +140,6 @@
 	. = ..()
 	update_icons()
 
-/mob/living/carbon/superior_animal/updateicon()
+/mob/living/carbon/superior_animal/update_icon()
 	. = ..()
 	update_icons()

@@ -18,7 +18,7 @@
 			user.visible_message(SPAN_DANGER("[user] butchers \the [src] messily!"))
 			gib()
 
-/mob/living/carbon/superior_animal/update_lying_buckled_and_verb_status()
+/mob/living/carbon/superior_animal/UpdateLyingBuckledAndVerbStatus()
 	..()
 
 	check_AI_act()
@@ -28,9 +28,9 @@
 	updatehealth()
 
 /mob/living/carbon/superior_animal/attackby(obj/item/I, mob/living/user, var/params)
-	if (meat_type && (stat == DEAD) && (QUALITY_CUTTING in I.tool_qualities))
-		if (I.use_tool(user, src, WORKTIME_NORMAL, QUALITY_CUTTING, FAILCHANCE_NORMAL, required_stat = STAT_BIO))
-			harvest(user)
+	if (meat_type && (stat == DEAD) && I.sharp == TRUE)
+		//if (I.use_tool(user, src, WORKTIME_NORMAL, QUALITY_CUTTING, FAILCHANCE_NORMAL, required_stat = STAT_BIO))
+		harvest(user)
 	else
 		. = ..()
 		updatehealth()
@@ -62,7 +62,7 @@
 				return
 
 			M.put_in_active_hand(G)
-			G.synch()
+			//G.synch()
 			LAssailant = M
 
 			M.do_attack_animation(src)
@@ -91,8 +91,10 @@
 				M.visible_message("\red [M] missed \the [src]")
 			else
 				if (istype(H))
-					damage += max(0, (H.stats.getStat(STAT_ROB) / 10))
-					if (HULK in H.mutations)
+					var/combatskill = H.get_skill_value(SKILL_COMBAT)
+					if(combatskill >= SKILL_ADEPT)
+						damage += max(0, (combatskill / 2))
+					if (MUTATION_HULK in H.mutations)
 						damage *= 2
 
 				playsound(loc, "punch", 25, 1, -1)
@@ -107,8 +109,9 @@
 /mob/living/carbon/superior_animal/ex_act(severity)
 	..()
 	if(!blinded)
-		if (HUDtech.Find("flash"))
-			flick("flash", HUDtech["flash"])
+		/*if (HUDtech.Find("flash"))
+			flick("flash", HUDtech["flash"])*/
+		flash_eyes()
 
 	var/b_loss = null
 	var/f_loss = null
@@ -202,7 +205,7 @@
 
 	for(var/obj/item/I in src)
 		drop_from_inventory(I)
-		I.throw_at(get_edge_target_turf(src,pick(alldirs)), rand(1,3), round(30/I.w_class))
+		I.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)), rand(1,3), round(30/I.w_class))
 
 	playsound(src.loc, 'sound/effects/splat.ogg', max(10,min(50,maxHealth)), 1)
 	if (do_gibs)
@@ -327,7 +330,7 @@
 		adjustOxyLoss(2)
 		return
 
-	var/breath_pressure = (breath.total_moles*R_IDEAL_GAS_EQUATION*breath.temperature)/BREATH_VOLUME
+	var/breath_pressure = (breath.total_moles*R_IDEAL_GAS_EQUATION*breath.temperature)/STD_BREATH_VOLUME
 
 	if (breath_required_type)
 		var/inhaling = breath.gas[breath_required_type]

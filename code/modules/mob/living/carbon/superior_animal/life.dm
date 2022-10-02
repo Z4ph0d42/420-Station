@@ -34,7 +34,10 @@
 
 			stop_automated_movement = 1
 			stance = HOSTILE_STANCE_ATTACKING
-			set_glide_size(DELAY2GLIDESIZE(move_to_delay))
+			var/new_glide_size = world.icon_size / max(CEILING(move_to_delay / world.tick_lag, 1), 1)
+			glide_size = new_glide_size
+			for (var/atom/movable/AM in contents)
+				AM.glide_size = new_glide_size
 			walk_to(src, target_mob, 1, move_to_delay)
 
 		if(HOSTILE_STANCE_ATTACKING)
@@ -45,13 +48,18 @@
 
 	//random movement
 	if(wander && !stop_automated_movement && !anchored)
-		if(isturf(src.loc) && !resting && !buckled && canmove)
+		if(isturf(src.loc) && !resting && !buckled && !incapacitated() && !stat)
 			turns_since_move++
 			if(turns_since_move >= turns_per_move)
 				if(!(stop_automated_movement_when_pulled && pulledby))
-					var/moving_to = pick(cardinal)
+					var/moving_to = pick(GLOB.cardinal)
 					set_dir(moving_to)
-					step_glide(src, moving_to, DELAY2GLIDESIZE(0.5 SECONDS))
+					//step_glide(src, moving_to, DELAY2GLIDESIZE(0.5 SECONDS))
+					var/step_glide_size = world.icon_size / max(CEILING(0.5 SECONDS / world.tick_lag, 1), 1)
+					glide_size = step_glide_size
+					for (var/atom/movable/AM in contents)
+						AM.glide_size = step_glide_size
+					step(src, moving_to)
 					turns_since_move = 0
 
 	//Speaking
@@ -61,15 +69,23 @@
 /mob/living/carbon/superior_animal/handle_chemicals_in_body()
 	if(reagents)
 		chem_effects.Cut()
-		analgesic = 0
+		//analgesic = 0
 
 		if(touching) touching.metabolize()
+		var/datum/reagents/metabolism/ingested = get_ingested_reagents()
 		if(ingested) ingested.metabolize()
 		if(bloodstr) bloodstr.metabolize()
-		metabolism_effects.process()
+		//metabolism_effects.process()
+		for(var/T in chem_doses)
+			if(bloodstr?.has_reagent(T) || ingested?.has_reagent(T) || touching?.has_reagent(T))
+				continue
+			var/datum/reagent/R = T
+			chem_doses[T] -= initial(R.metabolism)*2
+			if(chem_doses[T] <= 0)
+				chem_doses -= T
 
-		if(CE_PAINKILLER in chem_effects)
-			analgesic = chem_effects[CE_PAINKILLER]
+		/*if(CE_PAINKILLER in chem_effects)
+			analgesic = chem_effects[CE_PAINKILLER]*/
 
 	if(status_flags & GODMODE)
 		return 0
