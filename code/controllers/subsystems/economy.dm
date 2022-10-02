@@ -162,26 +162,20 @@ SUBSYSTEM_DEF(economy)
 
 //Step 3: Actually paying the wages
 /proc/pay_wages()
-	to_chat(world,"pay_wages")
 	var/total_paid = 0
 	for (var/d in GLOB.all_departments)
 		var/datum/station_department/department = GLOB.all_departments[d]
-		to_chat(world,"[department.id]")
 		if (!department.pending_wage_total)
 			//No need to do anything if nobody's being paid here
-			to_chat(world,"[department.id] is not pending_wage_total")
 			continue
 
 		//Get our account
 		var/datum/money_account/account = department_accounts[department.id]
 		if (!account)
-			to_chat(world,"[department.id] has no account")
 			continue
-		to_chat(world,"[account.account_name]")
 
 		//Check again that the department has enough. Because some departments, like guild, didnt request funds
 		if (account.money < department.pending_wage_total)
-			to_chat(world,"[account.money < department.pending_wage_total]")
 			//TODO Here: Email the account owner warning them that wages can't be paid
 			//Ok we can't pay wages, this is bad. Lets tell the account owner
 			/*var/ownername = account.owner_name
@@ -194,15 +188,12 @@ SUBSYSTEM_DEF(economy)
 
 		//Here we go, lets pay them!
 		for (var/datum/computer_file/report/crew_record/R in department.pending_wages)
-			to_chat(world,"crew record [R.get_name()]")
 			var/paid = FALSE
 			//Get the crewman's account that we'll pay to
 			var/crew_account_num = R.get_account()
 			var/amount = department.pending_wages[R]
-			to_chat(world,"crew_account_num = [crew_account_num], amount = [amount]")
 			paid = transfer_funds(department.account_number, crew_account_num, "Payroll", "CEV Zerzura payroll system", amount)
 			if (paid)
-				to_chat(world,"paid success")
 				total_paid += amount
 				var/sender = "[department.name] account"
 				if (department.funding_type == FUNDING_INTERNAL)
