@@ -1740,9 +1740,10 @@
 /datum/seed/cannabis
 	name = "cannabis"
 	seed_name = "cannabis"
-	mutants =list("")
+	mutants = null
 	chems = list(/datum/reagent/nutriment = list(1), /datum/reagent/thc = list(5,8))
 	kitchen_tag = "cannabis"
+	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
 
 //I'm color blind please feel free to tweak this color
 /datum/seed/cannabis/New()

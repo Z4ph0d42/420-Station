@@ -10,6 +10,8 @@
 	var/plantname
 	var/datum/seed/seed
 	var/potency = -1
+	var/init_at_spawn = TRUE
+	var/cigarette_type = null
 
 /obj/item/weapon/reagent_containers/food/snacks/grown/New(newloc,planttype)
 	if(planttype)
@@ -19,6 +21,10 @@
 
 /obj/item/weapon/reagent_containers/food/snacks/grown/Initialize()
 	. = ..()
+	if(init_at_spawn)
+		Initplant()
+
+/obj/item/weapon/reagent_containers/food/snacks/grown/proc/Initplant()
 	if(!SSplants)
 		log_error("<span class='danger'>Plant controller does not exist and [src] requires it. Aborting.</span>")
 		return INITIALIZE_HINT_QDEL
@@ -30,6 +36,7 @@
 
 	SetName("[seed.seed_name]")
 	trash = seed.get_trash_type()
+	cigarette_type = seed.cigarette_type
 	if(!dried_type)
 		dried_type = type
 
@@ -332,3 +339,24 @@ var/list/fruit_icon_cache = list()
 		I.color = flesh_colour
 		fruit_icon_cache["slice-[rind_colour]"] = I
 	overlays |= fruit_icon_cache["slice-[rind_colour]"]
+
+//custom plant
+/obj/item/weapon/reagent_containers/food/snacks/grown/custom
+	name = "custom plant"
+	icon_state = "cabbage-product"
+	var/activated = 0
+	init_at_spawn = FALSE
+
+/obj/item/weapon/reagent_containers/food/snacks/grown/custom/attack_self(mob/user)
+	if(!activated)
+		var/list/selections = SSplants.seeds.Copy()
+		var/choice = input(user,"Choose which plant to create.",name,) as null|anything in selections
+		if(activated)
+			return
+		activated = 1
+		if(choice && choice in selections)
+			plantname = choice
+			Initplant()
+			fill_reagents()
+		return
+	return ..()
