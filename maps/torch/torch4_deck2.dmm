@@ -5290,10 +5290,6 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/engine_monitoring)
-"kZ" = (
-/obj/structure/scrap/poor/large,
-/turf/simulated/floor/reinforced/airless,
-/area/vacant/prototype/engine)
 "la" = (
 /obj/structure/hygiene/shower{
 	dir = 4;
@@ -8077,6 +8073,9 @@
 	name = "Deck Three Port status indicator";
 	pixel_x = 8;
 	pixel_y = -24
+	},
+/obj/item/weapon/paper{
+	info = To turn on burn mode, toggle the fuel mode then wait 15 seconds and press the ignition switch. If indicator light turns red, press the corresponding vent button. When disabling burn mode, vent all chambers to prevent a blowout.
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/engineering_monitoring)
@@ -13427,10 +13426,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/engineering/engineering_bay)
-"FN" = (
-/obj/structure/scrap/guns,
-/turf/simulated/floor/reinforced/airless,
-/area/vacant/prototype/engine)
 "FP" = (
 /obj/effect/shuttle_landmark/merc/deck2,
 /turf/space,
@@ -13812,7 +13807,6 @@
 	dir = 8;
 	icon_state = "warningcorner"
 	},
-/obj/structure/scrap/medical,
 /turf/simulated/floor/reinforced/airless,
 /area/vacant/prototype/engine)
 "Hh" = (
@@ -18810,10 +18804,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics)
-"WZ" = (
-/obj/structure/scrap/medical,
-/turf/simulated/floor/reinforced/airless,
-/area/vacant/prototype/engine)
 "Xa" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Second Deck Substation"
@@ -19091,10 +19081,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
-"XX" = (
-/obj/structure/scrap/food/large,
-/turf/simulated/floor/reinforced/airless,
-/area/vacant/prototype/engine)
 "XZ" = (
 /obj/structure/sign/warning/high_voltage{
 	dir = 8;
@@ -28228,7 +28214,7 @@ qw
 mc
 ue
 Se
-XX
+Kf
 mg
 wE
 mg
@@ -28834,7 +28820,7 @@ qw
 Lc
 ad
 Ej
-WZ
+Kf
 Hg
 mh
 Qh
@@ -29036,8 +29022,8 @@ qw
 ud
 Pe
 Se
-FN
-kZ
+Kf
+Kf
 qh
 Rh
 Na
