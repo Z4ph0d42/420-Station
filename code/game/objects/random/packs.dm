@@ -165,8 +165,8 @@ They generally give more random result and can provide more divercity in spawn.
 					/obj/random/closet_tech = 6,
 					/obj/random/closet = 4,
 					/obj/random/closet_wardrobe = 2,
-//					/obj/random/exosuit/damaged = 1, //Some dangerous shit can be found there
-					/obj/random/hardsuit = 1, //idk wtf an exosuit is so heres a hardsuit
+					/obj/random/exosuit/damaged = 1, //Some dangerous shit can be found there
+					/obj/random/hardsuit = 1, //idk wtf an exosuit is so heres a hardsuit (exosuits are mechs, dummy)
 				))
 
 /obj/random/pack/junk_machine/low_chance
@@ -181,5 +181,5 @@ They generally give more random result and can provide more divercity in spawn.
 					/obj/random/closet_tech = 3,
 					/obj/random/closet = 2,
 					/obj/random/closet_wardrobe = 2,
-//					/obj/random/exosuit/damaged = 1, //Some dangerous shit can be found there to-do
+					/obj/random/exosuit/damaged = 1, //Some dangerous shit can be found there to-do
 				))
