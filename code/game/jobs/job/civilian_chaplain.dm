@@ -10,6 +10,7 @@
 	access = list(access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
 	minimal_access = list(access_morgue, access_chapel_office, access_crematorium)
 	outfit_type = /decl/hierarchy/outfit/job/chaplain
+	economic_power = 1
 
 	equip(var/mob/living/carbon/human/H, var/alt_title, var/ask_questions = TRUE)
 		. = ..()
