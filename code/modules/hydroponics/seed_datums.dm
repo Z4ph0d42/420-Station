@@ -1740,8 +1740,8 @@
 /datum/seed/cannabis
 	name = "cannabis"
 	seed_name = "cannabis"
-	mutants = null
-	chems = list(/datum/reagent/nutriment = list(1), /datum/reagent/thc = list(5,8))
+	mutants = list("crimson kush","blueberry chronic")
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(5,8))
 	kitchen_tag = "cannabis"
 	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
 
@@ -1760,3 +1760,37 @@
 	set_trait(TRAIT_IDEAL_HEAT, 298)
 	set_trait(TRAIT_IDEAL_LIGHT, 6)
 	set_trait(TRAIT_WATER_CONSUMPTION, 6)
+
+/datum/seed/cannabis/crimson_kush
+	name = "crimson kush"
+	seed_name = "crimson kush"
+	mutants = null
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(6,5), /datum/reagent/paracetamol = list(1,4))
+	kitchen_tag = "cannabis"
+	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
+
+/datum/seed/cannabis/crimson_kush/New()
+	..()
+	set_trait(TRAIT_HARVEST_REPEAT,2)
+	set_trait(TRAIT_YIELD,3)
+	set_trait(TRAIT_POTENCY,10.5)
+	set_trait(TRAIT_PRODUCT_COLOUR,"#b13e0d")
+	set_trait(TRAIT_PLANT_COLOUR,"#a44404")
+	set_trait(TRAIT_WATER_CONSUMPTION, 6.2)
+
+/datum/seed/cannabis/blueberry_chronic
+	name = "blueberry chronic"
+	seed_name = "blueberry chronic"
+	mutants = null
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(6,5), /datum/reagent/dexalin = list(1,4))
+	kitchen_tag = "cannabis"
+	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
+
+/datum/seed/cannabis/blueberry_chronic/New()
+	..()
+	set_trait(TRAIT_HARVEST_REPEAT,2)
+	set_trait(TRAIT_YIELD,3)
+	set_trait(TRAIT_POTENCY,10.5)
+	set_trait(TRAIT_PRODUCT_COLOUR,"#150db1")
+	set_trait(TRAIT_PLANT_COLOUR,"#0c04a4")
+	set_trait(TRAIT_WATER_CONSUMPTION, 6.2)
