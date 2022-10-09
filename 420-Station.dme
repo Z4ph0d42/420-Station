@@ -1111,6 +1111,7 @@
 #include "code\game\objects\items\weapons\tools\wrench.dm"
 #include "code\game\objects\random\closet.dm"
 #include "code\game\objects\random\date_based.dm"
+#include "code\game\objects\random\exosuit.dm"
 #include "code\game\objects\random\packs.dm"
 #include "code\game\objects\random\purerandom.dm"
 #include "code\game\objects\random\random.dm"
