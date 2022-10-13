@@ -12,15 +12,15 @@
 	melee_damage_lower = 1
 	melee_damage_upper = 3 //He's a ranged roach
 
-	breath_required_type = NONE
-	breath_poison_type = NONE
+	breath_required_type = 0
+	breath_poison_type = 0
 	min_breath_required_type = 0
 	min_breath_poison_type = 0
 
 	min_air_pressure = 0
 	min_bodytemperature = 0
 
-	spawn_tags = SPAWN_TAG_NANITE_ROACH
+	//spawn_tags = SPAWN_TAG_NANITE_ROACH
 	rarity_value = 22.5
 
 	var/list/nanite_swarms = list()
@@ -56,7 +56,7 @@
 	icon = 'icons/mob/simple_animal/critter.dmi'
 	icon_state = "naniteroach"
 	icon_living = "naniteroach"
-	pass_flags = PASSTABLE
+	pass_flags = PASS_FLAG_TABLE
 	density = FALSE
 	health = 10
 	maxHealth = 10

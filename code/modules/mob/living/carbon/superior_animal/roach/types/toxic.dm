@@ -20,7 +20,8 @@
 	if(isliving(A))
 		var/mob/living/L = A
 		if(istype(L) && prob(25))
-			var/damage = rand(melee_damage_lower, melee_damage_upper)
-			L.damage_through_armor(damage, TOX)
+			var/attackdamage = rand(melee_damage_lower, melee_damage_upper)
+			//L.damage_through_armor(damage, TOX)
+			L.modify_damage_by_armor(damage = attackdamage, damage_type = TOX)
 			playsound(src, 'sound/voice/insect_battle_screeching.ogg', 30, 1, -3)
 			L.visible_message(SPAN_DANGER("\the [src] globs up some toxic bile all over \the [L]!"))

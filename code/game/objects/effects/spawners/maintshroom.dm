@@ -17,7 +17,7 @@
 	if(T.get_lumcount() > min_light_limit)
 		return
 
-	new /obj/effect/plant(get_turf(src), new /datum/seed/mushroom/maintshroom)
+	new /obj/effect/vine(get_turf(src), new /datum/seed/mushroom/maintshroom)
 	find_or_create_burrow(get_turf(src))
 
 /obj/effect/spawner/maintshroom/Initialize()
@@ -56,6 +56,6 @@
 	if(T.get_lumcount() > min_light_limit)
 		return
 
-	new /obj/effect/plant(get_turf(B), new /datum/seed/mushroom/maintshroom)
+	new /obj/effect/vine(get_turf(B), new /datum/seed/mushroom/maintshroom)
 
 	qdel(src)

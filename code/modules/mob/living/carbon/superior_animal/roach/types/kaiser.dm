@@ -26,7 +26,7 @@ Has ability of every roach.
 	move_to_delay = 8
 	mob_size = MOB_LARGE
 	status_flags = 0
-	mouse_opacity = MOUSE_OPACITY_OPAQUE // Easier to click on in melee, they're giant targets anyway
+	mouse_opacity = 2 //opaque Easier to click on in melee, they're giant targets anyway
 
 	var/distress_call_stage = 3
 
@@ -71,8 +71,9 @@ Has ability of every roach.
 	if(isliving(A))
 		var/mob/living/L = A
 		if(istype(L) && prob(10))
-			var/damage = rand(melee_damage_lower, melee_damage_upper)
-			L.damage_through_armor(damage, TOX)
+			var/attackdamage = rand(melee_damage_lower, melee_damage_upper)
+			//L.damage_through_armor(damage, TOX)
+			L.modify_damage_by_armor(damage = attackdamage, damage_type = TOX)
 			playsound(src, 'sound/voice/insect_battle_screeching.ogg', 30, 1, -3)
 			L.visible_message(SPAN_DANGER("\the [src] globs up some toxic bile all over \the [L]!"))
 
@@ -130,8 +131,7 @@ Has ability of every roach.
 /mob/living/carbon/superior_animal/roach/kaiser/slip(var/slipped_on)
 	return FALSE
 
-/* turned this off for now, its not working and i doubt it would get used much. might fix latter. ported directly from eris
-// //RIDING
+/*// //RIDING
 /mob/living/carbon/superior_animal/roach/kaiser/try_tame(var/mob/living/carbon/user, var/obj/item/weapon/reagent_containers/food/snacks/grown/thefood)
 	if(!istype(thefood))
 		return FALSE
@@ -160,5 +160,4 @@ Has ability of every roach.
 		visible_message("[src] reluctantly stops thrashing around...")
 		return TRUE
 	visible_message("[src] snaps out of its trance and rushes at [user]!")
-	return FALSE
-*/
+	return FALSE*/

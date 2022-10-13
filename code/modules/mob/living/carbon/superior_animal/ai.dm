@@ -80,3 +80,7 @@
 			if (istype(obstacle, /obj/structure/window) || istype(obstacle, /obj/structure/closet) || istype(obstacle, /obj/structure/table) || istype(obstacle, /obj/structure/grille))
 				obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),attacktext)
 
+/mob/living/carbon/superior_animal/proc/activate_ai()
+	AI_inactive = FALSE
+	//life_cycles_before_sleep = initial(life_cycles_before_sleep)
+

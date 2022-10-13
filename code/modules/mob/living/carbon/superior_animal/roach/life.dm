@@ -25,7 +25,11 @@
 				eat_target = safepick(nearestObjectsInList(eatTargets,src,1))
 				if (eat_target)
 					busy = MOVING_TO_TARGET
-					set_glide_size(DELAY2GLIDESIZE(move_to_delay))
+					//set_glide_size(DELAY2GLIDESIZE(move_to_delay))
+					var/new_glide_size = world.icon_size / max(CEILING(move_to_delay / world.tick_lag, 1), 1)
+					glide_size = new_glide_size
+					for (var/atom/movable/AM in contents)
+						AM.glide_size = new_glide_size
 					walk_to(src, eat_target, 1, move_to_delay)
 					GiveUp(eat_target) //give up if we can't reach target
 					return
@@ -36,7 +40,7 @@
 					stop_automated_movement = 1
 					src.visible_message(SPAN_NOTICE("\The [src] begins to eat \the [eat_target]."))
 					walk(src,0)
-					spawn(3000) // how much time it takes to it a corpse, in tenths of second 
+					spawn(3000) // how much time it takes to it a corpse, in tenths of second
 					    // Set to 5 minutes to let the crew enough time to get the corpse
 						// Several roaches eating at the same time do not speed up the process
 						// If disturbed the roach has to start back from 0
@@ -51,12 +55,12 @@
 
 										var/mob/living/carbon/human/H = M
 
-										// Process Cruciform
-										var/obj/item/weapon/implant/core_implant/cruciform/CI = H.get_core_implant(/obj/item/weapon/implant/core_implant/cruciform, FALSE)
+										// Process Cruciform //This doesnt exist in this source. commenting untill that is brought over some day. -falaskian
+										/*var/obj/item/weapon/implant/core_implant/cruciform/CI = H.get_core_implant(/obj/item/weapon/implant/core_implant/cruciform, FALSE)
 										if (CI)
 											var/mob/N = CI.wearer
 											CI.name = "[N]'s Cruciform"
-											CI.uninstall()
+											CI.uninstall()*/
 
 										// Gib victim but remove non synthetic organs
 										H.gib(max_range=1, keep_only_robotics=TRUE)
@@ -98,7 +102,7 @@
 							if(!(locate(/obj/effect/roach/roach_egg) in get_turf(src)))
 								new /obj/effect/roach/roach_egg(loc, src)
 								fed--
-								update_openspace()
+								//update_openspace()
 							busy = 0
 							stop_automated_movement = 0
 		else

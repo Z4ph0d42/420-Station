@@ -28,7 +28,7 @@
 	min_air_pressure = 15 //below this, brute damage is dealt
 
 	faction = "roach"
-	pass_flags = PASSTABLE
+	pass_flags = PASS_FLAG_TABLE
 	acceptableTargetDistance = 3 //consider all targets within this range equally
 	randpixel = 12
 	overkill_gib = 16
@@ -36,7 +36,7 @@
 
 
 	//spawn_values
-	spawn_tags = SPAWN_TAG_ROACH
+	//spawn_tags = SPAWN_TAG_ROACH
 	rarity_value = 5
 
 	var/atom/eat_target // target that the roach wants to eat
@@ -49,3 +49,28 @@
 	if (.)
 		for (var/mob/living/carbon/superior_animal/roach/fuhrer/F in range(src,8))
 			F.distress_call()
+
+//roach spawners
+/obj/random/roaches
+	name = "random roach"
+	spawn_nothing_percentage = 30
+	var/spawn_object = /mob/living/carbon/superior_animal/roach
+
+/obj/random/roaches/low_chance
+	name = "low chance random roach"
+	spawn_nothing_percentage = 60
+
+/obj/random/roaches/cluster
+	name = "cluster of roaches"
+	alpha = 128
+	min_amount = 3
+	max_amount = 9
+	spread_range = 0
+
+/obj/random/roaches/cluster/low_chance
+	name = "low chance cluster of roaches"
+	spawn_nothing_percentage = 60
+
+// For Scrap Beacon
+/obj/random/roaches/cluster/beacon
+	spawn_object = /mob/living/carbon/superior_animal/roach/nanite
