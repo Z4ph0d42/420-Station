@@ -14,7 +14,7 @@ var/list/global/distressed_burrows = list()
 
 SUBSYSTEM_DEF(migration)
 	name = "Migration"
-	init_order = INIT_ORDER_LATELOAD
+	init_order = SS_INIT_MISC_LATE
 
 	wait = 300 //Ticks once per 30 seconds
 
@@ -46,8 +46,18 @@ SUBSYSTEM_DEF(migration)
 /datum/controller/subsystem/migration/Initialize()
 	. = ..()
 	for (var/i = 0; i < roundstart_burrows; i++)
-		var/area/A = random_ship_area(FALSE, FALSE, FALSE)
-		var/turf/T = A.random_space() //Lets make sure the selected area is valid
+		var/list/ship_areas = list()
+		for(var/area/A in world)
+			if(is_station_area(A))
+				ship_areas += A
+		var/area/A = pick(ship_areas)
+		var/turf/T //Lets make sure the selected area is valid
+		var/list/turfs = list()
+		for(var/turf/simulated/floor/F in A.contents)
+			if(turf_clear(F))
+				turfs += F
+		if (turfs.len)
+			T = pick(turfs)
 		create_burrow(T)
 
 
@@ -57,7 +67,7 @@ Called by roaches when they spawn.
 This proc will attempt to create a burrow against a wall, within view of the target location
 */
 /proc/create_burrow(var/turf/target)
-	if (!isOnShipLevel(target))
+	if(!isStationLevel(target))
 		return
 
 	//First of all lets get a list of everything in dview.
@@ -70,20 +80,23 @@ This proc will attempt to create a burrow against a wall, within view of the tar
 
 
 		//No being under a low wall
-		if (F.is_wall)
+		if (F.is_wall())
 			continue
-
-		//No stacking multiple burrows per tile
-		if (locate(/obj/structure/burrow) in F)
-			continue
-
-
-		//No airlocks
-		if (locate(/obj/machinery/door) in F)
-			continue
-
-		//No ladders or stairs
-		if (locate(/obj/structure/multiz) in F)
+		var/list/blocking_objects = list(
+		/obj/structure/burrow, //No stacking multiple burrows per tile
+		/obj/machinery/door, //No airlocks
+		/obj/structure/stairs, //No stairs
+		/obj/structure/ladder) //No ladders
+		var/blocked = 0
+		for(var/atom/movable/AM in F)
+			blocked = 0
+			for(var/t in blocking_objects)
+				if(istype(AM,t))
+					blocked = 1
+					break
+			if(blocked)
+				break
+		if(blocked)
 			continue
 
 		//No turfs in space
@@ -91,9 +104,9 @@ This proc will attempt to create a burrow against a wall, within view of the tar
 			continue
 
 		//To be valid, the floor needs to have a wall in a cardinal direction
-		for (var/d in cardinal)
+		for (var/d in GLOB.cardinal)
 			var/turf/T = get_step(F, d)
-			if (T.is_wall)
+			if (T.is_wall())
 				//Its got a wall!
 				possible_turfs[F] = T //We put this floor and its wall into the possible turfs list
 
@@ -213,11 +226,12 @@ This proc will attempt to create a burrow against a wall, within view of the tar
 /datum/controller/subsystem/migration/proc/choose_burrow_target(var/obj/structure/burrow/source, var/reroll_type = TRUE, var/reroll_prob = 99.5)
 	var/obj/structure/burrow/candidate
 
-	switch (GLOB.storyteller.config_tag)
+	//storytellers are not a thing
+	/*switch (GLOB.storyteller.config_tag)
 		if ("jester") // Jester will most likely not reroll the maintenance area check.
 			reroll_prob = 19.5
 		if ("warrior")
-			reroll_prob = 80
+			reroll_prob = 80*/
 
 	//Lets copy the list into a candidates buffer
 	var/list/candidates = all_burrows.Copy(1,0)
@@ -245,7 +259,7 @@ This proc will attempt to create a burrow against a wall, within view of the tar
 		//And a high chance to reroll it if its not what we want in terms of being in/out of maintenance
 		if ((candidate.maintenance != reroll_type) && prob(reroll_prob))
 			continue
-		
+
 		// if burrow was closed before it has chance to be ignored
 		if (candidate.isSealed && candidate.isRevealed && prob(reroll_prob/2))
 			continue
@@ -280,7 +294,7 @@ This proc will attempt to create a burrow against a wall, within view of the tar
 		//Burrow is already busy
 		if (candidate.target || candidate.recieving)
 			continue
-		
+
 		// Burrow is closed
 		if(candidate.isSealed)
 			continue
@@ -334,7 +348,7 @@ This proc will attempt to create a burrow against a wall, within view of the tar
 		//Branch 1: No plants yet
 		if (!B.plant)
 			//This burrow has no plant registered, lets look for nearby plants
-			for (var/obj/effect/plant/P in dview(1, B.loc))
+			for (var/obj/effect/vine/P in dview(1, B.loc))
 
 				//Make sure this is a spreading plant, no sending potatoes through a burrow
 				if (P.seed.get_trait(TRAIT_SPREAD) >= 2)
@@ -462,7 +476,8 @@ This proc will attempt to create a burrow against a wall, within view of the tar
 		var/obj/structure/burrow/B = b
 
 		//How far between the burrows?
-		var/dist = dist3D(source, B)
+		//var/dist = dist3D(source, B) no 3d dist exists at this time
+		var/dist = get_dist(source, B)
 		distances[B] = dist
 
 		//Now lets scroll through the list of sorted burrows and find where to insert it

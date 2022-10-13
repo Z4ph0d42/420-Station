@@ -7,11 +7,11 @@
 	desc = "Cracks on the tile."
 	anchored = TRUE
 	density = FALSE
-	plane = ABOVE_TILE_LAYER 
+	plane = DEFAULT_PLANE
 	icon = 'icons/obj/burrows.dmi'
 	icon_state = "cracks"
-	level = BELOW_PLATING_LEVEL
-	layer = ABOVE_NORMAL_TURF_LAYER
+	level = PLATING_LAYER
+	layer = EXPOSED_WIRE_TERMINAL_LAYER
 
 	//health is used when attempting to collapse this hole. It is a multiplier on the time taken and failure rate
 	//Any failed attempt to collapse it will reduce the health, making future attempts easier
@@ -64,10 +64,10 @@
 /obj/structure/burrow/New(var/loc, turf/anchor)
 	.=..()
 	all_burrows.Add(src)
-	var/obj/machinery/power/nt_obelisk/obelisk = locate(/obj/machinery/power/nt_obelisk) in range(7, src)
+	/*var/obj/machinery/power/nt_obelisk/obelisk = locate(/obj/machinery/power/nt_obelisk) in range(7, src)
 	if(obelisk && obelisk.active)
 		qdel(src)
-		return
+		return*/
 	if (anchor)
 		offset_to(anchor, 8)
 
@@ -81,12 +81,12 @@
 	// apparently burrows should face walls
 	for (var/d in GLOB.cardinal)
 		var/turf/T = get_step(F, d)
-		if (T.is_wall)
+		if (T.is_wall())
 			dir = d
 			break
 
 	var/area/A = get_area(src)
-	if (A && A.is_maintenance)
+	if (A && istype(A,/area/maintenance))
 		maintenance = TRUE
 		break_open(TRUE)
 
@@ -146,7 +146,7 @@
 	//Creatures only. No humans or robots
 	if (!isanimal(L) && !issuperioranimal(L))
 		return FALSE
-	
+
 	//Kaisers are too fat, they can't fit in
 	if(istype(L, /mob/living/carbon/superior_animal/roach/kaiser))
 		return FALSE
@@ -343,7 +343,7 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 		//Next get a list of floors to move them to
 		var/list/floors = list()
 		for (var/turf/simulated/floor/F in dview(2, loc))
-			if (F.is_wall)
+			if (F.is_wall())
 				continue
 
 			if (turf_is_external(F))
@@ -459,7 +459,7 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 /obj/structure/burrow/proc/reveal()
 	if(!isRevealed)
 		isRevealed = TRUE
-		level = ABOVE_PLATING_LEVEL
+		level = 2//ABOVE_PLATING_LEVEL
 	var/turf/simulated/floor/F = loc
 	if (istype(F))
 		F.levelupdate()
@@ -478,25 +478,23 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 /obj/structure/burrow/attackby(var/obj/item/weapon/W as obj, var/mob/user as mob)
 	if(!isRevealed)
 		return
-	if(isSealed)
-	if(isWelder(W))
-	(do_after(user,30,src))
+	if(isSealed && isWelder(W))
 		var/obj/item/weapon/weldingtool/WT = W
-			user.visible_message("[user] attempts to weld [src] with the [W]", "You start welding [src] with the [W]")
-			if(W.use_tool(user, src, WORKTIME_NORMAL, QUALITY_WELDING, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC) && isSealed)
-				user.visible_message("[user] welds [src] with the [W].", "You weld the [src] with the [W].")
-				if(recieving)
-					if(prob(33))
-						qdel(src)
-					else	// false welding, critters will create new cracks
-						invisibility = 101
-						spawn(rand(3,10) SECONDS)
-							if(isSealed)
-								audio('sound/effects/thud_break.ogg', 100)
-								spawn_rubble(loc, 1, 100)//And make some rubble
-								invisibility = 0
-				else
+		user.visible_message("[user] attempts to weld [src] with the [W]", "You start welding [src] with the [W]")
+		if(do_after(user,30,src) && isSealed && WT.remove_fuel(0, user))
+			user.visible_message("[user] welds [src] with the [W].", "You weld the [src] with the [W].")
+			if(recieving)
+				if(prob(33))
 					qdel(src)
+				else	// false welding, critters will create new cracks
+					invisibility = 101
+					spawn(rand(3,10) SECONDS)
+						if(isSealed)
+							audio('sound/effects/thud_break.ogg', 100)
+							spawn_rubble(loc, 1, 100)//And make some rubble
+							invisibility = 0
+			else
+				qdel(src)
 	else
 		if(istype(W, /obj/item/stack/material) && W.get_material_name() == MATERIAL_STEEL)
 			var/obj/item/stack/G = W
@@ -509,7 +507,7 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 					return
 
 
-		if (W.has_quality(QUALITY_DIGGING) && !isSealed)
+		if (W.isshovel() && !isSealed)
 			user.visible_message("[user] starts breaking and collapsing [src] with the [W]", "You start breaking and collapsing [src] with the [W]")
 
 			//Attempting to collapse a burrow may trigger reinforcements.
@@ -521,14 +519,19 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 
 			//We record the time to prevent exploits of starting and quickly cancelling
 			var/start = world.time
-			var/target_time = WORKTIME_FAST+ 2*health
+			var/target_time = 60+ 2*health
 
-			if (W.use_tool(user, src, target_time, QUALITY_DIGGING, health * 0.66, list(STAT_MEC, STAT_ROB), forced_sound = WORKSOUND_PICKAXE))
-				//On success, the hole is destroyed!
-				new /obj/spawner/scrap/sparse(get_turf(user))
-				user.visible_message("[user] collapses [src] with the [W] and dumps trash which was in the way.", "You collapse [src] with the [W] and dump trash which was in the way.")
+			//if (W.use_tool(user, src, target_time, QUALITY_DIGGING, health * 0.66, list(STAT_MEC, STAT_ROB), forced_sound = WORKSOUND_PICKAXE))
+			playsound(loc, 'sound/items/Crowbar.ogg', 50, 1)
+			if(!do_after(user,60,src))
+				return
+			if (W.isshovel())
+				if(do_after(user,target_time,src))
+					//On success, the hole is destroyed!
+					new /obj/random/scrap/sparse_even(get_turf(user))
+					user.visible_message("[user] collapses [src] with the [W] and dumps trash which was in the way.", "You collapse [src] with the [W] and dump trash which was in the way.")
 
-				collapse()
+					collapse()
 			else
 				var/duration = world.time - start
 				if (duration < 10) //Digging less than a second does nothing
@@ -536,10 +539,10 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 
 				spawn_rubble(loc, 1, 100)
 
-				if (W.get_tool_quality(QUALITY_DIGGING) > 30)
-					to_chat(user, SPAN_NOTICE("The [src] crumbles a bit. Keep trying and you'll collapse it eventually"))
-				else
-					to_chat(user, SPAN_NOTICE("This isn't working very well. Perhaps you should get a better digging tool?"))
+				//if (W.get_tool_quality(QUALITY_DIGGING) > 30)
+					//to_chat(user, SPAN_NOTICE("The [src] crumbles a bit. Keep trying and you'll collapse it eventually"))
+				//else
+				to_chat(user, SPAN_NOTICE("This isn't working very well. Perhaps you should get a better digging tool?"))
 
 				//On failure, the hole takes some damage based on the digging quality of the tool.
 				//This will make things much easier next time
@@ -549,7 +552,7 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 					//If they spent less than the full time attempting the work, then the reduction is reduced
 					//A multiplier is based on 85% of the time spent working,
 					time_mult = (duration / target_time) * 0.85
-			health -= (I.get_tool_quality(QUALITY_DIGGING)*time_mult)
+				health -= (rand(20,30)*time_mult)
 
 			return
 
@@ -560,7 +563,8 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 /obj/structure/burrow/proc/collapse(var/clean = FALSE)
 	if(!clean)
 		spawn_rubble(loc, 0, 100)
-	if(deepmaint_entry_point)
+	//deepmaint is not a thing
+	/*if(deepmaint_entry_point)
 		if(free_deepmaint_ladders.len > 0)
 			var/obj/structure/multiz/ladder/up/my_ladder = pick(free_deepmaint_ladders)
 			free_deepmaint_ladders -= my_ladder
@@ -569,7 +573,7 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 			my_ladder.targeted_by = my_hole
 			my_ladder.target = my_hole
 			qdel(src)
-			return
+			return*/
 	isSealed = TRUE
 	icon_state = initial(icon_state)
 	name = initial(name)
@@ -584,7 +588,7 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 
 	var/list/floors = list()
 	for (var/turf/simulated/floor/F in dview(spread, T))
-		if (F.is_wall)
+		if (F.is_wall())
 			continue
 		if (locate(/obj/effect/decal/cleanable/rubble) in F)
 			continue
@@ -613,7 +617,8 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 /obj/structure/burrow/proc/enter_burrow(var/mob/living/L)
 	break_open()
 	spawn()
-		L.do_pickup_animation(src, L.loc)
+		//L.do_pickup_animation(src, L.loc)
+		do_attack_animation(L) //pickup_animation proc doesnt exist, so were gonna make the burrow attack the mob. Might give the same effect. -falaskian
 		sleep(8)
 		L.forceMove(src)
 
@@ -639,8 +644,9 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 //It relies on the plant seed already being set
 /obj/structure/burrow/proc/spread_plants()
 	reveal()
-	if(istype(plant, /datum/seed/wires))		//hivemind wireweeds handling
-		if(locate(/obj/effect/plant) in loc)
+	//it seems wire seeds arent a thing -falaskian
+	/*if(istype(plant, /datum/seed/wires))		//hivemind wireweeds handling
+		if(locate(/obj/effect/vine) in loc)
 			return
 
 		if(!hive_mind_ai || !hive_mind_ai.hives.len || maintenance)
@@ -649,14 +655,14 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 		break_open()
 		var/obj/machinery/hivemind_machine/node/hivemind_node = pick(hive_mind_ai.hives)
 		var/obj/effect/plant/hivemind/wire = new(loc, plant)
-		hivemind_node.add_wireweed(wire)
+		hivemind_node.add_wireweed(wire)*/
 
-	for (var/obj/effect/plant in loc)
+	for (var/obj/effect/vine/plant in loc)
 		return
 
 	//The plant is not assigned a parent, so it will become the parent of plants that grow from here
 	//If it were assigned a parent from a previous burrow, it'd never spread at all due to distance
-	new /obj/effect/plant(get_turf(src), plant)
+	new /obj/effect/vine(get_turf(src), plant)
 
 
 
@@ -678,7 +684,7 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 /obj/structure/burrow/ex_act(severity)
 	spawn(1)
 		var/turf/T = get_turf(src)
-		if(T.is_hole)
+		if(T.is_open())
 			qdel(src)
 		else
 			collapse()
