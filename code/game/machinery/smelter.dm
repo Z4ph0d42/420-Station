@@ -243,7 +243,8 @@
 	for(var/obj/item/weapon/stock_parts/manipulator/M in component_parts)
 		manipulator_rating += M.rating
 		++manipulator_count
-
+	if(manipulator_count == 0)
+		manipulator_count = 1 //preventing division by zero. -falaskian
 	speed = initial(speed)*(manipulator_rating/manipulator_count)
 
 	var/ml_rating = 0
