@@ -16869,6 +16869,7 @@
 /obj/structure/closet/toolcloset,
 /obj/effect/floor_decal/corner/yellow/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/device/multitool,
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/storage)
 "QJ" = (

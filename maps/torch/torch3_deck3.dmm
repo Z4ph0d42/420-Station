@@ -11776,6 +11776,7 @@
 	pixel_y = 4
 	},
 /obj/item/weapon/shovel,
+/obj/item/device/multitool,
 /turf/simulated/floor/tiled/monotile,
 /area/storage/tools)
 "AL" = (

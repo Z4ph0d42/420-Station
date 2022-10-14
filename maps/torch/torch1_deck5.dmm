@@ -7538,6 +7538,7 @@
 /obj/effect/floor_decal/corner/brown/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/weapon/storage/pouch/medium_generic,
+/obj/item/device/multitool,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "qf" = (
@@ -7545,6 +7546,7 @@
 /obj/effect/floor_decal/corner/brown/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/weapon/storage/pouch/medium_generic,
+/obj/item/device/multitool,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "qg" = (
@@ -7571,6 +7573,7 @@
 	dir = 4
 	},
 /obj/item/weapon/storage/pouch/medium_generic,
+/obj/item/device/multitool,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "qi" = (
@@ -12562,6 +12565,7 @@
 /obj/effect/floor_decal/corner/brown/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/weapon/storage/pouch/medium_generic,
+/obj/item/device/multitool,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "Ek" = (
@@ -17262,6 +17266,7 @@
 	amount = 30
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/device/multitool,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/storage)
 "UM" = (

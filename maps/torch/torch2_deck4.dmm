@@ -4181,6 +4181,7 @@
 	pixel_x = 2;
 	pixel_y = -2
 	},
+/obj/item/device/multitool,
 /turf/simulated/floor/tiled/monotile,
 /area/storage/primary)
 "os" = (
