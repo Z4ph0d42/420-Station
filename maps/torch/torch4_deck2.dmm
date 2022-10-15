@@ -1283,6 +1283,7 @@
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/vacant/armory)
 "cm" = (
@@ -2774,6 +2775,7 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "fe" = (
@@ -2787,6 +2789,7 @@
 	pixel_x = -22;
 	pixel_y = 0
 	},
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/vacant/chapel)
 "fg" = (
@@ -3373,6 +3376,7 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "gu" = (
@@ -8137,6 +8141,19 @@
 /obj/structure/scrap/large,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/foreport)
+"rJ" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/random/cluster/roaches/low_chance,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/aftport)
 "rM" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red,
 /turf/simulated/floor/tiled/techfloor,
@@ -9005,6 +9022,7 @@
 	dir = 8;
 	icon_state = "warningcorner"
 	},
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/vacant/prototype/engine)
 "ue" = (
@@ -11040,6 +11058,19 @@
 "zV" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftport)
+"zW" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/scrap/guns,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/aftport)
 "zZ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -11465,6 +11496,7 @@
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/foreport)
 "Bh" = (
@@ -11519,6 +11551,10 @@
 "Bs" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/cargo)
+"Bt" = (
+/obj/structure/scrap/guns/large,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/aftport)
 "Bu" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/effect/floor_decal/industrial/warning{
@@ -11938,6 +11974,7 @@
 	pixel_x = -23;
 	pixel_y = 0
 	},
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/foreport)
 "Cq" = (
@@ -13175,6 +13212,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 4
 	},
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
 "Fl" = (
@@ -15464,6 +15502,16 @@
 /obj/machinery/meter,
 /turf/simulated/wall/r_wall/prepainted,
 /area/engineering/atmos)
+"Ms" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk,
+/obj/random/cluster/roaches/low_chance,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/aftport)
 "Mu" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -15543,6 +15591,10 @@
 /obj/effect/floor_decal/techfloor,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
+"MN" = (
+/obj/random/cluster/roaches/low_chance,
+/turf/simulated/floor/plating,
+/area/vacant/chapel)
 "MP" = (
 /obj/machinery/atmospherics/binary/pump,
 /turf/simulated/floor/tiled/techfloor,
@@ -17156,6 +17208,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/catwalk,
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "Ru" = (
@@ -17827,6 +17880,11 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
+"TB" = (
+/obj/structure/catwalk,
+/obj/random/cluster/roaches,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/aftport)
 "TD" = (
 /obj/machinery/computer/rdconsole/robotics,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -17872,6 +17930,19 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
+"TN" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/random/cluster/roaches,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/aftport)
 "TV" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -18094,6 +18165,10 @@
 /obj/random/junk,
 /obj/random/junk,
 /turf/simulated/floor/tiled/techfloor,
+/area/maintenance/seconddeck/foreport)
+"UT" = (
+/obj/random/cluster/roaches,
+/turf/simulated/floor/plating,
 /area/maintenance/seconddeck/foreport)
 "UU" = (
 /obj/structure/sign/warning/nosmoking_1,
@@ -18531,6 +18606,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos)
+"Wu" = (
+/obj/structure/scrap/guns/large,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/foreport)
 "Wv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -18778,6 +18857,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
+"WW" = (
+/obj/random/cluster/roaches/low_chance,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/foreport)
 "WX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -19072,6 +19155,10 @@
 	},
 /turf/simulated/wall/prepainted,
 /area/maintenance/seconddeck/forestarboard)
+"Yb" = (
+/obj/random/cluster/roaches/low_chance,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/aftport)
 "Yc" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
@@ -19614,6 +19701,7 @@
 /area/maintenance/seconddeck/central)
 "ZZ" = (
 /obj/machinery/light/small,
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/airless,
 /area/engineering/engine_room)
 
@@ -32630,7 +32718,7 @@ JX
 JX
 JX
 dO
-dq
+MN
 EQ
 dq
 dr
@@ -33062,7 +33150,7 @@ yf
 yg
 yg
 yg
-pi
+WW
 Cm
 Wp
 Wp
@@ -35086,7 +35174,7 @@ BN
 lr
 pi
 pi
-pi
+WW
 Wp
 Wp
 Wp
@@ -35279,9 +35367,9 @@ pi
 ZV
 yi
 xh
+Wu
 pi
-pi
-pi
+UT
 JT
 Bk
 Bk
@@ -37503,7 +37591,7 @@ wB
 Jc
 nN
 TJ
-Ky
+Yb
 VK
 mT
 BX
@@ -37906,7 +37994,7 @@ TJ
 TJ
 TJ
 TJ
-Ky
+Bt
 Ky
 VK
 Bm
@@ -38303,12 +38391,12 @@ Lm
 Pm
 oa
 kn
-kn
+zW
 kO
 nn
 Wy
 kn
-kn
+TN
 kn
 kn
 An
@@ -40939,7 +41027,7 @@ sZ
 sZ
 sZ
 sZ
-NH
+rJ
 Cg
 CF
 Dh
@@ -41749,7 +41837,7 @@ Fd
 sZ
 GC
 yt
-CJ
+Ms
 YQ
 kb
 Eb
@@ -44777,7 +44865,7 @@ yN
 zx
 Aq
 BG
-lt
+TB
 BI
 CN
 Dn

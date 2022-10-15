@@ -2780,6 +2780,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "aeS" = (
@@ -4421,6 +4422,7 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
+/obj/random/cluster/roaches,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/forestarboard)
 "ahO" = (
@@ -4835,6 +4837,7 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
+/obj/random/cluster/roaches,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "aiI" = (
@@ -11971,6 +11974,7 @@
 	pixel_y = -22
 	},
 /obj/structure/catwalk,
+/obj/random/cluster/roaches,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
 "aPF" = (
@@ -12063,6 +12067,7 @@
 	pixel_y = -22
 	},
 /obj/structure/catwalk,
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "aPL" = (
@@ -12612,6 +12617,7 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
 "aRq" = (
@@ -14941,6 +14947,22 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/wing)
+"brM" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk,
+/obj/random/cluster/roaches/low_chance,
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/aftport)
 "bta" = (
 /obj/effect/floor_decal/corner/research{
 	dir = 1;
@@ -17029,6 +17051,10 @@
 /obj/structure/scrap/medical,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
+"dVm" = (
+/obj/random/cluster/roaches,
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/centralport)
 "dVw" = (
 /turf/simulated/wall/r_wall/hull,
 /area/command/armoury/tactical)
@@ -17970,6 +17996,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
+"fES" = (
+/obj/random/cluster/roaches/low_chance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/aftstarboard)
 "fHk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -26782,6 +26812,10 @@
 /obj/machinery/meter,
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/xenobiology/xenoflora)
+"qKw" = (
+/obj/random/cluster/roaches/low_chance,
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/aftport)
 "qKx" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
@@ -27243,6 +27277,7 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/forestarboard)
 "rjb" = (
@@ -27846,6 +27881,10 @@
 /obj/machinery/atmospherics/valve,
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
+"rOt" = (
+/obj/random/cluster/roaches/low_chance,
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/aftstarboard)
 "rOE" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 9;
@@ -29700,6 +29739,10 @@
 	},
 /turf/simulated/floor/reinforced/hydrogen,
 /area/thruster/d1port)
+"tJv" = (
+/obj/random/cluster/roaches,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/aftstarboard)
 "tJM" = (
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
@@ -29756,6 +29799,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
+"tSS" = (
+/obj/random/cluster/roaches/low_chance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/centralstarboard)
 "tTA" = (
 /obj/structure/table/standard,
 /obj/item/weapon/storage/box/donkpockets,
@@ -31143,6 +31190,19 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury)
+"xqP" = (
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk,
+/obj/random/cluster/roaches/low_chance,
+/turf/simulated/floor/plating,
+/area/thruster/d1port)
 "xtq" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 10
@@ -31151,6 +31211,7 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
+/obj/random/cluster/roaches,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "xuW" = (
@@ -49590,7 +49651,7 @@ aaa
 abP
 abP
 abP
-rhO
+tSS
 abd
 agP
 xSA
@@ -51444,7 +51505,7 @@ lxs
 xxY
 tLL
 mav
-aCZ
+dVm
 aRI
 pbc
 jjh
@@ -53025,7 +53086,7 @@ afq
 acH
 adt
 uXe
-uXe
+tJv
 age
 dmb
 dDb
@@ -53467,7 +53528,7 @@ rRb
 skb
 sub
 aSK
-aTe
+brM
 aTF
 bDK
 bDK
@@ -55244,7 +55305,7 @@ aaa
 mpy
 mpy
 acT
-uXe
+fES
 adw
 kZb
 kYM
@@ -56868,7 +56929,7 @@ agt
 qZW
 sde
 abp
-sde
+rOt
 uiY
 bkG
 vEa
@@ -57105,7 +57166,7 @@ tCu
 nPT
 xaC
 wEw
-bvI
+xqP
 jbk
 abM
 aaa
@@ -58502,7 +58563,7 @@ jrH
 aAX
 aGN
 lLD
-aLu
+qKw
 aLu
 fnR
 bDK

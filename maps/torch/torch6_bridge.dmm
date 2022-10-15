@@ -52,6 +52,7 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
 "aj" = (
+/obj/random/cluster/roaches,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "ak" = (
@@ -4625,6 +4626,14 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
+"jI" = (
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
+	},
+/obj/random/cluster/roaches/low_chance,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "jM" = (
 /obj/effect/floor_decal/corner/yellow{
 	dir = 6
@@ -13452,6 +13461,19 @@
 /obj/effect/floor_decal/industrial/shutoff,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
+"Nm" = (
+/obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/random/cluster/roaches/low_chance,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/foreport)
 "Nn" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -13484,6 +13506,7 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "Nt" = (
@@ -24828,7 +24851,7 @@ af
 af
 PV
 VB
-zq
+jI
 Nr
 Tx
 bI
@@ -27690,7 +27713,7 @@ AX
 RE
 IK
 UE
-UE
+Nm
 lW
 yI
 tg

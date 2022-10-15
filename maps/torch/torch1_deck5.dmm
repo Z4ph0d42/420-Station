@@ -385,6 +385,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "aM" = (
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/vacant/infirmary)
 "aN" = (
@@ -581,6 +582,7 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
+/obj/random/cluster/roaches,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "bq" = (
@@ -5872,6 +5874,7 @@
 	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "na" = (
@@ -6113,6 +6116,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "nv" = (
@@ -8155,6 +8159,7 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "rn" = (
@@ -9938,6 +9943,7 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "vj" = (
@@ -10094,6 +10100,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "vK" = (
+/obj/random/cluster/roaches,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "vL" = (
@@ -10919,6 +10926,7 @@
 	target_pressure = 2533.13
 	},
 /obj/random_multi/single_item/poppy,
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "yC" = (
@@ -11086,6 +11094,18 @@
 	},
 /turf/simulated/floor/plating,
 /area/quartermaster/hangar)
+"zg" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/random/cluster/roaches,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftport)
 "zi" = (
 /obj/structure/bed,
 /obj/structure/cable/cyan{
@@ -11607,6 +11627,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "Ba" = (
@@ -12807,6 +12828,7 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
+/obj/random/cluster/roaches,
 /turf/simulated/floor/tiled/white,
 /area/vacant/infirmary)
 "EU" = (
@@ -13529,6 +13551,7 @@
 	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/random/cluster/roaches,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "HJ" = (
@@ -13749,6 +13772,7 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
+/obj/random/cluster/roaches,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "Io" = (
@@ -15193,6 +15217,7 @@
 /turf/simulated/floor/tiled,
 /area/quartermaster/hangar)
 "Ne" = (
+/obj/random/cluster/roaches,
 /turf/simulated/floor/wood/walnut,
 /area/vacant/bar)
 "Nf" = (
@@ -15364,6 +15389,7 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
+/obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "NG" = (
@@ -15823,6 +15849,10 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/isolation)
+"Ps" = (
+/obj/random/cluster/roaches/low_chance,
+/turf/simulated/floor/wood/walnut,
+/area/vacant/bar)
 "Pt" = (
 /obj/structure/sign/warning/airlock{
 	dir = 8;
@@ -18057,6 +18087,11 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/petrov/maint)
+"XM" = (
+/obj/structure/railing/mapped,
+/obj/random/cluster/roaches,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftport)
 "XQ" = (
 /obj/machinery/atmospherics/portables_connector,
 /turf/simulated/floor/tiled/white,
@@ -39031,7 +39066,7 @@ aJ
 mU
 wj
 no
-sa
+zg
 OE
 ws
 ws
@@ -40612,7 +40647,7 @@ Xi
 QL
 MG
 av
-Ne
+Ps
 Ia
 fz
 EX
@@ -43068,7 +43103,7 @@ ws
 ws
 KG
 JI
-VC
+XM
 vS
 vY
 ws

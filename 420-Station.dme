@@ -1117,6 +1117,7 @@
 #include "code\game\objects\random\purerandom.dm"
 #include "code\game\objects\random\random.dm"
 #include "code\game\objects\random\scrap.dm"
+#include "code\game\objects\random\mob\roach.dm"
 #include "code\game\objects\structures\ai_decoy.dm"
 #include "code\game\objects\structures\barricade.dm"
 #include "code\game\objects\structures\barsign.dm"
