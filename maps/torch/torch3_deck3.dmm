@@ -2489,7 +2489,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/forestarboard)
 "fk" = (
@@ -4410,7 +4410,7 @@
 /obj/machinery/atmospherics/valve/shutoff/fuel{
 	dir = 4
 	},
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
 "iI" = (
@@ -5697,7 +5697,7 @@
 	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
 "li" = (
@@ -9732,7 +9732,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/random/cluster/roaches,
+/obj/random/roaches/cluster,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
 "vd" = (
@@ -10181,7 +10181,7 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "wx" = (
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "wy" = (
@@ -10451,7 +10451,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/foreport)
 "xe" = (
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/vacant/brig)
 "xf" = (
@@ -11743,7 +11743,7 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "AF" = (
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
 "AG" = (
@@ -12787,7 +12787,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
 "DB" = (
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/aftport)
 "DD" = (
@@ -13290,7 +13290,7 @@
 	icon_state = "1-8"
 	},
 /obj/structure/catwalk,
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
 "EC" = (
@@ -17140,7 +17140,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/foreport)
 "Oo" = (
-/obj/random/cluster/roaches,
+/obj/random/roaches/cluster,
 /turf/simulated/floor/plating,
 /area/vacant/cabin)
 "Op" = (
@@ -18400,7 +18400,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
 "Sb" = (
@@ -18860,11 +18860,11 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftport)
 "Tl" = (
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/port)
 "Tm" = (
@@ -18908,7 +18908,7 @@
 /area/hallway/primary/thirddeck/fore)
 "Tr" = (
 /obj/effect/floor_decal/corner/red/diagonal,
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/tiled/dark,
 /area/vacant/mess)
 "Ts" = (
@@ -19033,7 +19033,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/forestarboard)
 "TK" = (
-/obj/random/cluster/roaches,
+/obj/random/roaches/cluster,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/foreport)
 "TL" = (
@@ -19766,7 +19766,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
 "VA" = (
@@ -20215,7 +20215,7 @@
 /area/crew_quarters/mess)
 "WJ" = (
 /obj/random/obstruction,
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
 "WL" = (

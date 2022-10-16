@@ -52,7 +52,7 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
 "aj" = (
-/obj/random/cluster/roaches,
+/obj/random/roaches/cluster,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "ak" = (
@@ -4631,7 +4631,7 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "jM" = (
@@ -13471,7 +13471,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
 "Nn" = (
@@ -13506,7 +13506,7 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "Nt" = (

@@ -168,7 +168,7 @@
 	dir = 6;
 	icon_state = "warning"
 	},
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
 "aG" = (
@@ -1648,7 +1648,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/random/cluster/roaches,
+/obj/random/roaches/cluster,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "fw" = (
@@ -3361,7 +3361,7 @@
 	dir = 8;
 	icon_state = "warning"
 	},
-/obj/random/cluster/roaches,
+/obj/random/roaches/cluster,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/starboard)
 "lB" = (
@@ -4492,7 +4492,7 @@
 	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
 "pG" = (
@@ -8140,7 +8140,7 @@
 /area/quartermaster/office)
 "Au" = (
 /obj/structure/railing/mapped,
-/obj/random/cluster/roaches,
+/obj/random/roaches/cluster,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "AC" = (
@@ -9919,7 +9919,7 @@
 /area/hallway/primary/fourthdeck/aft)
 "Hi" = (
 /obj/structure/railing/mapped,
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "Hm" = (
@@ -13160,7 +13160,7 @@
 /turf/simulated/open,
 /area/quartermaster/storage/upper)
 "QL" = (
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
 "QM" = (
@@ -14436,7 +14436,7 @@
 /area/quartermaster/deckchief)
 "TP" = (
 /obj/random/trash,
-/obj/random/cluster/roaches,
+/obj/random/roaches/cluster,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/aft)
 "TQ" = (
@@ -15755,7 +15755,7 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/port)
 "Xz" = (
@@ -15880,7 +15880,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "XJ" = (
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/vacant/monitoring)
 "XL" = (
@@ -16358,7 +16358,7 @@
 /turf/simulated/floor/tiled,
 /area/quartermaster/office)
 "YU" = (
-/obj/random/cluster/roaches,
+/obj/random/roaches/cluster,
 /turf/simulated/floor/plating,
 /area/vacant/monitoring)
 "YV" = (

@@ -29,6 +29,6 @@
 				spawn_type = /mob/living/carbon/superior_animal/roach/fuhrer
 			else
 				//spawn_type = /obj/spawner/mob/roaches
-				spawn_type = /obj/random/single/roaches
+				spawn_type = /obj/random/roaches
 			new spawn_type(src.loc, src)
 			qdel(src)

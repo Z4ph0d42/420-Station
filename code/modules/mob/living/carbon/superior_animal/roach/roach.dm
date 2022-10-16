@@ -51,26 +51,42 @@
 			F.distress_call()
 
 //roach spawners
-/obj/random/single/roaches
+/obj/random/roaches
 	name = "random roach"
-	spawn_nothing_percentage = 30
-	spawn_object = /mob/living/carbon/superior_animal/roach
+	icon_state = "hostilemob-brown"
+	alpha = 128
 
-/obj/random/single/roaches/low_chance
+/obj/random/roaches/item_to_spawn()
+	return pickweight(list(/mob/living/carbon/superior_animal/roach = 9,
+				/mob/living/carbon/superior_animal/roach/tank = 2,
+				/mob/living/carbon/superior_animal/roach/toxic = 2,
+				/mob/living/carbon/superior_animal/roach/nanite = 2,
+				/mob/living/carbon/superior_animal/roach/hunter = 4,
+				/mob/living/carbon/superior_animal/roach/support = 4,
+				/mob/living/carbon/superior_animal/roach/fuhrer = 0.5))
+
+/obj/random/roaches/low_chance
 	name = "low chance random roach"
+	icon_state = "hostilemob-brown-low"
 	spawn_nothing_percentage = 60
 
-/obj/random/single/roaches/cluster
+/obj/random/roaches/cluster
 	name = "cluster of roaches"
+	icon_state = "hostilemob-brown-cluster"
 	alpha = 128
 	min_amount = 3
 	max_amount = 9
-	spread_range = 0
+	spread_range = 1
+	refire_item_to_spawn_each_time = 1
 
-/obj/random/single/roaches/cluster/low_chance
+/obj/random/roaches/cluster/item_to_spawn()
+	return /obj/random/roaches
+
+/obj/random/roaches/cluster/low_chance
 	name = "low chance cluster of roaches"
+	icon_state = "hostilemob-brown-cluster-low"
 	spawn_nothing_percentage = 60
 
 // For Scrap Beacon
-/obj/random/single/roaches/cluster/beacon
-	spawn_object = /mob/living/carbon/superior_animal/roach/nanite
+/obj/random/roaches/cluster/beacon/item_to_spawn()
+	return /mob/living/carbon/superior_animal/roach/nanite

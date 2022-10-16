@@ -59,7 +59,7 @@ Has ability of every roach.
 	if(can_call_reinforcements())
 		distress_call()
 
-	gas_sac.add_reagent("blattedin", 1)
+	gas_sac.add_reagent(/datum/reagent/toxin/blattedin, 1)
 	if(prob(7))
 		gas_attack()
 

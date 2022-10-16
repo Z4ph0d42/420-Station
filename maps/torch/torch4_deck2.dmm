@@ -1283,7 +1283,7 @@
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/vacant/armory)
 "cm" = (
@@ -2775,7 +2775,7 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "fe" = (
@@ -2789,7 +2789,7 @@
 	pixel_x = -22;
 	pixel_y = 0
 	},
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/vacant/chapel)
 "fg" = (
@@ -3376,7 +3376,7 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "gu" = (
@@ -8151,7 +8151,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
 "rM" = (
@@ -9022,7 +9022,7 @@
 	dir = 8;
 	icon_state = "warningcorner"
 	},
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/vacant/prototype/engine)
 "ue" = (
@@ -11496,7 +11496,7 @@
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/foreport)
 "Bh" = (
@@ -11974,7 +11974,7 @@
 	pixel_x = -23;
 	pixel_y = 0
 	},
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/foreport)
 "Cq" = (
@@ -13212,7 +13212,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 4
 	},
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
 "Fl" = (
@@ -15509,7 +15509,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
 "Mu" = (
@@ -15592,7 +15592,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
 "MN" = (
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/vacant/chapel)
 "MP" = (
@@ -17208,7 +17208,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/catwalk,
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "Ru" = (
@@ -17882,7 +17882,7 @@
 /area/hallway/primary/seconddeck)
 "TB" = (
 /obj/structure/catwalk,
-/obj/random/cluster/roaches,
+/obj/random/roaches/cluster,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
 "TD" = (
@@ -17940,7 +17940,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/random/cluster/roaches,
+/obj/random/roaches/cluster,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
 "TV" = (
@@ -18167,7 +18167,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/foreport)
 "UT" = (
-/obj/random/cluster/roaches,
+/obj/random/roaches/cluster,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/foreport)
 "UU" = (
@@ -18858,7 +18858,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
 "WW" = (
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/foreport)
 "WX" = (
@@ -19156,7 +19156,7 @@
 /turf/simulated/wall/prepainted,
 /area/maintenance/seconddeck/forestarboard)
 "Yb" = (
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
 "Yc" = (
@@ -19701,7 +19701,7 @@
 /area/maintenance/seconddeck/central)
 "ZZ" = (
 /obj/machinery/light/small,
-/obj/random/cluster/roaches/low_chance,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/airless,
 /area/engineering/engine_room)
 

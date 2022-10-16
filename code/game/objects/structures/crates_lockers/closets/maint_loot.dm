@@ -158,7 +158,7 @@
 	/obj/random/rations,
 	/obj/random/rations,
 	/obj/random/rations,
-	/obj/random/single/roaches/cluster/low_chance)
+	/obj/random/roaches/cluster/low_chance)
 
 //im 50/50 on importing the scrap beacon, either way a job for latter.
 
@@ -174,4 +174,4 @@
 	/obj/random/rations,
 	/obj/random/rations,
 	/obj/random/rations,
-	/obj/random/cluster/roaches/beacon)*/
+	/obj/random/roaches/cluster/beacon)*/

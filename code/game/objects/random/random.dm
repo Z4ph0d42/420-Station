@@ -10,6 +10,7 @@
 	var/has_postspawn = FALSE
 	invisibility = INVISIBILITY_MAXIMUM
 	var/spawn_method = /obj/random/proc/spawn_item
+	var/refire_item_to_spawn_each_time = 0
 
 // creates a new object and deletes itself
 /obj/random/Initialize()
@@ -49,12 +50,29 @@
 			return
 		build_path = pickweight(spawnchoices)
 
-	var/atom/A = new build_path(src.loc)
-	if(pixel_x || pixel_y)
-		A.pixel_x = pixel_x
-		A.pixel_y = pixel_y
-
-	return A
+	var/minrand = max(min_amount,1)
+	var/maxrand = max(max_amount,1)
+	var/randomnumber
+	if(minrand == maxrand)
+		randomnumber = minrand
+	else
+		randomnumber = rand(minrand,maxrand)
+	var/turf/spawnturf = get_turf(src)
+	var/list/spread_turfs = list(spawnturf)
+	if(spread_range > 0)
+		for(var/turf/T in orange(spread_range,spawnturf))
+			if((!T in spread_turfs) && !T.is_wall())
+				spread_turfs += T
+	. = list()
+	if(spread_turfs.len)
+		for(var/i=randomnumber,i>0,i--)
+			var/atom/A = new build_path(pick(spread_turfs))
+			if(pixel_x || pixel_y)
+				A.pixel_x = pixel_x
+				A.pixel_y = pixel_y
+			. += A
+			if(refire_item_to_spawn_each_time)
+				build_path = item_to_spawn()
 
 // Returns an associative list in format path:weight
 /obj/random/proc/spawn_choices()
@@ -371,7 +389,7 @@ obj/random/cloth/masks/spawn_choices()
 				/obj/item/weapon/storage/pouch/medical_supply = 2,
 				/obj/item/weapon/storage/pouch/medium_generic = 3,
 				/obj/item/weapon/storage/pouch/pistol_holster = 2,
-				/obj/item/weapon/storage/pouch/small_generic = 4,		
+				/obj/item/weapon/storage/pouch/small_generic = 4,
 				)
 
 /obj/random/material_ore
@@ -1018,7 +1036,7 @@ obj/random/closet //A couple of random closets to spice up maint
 	. = ..()
 	if(. && length(locker_vermin) && prob(vermin_chance))
 		var/vermin_type = pickweight(locker_vermin)
-		new vermin_type(.)
+		new vermin_type(pick(.))
 
 /obj/random/coin
 	name = "random coin"
