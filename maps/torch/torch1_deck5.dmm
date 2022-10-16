@@ -1758,6 +1758,11 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
+"dq" = (
+/obj/structure/railing/mapped,
+/obj/random/roaches/cluster/low_chance,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftport)
 "du" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1;
@@ -11614,7 +11619,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "Ba" = (
@@ -14208,11 +14212,6 @@
 /obj/effect/paint/silver,
 /turf/simulated/floor/plating,
 /area/shuttle/petrov/isolation)
-"JR" = (
-/obj/structure/railing/mapped,
-/obj/random/roaches/cluster/low_chance,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/aftport)
 "JS" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -43087,7 +43086,7 @@ ws
 ws
 KG
 JI
-JR
+dq
 vS
 vY
 ws
