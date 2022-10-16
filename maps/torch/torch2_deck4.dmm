@@ -1648,7 +1648,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/random/roaches/cluster,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "fw" = (
@@ -8140,7 +8140,7 @@
 /area/quartermaster/office)
 "Au" = (
 /obj/structure/railing/mapped,
-/obj/random/roaches/cluster,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "AC" = (
@@ -9917,11 +9917,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/fourthdeck/aft)
-"Hi" = (
-/obj/structure/railing/mapped,
-/obj/random/roaches/cluster/low_chance,
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/forestarboard)
 "Hm" = (
 /obj/structure/cable{
 	d1 = 16;
@@ -16357,10 +16352,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/office)
-"YU" = (
-/obj/random/roaches/cluster,
-/turf/simulated/floor/plating,
-/area/vacant/monitoring)
 "YV" = (
 /obj/machinery/computer/modular/preset/engineering,
 /obj/machinery/atmospherics/pipe/simple/hidden,
@@ -29537,7 +29528,7 @@ mh
 le
 BU
 CV
-YU
+CV
 EJ
 lE
 Gc
@@ -35974,7 +35965,7 @@ aa
 ak
 ak
 ux
-Hi
+bw
 bZ
 dU
 fd

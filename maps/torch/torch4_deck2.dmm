@@ -1283,7 +1283,6 @@
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
-/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/vacant/armory)
 "cm" = (
@@ -11974,7 +11973,6 @@
 	pixel_x = -23;
 	pixel_y = 0
 	},
-/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/foreport)
 "Cq" = (
@@ -17930,19 +17928,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
-"TN" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/random/roaches/cluster,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/aftport)
 "TV" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -18165,10 +18150,6 @@
 /obj/random/junk,
 /obj/random/junk,
 /turf/simulated/floor/tiled/techfloor,
-/area/maintenance/seconddeck/foreport)
-"UT" = (
-/obj/random/roaches/cluster,
-/turf/simulated/floor/plating,
 /area/maintenance/seconddeck/foreport)
 "UU" = (
 /obj/structure/sign/warning/nosmoking_1,
@@ -33150,7 +33131,7 @@ yf
 yg
 yg
 yg
-WW
+pi
 Cm
 Wp
 Wp
@@ -35369,7 +35350,7 @@ yi
 xh
 Wu
 pi
-UT
+pi
 JT
 Bk
 Bk
@@ -38396,7 +38377,7 @@ kO
 nn
 Wy
 kn
-TN
+kn
 kn
 kn
 An

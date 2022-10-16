@@ -4422,7 +4422,6 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
-/obj/random/roaches/cluster,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/forestarboard)
 "ahO" = (
@@ -4837,7 +4836,6 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
-/obj/random/roaches/cluster,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "aiI" = (
@@ -5759,6 +5757,7 @@
 	pixel_y = -24
 	},
 /obj/structure/cable/green,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
 "alO" = (
@@ -11974,7 +11973,6 @@
 	pixel_y = -22
 	},
 /obj/structure/catwalk,
-/obj/random/roaches/cluster,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
 "aPF" = (
@@ -12067,7 +12065,6 @@
 	pixel_y = -22
 	},
 /obj/structure/catwalk,
-/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "aPL" = (
@@ -17052,7 +17049,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "dVm" = (
-/obj/random/roaches/cluster,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "dVw" = (
@@ -17996,10 +17993,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
-"fES" = (
-/obj/random/roaches/cluster/low_chance,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/aftstarboard)
 "fHk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -29739,10 +29732,6 @@
 	},
 /turf/simulated/floor/reinforced/hydrogen,
 /area/thruster/d1port)
-"tJv" = (
-/obj/random/roaches/cluster,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/aftstarboard)
 "tJM" = (
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
@@ -31190,19 +31179,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury)
-"xqP" = (
-/obj/machinery/atmospherics/pipe/simple/visible/fuel{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/catwalk,
-/obj/random/roaches/cluster/low_chance,
-/turf/simulated/floor/plating,
-/area/thruster/d1port)
 "xtq" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 10
@@ -53086,7 +53062,7 @@ afq
 acH
 adt
 uXe
-tJv
+uXe
 age
 dmb
 dDb
@@ -55305,7 +55281,7 @@ aaa
 mpy
 mpy
 acT
-fES
+uXe
 adw
 kZb
 kYM
@@ -57166,7 +57142,7 @@ tCu
 nPT
 xaC
 wEw
-xqP
+bvI
 jbk
 abM
 aaa

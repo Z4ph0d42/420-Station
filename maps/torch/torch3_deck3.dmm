@@ -744,7 +744,8 @@
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar)
 "bQ" = (
-/turf/simulated/floor/tiled/dark,
+/obj/effect/floor_decal/industrial/outline/grey,
+/turf/simulated/floor/bluegrid,
 /area/tcommsat/chamber)
 "bR" = (
 /obj/machinery/telecomms/processor/preset_two,
@@ -862,7 +863,6 @@
 	icon_state = "0-4"
 	},
 /obj/structure/closet/crate/hydroponics/beekeeping,
-/obj/item/weapon/screwdriver,
 /obj/effect/floor_decal/corner/green{
 	dir = 8
 	},
@@ -1560,7 +1560,8 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/effect/catwalk_plated/dark,
+/turf/simulated/floor/plating,
 /area/tcommsat/chamber)
 "dq" = (
 /obj/structure/table/rack,
@@ -2498,7 +2499,8 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/effect/catwalk_plated/dark,
+/turf/simulated/floor/plating,
 /area/tcommsat/chamber)
 "fl" = (
 /obj/machinery/door/firedoor,
@@ -4749,6 +4751,7 @@
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/mess)
 "jo" = (
+/obj/structure/salvageable/server,
 /turf/simulated/floor/bluegrid,
 /area/tcommsat/chamber)
 "jp" = (
@@ -9732,7 +9735,6 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/random/roaches/cluster,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
 "vd" = (
@@ -12787,9 +12789,9 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
 "DB" = (
-/obj/random/roaches/cluster/low_chance,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/thirddeck/aftport)
+/obj/item/weapon/reagent_containers/pill/floorpill,
+/turf/simulated/floor/tiled/dark,
+/area/vacant/cabin)
 "DD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -13290,7 +13292,6 @@
 	icon_state = "1-8"
 	},
 /obj/structure/catwalk,
-/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
 "EC" = (
@@ -14238,6 +14239,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/item/weapon/reagent_containers/pill/floorpill,
 /turf/simulated/floor/tiled,
 /area/crew_quarters/cryolocker)
 "Ha" = (
@@ -16874,7 +16876,8 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/effect/catwalk_plated/dark,
+/turf/simulated/floor/plating,
 /area/tcommsat/chamber)
 "Nu" = (
 /obj/machinery/meter,
@@ -16943,7 +16946,8 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/effect/catwalk_plated/dark,
+/turf/simulated/floor/plating,
 /area/tcommsat/chamber)
 "ND" = (
 /obj/structure/sign/warning/server_room,
@@ -17140,7 +17144,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/foreport)
 "Oo" = (
-/obj/random/roaches/cluster,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/vacant/cabin)
 "Op" = (
@@ -17311,7 +17315,8 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/effect/catwalk_plated/dark,
+/turf/simulated/floor/plating,
 /area/tcommsat/chamber)
 "OO" = (
 /obj/machinery/alarm{
@@ -18394,15 +18399,13 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/gym)
 "Sa" = (
-/obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	dir = 4
 	},
-/obj/random/roaches/cluster/low_chance,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/port)
+/obj/item/weapon/reagent_containers/pill/floorpill,
+/turf/simulated/floor/tiled/techfloor,
+/area/thruster/d3port)
 "Sb" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/fuel{
 	dir = 4
@@ -19032,10 +19035,6 @@
 /obj/random/junk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/forestarboard)
-"TK" = (
-/obj/random/roaches/cluster,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/thirddeck/foreport)
 "TL" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -20213,11 +20212,6 @@
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/mess)
-"WJ" = (
-/obj/random/obstruction,
-/obj/random/roaches/cluster/low_chance,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/foreport)
 "WL" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
@@ -31033,7 +31027,7 @@ zS
 GV
 RV
 YC
-TK
+Yb
 Yb
 BV
 BV
@@ -31225,7 +31219,7 @@ Yr
 Yr
 Zn
 yH
-WJ
+Kd
 ur
 ur
 Kd
@@ -39112,7 +39106,7 @@ Ew
 Fd
 Nj
 Gf
-Sa
+Lk
 EL
 Hf
 Hf
@@ -43150,7 +43144,7 @@ AN
 TN
 JV
 ub
-Fj
+DB
 Pt
 GK
 ub
@@ -45371,7 +45365,7 @@ CJ
 RG
 CU
 ub
-Oo
+ED
 ub
 ub
 ub
@@ -45779,7 +45773,7 @@ Dn
 Dn
 EE
 EE
-DB
+EE
 EE
 jZ
 jZ
@@ -50023,7 +50017,7 @@ La
 La
 Qk
 Jj
-Jk
+Sa
 Ws
 MR
 pI
