@@ -383,12 +383,12 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 	loot_max = 10
 	loot_list = list(
 		/obj/random/pack/gun_loot = 8,
-		/obj/random/powercell,
-		/obj/random/exosuit_equipment = 2,
-		/obj/item/toy/crossbow,
-		/obj/item/weapon/material/shard,
-		/obj/random/material/steel,
-		/obj/random/junk/nondense,
+		/obj/random/powercell = 4,
+		/obj/random/exosuit_equipment = 1,
+		/obj/item/toy/crossbow = 3,
+		/obj/item/weapon/material/shard = 2, 
+		/obj/random/material/steel = 3,
+		/obj/random/junk/nondense = 5,
 //		/obj/random/pack/rare = 0.3
 	)
 
