@@ -2913,6 +2913,10 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fifthdeck/aft)
+"fV" = (
+/obj/random/snack,
+/turf/simulated/floor/plating,
+/area/vacant/bar)
 "fW" = (
 /obj/effect/floor_decal/corner/mauve/half{
 	dir = 4;
@@ -7691,6 +7695,17 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fifthdeck/aft)
+"qw" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
+	},
+/obj/random/snack,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftport)
 "qy" = (
 /obj/effect/floor_decal/corner/brown{
 	dir = 5
@@ -9205,6 +9220,7 @@
 /area/maintenance/fifthdeck/aftport)
 "tz" = (
 /obj/item/seeds/appleseed,
+/obj/random/snack,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "tA" = (
@@ -9785,6 +9801,7 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
+/obj/random/snack,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "uO" = (
@@ -10384,6 +10401,11 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/hallwaya)
+"wM" = (
+/obj/structure/catwalk,
+/obj/random/snack,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/fore)
 "wP" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
@@ -10759,6 +10781,7 @@
 	dir = 9;
 	icon_state = "intact"
 	},
+/obj/random/snack,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "yk" = (
@@ -11037,6 +11060,12 @@
 /obj/structure/catwalk,
 /obj/structure/scrap/poor,
 /turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/fore)
+"yT" = (
+/obj/structure/table/steel,
+/obj/random/tool,
+/obj/random/snack,
+/turf/simulated/floor/tiled/techmaint,
 /area/maintenance/fifthdeck/fore)
 "yU" = (
 /obj/machinery/atmospherics/unary/heater,
@@ -12520,6 +12549,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
+/obj/random/snack,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "DZ" = (
@@ -15569,6 +15599,10 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/shuttle/petrov/cell1)
+"Os" = (
+/obj/random/snack,
+/turf/simulated/floor/plating,
+/area/quartermaster/hangar)
 "Ow" = (
 /obj/structure/handrai{
 	dir = 4;
@@ -16357,6 +16391,16 @@
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/tiled/techmaint,
+/area/maintenance/fifthdeck/fore)
+"Rk" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk,
+/obj/random/snack,
+/turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "Rn" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -30353,7 +30397,7 @@ an
 an
 an
 pi
-pi
+yT
 uB
 yq
 ux
@@ -31563,7 +31607,7 @@ iI
 lj
 jG
 wF
-rB
+Rk
 mh
 ph
 ph
@@ -32559,7 +32603,7 @@ ZN
 yc
 mh
 wZ
-mh
+wM
 sg
 fl
 so
@@ -35784,7 +35828,7 @@ aH
 ye
 aJ
 iX
-bi
+Os
 aJ
 bi
 ih
@@ -38846,7 +38890,7 @@ aX
 aJ
 CX
 wj
-no
+qw
 sa
 of
 ws
@@ -40426,7 +40470,7 @@ aa
 aa
 Xi
 QL
-yI
+fV
 Ne
 Lj
 zL

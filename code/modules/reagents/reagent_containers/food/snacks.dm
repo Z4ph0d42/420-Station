@@ -747,6 +747,76 @@
 	nutriment_amt = 6
 	bitesize = 2
 
+/obj/item/weapon/reagent_containers/food/snacks/kampferburger
+	name = "Kampfer Burger"
+	desc = "Tasty but it's a bit of a struggle to get it down"
+	icon_state = "kampferburger"
+	bitesize = 1
+	center_of_mass = list("x"=16, "y"=11)
+	nutriment_desc = list("bun" = 2)
+	nutriment_amt = 2
+	reagents = list("protein" = 4)
+	
+/obj/item/weapon/reagent_containers/food/snacks/panzerburger
+	name = "Panzer Burger"
+	desc = "Surprisingly heavy but seems to be made up of mostly shell"
+	icon_state = "panzerburger"
+	bitesize = 3
+	center_of_mass = list("x"=16, "y"=11)
+	nutriment_desc = list("bun" = 2)
+	nutriment_amt = 1
+	reagents = list("protein" = 8)
+		
+/obj/item/weapon/reagent_containers/food/snacks/jagerburger
+	name = "Jager Burger"
+	desc = "The hunter becomes the hunted"
+	icon_state = "jagerburger"
+	bitesize = 2
+	center_of_mass = list("x"=16, "y"=11)
+	nutriment_desc = list("bun" = 2)
+	nutriment_amt = 3
+	reagents = list("protein" = 6)
+		
+/obj/item/weapon/reagent_containers/food/snacks/seucheburger
+	name = "Seuche Burger"
+	desc = "The Burger that anti vaxxers love"
+	icon_state = "seucheburger"
+	bitesize = 2
+	center_of_mass = list("x"=16, "y"=11)
+	nutriment_desc = list("bun" = 2)
+	nutriment_amt = 2
+	reagents = list("protein" = 4)
+		
+/obj/item/weapon/reagent_containers/food/snacks/bigroachburger
+	name = "Big Roach Burger"
+	desc = "Delicious finally some good food"
+	icon_state = "bigroachburger"
+	bitesize = 3
+	center_of_mass = list("x"=16, "y"=11)
+	nutriment_desc = list("bun" = 2)
+	nutriment_amt = 3
+	reagents = list("protein" = 8)
+		
+/obj/item/weapon/reagent_containers/food/snacks/fuhrerburger
+	name = "Fuhrer Burger"
+	desc = "Its inability to take criticism makes this  one of the worst tasting burgers in existence"
+	icon_state = "fuhrerburger"
+	bitesize = 3
+	center_of_mass = list("x"=16, "y"=11)
+	nutriment_desc = list("bun" = 2)
+	nutriment_amt = 3
+	reagents = list("protein" = 8, "fuhrerole" = 3)
+		
+/obj/item/weapon/reagent_containers/food/snacks/kaiserburger
+	name = "Kaiser Burger"
+	desc = "The rare experience for your taste buds"
+	icon_state = "kaiserburger"
+	bitesize = 3
+	center_of_mass = list("x"=16, "y"=11)
+	nutriment_desc = list("bun" = 2)
+	nutriment_amt = 3
+	reagents = list("protein" = 10)
+		
 /obj/item/weapon/reagent_containers/food/snacks/omelette
 	name = "cheese omelette"
 	desc = "Omelette with cheese!"

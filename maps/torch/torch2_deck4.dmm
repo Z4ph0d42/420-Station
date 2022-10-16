@@ -161,6 +161,7 @@
 /obj/machinery/atmospherics/pipe/zpipe/up/supply,
 /obj/machinery/atmospherics/pipe/zpipe/up/scrubbers,
 /obj/effect/floor_decal/industrial/warning,
+/obj/random/snack,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
 "aF" = (
@@ -2407,6 +2408,21 @@
 /obj/effect/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
 /area/storage/primary)
+"hF" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1"
+	},
+/obj/random/snack,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/aft)
 "hO" = (
 /obj/structure/table/rack,
 /obj/random/tech_supply,
@@ -2660,6 +2676,11 @@
 /obj/structure/closet/crate/internals,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/aft)
+"iF" = (
+/obj/structure/railing/mapped,
+/obj/random/snack,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/aft)
 "iM" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -3861,6 +3882,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/random/snack,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
 "mY" = (
@@ -7689,6 +7711,7 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
+/obj/random/snack,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
 "zf" = (
@@ -10452,6 +10475,10 @@
 /obj/effect/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/port)
+"IW" = (
+/obj/random/snack,
+/turf/simulated/floor/plating,
+/area/vacant/monitoring)
 "IX" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 8
@@ -14466,6 +14493,7 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
+/obj/random/snack,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/port)
 "TX" = (
@@ -29527,7 +29555,7 @@ LJ
 mh
 le
 BU
-CV
+IW
 CV
 EJ
 lE
@@ -42427,7 +42455,7 @@ aa
 aa
 wX
 wp
-Ew
+iF
 nH
 Ji
 aw
@@ -42841,7 +42869,7 @@ wi
 wi
 wi
 JI
-tC
+hF
 tC
 tC
 yl

@@ -83,6 +83,7 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
+/obj/random/snack,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "ao" = (
