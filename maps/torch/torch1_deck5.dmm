@@ -10099,6 +10099,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "vK" = (
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "vL" = (
@@ -14207,6 +14208,11 @@
 /obj/effect/paint/silver,
 /turf/simulated/floor/plating,
 /area/shuttle/petrov/isolation)
+"JR" = (
+/obj/structure/railing/mapped,
+/obj/random/roaches/cluster/low_chance,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftport)
 "JS" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -43081,7 +43087,7 @@ ws
 ws
 KG
 JI
-VC
+JR
 vS
 vY
 ws
