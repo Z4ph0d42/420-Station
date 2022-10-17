@@ -67,7 +67,7 @@ Called by roaches when they spawn.
 This proc will attempt to create a burrow against a wall, within view of the target location
 */
 /proc/create_burrow(var/turf/target)
-	if(!isStationLevel(target))
+	if(!target || !isStationLevel(target.z))
 		return
 
 	//First of all lets get a list of everything in dview.

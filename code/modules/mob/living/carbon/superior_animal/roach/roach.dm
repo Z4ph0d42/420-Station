@@ -72,7 +72,7 @@
 
 /obj/random/roaches/cluster
 	name = "cluster of roaches"
-	icon_state = "hostilemob-brown-cluster"
+	icon_state = "x3"
 	alpha = 128
 	min_amount = 3
 	max_amount = 9
@@ -84,7 +84,6 @@
 
 /obj/random/roaches/cluster/low_chance
 	name = "low chance cluster of roaches"
-	icon_state = "x3"
 	spawn_nothing_percentage = 60
 
 // For Scrap Beacon
