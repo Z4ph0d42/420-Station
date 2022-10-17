@@ -6064,10 +6064,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/observation)
-"mb" = (
-/obj/random/snack,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/thirddeck/port)
 "mc" = (
 /obj/effect/floor_decal/corner/green/half{
 	dir = 1;
@@ -7180,10 +7176,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/fore)
-"oN" = (
-/obj/random/snack,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/foreport)
 "oO" = (
 /obj/structure/table/gamblingtable,
 /obj/item/weapon/dice/d20,
@@ -9739,10 +9731,6 @@
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /turf/simulated/floor/plating,
-/area/maintenance/thirddeck/aftport)
-"uY" = (
-/obj/random/snack,
-/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/aftport)
 "vc" = (
 /obj/machinery/light/small{
@@ -12557,20 +12545,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftport)
-"CW" = (
-/obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/random/snack,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/port)
 "CX" = (
 /obj/structure/curtain/open/bed,
 /obj/effect/floor_decal/techfloor{
@@ -13203,10 +13177,6 @@
 /obj/effect/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/aft)
-"En" = (
-/obj/random/snack,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/forestarboard)
 "Eo" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -17207,6 +17177,10 @@
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /turf/simulated/wall/r_wall/hull,
 /area/thruster/d3port)
+"Os" = (
+/obj/random/snack,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/forestarboard)
 "Ot" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -17575,6 +17549,10 @@
 /mob/living/simple_animal/mouse/gray,
 /turf/simulated/floor/tiled/dark,
 /area/vacant/cabin)
+"Pu" = (
+/obj/random/snack,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/aftport)
 "Pw" = (
 /obj/structure/salvageable/data,
 /turf/simulated/floor/plating,
@@ -17745,6 +17723,20 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/engineering/hardstorage)
+"PS" = (
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/random/snack,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/port)
 "PT" = (
 /obj/effect/floor_decal/corner/lime/three_quarters{
 	dir = 4
@@ -18640,6 +18632,10 @@
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/galleybackroom)
+"SB" = (
+/obj/random/snack,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/port)
 "SC" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -19249,10 +19245,6 @@
 /obj/structure/scrap/food/large,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/forestarboard)
-"Uk" = (
-/obj/random/snack,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
 "Um" = (
 /obj/machinery/light{
 	dir = 1
@@ -19686,9 +19678,9 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/bar)
 "Vj" = (
-/obj/structure/salvageable/server_os,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/thirddeck/foreport)
+/obj/random/snack,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/starboard)
 "Vl" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -21137,6 +21129,10 @@
 /obj/random/torchcloset,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/aftstarboard)
+"Zh" = (
+/obj/random/snack,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/foreport)
 "Zi" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -30663,7 +30659,7 @@ NL
 zS
 zS
 zS
-oN
+Zh
 BX
 BX
 BX
@@ -30861,7 +30857,7 @@ yH
 SX
 ur
 AF
-oN
+Zh
 LA
 LA
 zS
@@ -32280,7 +32276,7 @@ Om
 Te
 zS
 UI
-Vj
+Yb
 Ey
 oR
 Ur
@@ -33862,7 +33858,7 @@ aO
 aO
 aO
 yF
-En
+Os
 bu
 dv
 er
@@ -38544,7 +38540,7 @@ LX
 uO
 uO
 Lk
-CW
+PS
 Hf
 Hf
 aU
@@ -41372,7 +41368,7 @@ Ez
 Ff
 Ez
 HD
-mb
+SB
 Hf
 Hf
 Hf
@@ -42748,7 +42744,7 @@ aH
 aL
 ad
 ba
-Uk
+Vj
 PP
 cl
 Ti
@@ -45814,7 +45810,7 @@ CU
 Dn
 Dn
 Dn
-uY
+Pu
 EE
 EE
 EE
