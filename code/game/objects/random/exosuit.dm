@@ -2,7 +2,7 @@
 	name = "random exosuit"
 	icon_state = "x4"
 	var/list/randsuits = list(
-		/mob/living/exosuit/premade/powerloader = 5,
+		/mob/living/exosuit/premade/powerloader = 7,
 		/mob/living/exosuit/premade/powerloader = 4,
 		/mob/living/exosuit/premade/light = 6,
 		/mob/living/exosuit/premade/combat = 1,//comes unarmed
@@ -14,7 +14,7 @@
 /obj/random/exosuit/low_chance
 	name = "low chance random lathe disk"
 	icon_state = "x4"
-	spawn_nothing_percentage = 90
+	spawn_nothing_percentage = 60
 
 
 
@@ -30,7 +30,7 @@
 /obj/random/exosuit/damaged/low_chance
 	name = "low chance random damaged exosuit"
 	icon_state = "x4"
-	spawn_nothing_percentage = 90
+	spawn_nothing_percentage = 60
 
 
 
