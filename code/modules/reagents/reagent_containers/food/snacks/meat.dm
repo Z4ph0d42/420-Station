@@ -47,9 +47,9 @@
 
 obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat
 	desc = "A slab of sickly-green bubbling meat cut from a giant roach. You swear you can see it still twitching occasionally. Delicious!"
+	icon = 'icons/obj/food.dmi'
 	icon_state = "xenomeat"
 	filling_color = "#E2FFDE"
-
 	bitesize = 6
 	reagents = list("protein" = 4)
 
