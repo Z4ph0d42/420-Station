@@ -58,11 +58,15 @@
 	else
 		randomnumber = rand(minrand,maxrand)
 	var/turf/spawnturf = get_turf(src)
-	var/list/spread_turfs = list(spawnturf)
-	if(spread_range > 0)
-		for(var/turf/T in orange(spread_range,spawnturf))
-			if((!T in spread_turfs) && !T.is_wall())
-				spread_turfs += T
+	var/list/spread_turfs = list()
+	if(isturf(loc))
+		spread_turfs += spawnturf
+		if(spread_range > 0)
+			for(var/turf/T in orange(spread_range,spawnturf))
+				if((!T in spread_turfs) && !T.is_wall())
+					spread_turfs += T
+	else
+		spread_turfs += loc
 	. = list()
 	if(spread_turfs.len)
 		for(var/i=randomnumber,i>0,i--)

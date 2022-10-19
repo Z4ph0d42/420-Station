@@ -111,17 +111,20 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 	loot_generated = TRUE
 	if(!big_item)
 		make_big_loot()
-
 	var/amt = rand(loot_min, loot_max)
+	var/list/lootlist = loot_list.Copy()
+	for(var/l in lootlist)
+		if(!lootlist[l])
+			lootlist[l] = 1
 	for(var/x in 1 to amt)
-		var/loot_path = pickweight(loot_list)
+		var/loot_path = pickweight(lootlist)
 		new loot_path(src)
 
-	for(var/obj/item/loot in contents)
+	for(var/obj/item/listedloot in contents)
 		if(prob(66))
-			loot.make_old()
-		if(istype(loot, /obj/item/weapon/reagent_containers/food/snacks))
-			var/obj/item/weapon/reagent_containers/food/snacks/S = loot
+			listedloot.make_old()
+		if(istype(listedloot, /obj/item/weapon/reagent_containers/food/snacks))
+			var/obj/item/weapon/reagent_containers/food/snacks/S = listedloot
 			if(prob(20))
 				S.reagents.add_reagent("toxin", rand(2, 15))
 
@@ -181,20 +184,22 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 	for(var/A in loot)
 		loot.remove_from_storage(A,src)
 
-	var/total_storage_space = 0
-
 	if(contents.len)
 		contents = shuffle(contents)
 		var/num = rand(2, loot_min)
+		var/total_storage_space = 0
+		var/list/checked_items = list()
 		for(var/obj/item/O in contents)
 			if(!num)
 				break
 			if(O == loot || O == big_item)
 				continue
+			checked_items += O
 			total_storage_space += O.get_storage_cost()
-			O.forceMove(loot)
+		loot.max_storage_space = max(10, total_storage_space)
+		for(var/obj/item/O in checked_items)
+			loot.handle_item_insertion(O, 1)
 			num--
-	loot.max_storage_space = max(10, total_storage_space)
 	update_icon()
 
 /obj/structure/scrap/proc/randomize_image(image/I)

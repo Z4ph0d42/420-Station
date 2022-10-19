@@ -252,6 +252,8 @@
 	for(var/obj/item/weapon/stock_parts/micro_laser/ML in component_parts)
 		ml_rating += ML.rating
 		++ml_count
+	if(ml_count == 0)
+		ml_count = 1 //preventing division by zero. -falaskian
 
 	scrap_multiplier = initial(scrap_multiplier)+(((ml_rating/ml_count)-1)*0.05)
 
@@ -260,6 +262,8 @@
 	for(var/obj/item/weapon/stock_parts/matter_bin/MB in component_parts)
 		mb_rating += MB.rating
 		++mb_count
+	if(mb_count == 0)
+		mb_count = 1 //preventing division by zero. -falaskian
 	storage_capacity = round(initial(storage_capacity)*(mb_rating/mb_count))
 
 
