@@ -70,6 +70,8 @@
 	. = list()
 	if(spread_turfs.len)
 		for(var/i=randomnumber,i>0,i--)
+			if(discontinue(.))
+				break
 			var/atom/A = new build_path(pick(spread_turfs))
 			if(pixel_x || pixel_y)
 				A.pixel_x = pixel_x
@@ -81,6 +83,10 @@
 // Returns an associative list in format path:weight
 /obj/random/proc/spawn_choices()
 	return list()
+
+//Shall we stop spawning? (For canceling when spawning multiple things)
+/obj/random/proc/discontinue(list/spawns)
+	return FALSE
 
 /obj/random/single
 	name = "randomly spawned object"

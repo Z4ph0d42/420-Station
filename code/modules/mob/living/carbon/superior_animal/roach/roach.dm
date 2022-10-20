@@ -55,6 +55,19 @@
 	name = "random roach"
 	icon_state = "hostilemob-brown"
 	alpha = 128
+	var/z_level_max_roach_count = 15 //do not spawn any more if there are more then this in the z-level. -1 to ignore
+
+/obj/random/roaches/discontinue(spawns)
+	. = ..()
+	if(z_level_max_roach_count > 0)
+		var/roachcount = 0
+		for(var/mob/living/carbon/superior_animal/roach/R in GLOB.living_mob_list_)
+			if(R.z == z)
+				roachcount++
+			if(roachcount >= z_level_max_roach_count)
+				. = TRUE
+				break
+	return ..()
 
 /obj/random/roaches/item_to_spawn()
 	return pickweight(list(/mob/living/carbon/superior_animal/roach = 9,
