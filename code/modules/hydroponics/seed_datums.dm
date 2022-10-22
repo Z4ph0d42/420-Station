@@ -600,6 +600,7 @@
 		/datum/reagent/soporific,
 		/datum/reagent/woodpulp
 		//could not locate "mutationtoxin" and "amutationtoxin"
+			//gonna port them in soon
 		)
 
 	var/list/firstnames = list (
