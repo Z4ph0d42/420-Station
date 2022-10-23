@@ -67,7 +67,6 @@
 			if(roachcount >= z_level_max_roach_count)
 				. = TRUE
 				break
-	return ..()
 
 /obj/random/roaches/item_to_spawn()
 	return pickweight(list(/mob/living/carbon/superior_animal/roach = 9,
