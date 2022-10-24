@@ -63,7 +63,7 @@
 											CI.uninstall()*/
 
 										// Gib victim but remove non synthetic organs
-										H.gib(max_range=1, keep_only_robotics=TRUE)
+										H.gib()//max_range=1, keep_only_robotics=TRUE //these args dont exist.
 
 										// Spawn human remains
 										var/remainsType = /obj/item/remains/human
