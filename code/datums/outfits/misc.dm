@@ -52,6 +52,11 @@
 	l_ear =  /obj/item/device/radio/headset
 	uniform = /obj/item/clothing/under/rank/clown
 	l_pocket = /obj/item/weapon/bikehorn
+	id_slot = slot_wear_id
+	id_types = list(/obj/item/weapon/card/id/civilian)
+	pda_slot = slot_r_store
+	pda_type = /obj/item/modular_computer/pda/clown
+	id_pda_assignment = "Clown"
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_RESET_EQUIPMENT
 
 /decl/hierarchy/outfit/clown/New()

@@ -124,3 +124,7 @@ obj/item/modular_computer/pda/CtrlClick(mob/user)
 /obj/item/modular_computer/pda/roboticist
 	icon_state = "pda-robot"
 	icon_state_unpowered = "pda-robot"
+
+/obj/item/modular_computer/pda/clown
+	icon_state = "pda-clown"
+	icon_state_unpowered = "pda-clown"
