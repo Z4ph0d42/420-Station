@@ -99,7 +99,7 @@
 	                    SKILL_CHEMISTRY = SKILL_BASIC)
 
 /datum/job/crew
-	title = "Crewman"
+	title = "Vagabond"
 	department = "Service"
 	department_flag = SRV
 	total_positions = 5
@@ -120,16 +120,17 @@
 	)
 
 	access = list(access_maint_tunnels, access_emergency_storage, access_solgov_crew)
-
-/datum/job/clown
+	
+	/datum/job/clown
 	title = "Clown"
 	department = "Civilian"
 	department_flag = CIV
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Captain"
+	minimum_character_age = list(SPECIES_HUMAN = 18)
 	economic_power = 2
-	access = list()			//See /datum/job/assistant/get_access()
+	access = list(access_maint_tunnels, access_emergency_storage, access_solgov_crew)
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	minimal_player_age = 4
 	outfit_type = /decl/hierarchy/outfit/clown
@@ -141,4 +142,3 @@
 
 /datum/job/clown/get_description_blurb()
 	return "Clowning is a profession where you have to be able to adapt to any situation. You need to be flexible, robust and quick-witted. Your job requires you to be creative and have a good sense of humor. A clown's job is not just about making people laugh."
-	
