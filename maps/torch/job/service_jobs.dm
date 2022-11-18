@@ -121,7 +121,7 @@
 
 	access = list(access_maint_tunnels, access_emergency_storage, access_solgov_crew)
 	
-	/datum/job/clown
+/datum/job/clown
 	title = "Clown"
 	department = "Civilian"
 	department_flag = CIV
@@ -132,7 +132,7 @@
 	economic_power = 2
 	access = list(access_maint_tunnels, access_emergency_storage, access_solgov_crew)
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	minimal_player_age = 4
+	minimal_player_age = 1
 	outfit_type = /decl/hierarchy/outfit/clown
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
