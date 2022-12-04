@@ -125,8 +125,8 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 			listedloot.make_old()
 		if(istype(listedloot, /obj/item/weapon/reagent_containers/food/snacks))
 			var/obj/item/weapon/reagent_containers/food/snacks/S = listedloot
-			if(prob(20))
-				S.reagents.add_reagent("toxin", rand(2, 15))
+			if(S.reagents && prob(20))
+				S.reagents.add_reagent(/datum/reagent/toxin, rand(2, 15))
 
 	loot = new(src)
 	loot.max_w_class = ITEM_SIZE_HUGE
@@ -170,7 +170,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 						return
 					if(affecting.take_external_damage(5, 0))
 						H.UpdateDamageIcon()
-					H.reagents.add_reagent("toxin", pick(prob(50);0,prob(50);5,prob(10);10,prob(1);25))
+					H.reagents.add_reagent(/datum/reagent/toxin, pick(prob(50);0,prob(50);5,prob(10);10,prob(1);25))
 					H.updatehealth()
 //					if(!(H.species.flags & NO_PAIN)) i am not going to fuck with mob code right now.
 //						H.Weaken(3)
@@ -184,22 +184,22 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 	for(var/A in loot)
 		loot.remove_from_storage(A,src)
 
+	var/total_storage_space = 0
 	if(contents.len)
 		contents = shuffle(contents)
 		var/num = rand(2, loot_min)
-		var/total_storage_space = 0
 		var/list/checked_items = list()
 		for(var/obj/item/O in contents)
-			if(!num)
-				break
 			if(O == loot || O == big_item)
 				continue
 			checked_items += O
 			total_storage_space += O.get_storage_cost()
-		loot.max_storage_space = max(10, total_storage_space)
 		for(var/obj/item/O in checked_items)
+			if(num <= 0)
+				break
 			loot.handle_item_insertion(O, 1)
 			num--
+	loot.max_storage_space = max(10, total_storage_space)
 	update_icon()
 
 /obj/structure/scrap/proc/randomize_image(image/I)
@@ -254,7 +254,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 			return FALSE
 		to_chat(user, "<span class='danger'>Ouch! You cut yourself while picking through \the [src].</span>")
 		BP.take_external_damage(5, null, TRUE, TRUE, "Sharp debris")
-		victim.reagents.add_reagent("toxin", pick(prob(50);0,prob(50);5,prob(10);10,prob(1);25))
+		victim.reagents.add_reagent(/datum/reagent/toxin, pick(prob(50);0,prob(50);5,prob(10);10,prob(1);25))
 		if(victim & SPECIES_FLAG_NO_PAIN) // So we still take damage, but actually dig through.
 			return FALSE
 		return TRUE
@@ -285,19 +285,19 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 
 
 /obj/structure/scrap/proc/clear_if_empty()
-	if (dig_amount <= 0)
-		for (var/obj/item/i in contents)
-			if ((i != big_item) && (i != loot)) //These two dont stop the pile from being cleared
-				return FALSE
-
+	if(!loot_generated)
+		return FALSE
+	//if (dig_amount <= 0)
+	for (var/obj/item/i in contents)
+		if ((i != big_item) && (i != loot)) //These two dont stop the pile from being cleared
+			return FALSE
 		//Anything in the internal storage prevents deletion
-		if (loot)
-			for (var/obj/item/i in loot.contents)
-				return FALSE
-
-		clear()
-		return TRUE
-	return FALSE
+	if (loot)
+		for (var/obj/item/i in loot.contents)
+			return FALSE
+	dig_amount = 0
+	clear()
+	return TRUE
 
 /obj/structure/scrap/proc/clear()
 	visible_message("<span class='notice'>\The [src] is cleared out!</span>")
@@ -391,7 +391,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		/obj/random/powercell ,
 		/obj/random/exosuit_equipment = 1,
 		/obj/item/toy/crossbow,
-		/obj/item/weapon/material/shard, 
+		/obj/item/weapon/material/shard,
 		/obj/random/material/steel,
 		/obj/random/junk/nondense,
 //		/obj/random/pack/rare = 0.3
