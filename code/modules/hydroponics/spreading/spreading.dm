@@ -122,10 +122,13 @@
 
 	growth = max(1,max_growth)
 
-	var/ikey = "\ref[seed]-plant-[growth]"
-	if(!SSplants.plant_icon_cache[ikey])
-		SSplants.plant_icon_cache[ikey] = seed.get_icon(growth)
-	overlays += SSplants.plant_icon_cache[ikey]
+	if(seed && seed.get_trait(TRAIT_PLANT_ICON))
+		icon_state = "[seed.get_trait(TRAIT_PLANT_ICON)]-[growth]"
+	else
+		var/ikey = "\ref[seed]-plant-[growth]"
+		if(!SSplants.plant_icon_cache[ikey])
+			SSplants.plant_icon_cache[ikey] = seed.get_icon(growth)
+		overlays += SSplants.plant_icon_cache[ikey]
 
 	if(growth > 2 && growth == max_growth)
 		layer = (seed && seed.force_layer) ? seed.force_layer : ABOVE_OBJ_LAYER
@@ -221,7 +224,7 @@
 			damage *= 2
 		adjust_health(-damage)
 		playsound(get_turf(src), W.hitsound, 100, 1)
-		
+
 /obj/effect/vine/AltClick(var/mob/user)
 	if(!CanPhysicallyInteract(user) || user.incapacitated())
 		return ..()

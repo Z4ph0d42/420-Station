@@ -385,6 +385,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "aM" = (
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/vacant/infirmary)
 "aN" = (
@@ -1757,6 +1758,11 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
+"dq" = (
+/obj/structure/railing/mapped,
+/obj/random/roaches/cluster/low_chance,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftport)
 "du" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1;
@@ -2907,6 +2913,10 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fifthdeck/aft)
+"fV" = (
+/obj/random/snack,
+/turf/simulated/floor/plating,
+/area/vacant/bar)
 "fW" = (
 /obj/effect/floor_decal/corner/mauve/half{
 	dir = 4;
@@ -5872,6 +5882,7 @@
 	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "na" = (
@@ -6113,6 +6124,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "nv" = (
@@ -7537,12 +7549,16 @@
 /obj/structure/closet/toolcloset/excavation,
 /obj/effect/floor_decal/corner/brown/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/storage/pouch/medium_generic,
+/obj/item/device/multitool,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "qf" = (
 /obj/structure/closet/secure_closet/secure_closet/xenoarchaeologist_torch,
 /obj/effect/floor_decal/corner/brown/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/storage/pouch/medium_generic,
+/obj/item/device/multitool,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "qg" = (
@@ -7568,6 +7584,8 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/item/weapon/storage/pouch/medium_generic,
+/obj/item/device/multitool,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "qi" = (
@@ -7677,6 +7695,17 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fifthdeck/aft)
+"qw" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
+	},
+/obj/random/snack,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftport)
 "qy" = (
 /obj/effect/floor_decal/corner/brown{
 	dir = 5
@@ -8149,6 +8178,7 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "rn" = (
@@ -9190,6 +9220,7 @@
 /area/maintenance/fifthdeck/aftport)
 "tz" = (
 /obj/item/seeds/appleseed,
+/obj/random/snack,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "tA" = (
@@ -9770,6 +9801,7 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
+/obj/random/snack,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "uO" = (
@@ -9932,6 +9964,7 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "vj" = (
@@ -10004,6 +10037,9 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/shuttle/petrov/maint)
+"vs" = (
+/turf/simulated/floor/plating,
+/area/hallway/primary/fifthdeck/aft)
 "vt" = (
 /obj/structure/shuttle/engine/heater{
 	dir = 4;
@@ -10085,6 +10121,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "vK" = (
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "vL" = (
@@ -10364,6 +10401,11 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/hallwaya)
+"wM" = (
+/obj/structure/catwalk,
+/obj/random/snack,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/fore)
 "wP" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
@@ -10739,6 +10781,7 @@
 	dir = 9;
 	icon_state = "intact"
 	},
+/obj/random/snack,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "yk" = (
@@ -10910,6 +10953,7 @@
 	target_pressure = 2533.13
 	},
 /obj/random_multi/single_item/poppy,
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "yC" = (
@@ -11016,6 +11060,12 @@
 /obj/structure/catwalk,
 /obj/structure/scrap/poor,
 /turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/fore)
+"yT" = (
+/obj/structure/table/steel,
+/obj/random/tool,
+/obj/random/snack,
+/turf/simulated/floor/tiled/techmaint,
 /area/maintenance/fifthdeck/fore)
 "yU" = (
 /obj/machinery/atmospherics/unary/heater,
@@ -12499,6 +12549,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
+/obj/random/snack,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "DZ" = (
@@ -12555,6 +12606,8 @@
 /obj/structure/closet/secure_closet/prospector,
 /obj/effect/floor_decal/corner/brown/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/storage/pouch/medium_generic,
+/obj/item/device/multitool,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "Ek" = (
@@ -12796,6 +12849,7 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/tiled/white,
 /area/vacant/infirmary)
 "EU" = (
@@ -14459,6 +14513,9 @@
 /obj/structure/salvageable/autolathe,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/fore)
+"KK" = (
+/turf/simulated/floor/plating,
+/area/hallway/primary/fifthdeck/fore)
 "KL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/cyan{
@@ -15350,6 +15407,7 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "NG" = (
@@ -15541,6 +15599,10 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/shuttle/petrov/cell1)
+"Os" = (
+/obj/random/snack,
+/turf/simulated/floor/plating,
+/area/quartermaster/hangar)
 "Ow" = (
 /obj/structure/handrai{
 	dir = 4;
@@ -15809,6 +15871,10 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/isolation)
+"Ps" = (
+/obj/random/roaches/cluster/low_chance,
+/turf/simulated/floor/wood/walnut,
+/area/vacant/bar)
 "Pt" = (
 /obj/structure/sign/warning/airlock{
 	dir = 8;
@@ -16100,7 +16166,7 @@
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/plating,
 /area/quartermaster/expedition/atmos)
 "QB" = (
 /obj/structure/cable/cyan{
@@ -16325,6 +16391,16 @@
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/tiled/techmaint,
+/area/maintenance/fifthdeck/fore)
+"Rk" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk,
+/obj/random/snack,
+/turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "Rn" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -17252,6 +17328,7 @@
 	amount = 30
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/device/multitool,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/storage)
 "UM" = (
@@ -30320,7 +30397,7 @@ an
 an
 an
 pi
-pi
+yT
 uB
 yq
 ux
@@ -31530,7 +31607,7 @@ iI
 lj
 jG
 wF
-rB
+Rk
 mh
 ph
 ph
@@ -32526,7 +32603,7 @@ ZN
 yc
 mh
 wZ
-mh
+wM
 sg
 fl
 so
@@ -32535,7 +32612,7 @@ sm
 ii
 gv
 rO
-oY
+KK
 oZ
 qR
 pa
@@ -35751,9 +35828,9 @@ aH
 ye
 aJ
 iX
-fX
+Os
 aJ
-UH
+bi
 ih
 ee
 bj
@@ -38813,7 +38890,7 @@ aX
 aJ
 CX
 wj
-no
+qw
 sa
 of
 ws
@@ -40393,7 +40470,7 @@ aa
 aa
 Xi
 QL
-yI
+fV
 Ne
 Lj
 zL
@@ -40415,7 +40492,7 @@ qz
 um
 Xz
 hF
-UO
+vs
 xg
 UO
 aS
@@ -40597,7 +40674,7 @@ Xi
 QL
 MG
 av
-Ne
+Ps
 Ia
 fz
 EX
@@ -40623,7 +40700,7 @@ oR
 oS
 HG
 MW
-OG
+Ym
 Oy
 Yi
 UL
@@ -43053,7 +43130,7 @@ ws
 ws
 KG
 JI
-VC
+dq
 vS
 vY
 ws

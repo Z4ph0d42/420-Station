@@ -39,6 +39,12 @@ GLOBAL_DATUM_INIT(underwear, /datum/category_collection/underwear, new())
 var/list/datum/visualnet/visual_nets = list()
 var/datum/visualnet/camera/cameranet = new()
 
+//Jobs and economy
+GLOBAL_LIST_EMPTY(joblist)					//list of all jobstypes, minus borg and AI
+GLOBAL_LIST_EMPTY(all_departments)			//List of all department datums
+var/global/list/department_IDs = list(COM, MED, ENG, SCI, SEC, SUP, SRV)
+GLOBAL_LIST_EMPTY(global_corporations)
+
 // Runes
 var/global/list/rune_list = new()
 var/global/list/endgame_exits = list()
@@ -108,6 +114,14 @@ var/global/list/string_slot_flags = list(
 			continue
 		H = new path()
 		GLOB.facial_hair_styles_list[H.name] = H
+
+	//List of job department datums
+	paths = subtypesof(/datum/station_department)
+	for(var/T in paths)
+		var/datum/station_department/D = new T
+		if(!D.id || !istext(D.id))
+			continue
+		GLOB.all_departments[D.id] = D
 
 	//Body markings - Initialise all /datum/sprite_accessory/marking into an list indexed by marking name
 	paths = typesof(/datum/sprite_accessory/marking) - /datum/sprite_accessory/marking

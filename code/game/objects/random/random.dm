@@ -10,6 +10,7 @@
 	var/has_postspawn = FALSE
 	invisibility = INVISIBILITY_MAXIMUM
 	var/spawn_method = /obj/random/proc/spawn_item
+	var/refire_item_to_spawn_each_time = 0
 
 // creates a new object and deletes itself
 /obj/random/Initialize()
@@ -49,16 +50,43 @@
 			return
 		build_path = pickweight(spawnchoices)
 
-	var/atom/A = new build_path(src.loc)
-	if(pixel_x || pixel_y)
-		A.pixel_x = pixel_x
-		A.pixel_y = pixel_y
-
-	return A
+	var/minrand = max(min_amount,1)
+	var/maxrand = max(max_amount,1)
+	var/randomnumber
+	if(minrand == maxrand)
+		randomnumber = minrand
+	else
+		randomnumber = rand(minrand,maxrand)
+	var/turf/spawnturf = get_turf(src)
+	var/list/spread_turfs = list()
+	if(isturf(loc))
+		spread_turfs += spawnturf
+		if(spread_range > 0)
+			for(var/turf/T in orange(spread_range,spawnturf))
+				if((!T in spread_turfs) && !T.is_wall())
+					spread_turfs += T
+	else
+		spread_turfs += loc
+	. = list()
+	if(spread_turfs.len)
+		for(var/i=randomnumber,i>0,i--)
+			if(discontinue(.))
+				break
+			var/atom/A = new build_path(pick(spread_turfs))
+			if(pixel_x || pixel_y)
+				A.pixel_x = pixel_x
+				A.pixel_y = pixel_y
+			. += A
+			if(refire_item_to_spawn_each_time)
+				build_path = item_to_spawn()
 
 // Returns an associative list in format path:weight
 /obj/random/proc/spawn_choices()
 	return list()
+
+//Shall we stop spawning? (For canceling when spawning multiple things)
+/obj/random/proc/discontinue(list/spawns)
+	return FALSE
 
 /obj/random/single
 	name = "randomly spawned object"
@@ -355,15 +383,24 @@ obj/random/cloth/masks/spawn_choices()
 	icon_state = "medium_generic"
 
 /obj/random/pouches/spawn_choices()
-	return list(/obj/item/weapon/storage/pouch/small_generic = 4,
-				/obj/item/weapon/storage/pouch/medium_generic,
-				/obj/item/weapon/storage/pouch/large_generic = 3,
-				/obj/item/weapon/storage/pouch/medical_supply = 3,
-				/obj/item/weapon/storage/pouch/engineering_tools= 2,
-				/obj/item/weapon/storage/pouch/engineering_supply = 2,
-				/obj/item/weapon/storage/pouch/ammo = 1,
-				/obj/item/weapon/storage/pouch/tubular/vial= 1,
-				/obj/item/weapon/storage/pouch/pistol_holster = 3)
+	return list(/obj/item/clothing/accessory/storage/pouches/blue = 6,
+				/obj/item/clothing/accessory/storage/pouches/green = 6,
+				/obj/item/clothing/accessory/storage/pouches/large = 4,
+				/obj/item/clothing/accessory/storage/pouches/large/blue = 3,
+				/obj/item/clothing/accessory/storage/pouches/large/navy = 3,
+				/obj/item/clothing/accessory/storage/pouches/large/tan = 4,
+				/obj/item/clothing/accessory/storage/pouches/navy = 6,
+				/obj/item/clothing/accessory/storage/pouches/tan = 6,
+				/obj/item/weapon/storage/pouch/ammo = 3,
+				/obj/item/weapon/storage/pouch/engineering_tools = 4,
+				/obj/item/weapon/storage/pouch/engineering_supply = 3,
+				/obj/item/weapon/storage/pouch/holding = 1,
+				/obj/item/weapon/storage/pouch/large_generic = 2,
+				/obj/item/weapon/storage/pouch/medical_supply = 2,
+				/obj/item/weapon/storage/pouch/medium_generic = 3,
+				/obj/item/weapon/storage/pouch/pistol_holster = 2,
+				/obj/item/weapon/storage/pouch/small_generic = 4,
+				)
 
 /obj/random/material_ore
 	name = "Random raw ores"
@@ -1009,7 +1046,7 @@ obj/random/closet //A couple of random closets to spice up maint
 	. = ..()
 	if(. && length(locker_vermin) && prob(vermin_chance))
 		var/vermin_type = pickweight(locker_vermin)
-		new vermin_type(.)
+		new vermin_type(pick(.))
 
 /obj/random/coin
 	name = "random coin"
@@ -2185,13 +2222,13 @@ var/list/random_useful_
 				/obj/structure/flora/pottedplant/sticky = 8,
 				/obj/structure/flora/pottedplant/smelly = 0.5,
 				/obj/structure/flora/pottedplant/small = 1,
-				/obj/structure/flora/pottedplant/aquatic =  3,
+				/obj/structure/flora/pottedplant/aquatic = 3,
 				/obj/structure/flora/pottedplant/shoot = 2,
-				/obj/structure/flora/pottedplant/flower =4,
+				/obj/structure/flora/pottedplant/flower = 4,
 				/obj/structure/flora/pottedplant/crystal = 2
 				))
 
 /obj/random/potted_plant/low_chance
-	name = "low chance random potted plant"
+	name = "random potted plant"
 	icon_state = "plant-03"
 	spawn_nothing_percentage = 00

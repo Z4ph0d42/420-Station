@@ -21,6 +21,15 @@
 	var/item_state = null // Used to specify the item state for the on-mob overlays.
 	var/does_spin = TRUE // Does the atom spin when thrown (of course it does :P)
 
+		//spawn_values
+	var/price_tag = 0 // The item price in credits. atom/movable so we can also assign a price to animals and other things.
+	var/spawn_tags
+	var/rarity_value = 1 //min:1
+	var/spawn_frequency = 0 //min:0
+	var/accompanying_object	//path or text "obj/item/weapon,/obj/item/device"
+	var/spawn_blacklisted = FALSE
+	var/bad_type //path
+	
 /atom/movable/Destroy()
 	. = ..()
 	if(!(atom_flags & ATOM_FLAG_INITIALIZED))
@@ -238,3 +247,7 @@
 
 /atom/movable/proc/get_bullet_impact_effect_type()
 	return BULLET_IMPACT_NONE
+
+// if this returns true, interaction to turf will be redirected to src instead
+/atom/movable/proc/preventsTurfInteractions()
+	return FALSE

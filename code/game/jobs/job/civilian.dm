@@ -10,6 +10,8 @@
 	minimal_access = list(access_bar)
 	alt_titles = list("Barista")
 	outfit_type = /decl/hierarchy/outfit/job/service/bartender
+	economic_power = 8
+	wage = WAGE_NONE // Makes his own money
 
 /datum/job/bartender/get_description_blurb()
 	return "The bartender is the person who serves drinks to customers. A good bartender should have excellent communication skills, be able to work under pressure, and be able to handle any situation that may arise. Bartenders need to know how to make cocktails, mix drinks, and serve alcohol responsibly."
@@ -26,6 +28,8 @@
 	minimal_access = list(access_kitchen)
 	alt_titles = list("Cook")
 	outfit_type = /decl/hierarchy/outfit/job/service/chef
+	economic_power = 2
+	wage = WAGE_LABOUR
 	
 /datum/job/chef/get_description_blurb()
 	return "A chef’s primary responsibility is to prepare meals for the crew. In addition to preparing meals, he/she may have to make sure that the kitchen is clean and organized. If the chef is not doing his/her job properly, then the crew members might get sick."
@@ -41,6 +45,8 @@
 	minimal_access = list(access_hydroponics)
 	alt_titles = list("Hydroponicist")
 	outfit_type = /decl/hierarchy/outfit/job/service/gardener
+	economic_power = 5
+	wage = WAGE_PROFESSIONAL
 
 /datum/job/hydro/get_description_blurb()
 	return "You are the ships gardener. You're resposible for the production all fresh produce on the station. Who knew scurvy would still be a problem on deep space voyages."
@@ -59,6 +65,8 @@
 	minimal_player_age = 3
 	ideal_character_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/cargo/qm
+	economic_power = 9
+	wage = WAGE_COMMAND
 	
 /datum/job/qm/get_description_blurb()
 	return "A Quartermaster is responsible for making sure that the crew gets what they need, when they need it. You are also resonsible for over seeing of the entire cargo department, this includes both personnel and finances."
@@ -73,6 +81,8 @@
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_access = list(access_maint_tunnels, access_cargo, access_cargo_bot, access_mailsorting)
 	outfit_type = /decl/hierarchy/outfit/job/cargo/cargo_tech
+	economic_power = 3
+	wage = WAGE_LABOUR_DUMB
 
 /datum/job/cargo_tech/get_description_blurb()
 	return "You are resposnible for loading and unloading cargo into the shuttle."
@@ -89,6 +99,7 @@
 	minimal_access = list(access_mining, access_mining_station, access_mailsorting)
 	alt_titles = list("Drill Technician","Prospector")
 	outfit_type = /decl/hierarchy/outfit/job/cargo/mining
+	wage = WAGE_LABOUR_HAZARD
 	
 /datum/job/mining/get_description_blurb()
 	return "Mining asteroids is a dangerous occupation. One wrong move can result in being crushed or frozen solid. There’s no telling what kind of toxic chemicals might be present on these rocks. You have to wear protective gear at all times."
@@ -104,6 +115,8 @@
 	minimal_access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_medical)
 	alt_titles = list("Custodian","Sanitation Technician")
 	outfit_type = /decl/hierarchy/outfit/job/service/janitor
+	economic_power = 1
+	wage = WAGE_LABOUR_DUMB
 
 /datum/job/janitor/get_description_blurb()
 	return "The job of a janitor is not a glamorous one. You go where no-one else wants to go, clean what others don't want to clean and do everything they don't want to do."
@@ -120,6 +133,8 @@
 	minimal_access = list(access_library)
 	alt_titles = list("Journalist")
 	outfit_type = /decl/hierarchy/outfit/job/librarian
+	economic_power = 1
+	wage = WAGE_LABOUR
 
 /datum/job/lawyer
 	title = "Internal Affairs Agent"
@@ -133,6 +148,7 @@
 	minimal_access = list(access_lawyer, access_sec_doors, access_bridge)
 	minimal_player_age = 1
 	outfit_type = /decl/hierarchy/outfit/job/internal_affairs_agent
+	wage = WAGE_PROFESSIONAL
 
 /datum/job/lawyer/equip(var/mob/living/carbon/human/H)
 	. = ..()

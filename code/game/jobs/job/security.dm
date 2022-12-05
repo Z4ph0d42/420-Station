@@ -10,6 +10,7 @@
 	selection_color = "#8e2929"
 	req_admin_notify = 1
 	economic_power = 10
+	wage = WAGE_COMMAND
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory, access_heads,
 			            access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
 			            access_research, access_engine, access_mining, access_medical, access_construction, access_mailsorting,
@@ -36,6 +37,7 @@
 	supervisors = "the head of security"
 	selection_color = "#601c1c"
 	economic_power = 5
+	wage = WAGE_PROFESSIONAL
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory, access_maint_tunnels, access_morgue, access_external_airlocks)
 	minimal_access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory, access_maint_tunnels, access_external_airlocks)
 	minimal_player_age = 7
@@ -52,6 +54,7 @@
 	selection_color = "#601c1c"
 	alt_titles = list("Forensic Technician" = /decl/hierarchy/outfit/job/security/detective/forensic)
 	economic_power = 5
+	wage = WAGE_LABOUR
 	access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels)
 	minimal_access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels)
 	minimal_player_age = 7
@@ -68,6 +71,7 @@
 	selection_color = "#601c1c"
 	alt_titles = list("Junior Officer")
 	economic_power = 4
+	wage = WAGE_LABOUR_DUMB
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_maint_tunnels, access_morgue, access_external_airlocks)
 	minimal_access = list(access_security, access_eva, access_sec_doors, access_brig, access_maint_tunnels, access_external_airlocks)
 	minimal_player_age = 7

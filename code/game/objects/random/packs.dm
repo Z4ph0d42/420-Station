@@ -140,13 +140,13 @@ They generally give more random result and can provide more divercity in spawn.
 					/obj/random/closet = 4,
 					/obj/random/closet_wardrobe = 2,
 					/obj/random/scrap/moderate_weighted = 12, //Our scrap pile. This is basically just a huge spawner.
-					//obj/random/exosuit/damaged = 1, //Some dangerous shit can be found there  // need oldificator.dm working first TODO
+					/obj/random/exosuit/damaged = 1, //Some dangerous shit can be found there  // need oldificator.dm working first TODO
 				))
 
 /obj/random/pack/machine/low_chance
 	name = "low chance random structure"
 	icon_state = "machine-orange-low"
-	spawn_nothing_percentage = 30
+	spawn_nothing_percentage = 60
 
 
 
@@ -165,14 +165,14 @@ They generally give more random result and can provide more divercity in spawn.
 					/obj/random/closet_tech = 6,
 					/obj/random/closet = 4,
 					/obj/random/closet_wardrobe = 2,
-//					/obj/random/exosuit/damaged = 1, //Some dangerous shit can be found there
-					/obj/random/hardsuit = 1, //idk wtf an exosuit is so heres a hardsuit
+					/obj/random/exosuit/damaged = 1, //Some dangerous shit can be found there
+					/obj/random/hardsuit = 1, //idk wtf an exosuit is so heres a hardsuit (exosuits are mechs, dummy)
 				))
 
 /obj/random/pack/junk_machine/low_chance
 	name = "low chance random junk structure"
 	icon_state = "machine-grey-low"
-	spawn_nothing_percentage = 30
+	spawn_nothing_percentage = 60
 
 /obj/random/pack/junk_machine/beacon/spawn_choices()
 	return pickweight(list(
@@ -181,5 +181,5 @@ They generally give more random result and can provide more divercity in spawn.
 					/obj/random/closet_tech = 3,
 					/obj/random/closet = 2,
 					/obj/random/closet_wardrobe = 2,
-//					/obj/random/exosuit/damaged = 1, //Some dangerous shit can be found there to-do
+					/obj/random/exosuit/damaged = 1, //Some dangerous shit can be found there to-do
 				))

@@ -56,6 +56,10 @@ GLOBAL_VAR_INIT(arrest_security_status, "Arrest")
 	set_sex(gender_term)
 	set_age(H ? H.age : 30)
 	set_status(GLOB.default_physical_status)
+
+	//set_email((H && H.mind) ? H.mind.initial_email_login["login"] : "none")
+	set_account((H && H.mind) ? H.mind.initial_account.account_number : "000000")
+
 	set_species(H ? H.get_species() : SPECIES_HUMAN)
 	set_branch(H ? (H.char_branch && H.char_branch.name) : "None")
 	set_rank(H ? (H.char_rank && H.char_rank.name) : "None")
@@ -194,6 +198,7 @@ FIELD_NUM("Age", age, null, access_change_ids)
 FIELD_LIST_EDIT("Status", status, GLOB.physical_statuses, null, access_medical)
 
 FIELD_SHORT("Species",species, null, access_change_ids)
+FIELD_NUM("Account",account, null, access_change_ids)
 FIELD_LIST("Branch", branch, record_branches(), null, access_change_ids)
 FIELD_LIST("Rank", rank, record_ranks(), null, access_change_ids)
 FIELD_SHORT("Religion", religion, access_chapel_office, access_change_ids)

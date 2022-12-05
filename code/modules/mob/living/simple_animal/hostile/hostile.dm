@@ -12,7 +12,7 @@
 	var/casingtype
 	var/fire_desc = "fires" //"X fire_desc at Y!"
 	var/ranged_range = 6 //tiles of range for ranged attackers to attack
-	var/move_to_delay = 4 //delay for the automated movement.
+	move_to_delay = 4 //delay for the automated movement.
 	var/attack_delay = DEFAULT_ATTACK_COOLDOWN
 	var/list/friends = list() //List of mobs that wont be picked as a target. Add to using weakref().
 	var/break_stuff_probability = 10
@@ -158,7 +158,7 @@
 	if(!.)
 		walk(src, 0)
 		return 0
-	if(client)
+	if(client || AI_inactive)
 		return 0
 	if(!can_act())
 		walk(src, 0)

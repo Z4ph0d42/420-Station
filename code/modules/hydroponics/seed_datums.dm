@@ -533,6 +533,119 @@
 	set_trait(TRAIT_PLANT_COLOUR,"#e6e6e6")
 	set_trait(TRAIT_PLANT_ICON,"mushroom10")
 
+/datum/seed/mushroom/maintshroom
+	name = "fungoartiglieria"
+	seed_name = "Fungo di Artiglieria mushroom"
+	display_name = "Fungo di Artiglieria"
+	mutants = null
+
+/datum/seed/mushroom/maintshroom/New()
+	..()
+	set_trait(TRAIT_MATURATION,6)
+	set_trait(TRAIT_PRODUCTION,6)
+	set_trait(TRAIT_YIELD,10)
+	set_trait(TRAIT_POTENCY,12)//
+	set_trait(TRAIT_REQUIRES_NUTRIENTS, FALSE)
+	set_trait(TRAIT_REQUIRES_WATER, FALSE)
+	set_trait(TRAIT_PRODUCT_ICON,"mushroom3")
+	set_trait(TRAIT_WALL_HUGGER,1)
+
+	set_trait(TRAIT_PLANT_ICON,"fungoartiglieria")
+	set_trait(TRAIT_SPREAD, 2)
+	set_trait(TRAIT_CHEMS, 1)
+	set_trait(TRAIT_CHEM_SPRAYER, TRUE)
+
+	chems = list()
+
+	var/list/possible_chems = list(
+		/datum/reagent/toxin/blattedin,
+		/datum/reagent/toxin/plasticide,
+		/datum/reagent/toxin/cyanide,
+		/datum/reagent/toxin,
+		/datum/reagent/blood,
+		/datum/reagent/water,
+		/datum/reagent/acetone,
+		/datum/reagent/hydrazine,
+		/datum/reagent/mercury,
+		/datum/reagent/potassium,
+		/datum/reagent/radium,
+		/datum/reagent/sugar,
+		/datum/reagent/nutriment/honey,
+		/datum/reagent/inaprovaline,
+		/datum/reagent/bicaridine,
+		/datum/reagent/dermaline,
+		/datum/reagent/dexalin,
+		/datum/reagent/cryoxadone,
+		/datum/reagent/tramadol,
+		/datum/reagent/synaptizine,
+		/datum/reagent/alkysine,
+		/datum/reagent/peridaxon,
+		/datum/reagent/ryetalyn,
+		/datum/reagent/hyperzine,
+		/datum/reagent/ethylredoxrazine,
+		/datum/reagent/hyronalin,
+		/datum/reagent/paroxetine,
+		/datum/reagent/rezadone,
+		/datum/reagent/thermite,
+		/datum/reagent/cryptobiolin,
+		/datum/reagent/impedrezene,
+		/datum/reagent/drink/juice/banana,
+		/datum/reagent/capsaicin,
+		/datum/reagent/chloralhydrate,
+		/datum/reagent/frostoil,
+		/datum/reagent/mindbreaker,
+		/datum/reagent/mutagen,
+		/datum/reagent/slimejelly,
+		/datum/reagent/space_drugs,
+		/datum/reagent/soporific,
+		/datum/reagent/woodpulp
+		//could not locate "mutationtoxin" and "amutationtoxin"
+			//gonna port them in soon
+		)
+
+	var/list/firstnames = list (
+		"bleak", "bog", "bum", "candy", "coarse", "corpse", "cramp", "club", "demon", "dog", "dung", "felt", "fly", "goblin", "grave", "greasy", "hypoxylon", "jelly", "junk", "icky", "imp", "ling", "lung", "maggot", "monkey", "mottled", "pixie", "poached", "powder", "pterula", "ramularia", "radiant", "rat", "roach", "rock", "scruffy", "serbian", "shaggy", "slimy", "smelly", "smoky", "space", "spider", "spiky", "splash", "stag", "stinky", "tumbling", "undulate", "vagabond", "veiled", "wall", "web"
+		)
+	var/list/secondnames = list(
+		"amanita", "bane", "beacon", "bolete", "bonnet", "bulgar", "cap", "cone", "conocybe", "coral", "clown", "cremini", "crepidotus", "cup", "cushion", "entoloma", "ear", "fungus", "gill", "heart", "horn", "hydnum", "leafspot", "leoninus", "lichen", "micellium", "morsel", "moss", "mushroom", "ori", "oyster", "panellus", "polypore", "panus", "porcini", "porridge", "puffball", "rod", "rot", "russula", "scale", "smut", "spots", "stem", "stool", "tail", "tears", "tongue", "trumpet", "truffle",  "urn", "vase", "wort"
+		)
+
+	shuffle(firstnames)
+	shuffle(secondnames)
+	var/list/names = list()
+	for (var/i = 1; i <= min(firstnames.len, secondnames.len); i++)
+		names += "[firstnames[i]] [secondnames[i]]"
+
+	var/random = 0
+	random = rand(1, possible_chems.len)
+	var/new_chem = possible_chems[random]
+	chems[new_chem] = list(rand(1,5),rand(5,10))
+
+	//Give the maintshroom the name
+	var generated_name = ""
+	if (random <= names.len)
+		generated_name = names[random]
+	else
+		generated_name = names[1]
+	name = "[generated_name]"
+	seed_name = "[generated_name]"
+	display_name = "[generated_name]"
+
+	//Set the maintshroom to the hue of the chem
+	var/datum/reagent/chem = GLOB.chemical_reagents_list[new_chem]
+	var/color = chem.color
+
+	//Color Wizardry
+	//We will take the color's hue completely
+	//We will cap its saturation to a low value, giving more of a pastel shade
+	//We will hard set the brightness to max
+	var/list/HSV = ReadHSV(RGBtoHSV(color))
+	color = set_HSV(color, list(null, min(HSV[2],100), 255))
+
+	if (chem)
+		set_trait(TRAIT_PLANT_COLOUR,color)
+		set_trait(TRAIT_PRODUCT_COLOUR,color)
+
 //Flowers/varieties
 /datum/seed/flower
 	name = "harebells"
@@ -1627,9 +1740,10 @@
 /datum/seed/cannabis
 	name = "cannabis"
 	seed_name = "cannabis"
-	mutants =list("")
-	chems = list(/datum/reagent/nutriment = list(1), /datum/reagent/thc = list(5,8))
+	mutants = list("crimson kush","blueberry chronic")
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(5,8))
 	kitchen_tag = "cannabis"
+	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
 
 //I'm color blind please feel free to tweak this color
 /datum/seed/cannabis/New()
@@ -1646,3 +1760,37 @@
 	set_trait(TRAIT_IDEAL_HEAT, 298)
 	set_trait(TRAIT_IDEAL_LIGHT, 6)
 	set_trait(TRAIT_WATER_CONSUMPTION, 6)
+
+/datum/seed/cannabis/crimson_kush
+	name = "crimson kush"
+	seed_name = "crimson kush"
+	mutants = null
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(6,5), /datum/reagent/paracetamol = list(1,4))
+	kitchen_tag = "cannabis"
+	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
+
+/datum/seed/cannabis/crimson_kush/New()
+	..()
+	set_trait(TRAIT_HARVEST_REPEAT,2)
+	set_trait(TRAIT_YIELD,3)
+	set_trait(TRAIT_POTENCY,10.5)
+	set_trait(TRAIT_PRODUCT_COLOUR,"#b13e0d")
+	set_trait(TRAIT_PLANT_COLOUR,"#a44404")
+	set_trait(TRAIT_WATER_CONSUMPTION, 6.2)
+
+/datum/seed/cannabis/blueberry_chronic
+	name = "blueberry chronic"
+	seed_name = "blueberry chronic"
+	mutants = null
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(6,5), /datum/reagent/dexalin = list(1,4))
+	kitchen_tag = "cannabis"
+	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
+
+/datum/seed/cannabis/blueberry_chronic/New()
+	..()
+	set_trait(TRAIT_HARVEST_REPEAT,2)
+	set_trait(TRAIT_YIELD,3)
+	set_trait(TRAIT_POTENCY,10.5)
+	set_trait(TRAIT_PRODUCT_COLOUR,"#150db1")
+	set_trait(TRAIT_PLANT_COLOUR,"#0c04a4")
+	set_trait(TRAIT_WATER_CONSUMPTION, 6.2)

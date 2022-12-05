@@ -60,6 +60,10 @@
 #define TRAIT_LARGE            	   40
 #define TRAIT_LEAVES_COLOUR        41
 #define TRAIT_PHOTOSYNTHESIS       42
+#define TRAIT_CHEM_SPRAYER         43
+#define TRAIT_WALL_HUGGER		   44
+#define TRAIT_INVASIVE             45//Allows to invade already seeded tiles
+
 
 // Seed noun datums
 #define SEED_NOUN_SPORES          "spores"

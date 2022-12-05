@@ -8,13 +8,15 @@
 	var/health = 100 	//A mob's health
 
 	var/hud_updateflag = 0
+	
+	var/AI_inactive = FALSE
 
 	//Damage related vars, NOTE: THESE SHOULD ONLY BE MODIFIED BY PROCS // what a joke
 	//var/bruteloss = 0 //Brutal damage caused by brute force (punching, being clubbed by a toolbox ect... this also accounts for pressure damage)
 	//var/oxyloss = 0   //Oxygen depravation damage (no air in lungs)
 	//var/toxloss = 0   //Toxic damage caused by being poisoned or radiated
 	//var/fireloss = 0  //Burn damage caused by being way too hot, too cold or burnt.
-	//var/halloss = 0   //Hallucination damage. 'Fake' damage obtained through hallucinating or the holodeck. Sleeping should cause it to wear off.
+	var/halloss = 0   //Hallucination damage. 'Fake' damage obtained through hallucinating or the holodeck. Sleeping should cause it to wear off.
 
 	var/last_special = 0 //Used by the resist verb, likely used to prevent players from bypassing next_move by logging in/out.
 
@@ -28,6 +30,9 @@
 	var/mob_swap_flags = 0
 	var/mob_push_flags = 0
 	var/mob_always_swap = 0
+	var/move_to_delay = 4 //delay for the automated movement.
+	var/can_burrow = FALSE //If true, this mob can travel around using the burrow network.
+	//When this mob spawns at roundstart, a burrow will be created near it if it can't find one
 
 	var/mob/living/cameraFollow = null
 	var/list/datum/action/actions = list()

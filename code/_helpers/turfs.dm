@@ -100,6 +100,35 @@
 		return TRUE
 	return FALSE
 
+/proc/turf_is_external(var/turf/T)
+	if (is_space_turf(T))
+		return TRUE
+
+	var/area/A = get_area(T)
+	if (A.area_flags & AREA_FLAG_EXTERNAL)
+		return TRUE
+
+	/*var/datum/gas_mixture/environment = T.return_air()
+	if (!environment || !environment.total_moles)
+		return TRUE*/
+	if(!has_air(T))
+		return TRUE
+
+	return FALSE
+
+/*/proc/dist3D(atom/A, atom/B)
+	var/turf/a = get_turf(A)
+	var/turf/b = get_turf(B)
+
+	if (!a || !b)
+		return 0
+
+	var/vecX = A.x - B.x
+	var/vecY = A.y - B.y
+	var/vecZ = (A.y - B.y)*DECK_HEIGHT
+
+	return abs(sqrt((vecX*vecX) + (vecY*vecY) +(vecZ*vecZ)))*/
+
 /*
 	Turf manipulation
 */

@@ -677,6 +677,10 @@
 				stat("Failsafe Controller:", "Waiting for MC")
 			else
 				stat("Failsafe Controller:", "ERROR")
+			if(GLOB)
+				GLOB.stat_entry()
+			else
+				stat("Globals:", "ERROR")
 			if(Master)
 				stat(null)
 				for(var/datum/controller/subsystem/SS in Master.subsystems)

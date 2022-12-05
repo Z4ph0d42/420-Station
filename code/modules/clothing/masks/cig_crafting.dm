@@ -23,11 +23,9 @@
 	desc = "A hand rolled joint using dried cannabis."
 	icon_state = "spliffoff"
 	type_butt = /obj/item/trash/roach
-	chem_volume = 50
-	brand = "handrolled"
+	//chem_volume = 50
 	smoketime = 800
 	chem_volume = 15
-	filling = list()
 
 /obj/item/clothing/mask/smokable/cigarette/rolled/joint/on_update_icon()
 	. = ..()
@@ -104,13 +102,16 @@
 			return
 	..()
 
-/obj/item/weapon/reagent_containers/food/snacks/grown/dried_tobacco/attackby(obj/item/I, mob/user)
+/obj/item/weapon/reagent_containers/food/snacks/grown/attackby(obj/item/I, mob/user)
 	if(is_type_in_list(I, list(/obj/item/paper/cig/, /obj/item/weapon/paper/, /obj/item/weapon/teleportation_scroll)))
 		if(!dry)
 			to_chat(user, "<span class='warning'>You need to dry [src] first!</span>")
 			return
 		if(user.unEquip(I))
-			var/obj/item/clothing/mask/smokable/cigarette/rolled/R = new(get_turf(src))
+			var/selected_cig_type = cigarette_type
+			if(!selected_cig_type)
+				selected_cig_type = /obj/item/clothing/mask/smokable/cigarette/rolled
+			var/obj/item/clothing/mask/smokable/cigarette/rolled/R = new selected_cig_type(get_turf(src))
 			R.chem_volume = reagents.total_volume
 			R.brand = "[src] handrolled in \the [I]."
 			reagents.trans_to_holder(R.reagents, R.chem_volume)
@@ -121,7 +122,7 @@
 			return
 	..()
 
-/obj/item/weapon/reagent_containers/food/snacks/grown/dried_cannabis/attackby(obj/item/I, mob/user)
+/*/obj/item/weapon/reagent_containers/food/snacks/grown/dried_cannabis/attackby(obj/item/I, mob/user)
 	if(is_type_in_list(I, list(/obj/item/paper/cig/long, /obj/item/weapon/paper/, /obj/item/weapon/teleportation_scroll)))
 		if(!dry)
 			to_chat(user, "<span class='warning'>You need to dry [src] first!</span>")
@@ -136,4 +137,4 @@
 			qdel(I)
 			qdel(src)
 			return
-	..()
+	..()*/

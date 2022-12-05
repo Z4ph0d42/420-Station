@@ -66,9 +66,72 @@
 //Destroyers are medium sized vessels, often used for escorting larger ships but able to go toe-to-toe with them if need be.
 //Frigates are medium sized vessels, often used for escorting larger ships. They will rapidly find themselves outclassed if forced to face heavy warships head on.
 
+var/global/current_date_string
+
 var/global/datum/money_account/vendor_account
 var/global/datum/money_account/station_account
 var/global/list/datum/money_account/department_accounts = list()
 var/global/num_financial_terminals = 1
 var/global/next_account_number = 0
 var/global/list/all_money_accounts = list()
+//var/global/economy_init = 0
+
+//Email account used to send notifications about salaries. Payments made, funding failed, etc
+var/global/datum/computer_file/data/email_account/service/payroll/payroll_mailer = null
+
+/*/proc/setup_economy()
+	if(economy_init)
+		return 2
+
+	payroll_mailer = new
+
+	news_network.CreateFeedChannel("Nyx Daily", "SolGov Minister of Information", 1, 1)
+	news_network.CreateFeedChannel("The Gibson Gazette", "Editor Mike Hammers", 1, 1)
+
+	for(var/loc_type in typesof(/datum/trade_destination) - /datum/trade_destination)
+		var/datum/trade_destination/D = new loc_type
+		weighted_randomevent_locations[D] = D.viable_random_events.len
+		weighted_mundaneevent_locations[D] = D.viable_mundane_events.len
+
+
+	//Create all the department accounts
+	for(var/d in GLOB.all_departments)
+		create_department_account(GLOB.all_departments[d])
+
+	station_account = department_accounts[COM]
+	vendor_account = department_accounts[SUP] //Vendors are operated by the guild and purchases pay into their stock
+
+	for(var/obj/machinery/vending/V in SSmachines.machinery)
+		if(!V.custom_vendor)
+			V.earnings_account = V.vendor_department ? department_accounts[V.vendor_department] : vendor_account
+
+	current_date_string = "[num2text(rand(1,31))] [pick("January","February","March","April","May","June","July","August","September","October","November","December")], [game_year]"
+
+	economy_init = 1
+	return 1
+
+//this already exists with in 420 station source.
+/proc/create_department_account(var/datum/station_department/department)
+	next_account_number = rand(111111, 999999)
+
+	var/datum/money_account/department_account = new()
+	department_account.account_name = "[department.name] Account"
+	department_account.account_number = rand(111111, 999999)
+	department.account_number = department_account.account_number
+
+	department_account.remote_access_pin = rand(1111, 111111)
+	department.account_pin = department_account.remote_access_pin
+
+	//create an entry in the account transaction log for when it was created
+	//var/datum/transaction/T = new(department.account_initial_balance, department_account.owner_name, "Account creation", "Asters Guild Terminal #277")
+	///datum/transaction/New(_source, _target, _amount, _purpose) -420 source
+	///datum/transaction/New(_amount = 0, _target_name, _purpose, _source_terminal, _date = null, _time = null) -cev source
+	var/datum/transaction/T = new("Asters Guild Terminal #277", department_account, department.account_initial_balance, "Account creation", "2 April, 2555","11:24")
+	//T.date = "2 April, 2555"
+	//T.time = "11:24"
+
+	//add the account
+	T.apply_to(department_account)
+	all_money_accounts.Add(department_account)
+
+	department_accounts[department.id] = department_account*/

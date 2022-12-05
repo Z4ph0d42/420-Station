@@ -83,6 +83,7 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
+/obj/random/snack,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "ao" = (
@@ -2260,13 +2261,10 @@
 /turf/simulated/floor/carpet/blue2,
 /area/bridge/meeting_room)
 "dQ" = (
-/obj/effect/floor_decal/corner/blue{
-	dir = 6
-	},
 /obj/structure/noticeboard{
 	pixel_x = 32
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/plating,
 /area/bridge/meeting_room)
 "dR" = (
 /obj/structure/disposalpipe/segment,
@@ -4465,7 +4463,7 @@
 	dir = 4;
 	icon_state = "handrail"
 	},
-/turf/simulated/floor/tiled/freezer,
+/turf/simulated/floor/plating,
 /area/aquila/head)
 "jf" = (
 /obj/machinery/light/small{
@@ -4535,6 +4533,9 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/aquila/passenger)
+"jq" = (
+/turf/simulated/floor/plating,
+/area/bridge/hallway/starboard)
 "jw" = (
 /obj/effect/floor_decal/corner/blue,
 /obj/random/trash,
@@ -4625,6 +4626,14 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
+"jI" = (
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
+	},
+/obj/random/roaches/cluster/low_chance,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "jM" = (
 /obj/effect/floor_decal/corner/yellow{
 	dir = 6
@@ -8781,6 +8790,9 @@
 "vv" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/bridge/disciplinary_board_room/deliberation)
+"vw" = (
+/turf/simulated/floor/plating,
+/area/bridge)
 "vx" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
@@ -11023,6 +11035,9 @@
 /obj/structure/catwalk,
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
+"Cp" = (
+/turf/simulated/floor/plating,
+/area/aquila/medical)
 "Cr" = (
 /obj/effect/floor_decal/spline/fancy/wood/corner{
 	dir = 4
@@ -12136,6 +12151,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge)
+"HA" = (
+/turf/simulated/floor/plating,
+/area/aquila/airlock)
 "HC" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -12729,6 +12747,9 @@
 /obj/structure/catwalk,
 /turf/simulated/open,
 /area/maintenance/bridge/foreport)
+"JO" = (
+/turf/simulated/floor/plating,
+/area/hallway/primary/bridge/aft)
 "JT" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/salvageable/implant_container_os,
@@ -13440,6 +13461,19 @@
 /obj/effect/floor_decal/industrial/shutoff,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
+"Nm" = (
+/obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/random/roaches/cluster/low_chance,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/foreport)
 "Nn" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -13472,6 +13506,7 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
+/obj/random/roaches/cluster/low_chance,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "Nt" = (
@@ -14386,6 +14421,9 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/heads/cobed)
+"Rm" = (
+/turf/simulated/floor/plating,
+/area/aquila/mess)
 "Rp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -14917,7 +14955,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/rd)
 "Tl" = (
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/plating,
 /area/bridge/storage)
 "Tm" = (
 /obj/structure/closet/secure_closet/bodyguard,
@@ -16325,6 +16363,9 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/aquila/head)
+"Zm" = (
+/turf/simulated/floor/plating,
+/area/aquila/passenger)
 "Zs" = (
 /obj/machinery/computer/account_database,
 /obj/machinery/recharger/wallcharger{
@@ -24425,7 +24466,7 @@ hn
 hn
 HK
 hn
-hn
+vw
 SJ
 ev
 eP
@@ -24810,7 +24851,7 @@ af
 af
 PV
 VB
-zq
+jI
 Nr
 Tx
 bI
@@ -26033,7 +26074,7 @@ eq
 aO
 yg
 bY
-cl
+jq
 cw
 cD
 db
@@ -27672,7 +27713,7 @@ AX
 RE
 IK
 UE
-UE
+Nm
 lW
 yI
 tg
@@ -30684,7 +30725,7 @@ gm
 gm
 gm
 jU
-kM
+JO
 lE
 mS
 oe
@@ -35125,7 +35166,7 @@ fJ
 gp
 ha
 hM
-AN
+Rm
 Mw
 kf
 XI
@@ -35536,7 +35577,7 @@ XI
 Qz
 nn
 Dw
-Dw
+HA
 pZ
 Ww
 Xb
@@ -36339,7 +36380,7 @@ nr
 OX
 iz
 JV
-JV
+Zm
 JV
 wr
 vn
@@ -36549,7 +36590,7 @@ gw
 pk
 JE
 qd
-qd
+Cp
 qd
 qd
 tN

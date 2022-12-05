@@ -9,6 +9,13 @@
 	if(!(isScrewdriver(C) && flooring && (flooring.flags & TURF_REMOVE_SCREWDRIVER)) && try_graffiti(user, C))
 		return
 
+	for(var/atom/movable/A in src)
+		if(A.preventsTurfInteractions())
+			to_chat(user, SPAN_NOTICE("[A] is in the way."))
+			A.attackby(C, user)
+			//if(A.preventsTurfInteractions())
+			return
+
 	if(flooring)
 		if(isCrowbar(C))
 			if(user.a_intent != I_HELP)

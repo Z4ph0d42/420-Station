@@ -25,6 +25,7 @@
 	var/has_mob_product
 	var/force_layer
 	var/req_CO2_moles    = 1.0// Moles of CO2 required for photosynthesis.
+	var/cigarette_type = null
 
 /datum/seed/New()
 
