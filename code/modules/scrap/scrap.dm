@@ -34,6 +34,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 	var/beacon = FALSE // If this junk pile is getting pulled by the junk beacon or not.
 	var/rare_item_chance = 70
 	var/rare_item = FALSE
+	var/cleared = 0
 
 /obj/structure/scrap/proc/make_cube()
 	try_make_loot() //don't have a cube without materials
@@ -285,7 +286,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 
 
 /obj/structure/scrap/proc/clear_if_empty()
-	if(!loot_generated)
+	if(!loot_generated || cleared)
 		return FALSE
 	//if (dig_amount <= 0)
 	for (var/obj/item/i in contents)
@@ -296,6 +297,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		for (var/obj/item/i in loot.contents)
 			return FALSE
 	dig_amount = 0
+	cleared = 1
 	clear()
 	return TRUE
 
