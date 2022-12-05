@@ -122,8 +122,11 @@
 
 	growth = max(1,max_growth)
 
+	var/found_icon_state
 	if(seed && seed.get_trait(TRAIT_PLANT_ICON))
-		icon_state = "[seed.get_trait(TRAIT_PLANT_ICON)]-[growth]"
+		found_icon_state = "[seed.get_trait(TRAIT_PLANT_ICON)]-[growth]"
+	if(found_icon_state && found_icon_state in icon_states(icon))
+		icon_state = found_icon_state
 	else
 		var/ikey = "\ref[seed]-plant-[growth]"
 		if(!SSplants.plant_icon_cache[ikey])
