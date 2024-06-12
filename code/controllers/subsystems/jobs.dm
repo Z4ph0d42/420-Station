@@ -230,37 +230,42 @@ SUBSYSTEM_DEF(jobs)
 			assign_role(player, job.title, mode = mode)
 			unassigned_roundstart -= player
 			break
+
 ///This proc is called before the level loop of divide_occupations() and will try to select a head, ignoring ALL non-head preferences for every level until it locates a head or runs out of levels to check
-/datum/controller/subsystem/jobs/proc/fill_head_position(datum/game_mode/mode)
-	for (var/level = 1 to 3)
-		for (var/command_position as anything in titles_by_department(COM))
+/datum/controller/subsystem/jobs/proc/fill_head_position(var/datum/game_mode/mode)
+	for(var/level = 1 to 3)
+		for(var/command_position in titles_by_department(COM))
 			var/datum/job/job = get_by_title(command_position)
-			if (!job)
-				continue
+			if(!job)	continue
 			var/list/candidates = find_occupation_candidates(job, level)
-			if (!length(candidates))
-				continue
+			if(!candidates.len)	continue
+			// Build a weighted list, weight by age.
 			var/list/weightedCandidates = list()
-			for (var/mob/mob as anything in candidates)
-				if (!mob.client)
+			for(var/mob/V in candidates)
+				// Log-out during round-start? What a bad boy, no head position for you!
+				if(!V.client) continue
+				var/age = V.client.prefs.age
+				if(age < job.minimum_character_age) // Nope.
 					continue
-				var/age = mob.client.prefs.age
-				if (age < job.minimum_character_age)
-					continue
-				if (age < job.minimum_character_age + 10)
-					weightedCandidates[mob] = 3
-				else if (age < job.ideal_character_age - 10)
-					weightedCandidates[mob] = 6
-				else if (age < job.ideal_character_age + 10)
-					weightedCandidates[mob] = 10
-				else if (age < job.ideal_character_age + 20)
-					weightedCandidates[mob] = 6
-				else
-					weightedCandidates[mob] = 3
+				switch(age)
+					if(job.minimum_character_age to (job.minimum_character_age+10))
+						weightedCandidates[V] = 3 // Still a bit young.
+					if((job.minimum_character_age+10) to (job.ideal_character_age-10))
+						weightedCandidates[V] = 6 // Better.
+					if((job.ideal_character_age-10) to (job.ideal_character_age+10))
+						weightedCandidates[V] = 10 // Great.
+					if((job.ideal_character_age+10) to (job.ideal_character_age+20))
+						weightedCandidates[V] = 6 // Still good.
+					if((job.ideal_character_age+20) to INFINITY)
+						weightedCandidates[V] = 3 // Geezer.
+					else
+						// If there's ABSOLUTELY NOBODY ELSE
+						if(candidates.len == 1) weightedCandidates[V] = 1
 			var/mob/new_player/candidate = pickweight(weightedCandidates)
-			if (assign_role(candidate, command_position, mode = mode))
-				return TRUE
-	return FALSE
+			if(assign_role(candidate, command_position, mode = mode))
+				return 1
+	return 0
+
 ///This proc is called at the start of the level loop of divide_occupations() and will cause head jobs to be checked before any other jobs of the same level
 /datum/controller/subsystem/jobs/proc/CheckHeadPositions(var/level, var/datum/game_mode/mode)
 	for(var/command_position in titles_by_department(COM))
