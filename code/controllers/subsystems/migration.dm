@@ -45,22 +45,22 @@ SUBSYSTEM_DEF(migration)
 */
 /datum/controller/subsystem/migration/Initialize()
 	. = ..()
-	for (var/i = 0; i < roundstart_burrows; i++)
-		var/list/ship_areas = list()
-		for(var/area/A in world)
-			if(is_station_area(A))
-				ship_areas += A
-		var/area/A = pick(ship_areas)
-		var/turf/T //Lets make sure the selected area is valid
-		var/list/turfs = list()
-		for(var/turf/simulated/floor/F in A.contents)
-			if(turf_clear(F))
-				turfs += F
-		if (turfs.len)
-			T = pick(turfs)
-		create_burrow(T)
-
-
+	var/list/ship_areas = list()
+	for(var/area/A in world)
+		if(is_station_area(A))
+			ship_areas += A
+	var/list/turfs = list()
+	if(ship_areas.len)
+		for(var/area/A in ship_areas)
+			for(var/turf/simulated/floor/F in A.contents)
+				if(turf_clear(F))
+					turfs += F
+	if(turfs.len)
+		for(var/i=0,i<roundstart_burrows,i++)
+			var/turf/T = pick(turfs)
+			if(istype(T)) //Lets make sure the selected area is valid
+				create_burrow(T)
+				turfs -= T
 
 /*
 Called by roaches when they spawn.

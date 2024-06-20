@@ -247,20 +247,18 @@ SUBSYSTEM_DEF(jobs)
 				var/age = V.client.prefs.age
 				if(age < job.minimum_character_age) // Nope.
 					continue
-				switch(age)
-					if(job.minimum_character_age to (job.minimum_character_age+10))
-						weightedCandidates[V] = 3 // Still a bit young.
-					if((job.minimum_character_age+10) to (job.ideal_character_age-10))
-						weightedCandidates[V] = 6 // Better.
-					if((job.ideal_character_age-10) to (job.ideal_character_age+10))
-						weightedCandidates[V] = 10 // Great.
-					if((job.ideal_character_age+10) to (job.ideal_character_age+20))
-						weightedCandidates[V] = 6 // Still good.
-					if((job.ideal_character_age+20) to INFINITY)
-						weightedCandidates[V] = 3 // Geezer.
-					else
-						// If there's ABSOLUTELY NOBODY ELSE
-						if(candidates.len == 1) weightedCandidates[V] = 1
+				else if(age <= (job.minimum_character_age+10))
+					weightedCandidates[V] = 3 // Still a bit young.
+				else if(age <= (job.ideal_character_age-10))
+					weightedCandidates[V] = 6 // Better.
+				else if(age <= (job.ideal_character_age+10))
+					weightedCandidates[V] = 10 // Great.
+				else if(age <= (job.ideal_character_age+20))
+					weightedCandidates[V] = 6 // Still good.
+				else if(age > (job.ideal_character_age+20))
+					weightedCandidates[V] = 3 // Geezer.
+				else if(candidates.len == 1) // If there's ABSOLUTELY NOBODY ELSE
+					weightedCandidates[V] = 1
 			var/mob/new_player/candidate = pickweight(weightedCandidates)
 			if(assign_role(candidate, command_position, mode = mode))
 				return 1

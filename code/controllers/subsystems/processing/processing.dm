@@ -24,6 +24,21 @@ SUBSYSTEM_DEF(processing)
 	var/wait = src.wait
 	var/times_fired = src.times_fired
 
+	//The latest byond 515 makes it so you cannot use call() with a type path of a proc, it must be text now. so this is how i convert the path in to text. -Falaskian
+	if(!istext(process_proc))
+		var/thetext = "[process_proc]"
+		var/thelength = length(thetext)
+		if(thelength > 0)
+			var/textcharacter = ""
+			while(textcharacter != "/")
+				if(thelength <= 0)
+					break
+				textcharacter = copytext(thetext,thelength,thelength+1)
+				if(textcharacter != "/")
+					thelength--
+			if(textcharacter == "/")
+				process_proc = copytext(thetext,thelength+1,length(thetext)+1)
+
 	while(current_run.len)
 		var/datum/thing = current_run[current_run.len]
 		current_run.len--
