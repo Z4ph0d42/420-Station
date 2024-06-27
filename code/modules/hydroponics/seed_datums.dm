@@ -1740,7 +1740,7 @@
 /datum/seed/cannabis
 	name = "cannabis"
 	seed_name = "cannabis"
-	mutants = list("crimson kush","blueberry chronic")
+	mutants = list("crimson kush", "blueberry chronic", "emerald dream", "purple haze", "ghost og", "solar flare", "aurora borealis", "lemon lightning", "thunder punch", "stardust sativa", "venusian velvet", "galactic glue")
 	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(5,8))
 	kitchen_tag = "cannabis"
 	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
@@ -1790,7 +1790,187 @@
 	..()
 	set_trait(TRAIT_HARVEST_REPEAT,2)
 	set_trait(TRAIT_YIELD,3)
-	set_trait(TRAIT_POTENCY,10.5)
+	set_trait(TRAIT_POTENCY,10.6)
 	set_trait(TRAIT_PRODUCT_COLOUR,"#150db1")
 	set_trait(TRAIT_PLANT_COLOUR,"#0c04a4")
 	set_trait(TRAIT_WATER_CONSUMPTION, 6.2)
+
+//Emerald Dream
+/datum/seed/cannabis/emerald_dream
+	name = "emerald dream"
+	seed_name = "emerald dream"
+	mutants = null
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(7,7), /datum/reagent/dexalin_plus = list(1,3))
+	kitchen_tag = "cannabis"
+	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
+
+/datum/seed/cannabis/emerald_dream/New()
+	..()
+	set_trait(TRAIT_HARVEST_REPEAT,3)
+	set_trait(TRAIT_YIELD,2)
+	set_trait(TRAIT_POTENCY,10.7)
+	set_trait(TRAIT_PRODUCT_COLOUR,"#00b300")
+	set_trait(TRAIT_PLANT_COLOUR,"#007a00")
+	set_trait(TRAIT_WATER_CONSUMPTION, 5.8)
+
+//Purple Haze
+/datum/seed/cannabis/purple_haze
+	name = "purple haze"
+	seed_name = "purple haze"
+	mutants = null
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(6,7), /datum/reagent/inaprovaline = list(1,3))
+	kitchen_tag = "cannabis"
+	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
+
+/datum/seed/cannabis/purple_haze/New()
+	..()
+	set_trait(TRAIT_HARVEST_REPEAT,2)
+	set_trait(TRAIT_YIELD,3)
+	set_trait(TRAIT_POTENCY,10.8)
+	set_trait(TRAIT_PRODUCT_COLOUR,"#800080")
+	set_trait(TRAIT_PLANT_COLOUR,"#660066")
+	set_trait(TRAIT_WATER_CONSUMPTION, 6.0)
+
+//Ghost OG
+/datum/seed/cannabis/ghost_og
+	name = "ghost og"
+	seed_name = "ghost og"
+	mutants = null
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(8,6), /datum/reagent/epinephrine = list(1,2))
+	kitchen_tag = "cannabis"
+	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
+
+/datum/seed/cannabis/ghost_og/New()
+	..()
+	set_trait(TRAIT_HARVEST_REPEAT,2)
+	set_trait(TRAIT_YIELD,2)
+	set_trait(TRAIT_POTENCY,10.9)
+	set_trait(TRAIT_PRODUCT_COLOUR,"#e0e0e0")
+	set_trait(TRAIT_PLANT_COLOUR,"#c0c0c0")
+	set_trait(TRAIT_WATER_CONSUMPTION, 5.6)
+
+//Solar Flare
+/datum/seed/cannabis/solar_flare
+	name = "solar flare"
+	seed_name = "solar flare"
+	mutants = null
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(5,8), /datum/reagent/bicaridine = list(1,3))
+	kitchen_tag = "cannabis"
+	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
+
+/datum/seed/cannabis/solar_flare/New()
+	..()
+	set_trait(TRAIT_HARVEST_REPEAT,3)
+	set_trait(TRAIT_YIELD,3)
+	set_trait(TRAIT_POTENCY,11.0)
+	set_trait(TRAIT_PRODUCT_COLOUR,"#ff4500")
+	set_trait(TRAIT_PLANT_COLOUR,"#cc3700")
+	set_trait(TRAIT_WATER_CONSUMPTION, 6.4)
+
+//Aurora Borealis
+/datum/seed/cannabis/aurora_borealis
+	name = "aurora borealis"
+	seed_name = "aurora borealis"
+	mutants = null
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(7,6), /datum/reagent/kelotane = list(1,2))
+	kitchen_tag = "cannabis"
+	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
+
+/datum/seed/cannabis/aurora_borealis/New()
+	..()
+	set_trait(TRAIT_HARVEST_REPEAT,2)
+	set_trait(TRAIT_YIELD,2)
+	set_trait(TRAIT_POTENCY,11.1)
+	set_trait(TRAIT_PRODUCT_COLOUR,"#0077b6")
+	set_trait(TRAIT_PLANT_COLOUR,"#005f8a")
+	set_trait(TRAIT_WATER_CONSUMPTION, 5.9)
+
+//Lemon Lightning
+/datum/seed/cannabis/lemon_lightning
+	name = "lemon lightning"
+	seed_name = "lemon lightning"
+	mutants = null
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(6,7), /datum/reagent/tramadol = list(1,3))
+	kitchen_tag = "cannabis"
+	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
+
+/datum/seed/cannabis/lemon_lightning/New()
+	..()
+	set_trait(TRAIT_HARVEST_REPEAT,2)
+	set_trait(TRAIT_YIELD,3)
+	set_trait(TRAIT_POTENCY,11.2)
+	set_trait(TRAIT_PRODUCT_COLOUR,"#ffff00")
+	set_trait(TRAIT_PLANT_COLOUR,"#cccc00")
+	set_trait(TRAIT_WATER_CONSUMPTION, 6.1)
+
+//Thunder Punch
+/datum/seed/cannabis/thunder_punch
+	name = "thunder punch"
+	seed_name = "thunder punch"
+	mutants = null
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(7,5), /datum/reagent/oxandrolone = list(1,2))
+	kitchen_tag = "cannabis"
+	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
+
+/datum/seed/cannabis/thunder_punch/New()
+	..()
+	set_trait(TRAIT_HARVEST_REPEAT,3)
+	set_trait(TRAIT_YIELD,2)
+	set_trait(TRAIT_POTENCY,11.3)
+	set_trait(TRAIT_PRODUCT_COLOUR,"#ffcc00")
+	set_trait(TRAIT_PLANT_COLOUR,"#cc9900")
+	set_trait(TRAIT_WATER_CONSUMPTION, 5.7)
+
+//Stardust Sativa
+/datum/seed/cannabis/stardust_sativa
+	name = "stardust sativa"
+	seed_name = "stardust sativa"
+	mutants = null
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(6,6), /datum/reagent/salbutamol = list(1,3))
+	kitchen_tag = "cannabis"
+	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
+
+/datum/seed/cannabis/stardust_sativa/New()
+	..()
+	set_trait(TRAIT_HARVEST_REPEAT,2)
+	set_trait(TRAIT_YIELD,3)
+	set_trait(TRAIT_POTENCY,11.4)
+	set_trait(TRAIT_PRODUCT_COLOUR,"#8a2be2")
+	set_trait(TRAIT_PLANT_COLOUR,"#6a1bb5")
+	set_trait(TRAIT_WATER_CONSUMPTION, 6.3)
+
+//Venusian Velvet
+/datum/seed/cannabis/venusian_velvet
+	name = "venusian velvet"
+	seed_name = "venusian velvet"
+	mutants = null
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(5,8), /datum/reagent/ephedrine = list(1,3))
+	kitchen_tag = "cannabis"
+	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
+
+/datum/seed/cannabis/venusian_velvet/New()
+	..()
+	set_trait(TRAIT_HARVEST_REPEAT,3)
+	set_trait(TRAIT_YIELD,2)
+	set_trait(TRAIT_POTENCY,11.5)
+	set_trait(TRAIT_PRODUCT_COLOUR,"#b03060")
+	set_trait(TRAIT_PLANT_COLOUR,"#802040")
+	set_trait(TRAIT_WATER_CONSUMPTION, 6.2)
+
+//Galactic Glue
+/datum/seed/cannabis/galactic_glue
+	name = "galactic glue"
+	seed_name = "galactic glue"
+	mutants = null
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(6,7), /datum/reagent/methamphetamine = list(1,3))
+	kitchen_tag = "cannabis"
+	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
+
+/datum/seed/cannabis/galactic_glue/New()
+	..()
+	set_trait(TRAIT_HARVEST_REPEAT,2)
+	set_trait(TRAIT_YIELD,3)
+	set_trait(TRAIT_POTENCY,12)
+	set_trait(TRAIT_PRODUCT_COLOUR,"#f0f0f0")
+	set_trait(TRAIT_PLANT_COLOUR,"#d0d0d0")
+	set_trait(TRAIT_WATER_CONSUMPTION, 6.4)
