@@ -1800,7 +1800,7 @@
 	name = "emerald dream"
 	seed_name = "emerald dream"
 	mutants = null
-	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(7,7), /datum/reagent/dexalin_plus = list(1,3))
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(7,7), /datum/reagent/dexalin = list(1,3))
 	kitchen_tag = "cannabis"
 	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
 
@@ -1836,7 +1836,7 @@
 	name = "ghost og"
 	seed_name = "ghost og"
 	mutants = null
-	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(8,6), /datum/reagent/epinephrine = list(1,2))
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(8,6), /datum/reagent/adrenaline = list(1,2))
 	kitchen_tag = "cannabis"
 	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
 
@@ -1908,7 +1908,7 @@
 	name = "thunder punch"
 	seed_name = "thunder punch"
 	mutants = null
-	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(7,5), /datum/reagent/oxandrolone = list(1,2))
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(7,5), /datum/reagent/hyperzine = list(1,2))
 	kitchen_tag = "cannabis"
 	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
 
@@ -1926,7 +1926,7 @@
 	name = "stardust sativa"
 	seed_name = "stardust sativa"
 	mutants = null
-	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(6,6), /datum/reagent/salbutamol = list(1,3))
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(6,6), /datum/reagent/antidexafen = list(1,3))
 	kitchen_tag = "cannabis"
 	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
 
@@ -1944,7 +1944,7 @@
 	name = "venusian velvet"
 	seed_name = "venusian velvet"
 	mutants = null
-	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(5,8), /datum/reagent/ephedrine = list(1,3))
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(5,8), /datum/reagent/adrenaline = list(1,3))
 	kitchen_tag = "cannabis"
 	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
 
@@ -1962,7 +1962,7 @@
 	name = "galactic glue"
 	seed_name = "galactic glue"
 	mutants = null
-	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(6,7), /datum/reagent/methamphetamine = list(1,3))
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(6,7), /datum/reagent/hyperzine = list(1,3))
 	kitchen_tag = "cannabis"
 	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
 
