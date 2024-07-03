@@ -10,6 +10,7 @@
 	throw_speed = 2
 	throw_range = 9
 	w_class = ITEM_SIZE_SMALL
+	tool_qualities = list(QUALITY_WIRE_CUTTING = 30)
 	origin_tech = list(TECH_MATERIAL = 1, TECH_ENGINEERING = 1)
 	matter = list(MATERIAL_STEEL = 80)
 	center_of_mass = "x=18;y=10"

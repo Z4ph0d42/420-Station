@@ -41,6 +41,8 @@
 
 	var/item_flags = 0 //Miscellaneous flags pertaining to equippable objects.
 
+	var/list/tool_qualities// List of item qualities for tools system. See qualities.dm.
+
 	//var/heat_transfer_coefficient = 1 //0 prevents all transfers, 1 is invisible
 	var/gas_transfer_coefficient = 1 // for leaking gas from turf to mask and vice-versa (for masks right now, but at some point, i'd like to include space helmets)
 	var/permeability_coefficient = 1 // for chemicals/diseases
@@ -376,7 +378,7 @@ var/list/global/slot_flags_enumeration = list(
 		if(!H.slot_is_accessible(slot, src, _user))
 			return 0
 
-	
+
 	if (!force && istype(src, /obj/item/clothing))
 		var/obj/item/clothing/SC = src
 		var/bulky = SC.get_bulky_coverage() //disallow bulky things from covering one another

@@ -8,6 +8,7 @@
 	slot_flags = SLOT_BELT | SLOT_EARS
 	force = 4.0
 	w_class = ITEM_SIZE_TINY
+	tool_qualities = list(QUALITY_SCREW_DRIVING = 30)
 	throwforce = 5.0
 	throw_speed = 3
 	throw_range = 5

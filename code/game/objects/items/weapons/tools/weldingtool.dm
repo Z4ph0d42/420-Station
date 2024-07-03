@@ -13,6 +13,7 @@
 	throw_speed = 1
 	throw_range = 5
 	w_class = ITEM_SIZE_SMALL
+	tool_qualities = list(QUALITY_WELDING = 30)
 	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 30)
 	origin_tech = list(TECH_ENGINEERING = 1)
 
