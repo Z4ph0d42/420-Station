@@ -9,7 +9,6 @@
 	force = 7
 	throwforce = 7.0
 	w_class = ITEM_SIZE_SMALL
-	tool_qualities = list(QUALITY_BOLT_TURNING = 30)
 	origin_tech = list(TECH_MATERIAL = 1, TECH_ENGINEERING = 1)
 	matter = list(MATERIAL_STEEL = 150)
 	center_of_mass = "x=17;y=16"

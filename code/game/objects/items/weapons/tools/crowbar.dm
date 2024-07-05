@@ -12,7 +12,6 @@
 	throw_range = 3
 	item_state = "crowbar"
 	w_class = ITEM_SIZE_NORMAL
-	tool_qualities = list(QUALITY_PRYING = 25)
 	origin_tech = list(TECH_ENGINEERING = 1)
 	matter = list(MATERIAL_STEEL = 140)
 	center_of_mass = "x=16;y=20"
