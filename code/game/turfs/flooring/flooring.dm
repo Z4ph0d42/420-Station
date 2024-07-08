@@ -199,28 +199,28 @@
 /decl/flooring/tiling/steel_broken
 	desc = "A broken foor tile"
 	icon_base = "steel_broken"
-	color = null
+	color = COLOR_GUNMETAL
 	has_damage_range = null
 	flags = TURF_REMOVE_CROWBAR
 
 /decl/flooring/tiling/steel_broken2
 	desc = "A broken foor tile"
 	icon_base = "steel_broken2"
-	color = null
+	color = COLOR_GUNMETAL
 	has_damage_range = null
 	flags = TURF_REMOVE_CROWBAR
 
 /decl/flooring/tiling/steel_broken3
 	desc = "A broken foor tile"
 	icon_base = "steel_broken3"
-	color = null
+	color = COLOR_GUNMETAL
 	has_damage_range = null
 	flags = TURF_REMOVE_CROWBAR
 
 /decl/flooring/tiling/steel_broken4
 	desc = "A broken foor tile"
 	icon_base = "steel_broken4"
-	color = null
+	color = COLOR_GUNMETAL
 	has_damage_range = null
 	flags = TURF_REMOVE_CROWBAR
 
