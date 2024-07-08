@@ -6749,7 +6749,7 @@
 	pixel_x = 6;
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken2,
 /area/quartermaster/storage)
 "ot" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -7090,6 +7090,9 @@
 	},
 /turf/simulated/wall/prepainted,
 /area/maintenance/substation/fifthdeck)
+"pg" = (
+/turf/simulated/floor/tiled/steel_broken3,
+/area/quartermaster/expedition)
 "ph" = (
 /turf/simulated/wall/prepainted,
 /area/maintenance/substation/fifthdeck)
@@ -14629,6 +14632,9 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fifthdeck/aft)
+"Le" = (
+/turf/simulated/floor/tiled/steel_broken3,
+/area/hallway/primary/fifthdeck/aft)
 "Lf" = (
 /obj/machinery/atmospherics/unary/tank/air{
 	dir = 4
@@ -15631,6 +15637,9 @@
 /obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/storage)
+"Oz" = (
+/turf/simulated/floor/tiled/steel_broken2,
+/area/hallway/primary/fifthdeck/aft)
 "OC" = (
 /obj/structure/table/standard,
 /obj/item/stack/material/phoron,
@@ -40080,7 +40089,7 @@ gF
 WH
 ql
 HO
-gE
+pg
 gE
 aE
 WU
@@ -40088,10 +40097,10 @@ qv
 yW
 qE
 Pv
-UO
+Oz
 uu
 UO
-UO
+Le
 HG
 ja
 ov

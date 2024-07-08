@@ -2610,6 +2610,9 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
+"fx" = (
+/turf/simulated/floor/tiled/steel_broken4,
+/area/hallway/primary/thirddeck/aft)
 "fy" = (
 /obj/structure/table/marble,
 /obj/item/weapon/reagent_containers/food/condiment/enzyme,
@@ -6695,6 +6698,9 @@
 /obj/machinery/portable_atmospherics/powered/pump/filled,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/aftstarboard)
+"nH" = (
+/turf/simulated/floor/tiled/steel_broken2,
+/area/hallway/primary/thirddeck/fore)
 "nI" = (
 /obj/structure/table/steel,
 /obj/structure/flora/pottedplant/small{
@@ -7797,6 +7803,9 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/mess)
+"qa" = (
+/turf/simulated/floor/tiled/steel_broken2,
+/area/hallway/primary/thirddeck/aft)
 "qb" = (
 /obj/effect/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
@@ -9878,6 +9887,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
+"vv" = (
+/obj/effect/floor_decal/corner/green{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/steel_broken2,
+/area/hallway/primary/thirddeck/center)
 "vy" = (
 /obj/item/weapon/beach_ball,
 /turf/simulated/floor/grass,
@@ -14800,6 +14815,9 @@
 /obj/random_multi/single_item/punitelly,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
+"IF" = (
+/turf/simulated/floor/tiled/steel_broken2,
+/area/crew_quarters/gym)
 "IH" = (
 /obj/structure/table/steel,
 /obj/random_multi/single_item/punitelly,
@@ -15052,7 +15070,7 @@
 /area/hallway/primary/thirddeck/aft)
 "Jc" = (
 /obj/effect/floor_decal/corner/green,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken,
 /area/hallway/primary/thirddeck/center)
 "Jd" = (
 /obj/effect/floor_decal/corner/green{
@@ -34888,7 +34906,7 @@ pP
 mX
 se
 tp
-VU
+nH
 VU
 fC
 iI
@@ -38521,7 +38539,7 @@ ni
 RN
 mH
 pZ
-Xn
+vv
 sp
 Mz
 uS
@@ -41551,7 +41569,7 @@ RW
 Oc
 Jg
 Wb
-sW
+fx
 sv
 re
 uU
@@ -41949,7 +41967,7 @@ Rf
 PG
 xF
 SU
-VF
+IF
 hx
 Vc
 hx
@@ -45189,7 +45207,7 @@ hA
 gE
 wB
 sJ
-sW
+qa
 RG
 wt
 xs

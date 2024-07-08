@@ -179,6 +179,26 @@
 	icon_state = "steel"
 	initial_flooring = /decl/flooring/tiling
 
+/turf/simulated/floor/tiled/steel_broken
+	name = "broken steel floor"
+	icon_state ="steel_broken"
+	initial_flooring = /decl/flooring/tiling/steel_broken
+
+/turf/simulated/floor/tiled/steel_broken2
+	name = "broken steel floor"
+	icon_state ="steel_broken2"
+	initial_flooring = /decl/flooring/tiling/steel_broken2
+
+/turf/simulated/floor/tiled/steel_broken3
+	name = "broken steel floor"
+	icon_state ="steel_broken3"
+	initial_flooring = /decl/flooring/tiling/steel_broken3
+
+/turf/simulated/floor/tiled/steel_broken4
+	name = "broken steel floor"
+	icon_state ="steel_broken4"
+	initial_flooring = /decl/flooring/tiling/steel_broken4
+
 /turf/simulated/floor/tiled/dark
 	name = "dark floor"
 	icon_state = "dark"

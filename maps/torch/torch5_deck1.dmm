@@ -513,7 +513,7 @@
 /obj/machinery/pager/robotics{
 	pixel_y = 30
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken2,
 /area/hallway/primary/firstdeck/center)
 "abi" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
@@ -2508,7 +2508,7 @@
 /obj/item/weapon/airlock_brace{
 	req_access = list("ACCESS_VAULT")
 	},
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/tiled/steel_broken4,
 /area/security/nuke_storage)
 "aeA" = (
 /obj/effect/floor_decal/techfloor{
@@ -6292,7 +6292,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken2,
 /area/assembly/robotics/office)
 "apo" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -7891,7 +7891,7 @@
 	pixel_x = 6;
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken3,
 /area/security/processing)
 "axO" = (
 /obj/machinery/door/airlock/security{
@@ -7907,7 +7907,7 @@
 	opacity = 0
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/tiled/steel_broken4,
 /area/security/processing)
 "axR" = (
 /turf/simulated/wall/r_wall/prepainted,
@@ -8490,7 +8490,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken2,
 /area/hallway/primary/firstdeck/aft)
 "azT" = (
 /obj/item/device/radio/intercom{
@@ -14911,7 +14911,7 @@
 	name = "Self Destruct Access Blast Door Control";
 	pixel_y = 32
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/turf/simulated/floor/tiled/steel_broken4,
 /area/security/nuke_storage)
 "bqv" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
@@ -16053,7 +16053,7 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 8
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken2,
 /area/hallway/primary/firstdeck/fore)
 "cHb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -17532,6 +17532,12 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/hardstorage/aux)
+"eEj" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/steel_broken3,
+/area/hallway/primary/firstdeck/fore)
 "eEE" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/portable_atmospherics/powered/pump/filled,
@@ -17836,7 +17842,7 @@
 	dir = 10;
 	icon_state = "corner_white"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken4,
 /area/hallway/primary/firstdeck/aft)
 "fmb" = (
 /obj/structure/closet/secure_closet/medical_torch,
@@ -21277,6 +21283,13 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
+"jUz" = (
+/obj/effect/floor_decal/corner/green{
+	dir = 10;
+	icon_state = "corner_white"
+	},
+/turf/simulated/floor/tiled/steel_broken,
+/area/hallway/primary/firstdeck/center)
 "jUP" = (
 /obj/structure/sign/warning/high_voltage,
 /turf/simulated/wall/prepainted,
@@ -21458,7 +21471,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken2,
 /area/assembly/chargebay)
 "kgu" = (
 /obj/machinery/alarm{
@@ -21989,6 +22002,12 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/staging)
+"kRD" = (
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/steel_broken2,
+/area/hallway/primary/firstdeck/aft)
 "kSb" = (
 /obj/structure/curtain/open/privacy,
 /obj/effect/floor_decal/corner/pink{
@@ -22435,7 +22454,7 @@
 	dir = 1;
 	icon_state = "corner_white"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken,
 /area/hallway/primary/firstdeck/aft)
 "ltb" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -23542,18 +23561,18 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/turf/simulated/floor/tiled/steel_broken4,
 /area/security/nuke_storage)
 "mMX" = (
 /obj/effect/floor_decal/corner/green,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken4,
 /area/hallway/primary/firstdeck/center)
 "mNb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/random_multi/single_item/poppy,
-/turf/simulated/floor/blackgrid,
+/turf/simulated/floor/tiled/steel_broken4,
 /area/security/nuke_storage)
 "mOb" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -25942,7 +25961,7 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
 "pIA" = (
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken4,
 /area/hallway/primary/firstdeck/fore)
 "pIW" = (
 /obj/structure/lattice,
@@ -27442,7 +27461,7 @@
 	dir = 5;
 	icon_state = "corner_white"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken2,
 /area/hallway/primary/firstdeck/center)
 "rtb" = (
 /obj/structure/table/standard,
@@ -28861,6 +28880,9 @@
 /obj/effect/floor_decal/corner/paleblue/mono,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/sleeper)
+"sLT" = (
+/turf/simulated/floor/tiled/steel_broken4,
+/area/security/nuke_storage)
 "sMf" = (
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/machinery/alarm{
@@ -30355,7 +30377,7 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 8
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken,
 /area/hallway/primary/firstdeck/aft)
 "uZO" = (
 /obj/structure/table/steel,
@@ -31026,6 +31048,9 @@
 	},
 /turf/simulated/open,
 /area/hallway/primary/firstdeck/fore)
+"wNL" = (
+/turf/simulated/floor/tiled/steel_broken4,
+/area/security/processing)
 "wNX" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -41568,7 +41593,7 @@ jpt
 vTY
 eyY
 dFn
-eyY
+wNL
 aBd
 uJn
 aDF
@@ -42979,7 +43004,7 @@ axR
 axR
 axR
 axR
-axR
+sLT
 bqb
 axR
 axR
@@ -43781,7 +43806,7 @@ amh
 scD
 aoc
 imK
-fDJ
+eEj
 mkb
 axR
 axR
@@ -49243,7 +49268,7 @@ kWb
 ldb
 ycz
 lib
-ure
+jUz
 aAt
 aBF
 aCR
@@ -51465,7 +51490,7 @@ agI
 aha
 ycz
 ayg
-ure
+jUz
 auN
 aBO
 wiT
@@ -52271,7 +52296,7 @@ agH
 agx
 oLK
 leb
-ivT
+kRD
 hgb
 flB
 hqb

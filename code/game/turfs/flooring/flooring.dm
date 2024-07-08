@@ -196,6 +196,35 @@
 	flags = TURF_REMOVE_CROWBAR
 	build_type = /obj/item/stack/tile/floor_freezer
 
+/decl/flooring/tiling/steel_broken
+	desc = "A broken foor tile"
+	icon_base = "steel_broken"
+	color = null
+	has_damage_range = null
+	flags = TURF_REMOVE_CROWBAR
+
+/decl/flooring/tiling/steel_broken2
+	desc = "A broken foor tile"
+	icon_base = "steel_broken2"
+	color = null
+	has_damage_range = null
+	flags = TURF_REMOVE_CROWBAR
+
+/decl/flooring/tiling/steel_broken3
+	desc = "A broken foor tile"
+	icon_base = "steel_broken3"
+	color = null
+	has_damage_range = null
+	flags = TURF_REMOVE_CROWBAR
+
+/decl/flooring/tiling/steel_broken4
+	desc = "A broken foor tile"
+	icon_base = "steel_broken4"
+	color = null
+	has_damage_range = null
+	flags = TURF_REMOVE_CROWBAR
+
+
 /decl/flooring/tiling/tech
 	icon = 'icons/turf/flooring/techfloor.dmi'
 	icon_base = "techfloor_gray"

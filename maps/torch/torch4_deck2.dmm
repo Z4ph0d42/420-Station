@@ -10820,6 +10820,9 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
+"zp" = (
+/turf/simulated/floor/tiled/steel_broken,
+/area/engineering/foyer)
 "zr" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -11470,6 +11473,9 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos)
+"AY" = (
+/turf/simulated/floor/tiled/steel_broken4,
+/area/hallway/primary/seconddeck/fore)
 "Bb" = (
 /obj/structure/closet/crate/med_crate/trauma,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -13724,7 +13730,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken2,
 /area/engineering/engine_monitoring)
 "GM" = (
 /turf/simulated/floor/tiled/techfloor,
@@ -19225,6 +19231,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/vacant/prototype/engine)
+"Yk" = (
+/turf/simulated/floor/tiled/steel_broken2,
+/area/hallway/primary/seconddeck/fore)
+"Ym" = (
+/turf/simulated/floor/tiled/steel_broken3,
+/area/engineering/foyer)
 "Yn" = (
 /obj/machinery/atmospherics/binary/pump{
 	dir = 8
@@ -32915,7 +32927,7 @@ lq
 mZ
 kD
 qm
-XA
+Yk
 Lp
 RL
 Au
@@ -33319,7 +33331,7 @@ JH
 JL
 pJ
 QM
-XA
+AY
 Lp
 Lp
 Io
@@ -33519,7 +33531,7 @@ TH
 GY
 Wr
 UN
-XA
+Yk
 hO
 KZ
 qv
@@ -41401,9 +41413,9 @@ pG
 qL
 qO
 rS
-oc
+zp
 ty
-oc
+Ym
 jS
 sZ
 Va

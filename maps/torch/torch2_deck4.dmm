@@ -4445,6 +4445,9 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/laundry)
+"ph" = (
+/turf/simulated/floor/tiled/steel_broken,
+/area/hallway/primary/fourthdeck/aft)
 "pi" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -4539,7 +4542,7 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 8
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken4,
 /area/hallway/primary/fourthdeck/fore)
 "pK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -4876,7 +4879,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/eva)
 "qR" = (
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken4,
 /area/eva)
 "qT" = (
 /obj/structure/table/steel_reinforced,
@@ -5203,6 +5206,12 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
+"sb" = (
+/obj/effect/floor_decal/corner/brown{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/steel_broken4,
+/area/hallway/primary/fourthdeck/center)
 "sd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/effect/catwalk_plated/dark,
@@ -6143,7 +6152,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/item/device/radio/beacon,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken2,
 /area/storage/primary)
 "ub" = (
 /obj/structure/disposalpipe/segment{
@@ -7227,7 +7236,7 @@
 /obj/effect/floor_decal/corner/brown{
 	dir = 5
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken2,
 /area/quartermaster/deckchief)
 "xo" = (
 /obj/structure/closet/emcloset,
@@ -7849,7 +7858,7 @@
 	dir = 8;
 	icon_state = "corner_white"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken,
 /area/hallway/primary/fourthdeck/fore)
 "zt" = (
 /obj/structure/cable/green{
@@ -13663,6 +13672,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
+"Sb" = (
+/turf/simulated/floor/tiled/steel_broken4,
+/area/quartermaster/office)
 "Sd" = (
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/lounge)
@@ -16907,6 +16919,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
+"ZY" = (
+/turf/simulated/floor/tiled/steel_broken2,
+/area/quartermaster/office)
 "ZZ" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -16922,7 +16937,7 @@
 	dir = 1;
 	pixel_y = -28
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_broken,
 /area/hallway/primary/fourthdeck/fore)
 
 (1,1,1) = {"
@@ -32982,7 +32997,7 @@ ki
 lf
 WC
 VJ
-QC
+sb
 vJ
 aY
 aY
@@ -37434,10 +37449,10 @@ lk
 lr
 vQ
 VC
-yy
+Sb
 yy
 uo
-yy
+ZY
 KD
 tz
 kS
@@ -38436,7 +38451,7 @@ kT
 Ed
 Hn
 GU
-yC
+ph
 rz
 ZE
 yD

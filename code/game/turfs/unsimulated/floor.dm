@@ -31,12 +31,15 @@
 
 /turf/unsimulated/floor/grass
 	icon_state = "grass0"
-	
+
 /turf/unsimulated/floor/plating
 	icon_state = "plating"
 
 /turf/unsimulated/floor/steeldirty
 	icon_state = "steel_dirty"
+
+/turf/unsimulated/floor/steel_broken
+	icon_state = "steel_broken"
 
 /turf/unsimulated/floor/showroom
 	icon_state = "showroomfloor"
@@ -54,14 +57,14 @@
 	icon_state = "platingdrift"
 
 // Lava Turfs
-	
+
 /turf/unsimulated/floor/lava
 	icon = 'icons/turf/flooring/lava.dmi'
 	icon_state = "lava"
 
 /turf/unsimulated/floor/lava/cold
 	icon_state = "cold"
-	
+
 /turf/unsimulated/floor/lava/moving
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "lava"
@@ -86,3 +89,6 @@
 
 /turf/unsimulated/floor/steeldirty
 	icon_state = "steel_dirty"
+
+/turf/unsimulated/floor/steel_broken
+	icon_state = "steel_broken"
