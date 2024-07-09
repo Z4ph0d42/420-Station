@@ -1,6 +1,6 @@
 # 420station
-A fork of baystatio![zerzura_logo_ancap](https://github.com/Z4ph0d42/420-Station/assets/1130859/27e1bb57-6e36-4b97-8c88-9373abd68752)
-n
+A fork of baystation![zerzura_logo_ancap](https://github.com/Z4ph0d42/420-Station/assets/1130859/27e1bb57-6e36-4b97-8c88-9373abd68752)
+
 
 [Website](http://baystation12.net/) - [Code](http://github.com/Baystation12/Baystation12/) - [Discord](https://discord.baystation12.net/) - [IRC](https://kiwiirc.com/client/irc.sorcery.net/codershuttle): irc://irc.sorcery.net/#codershuttle
 
