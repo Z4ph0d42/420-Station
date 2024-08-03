@@ -24,6 +24,7 @@
 	var/obj/item/weapon/engine/engine = null
 	var/engine_type
 	var/prefilled = 0
+	bump_with_mob = 1
 
 /obj/vehicle/bike/New()
 	..()

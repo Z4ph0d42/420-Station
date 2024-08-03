@@ -38,6 +38,8 @@
 	var/load_offset_x = 0		//pixel_x offset for item overlay
 	var/load_offset_y = 0		//pixel_y offset for item overlay
 
+	var/bump_with_mob = 0		//When this vehicle bumps something, does it call bump on the loaded mob?
+
 //-------------------------------------------
 // Standard procs
 //-------------------------------------------
@@ -255,6 +257,14 @@
 
 /obj/vehicle/proc/RunOver(var/mob/living/carbon/human/H)
 	return		//write specifics for different vehicles
+
+/obj/vehicle/Bump(atom/Obstacle)
+	if(bump_with_mob)
+		var/obj/machinery/door/D = Obstacle
+		var/mob/living/L = load
+		if(istype(D) && istype(L))
+			D.Bumped(L)
+	return ..()
 
 //-------------------------------------------
 // Loading/unloading procs
