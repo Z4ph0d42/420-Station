@@ -1,7 +1,7 @@
 # 420station
 A fork of baystation![zerzura_logo_ancap](https://github.com/Z4ph0d42/420-Station/assets/1130859/27e1bb57-6e36-4b97-8c88-9373abd68752)
 
-                                  [Discord](https://discord.gg/rJmf3UhT7U) 
+                                 https://discord.gg/rJmf3UhT7U
 
 ---
 
