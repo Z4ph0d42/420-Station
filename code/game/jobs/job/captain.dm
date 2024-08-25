@@ -20,6 +20,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 	ideal_character_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/captain
+	hud_icon = "hudcommandingofficer"
 
 /datum/job/captain/equip(var/mob/living/carbon/human/H)
 	. = ..()
