@@ -4,6 +4,8 @@ In reply to this set of comments on lib_machines.dm:
 // It is August 22nd, 2012... This TODO has already been here for months.. I wonder how long it'll last before someone does something about it.
 
 The answer was five and a half years -ZeroBits
+
+still there in 2024 -James from the internet
 */
 
 /datum/computer_file/program/library
