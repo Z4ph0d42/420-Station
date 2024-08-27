@@ -1819,7 +1819,7 @@
 /datum/seed/cannabis/blueberry_chronic
 	name = "blueberry chronic"
 	seed_name = "blueberry chronic"
- 	mutants = list("indigo frost", "sapphire smoke")
+	mutants = list("indigo frost","sapphire smoke")
 	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(6,5), /datum/reagent/dexalin = list(1,4))
 	kitchen_tag = "cannabis"
 	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
@@ -1974,10 +1974,10 @@
 	kitchen_tag = "cannabis"
 	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
 
-	/datum/seed/cannabis/aurora_borealis/New()
+/datum/seed/cannabis/aurora_borealis/New()
 	..()
 	set_trait(TRAIT_HARVEST_REPEAT,2)
-	set_trait(TRAIT_YIELD,2)
+	set_trait(TRAIT_YIELD,3)
 	set_trait(TRAIT_POTENCY,11.1)
 	set_trait(TRAIT_PRODUCT_COLOUR,"#0077b6")
 	set_trait(TRAIT_PLANT_COLOUR,"#005f8a")
@@ -2048,7 +2048,7 @@
 	name = "galactic glue"
 	seed_name = "galactic glue"
 	mutants = null
-	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(6,7), /datum/reagent/hyptricordrazine = list(1,3))
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/thc = list(6,7), /datum/reagent/tricordrazine = list(1,3))
 	kitchen_tag = "cannabis"
 	cigarette_type = /obj/item/clothing/mask/smokable/cigarette/rolled/joint
 //Tricordrazine weed
