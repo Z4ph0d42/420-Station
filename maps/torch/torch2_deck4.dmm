@@ -9214,7 +9214,8 @@
 /area/crew_quarters/lounge)
 "ET" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	light_max_bright = 2
 	},
 /obj/structure/bookcase,
 /turf/simulated/floor/carpet,
@@ -9226,7 +9227,8 @@
 /area/maintenance/fourthdeck/port)
 "EW" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	light_max_bright = 2
 	},
 /obj/machinery/camera/network/fourth_deck{
 	c_tag = "Fourth Deck - Lounge Aft";
@@ -11564,7 +11566,9 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
 "Ml" = (
-/obj/machinery/light/small,
+/obj/machinery/light/small{
+	light_max_bright = 2
+	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
 "Mn" = (
@@ -13646,7 +13650,8 @@
 	},
 /obj/machinery/light/small{
 	dir = 4;
-	pixel_y = 0
+	pixel_y = 0;
+	light_max_bright = 2
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
@@ -15768,7 +15773,8 @@
 /area/maintenance/fourthdeck/forestarboard)
 "Xt" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	light_max_bright = 2
 	},
 /obj/machinery/camera/network/fourth_deck{
 	c_tag = "Fourth Deck - Lounge Fore";
