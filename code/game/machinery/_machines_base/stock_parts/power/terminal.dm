@@ -85,8 +85,21 @@
 		return
 	if(istype(new_loc) && (terminal.loc == get_step(new_loc, terminal_dir)))
 		return     // This location is fine
-	machine.visible_message(SPAN_WARNING("The terminal is ripped out of \the [machine]!"))
-	qdel(terminal) // will handle everything via the destroyed event
+	if(istype(machine, /obj/machinery/power/apc))
+		terminal.forceMove(new_loc)
+		terminal.set_dir(terminal_dir ? GLOB.reverse_dir[terminal_dir] : machine.dir)
+		terminal.connect_to_network()
+	else if(istype(machine, /obj/machinery/power/smes))
+		var/turf/T = get_step(src, terminal_dir)
+		if(T)
+			terminal.forceMove(T)
+			terminal.set_dir(terminal_dir ? GLOB.reverse_dir[terminal_dir] : machine.dir)
+			terminal.connect_to_network()
+		else
+			qdel(terminal)
+	else
+		qdel(terminal) // will handle everything via the destroyed event
+		machine.visible_message(SPAN_WARNING("The terminal is ripped out of \the [machine]!"))
 
 /obj/item/weapon/stock_parts/power/terminal/proc/make_terminal(var/obj/machinery/machine)
 	if(!machine)
