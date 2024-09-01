@@ -51,22 +51,29 @@ obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat
 	icon_state = "xenomeat"
 	filling_color = "#E2FFDE"
 	bitesize = 6
-	reagents = list("protein" = 4)
+	var/roach_protein = 4
+
+obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat/New()
+	. = ..()
+	bitesize = initial(bitesize)
+	if(reagents.has_reagent(/datum/reagent/nutriment/protein))
+		reagents.del_reagent(/datum/reagent/nutriment/protein)
+	reagents.add_reagent(/datum/reagent/nutriment/protein, roach_protein)
 
 /obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat/seuche
-	reagents = list("protein" = 4)
+	roach_protein = 4
 
 /obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat/panzer
-	reagents = list("protein" = 8)
+	roach_protein = 8
 
 /obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat/fuhrer
-	reagents = list("protein" = 6)
+	roach_protein = 6
 
 /obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat/kaiser
-	reagents = list("protein" = 6)
+	roach_protein = 6
 
 /obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat/jager
-	reagents = list("protein" = 6)
+	roach_protein = 6
 
-/obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat/kraftwerk 
-	reagents = list("protein" = 6)
+/obj/item/weapon/reagent_containers/food/snacks/meat/roachmeat/kraftwerk
+	roach_protein = 6
