@@ -5106,13 +5106,16 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "lo" = (
-/obj/effect/floor_decal/scglogo,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/random/trash,
+/obj/effect/floor_decal/scglogo{
+	dir = 4;
+	icon_state = "center"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "lp" = (
@@ -5386,6 +5389,17 @@
 /obj/effect/floor_decal/scglogo{
 	dir = 4;
 	icon_state = "bottom-right"
+	},
+/obj/effect/floor_decal/scglogo{
+	dir = 4;
+	icon_state = "bottom-right"
+	},
+/obj/effect/floor_decal/scglogo{
+	dir = 8;
+	icon_state = "top-left"
+	},
+/obj/effect/floor_decal/scglogo{
+	icon_state = "top-right"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
@@ -6733,9 +6747,6 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/aquila/medical)
 "qf" = (
-/obj/effect/floor_decal/scglogo{
-	icon_state = "top-right"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -6749,6 +6760,10 @@
 /obj/structure/bed/chair/comfy/blue{
 	dir = 8;
 	icon_state = "comfychair_preview"
+	},
+/obj/effect/floor_decal/scglogo{
+	dir = 4;
+	icon_state = "bottom-right"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
@@ -6773,9 +6788,6 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "qh" = (
-/obj/effect/floor_decal/scglogo{
-	icon_state = "bottom-right"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -6787,6 +6799,9 @@
 	icon_state = "1-4"
 	},
 /obj/structure/bed/chair/comfy/blue,
+/obj/effect/floor_decal/scglogo{
+	icon_state = "bottom-right"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "qi" = (
@@ -7301,12 +7316,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "rA" = (
-/obj/effect/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "bottom-left"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
+	},
+/obj/effect/floor_decal/scglogo{
+	icon_state = "bottom-right"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
@@ -8340,6 +8354,9 @@
 	dir = 4;
 	icon_state = "top-right"
 	},
+/obj/effect/floor_decal/scglogo{
+	icon_state = "top-left"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "uq" = (
@@ -8354,6 +8371,13 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/scglogo{
+	dir = 8;
+	icon_state = "center-left"
+	},
+/obj/effect/floor_decal/scglogo{
+	icon_state = "top-center"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "us" = (
@@ -8597,6 +8621,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/effect/floor_decal/scglogo{
+	icon_state = "center-left"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "uV" = (
@@ -8657,7 +8684,8 @@
 /area/shield/bridge)
 "vf" = (
 /obj/effect/floor_decal/scglogo{
-	icon_state = "top-center"
+	dir = 4;
+	icon_state = "center-right"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
@@ -10007,7 +10035,8 @@
 /area/crew_quarters/heads/office/xo)
 "yh" = (
 /obj/effect/floor_decal/scglogo{
-	icon_state = "bottom-center"
+	dir = 4;
+	icon_state = "center-left"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
@@ -10963,9 +10992,6 @@
 	color = "#666666";
 	dir = 8
 	},
-/obj/effect/floor_decal/scglogo{
-	icon_state = "center-left"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -10980,6 +11006,10 @@
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
+	},
+/obj/effect/floor_decal/scglogo{
+	dir = 4;
+	icon_state = "top-center"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
@@ -11649,12 +11679,11 @@
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/office/co)
 "Fn" = (
-/obj/effect/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "bottom-center"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/effect/floor_decal/scglogo{
+	icon_state = "center-right"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
@@ -12206,13 +12235,14 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
 "HH" = (
-/obj/effect/floor_decal/scglogo{
-	icon_state = "top-left"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/effect/floor_decal/scglogo{
+	dir = 4;
+	icon_state = "top-right"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
@@ -12866,13 +12896,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "Kt" = (
-/obj/effect/floor_decal/scglogo{
-	icon_state = "bottom-left"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/effect/floor_decal/scglogo{
+	dir = 4;
+	icon_state = "top-left"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
@@ -13253,6 +13284,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
+	},
+/obj/effect/floor_decal/scglogo{
+	icon_state = "bottom-left"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
@@ -14096,6 +14130,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
+/obj/effect/floor_decal/scglogo,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "Qh" = (
@@ -15391,6 +15426,9 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/scglogo{
+	icon_state = "bottom-center"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "Vg" = (
@@ -16334,9 +16372,6 @@
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/sgr)
 "Zg" = (
-/obj/effect/floor_decal/scglogo{
-	icon_state = "center-right"
-	},
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 8;
@@ -16346,6 +16381,10 @@
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
+	},
+/obj/effect/floor_decal/scglogo{
+	dir = 1;
+	icon_state = "bottom-center"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
