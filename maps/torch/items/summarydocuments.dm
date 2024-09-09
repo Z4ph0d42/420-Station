@@ -478,7 +478,7 @@ obj/item/documents/generic/sol/realitybreak
 
 /obj/item/documents/generic/corp/uniondues
 	name = "union dues reminder"
-	desc = "A \"confidential\" memo sent from the Union Representative to all members of the Union reminding them that their mandated union fee pay period is approaching, and they should ensure their 250 thaler is deposited with them before the end of the month."
+	desc = "A \"confidential\" memo sent from the Union Representative to all members of the Union reminding them that their mandated union fee pay period is approaching, and they should ensure their 250 dollar is deposited with them before the end of the month."
 
 /obj/item/documents/generic/corp/glueandtape
 	name = "proper document disposal"

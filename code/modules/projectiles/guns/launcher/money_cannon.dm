@@ -57,7 +57,7 @@
 		release_force = 0
 		return
 
-	// Must launch at least 100 thaler to incur damage.
+	// Must launch at least 100 dollar to incur damage.
 	release_force = dispensing / 100
 
 /obj/item/weapon/gun/launcher/money/proc/unload_receptacle(mob/user)

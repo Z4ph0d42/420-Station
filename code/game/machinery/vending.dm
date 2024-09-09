@@ -176,7 +176,7 @@
 			return TRUE
 		else if(handled)
 			SSnano.update_uis(src)
-			return TRUE // don't smack that machine with your 2 thalers
+			return TRUE // don't smack that machine with your 2 dollars
 
 	if (I || istype(W, /obj/item/weapon/spacecash))
 		attack_hand(user)

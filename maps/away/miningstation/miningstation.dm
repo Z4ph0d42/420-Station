@@ -387,7 +387,7 @@
 	info = {"
 			<center><b><font color='red'>Grayson Industries</font></b></center>
 			<center><b><small>Headquarters, Financial Department</small></b></center>
-			<i>Quarterly income from this station has been well above projections. Well done. As a rewward, Grayson industries has awarded everyone on the station a raise of 1500 thaler. Enjoy the money, your men have earned it.area
+			<i>Quarterly income from this station has been well above projections. Well done. As a rewward, Grayson industries has awarded everyone on the station a raise of 1500 dollar. Enjoy the money, your men have earned it.area
 			Jason Mowry, Grayson Financial.</i>
 			"}
 
