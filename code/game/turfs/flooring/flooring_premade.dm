@@ -179,6 +179,37 @@
 	icon_state = "steel"
 	initial_flooring = /decl/flooring/tiling
 
+/turf/simulated/floor/tiled/bar
+	name= "bar floor"
+	icon_state = "bar"
+	initial_flooring = /decl/flooring/tiling/bar
+
+/turf/simulated/floor/tiled/bar_dance
+	name= "bar dancefloor"
+	icon_state = "bar_dance"
+	initial_flooring = /decl/flooring/tiling/bar_dance
+
+/turf/simulated/floor/tiled/bar_solid
+	name= "bar floor"
+	icon_state = "bar_solid"
+	initial_flooring = /decl/flooring/tiling/bar_solid
+
+/turf/simulated/floor/tiled/dark1
+	name= "dark1"
+	initial_flooring = /decl/flooring/tiling/dark1
+
+/turf/simulated/floor/tiled/dark2
+	name= "dark2"
+	initial_flooring = /decl/flooring/tiling/dark2
+
+/turf/simulated/floor/tiled/dark_grid1
+	name= "dark_grid1"
+	initial_flooring = /decl/flooring/tiling/dark_grid1
+
+/turf/simulated/floor/tiled/dark_grid2
+	name= "dark_grid2"
+	initial_flooring = /decl/flooring/tiling/dark_grid2
+
 /turf/simulated/floor/tiled/steel_broken
 	name = "broken steel floor"
 	icon_state ="steel_broken"
