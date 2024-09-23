@@ -1,25 +1,16 @@
 "aa" = (/obj/effect/floor_decal/corner/red{dir = 10},/obj/effect/floor_decal/corner/red{dir = 6; icon_state = "corner_white"},/turf/simulated/floor/tiled/dark,/area/security/bo)
 "ad" = (/obj/machinery/door/airlock/glass/medical{name = "Chemistry"},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/white/monotile,/area/medical/chemistry)
 "ai" = (/obj/structure/sign/hydro,/turf/simulated/wall/prepainted,/area/hydroponics)
-<<<<<<< Updated upstream
 "am" = (/obj/effect/shuttle_landmark/lift/cargo_bottom,/turf/simulated/floor/plating,/area/space)
 "an" = (/obj/machinery/computer/modular/preset/security{dir = 4; icon_state = "console"},/turf/simulated/floor/tiled,/area/security/processing)
-=======
-"aj" = (/obj/machinery/door/airlock/civilian,/turf/simulated/floor/tiled/white,/area/space)
->>>>>>> Stashed changes
 "ar" = (/obj/structure/catwalk,/obj/structure/railing/mapped{dir = 4; icon_state = "railing0-1"},/turf/simulated/floor/plating,/area/space)
 "av" = (/turf/simulated/floor/tiled,/area/security/processing)
 "ax" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/multi_tile/glass/command,/turf/simulated/floor/tiled/steel_ridged,/area/space)
 "aA" = (/obj/structure/table/woodentable,/obj/item/weapon/material/ashtray/glass{pixel_x = -4; pixel_y = -1},/obj/item/device/flashlight/lamp/green,/turf/simulated/floor/carpet,/area/crew_quarters/bar)
 "aB" = (/obj/effect/landmark{name = "JoinLateCryo"},/turf/simulated/floor/tiled/white,/area/space)
 "aC" = (/obj/machinery/door/airlock/freezer{name = "Galley Cold Room"},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/freezer,/area/crew_quarters/galleybackroom)
-<<<<<<< Updated upstream
 "aE" = (/turf/simulated/wall/prepainted,/area/hydroponics)
 "aG" = (/obj/effect/floor_decal/techfloor{dir = 4; icon_state = "techfloor_edges"},/obj/structure/railing/mapped{dir = 4; icon_state = "railing0-1"},/obj/effect/floor_decal/corner/brown{dir = 1; icon_state = "corner_white"},/turf/simulated/floor/tiled/steel_grid,/area/space)
-=======
-"aJ" = (/obj/machinery/hologram/holopad,/turf/simulated/floor/tiled,/area/hydroponics)
-"aK" = (/obj/structure/virology/analyser_off,/turf/simulated/floor/tiled/white,/area/space)
->>>>>>> Stashed changes
 "aU" = (/obj/structure/closet/secure_closet/personal/cabinet,/obj/item/weapon/gun/projectile/shotgun/doublebarrel,/obj/item/weapon/storage/box/ammo/shotgunshells,/obj/item/weapon/reagent_containers/food/drinks/flask/barflask,/obj/item/clothing/glasses/eyepatch/hud,/obj/item/weapon/storage/box/ammo/beanbags,/turf/simulated/floor/carpet,/area/crew_quarters/bar)
 "aZ" = (/obj/structure/table/standard,/obj/random/tool,/obj/random/smokes{pixel_y = 3; pixel_x = 5},/turf/simulated/floor/tiled/white/monotile,/area/space)
 "ba" = (/obj/machinery/cryopod,/obj/effect/floor_decal/industrial/warning{dir = 9; icon_state = "warning"},/turf/simulated/floor/tiled/techmaint,/area/space)
@@ -68,14 +59,8 @@
 "eh" = (/obj/item/weapon/paper_bin{pixel_x = -3; pixel_y = 7},/obj/structure/table/steel,/obj/item/weapon/folder/red,/obj/item/weapon/pen,/turf/simulated/floor/tiled,/area/security/processing)
 "ej" = (/turf/simulated/wall/walnut,/area/space)
 "el" = (/obj/effect/floor_decal/industrial/hatch/blue,/obj/structure/railing/mapped{dir = 4; icon_state = "railing0-1"},/turf/simulated/floor/tiled/steel_grid,/area/space)
-<<<<<<< Updated upstream
 "eA" = (/obj/effect/floor_decal/spline/plain/blue{dir = 1},/obj/structure/bed/roller,/turf/simulated/floor/tiled/white,/area/medical/sleeper)
 "eB" = (/obj/effect/floor_decal/corner/red{dir = 6},/turf/simulated/floor/tiled,/area/security/wing)
-=======
-"ey" = (/obj/structure/table/glass,/obj/structure/table/glass,/turf/simulated/floor/tiled/white,/area/space)
-"eA" = (/obj/effect/floor_decal/spline/plain/blue{dir = 1},/obj/structure/bed/roller,/turf/simulated/floor/tiled/white,/area/space)
-"eB" = (/obj/effect/floor_decal/corner/red{dir = 6},/turf/simulated/floor/tiled,/area/space)
->>>>>>> Stashed changes
 "eC" = (/obj/effect/wallframe_spawn/reinforced/hull,/obj/machinery/door/blast/regular/open{dir = 1; icon_state = "pdoor0"; id_tag = "prototype_chamber_blast"},/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/space)
 "eF" = (/obj/structure/bed/chair/comfy/red,/obj/effect/floor_decal/corner/red{dir = 10},/turf/simulated/floor/tiled/dark,/area/security/bo)
 "eI" = (/obj/structure/table/steel,/obj/effect/floor_decal/corner/red{dir = 10},/obj/effect/floor_decal/corner/red{dir = 4; icon_state = "corner_white"},/turf/simulated/floor/tiled,/area/security/wing)
@@ -237,11 +222,7 @@
 "pN" = (/obj/effect/floor_decal/corner/red,/turf/simulated/floor/tiled,/area/security/wing)
 "pP" = (/obj/structure/hygiene/urinal{pixel_y = 32},/obj/effect/floor_decal/corner/red/diagonal,/turf/simulated/floor/tiled/freezer,/area/security/brig)
 "pQ" = (/obj/machinery/atm{pixel_y = 32},/turf/simulated/floor/tiled,/area/space)
-<<<<<<< Updated upstream
 "pR" = (/obj/structure/stairs/north,/turf/space,/area/security/wing)
-=======
-"pR" = (/obj/structure/table/glass,/turf/simulated/floor/tiled/white,/area/space)
->>>>>>> Stashed changes
 "qa" = (/obj/structure/stairs/west,/turf/simulated/floor/tiled,/area/space)
 "qc" = (/turf/simulated/floor/tiled/freezer,/area/crew_quarters/mess)
 "qd" = (/obj/machinery/vending/coffee,/obj/effect/floor_decal/corner/green{dir = 5},/turf/simulated/floor/tiled,/area/space)
@@ -263,7 +244,6 @@
 "rC" = (/obj/structure/stairs/south,/turf/space,/area/space)
 "rO" = (/obj/effect/wallframe_spawn/reinforced,/turf/simulated/floor/plating,/area/space)
 "rR" = (/obj/structure/bed/chair/wheelchair,/turf/simulated/floor/tiled/dark,/area/space)
-"rT" = (/obj/machinery/door/airlock/medical,/turf/simulated/floor/tiled/white,/area/space)
 "rZ" = (/obj/machinery/gibber,/turf/simulated/floor/tiled/freezer,/area/crew_quarters/galleybackroom)
 "sf" = (/obj/effect/floor_decal/corner/paleblue{dir = 10},/turf/simulated/floor/tiled/white,/area/medical/medicalhallway)
 "sn" = (/obj/structure/closet/firecloset,/turf/simulated/floor/tiled,/area/space)
@@ -307,7 +287,6 @@
 "wk" = (/obj/structure/hygiene/shower{dir = 8; icon_state = "shower"; pixel_x = 0; pixel_y = 0},/turf/simulated/floor/tiled/freezer,/area/space)
 "wm" = (/obj/machinery/computer/modular/preset/civilian{dir = 8; icon_state = "console"},/turf/simulated/floor/tiled/white,/area/space)
 "wo" = (/obj/structure/bed/chair{dir = 8; icon_state = "chair_preview"},/turf/simulated/floor/tiled,/area/space)
-"wr" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled/white,/area/space)
 "wE" = (/obj/structure/bed/padded,/obj/item/weapon/storage/secure/safe{pixel_x = -22; pixel_y = 0},/obj/item/weapon/bedsheet/brown,/turf/simulated/floor/carpet,/area/space)
 "wI" = (/turf/simulated/floor/carpet,/area/crew_quarters/bar)
 "wJ" = (/obj/effect/floor_decal/scglogo{icon_state = "bottom-right"},/turf/simulated/floor/tiled,/area/space)
@@ -380,7 +359,6 @@
 "Ch" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/paper_bin{pixel_x = -3; pixel_y = 7},/obj/machinery/button/blast_door{id_tag = "engineeringdeskshutters"; name = "Desk Shutter Control"; pixel_y = 1},/turf/simulated/floor/tiled/monotile,/area/space)
 "Ci" = (/obj/machinery/door/airlock/multi_tile/glass/civilian,/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/steel_ridged,/area/space)
 "Cj" = (/obj/structure/sign/poster,/turf/simulated/wall/prepainted,/area/space)
-"Cl" = (/obj/structure/virology/incubator_off,/turf/simulated/floor/tiled/white,/area/space)
 "Cn" = (/obj/machinery/optable,/turf/simulated/floor/tiled/techfloor,/area/space)
 "Co" = (/obj/effect/wallframe_spawn/reinforced/no_grille,/obj/machinery/door/firedoor,/obj/machinery/door/blast/shutters{density = 0; dir = 4; icon_state = "shutter0"; id_tag = "infirm_windows"; name = "Infirmary Window Lockdown"; opacity = 0},/turf/simulated/floor/plating,/area/medical/medicalhallway)
 "Cy" = (/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 8; icon_state = "railing0-1"},/turf/simulated/open,/area/space)
@@ -418,15 +396,10 @@
 "Ft" = (/turf/simulated/wall/r_wall/prepainted,/area/space)
 "Fv" = (/obj/structure/reagent_dispensers/water_cooler,/turf/simulated/floor/tiled/white,/area/medical/medicalhallway)
 "FG" = (/obj/effect/floor_decal/corner/blue{dir = 9},/obj/structure/railing/mapped{dir = 4; icon_state = "railing0-1"},/turf/simulated/floor/tiled/steel_grid,/area/space)
-<<<<<<< Updated upstream
 "FM" = (/obj/effect/floor_decal/corner/paleblue{dir = 6},/obj/effect/floor_decal/corner/paleblue{dir = 9},/turf/simulated/floor/tiled/white,/area/medical/medicalhallway)
 "FN" = (/obj/structure/table/steel,/turf/simulated/floor/tiled,/area/security/processing)
 "FX" = (/turf/simulated/floor/tiled/steel_ridged,/area/crew_quarters/mess)
 "FY" = (/obj/structure/table/standard,/obj/structure/bedsheetbin,/obj/item/device/radio/intercom/department/security{dir = 8; icon_state = "intercom"; pixel_x = 21},/turf/simulated/floor/tiled,/area/security/brig)
-=======
-"FM" = (/obj/effect/floor_decal/corner/paleblue{dir = 6},/obj/effect/floor_decal/corner/paleblue{dir = 9},/turf/simulated/floor/tiled/white,/area/space)
-"FW" = (/obj/structure/wall_frame/standard,/obj/structure/window/basic/full,/turf/simulated/wall/prepainted,/area/space)
->>>>>>> Stashed changes
 "Gc" = (/obj/structure/bed,/obj/item/weapon/bedsheet/clown,/turf/simulated/floor/wood/bamboo,/area/space)
 "Gk" = (/obj/machinery/door/airlock/maintenance{name = "Galley Maintenance"},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/steel_ridged,/area/crew_quarters/galleybackroom)
 "Gl" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled/bar,/area/crew_quarters/mess)
@@ -496,15 +469,9 @@
 "Kq" = (/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/steel_ridged,/area/security/bo)
 "Kz" = (/obj/random/plant,/turf/simulated/floor/tiled/dark,/area/space)
 "KK" = (/obj/machinery/door/airlock/civilian{name = "Head"},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/steel_ridged,/area/space)
-<<<<<<< Updated upstream
 "KO" = (/turf/simulated/floor/tiled,/area/security/locker)
 "KP" = (/obj/machinery/atm{pixel_x = -29},/turf/simulated/floor/tiled/white,/area/medical/medicalhallway)
 "KT" = (/obj/structure/hygiene/toilet{dir = 4},/obj/effect/catwalk_plated/dark,/turf/simulated/open,/area/security/wing)
-=======
-"KP" = (/obj/machinery/atm{pixel_x = -29},/turf/simulated/floor/tiled/white,/area/space)
-"KQ" = (/obj/structure/virology/iso,/turf/simulated/floor/tiled/white,/area/space)
-"KT" = (/obj/structure/hygiene/toilet{dir = 4},/turf/simulated/floor/tiled,/area/space)
->>>>>>> Stashed changes
 "KX" = (/obj/effect/floor_decal/corner/grey/diagonal{dir = 4},/obj/structure/table/marble,/obj/machinery/cooker/cereal,/turf/simulated/floor/tiled/white,/area/crew_quarters/galley)
 "Lm" = (/obj/random_multi/single_item/punitelly,/turf/simulated/floor/wood/bamboo{icon_state = "wood_broken0"},/area/space)
 "Lr" = (/obj/structure/closet/secure_closet/personal/empty,/obj/random/pouches,/turf/simulated/floor/tiled/freezer,/area/space)
@@ -615,19 +582,12 @@
 "Tz" = (/obj/structure/closet/secure_closet/bar_torch,/turf/simulated/floor/lino,/area/crew_quarters/bar)
 "TB" = (/obj/effect/floor_decal/corner/green{dir = 1; icon_state = "corner_white"},/obj/effect/floor_decal/industrial/warning/fulltile,/obj/effect/floor_decal/industrial/warning{dir = 8},/turf/simulated/floor/tiled,/area/hallway/primary/fourthdeck/fore)
 "TD" = (/obj/structure/closet/crate/secure/biohazard/alt,/turf/simulated/floor/tiled/dark,/area/space)
-<<<<<<< Updated upstream
 "TJ" = (/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/steel_ridged,/area/crew_quarters/mess)
 "TL" = (/obj/structure/table/rack{dir = 8},/obj/random/tech_supply,/obj/random/tech_supply,/obj/random/tech_supply,/obj/random/tech_supply,/obj/random/tech_supply,/obj/effect/floor_decal/industrial/outline/yellow,/obj/item/weapon/shovel,/obj/item/weapon/shovel{pixel_x = -2; pixel_y = 3},/turf/simulated/floor/tiled/monotile,/area/space)
 "TP" = (/obj/structure/closet/wardrobe/chemistry_white,/turf/simulated/floor/tiled/white,/area/medical/chemistry)
 "TV" = (/obj/effect/floor_decal/industrial/hatch/blue,/obj/machinery/door/firedoor,/obj/machinery/door/blast/shutters{density = 0; dir = 4; icon_state = "shutter0"; id_tag = "infirm_windows"; name = "Infirmary Window Lockdown"; opacity = 0},/turf/simulated/floor/tiled/white,/area/medical/medicalhallway)
 "TW" = (/obj/structure/table/steel,/obj/item/device/taperecorder{pixel_y = 0},/obj/item/device/camera,/turf/simulated/floor/tiled/monotile,/area/security/processing)
 "TY" = (/obj/structure/table/steel,/obj/item/device/multitool,/obj/item/weapon/stamp/brig,/obj/item/weapon/stamp/denied{pixel_x = 5},/obj/random_multi/single_item/summarydocuments/sec,/turf/simulated/floor/tiled/dark,/area/security/bo)
-=======
-"TP" = (/obj/structure/closet/wardrobe/chemistry_white,/turf/simulated/floor/tiled/white,/area/space)
-"TQ" = (/obj/structure/virology/centrifuge,/turf/simulated/floor/tiled/white,/area/space)
-"TV" = (/obj/effect/floor_decal/industrial/hatch/blue,/obj/machinery/door/firedoor,/obj/machinery/door/blast/shutters{density = 0; dir = 4; icon_state = "shutter0"; id_tag = "infirm_windows"; name = "Infirmary Window Lockdown"; opacity = 0},/turf/simulated/floor/tiled/white,/area/space)
-"TY" = (/obj/structure/table/steel,/obj/item/device/multitool,/obj/item/weapon/stamp/brig,/obj/item/weapon/stamp/denied{pixel_x = 5},/obj/random_multi/single_item/summarydocuments/sec,/turf/simulated/floor/tiled/dark,/area/space)
->>>>>>> Stashed changes
 "Ua" = (/obj/effect/floor_decal/corner/grey/diagonal{dir = 4},/obj/machinery/smartfridge{pixel_x = -31},/turf/simulated/floor/tiled/white,/area/crew_quarters/galley)
 "Ub" = (/obj/effect/floor_decal/corner/red/mono,/turf/simulated/floor/tiled,/area/security/locker)
 "Uj" = (/obj/effect/floor_decal/corner/grey/diagonal{dir = 4},/obj/random_multi/single_item/runtime,/turf/simulated/floor/tiled/white,/area/crew_quarters/galley)
@@ -687,15 +647,9 @@
 "YX" = (/obj/item/weapon/stool/wood,/obj/item/weapon/soap,/turf/simulated/floor/tiled/freezer,/area/space)
 "Zc" = (/obj/structure/table/standard,/turf/simulated/floor/lino,/area/crew_quarters/bar)
 "Zg" = (/obj/machinery/atmospherics/pipe/manifold/hidden{dir = 1; icon_state = "map"},/obj/machinery/meter,/turf/simulated/floor/plating,/area/space)
-<<<<<<< Updated upstream
 "Zh" = (/obj/machinery/papershredder,/turf/simulated/floor/tiled/monotile,/area/space)
 "Zl" = (/obj/effect/floor_decal/corner/paleblue{dir = 5},/obj/effect/floor_decal/corner/paleblue{dir = 9},/obj/effect/floor_decal/corner/paleblue{dir = 6},/turf/simulated/floor/tiled/white,/area/medical/medicalhallway)
 "Zp" = (/obj/effect/wallframe_spawn/no_grille,/turf/simulated/floor/plating,/area/space)
-=======
-"Zj" = (/obj/machinery/smartfridge/secure/virology,/turf/simulated/floor/tiled/white,/area/space)
-"Zl" = (/obj/effect/floor_decal/corner/paleblue{dir = 5},/obj/effect/floor_decal/corner/paleblue{dir = 9},/obj/effect/floor_decal/corner/paleblue{dir = 6},/turf/simulated/floor/tiled/white,/area/space)
-"Zp" = (/obj/effect/wallframe_spawn/no_grille,/turf/simulated/floor/plating,/area/crew_quarters/mess)
->>>>>>> Stashed changes
 "Zt" = (/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/tiled/dark,/area/space)
 "ZH" = (/obj/machinery/computer/modular/preset/civilian{dir = 4; icon_state = "console"},/turf/simulated/floor/carpet,/area/crew_quarters/bar)
 "ZL" = (/obj/effect/floor_decal/corner/blue/mono,/turf/simulated/floor/tiled/dark/monotile,/area/space)
@@ -1158,7 +1112,6 @@ gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
 gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxydydydydydgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
 gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxlurRSzDjDjDjeNeNeNTDBAhvtexuydgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
 gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxluSzSzSzSzSzSzSzSzSzoISzEjLKydgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-<<<<<<< Updated upstream
 gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxSzSzSzSzSzSzSzSzSzSzoISzEACnydCeCeCeCegxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
 gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxbHSzSzSzSzSzSzSzSzluZtSzdgHtydCentntCegxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
 gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxbHSzSzSzSzSzSzSzSzluZOjxSzSzydCentntCegxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
@@ -1177,26 +1130,6 @@ gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
 gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxSzSzgxgxgxgxgxgxgxgxgxgxgxCentntCegxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
 gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxCentntCegxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
 gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxCentntCeFtFtFtFtFtFtFtgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-=======
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxSzSzSzSzSzSzSzSzSzSzoISzEACnydgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxbHSzSzSzSzSzSzSzSzluZtSzdgHtydgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxbHSzSzSzSzSzSzSzSzluZOjxSzSzydgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxbHSzSzEsEsEsFtgxgxFtcrcrxyluydgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxSzSzydydydFtrCrCFtydydydydydgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxSzSzydZjaKFtFtFtFteMeMeMydgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxSzSzydeMeMClKQeMFWeMeMeMydgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxSzSzrTeMeMeMeMeMajeMeMeMydgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxSzSzydpRwreMeMeMydydydydydgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxSzSzydpReypRTQeMydgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxSzSzydydydydydydydgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxSzSzgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxSzSzgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxSzSzgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxSzSzgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxSzSzgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
-gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxFtFtFtFtFtFtFtgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
->>>>>>> Stashed changes
 gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxFtFtFtFtFtCeCeCeCeFtVWVWVWVWVWFtgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
 gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxFtUkGOGOFtCentntCePoVWVWVWVWVWFtgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
 gxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxKmUkddPjFtCentntCePoVWVWVWVWVWFtgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgxgx
