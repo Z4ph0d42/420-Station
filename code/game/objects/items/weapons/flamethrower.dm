@@ -142,10 +142,17 @@
 	if(usr.stat || usr.restrained() || usr.lying)	return
 	usr.set_machine(src)
 	if(href_list["light"])
-		if(!tank)	return
-		if(tank.air_contents.get_by_flag(XGM_GAS_FUEL) <  1)	return
-		if(!status)	return
+		if(!tank)
+			to_chat(user, "<span class='warning'>Attach a fuel tank first!</span>")
+			return
+		if(tank.air_contents.get_by_flag(XGM_GAS_FUEL) <  1)
+			to_chat(user, "<span class='warning'>You need fuel for this!</span>")
+			return
+		if(!status)
+			to_chat(user, "<span class='warning'>The igniter is not secured properly. try a screwdriver!</span>")
+			return
 		lit = !lit
+		to_chat(user, "<span class='notice'>You light the [src].</span>")
 		if(lit)
 			START_PROCESSING(SSobj, src)
 	if(href_list["amount"])
