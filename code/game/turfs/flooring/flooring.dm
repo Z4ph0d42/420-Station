@@ -196,6 +196,60 @@
 	flags = TURF_REMOVE_CROWBAR
 	build_type = /obj/item/stack/tile/floor_freezer
 
+/decl/flooring/tiling/bar
+	desc = "A bar floor tile"
+	icon_base = "bar"
+	color = null
+	has_damage_range = null
+	flags = TURF_REMOVE_CROWBAR
+
+
+/decl/flooring/tiling/bar_dance
+	desc = "A bar dancefloor tile"
+	icon_base = "bar_dance"
+	color = null
+	has_damage_range = null
+	flags = TURF_REMOVE_CROWBAR
+
+/decl/flooring/tiling/bar_solid
+	desc = "A solid bar floor tile"
+	icon_base = "bar_solid"
+	color = null
+	has_damage_range = null
+	flags = TURF_REMOVE_CROWBAR
+
+/decl/flooring/tiling/dark1
+	desc = "A dark foor tile"
+	icon_base = "dark1"
+	color = null
+	has_damage_range = null
+	flags = TURF_REMOVE_CROWBAR
+	build_type = /obj/item/stack/tile/floor_dark
+
+/decl/flooring/tiling/dark2
+	desc = "A dark foor tile"
+	icon_base = "dark2"
+	color = null
+	has_damage_range = null
+	flags = TURF_REMOVE_CROWBAR
+	build_type = /obj/item/stack/tile/floor_dark
+
+/decl/flooring/tiling/dark_grid1
+	desc = "A dark grid foor tile"
+	icon_base = "dark_grid1"
+	color = null
+	has_damage_range = null
+	flags = TURF_REMOVE_CROWBAR
+	build_type = /obj/item/stack/tile/floor_dark
+
+/decl/flooring/tiling/dark_grid2
+	desc = "A dark grid foor tile"
+	icon_base = "dark_grid2"
+	color = null
+	has_damage_range = null
+	flags = TURF_REMOVE_CROWBAR
+	build_type = /obj/item/stack/tile/floor_dark
+
 /decl/flooring/tiling/steel_broken
 	desc = "A broken foor tile"
 	icon_base = "steel_broken"
